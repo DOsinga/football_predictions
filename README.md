@@ -30,7 +30,7 @@ By running the simulation 100 000 times, we get a nice distributon of outcomes:
  * Chile 6.52%
  * Colombia 4.47%
 
-
+At the time of writing the outcome is remarkable similar to the must more complicated model of fivethirtyeight at http://fivethirtyeight.com/interactives/world-cup/ 
 
 
 
