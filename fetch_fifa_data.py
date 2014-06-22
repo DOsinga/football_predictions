@@ -31,10 +31,7 @@ if __name__ == '__main__':
   writer.writeheader()
   for idx in range(20, -2, -1):
     url = URL % -idx
-    html = urllib.urlopen(url).read()
-    #file('/tmp/matches.xt', 'w').write(html)
-    #html = file('/tmp/matches.xt').read()
-    soup = BeautifulSoup.BeautifulSoup(html)
+    soup = BeautifulSoup.BeautifulSoup(urllib.urlopen(url).read())
     for row in soup.findAll('tr'):
       cols = [' '.join([str(x) for x in col.contents]) for col in row.findAll('td')]
       if cols[3].strip() in ('-', 'Abandoned'):
@@ -53,7 +50,6 @@ if __name__ == '__main__':
              'code2': team2[0],
              'team2': team2[1]}
       writer.writerow(res)
-#    break
 
 
 
