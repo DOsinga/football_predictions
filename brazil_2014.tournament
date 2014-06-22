@@ -1,0 +1,98 @@
+2014-06-12 2014-07-13
+
+Group_Stage
+  A
+    Brazil
+    Croatia
+    Mexico
+    Cameroon
+  B
+    Spain
+    Netherlands
+    Chile
+    Australia
+  C
+    Colombia
+    Greece
+    Côte d'Ivoire
+    Japan
+  D
+    Uruguay
+    Costa Rica
+    England
+    Italy
+  E
+    Switzerland
+    Ecuador
+    France
+    Honduras
+  F
+    Argentina
+    Bosnia and Herzegovina
+    Iran
+    Nigeria
+  G
+    Germany
+    Portugal
+    Ghana
+    USA
+  H
+    Belgium
+    Algeria
+    Russia
+    Korea Republic
+
+Round_2
+  R1
+    A1
+    B2
+  R2
+    C1
+    D2
+  R3
+    E1
+    F2
+  R4
+    G1
+    H2
+  R5
+    B1
+    A2
+  R6
+    D1
+    C2
+  R7
+    F1
+    E2
+  R8
+    H1
+    G2
+
+Quarter_Finals
+  Q1
+    R1
+    R2
+  Q2
+    R3
+    R4
+  Q3
+    R5
+    R6
+  Q4
+    R7
+    R8
+
+Semi_Finals
+  F1
+    Q1
+    Q2
+  F2
+    Q3
+    Q4
+
+Finals
+  Winner
+    F1
+    F2
+
+
