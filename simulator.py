@@ -5,8 +5,9 @@ import random
 import math
 
 from collections import defaultdict, Counter
+import yaml
 
-ITERATIONS = 10000
+ITERATIONS = 100000
 
 GROUP_A = [
   ('Brazil', 'Croatia', 3, 1),
@@ -56,7 +57,7 @@ GROUP_E = [
 GROUP_F = [
   ('Argentina', 'Bosnia and Herzegovina', 2, 1),
   ('Iran', 'Nigeria', 0, 0),
-  ('Argentina', 'Nigeria',),
+  ('Iran', 'Argentina', 0, 1),
   ('Nigeria', 'Bosnia and Herzegovina',),
   ('Nigeria', 'Argentina'),
   ('Bosnia and Herzegovina', 'Iran',),
@@ -65,7 +66,7 @@ GROUP_F = [
 GROUP_G = [
   ('Germany', 'Portugal', 4, 0),
   ('Ghana', 'USA', 2, 1),
-  ('Germany', 'Ghana',),
+  ('Germany', 'Ghana', 2, 2),
   ('USA', 'Portugal',),
   ('USA', 'Germany',),
   ('Portugal', 'Ghana',),
@@ -120,7 +121,8 @@ def simulate_knock_out(team1, team2):
     return team2
 
 def simulate_group(group):
-  assert len(group) == 6
+  pairs = set(tuple(sorted(x[:2])) for x in group)
+  assert len(pairs) == 6
   points = defaultdict(int)
   goals_pro = defaultdict(int)
   goals_against = defaultdict(int)
@@ -196,6 +198,10 @@ if __name__ == '__main__':
   win_loss_histogram = eval(model[0])
   del model[0]
   model = [l.split(':') for l in model]
+
+  tournament = yaml.load(file('brazil_2014.yaml'))
+  print tournament
+  1/0
 
   model = {team: float(score) for team, score in model}
 
