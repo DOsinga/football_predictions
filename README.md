@@ -16,19 +16,21 @@ The second thing calculate_scores.py does, is calculate a histogram from score d
 Running the prediction
 ----------------------
 
-Now that we have a model, we can run the prediction. simulator.py takes care of this. It contains all the matches that have already been played, plus the matches that are still upcoming. Running it calculates the outcome for all group matches, either by taking the score if the match has already been played, or guessing the outcome by looking up the score difference, and interpolating for that score difference the outcome histogram of historical matches. We then use a weighted choice to pick a win, draw or loss for this matches based on that histogram.
+Now that we have a model, we can run the prediction. simulator.py takes care of this. The tournament is encoded in a separate file aptly called brazil_1014.tournament. It contains the various rounds and who's playing aginst who. When you run the simulator, it goes through all matches in the tournament. The ones that already have been played and are present in results.csv are taken for fact, the result are simulated.
 
-Again, this is not very sophisticated. The outcome is encoded as a goal diference, but always 2-0, 1-1 or 0-2. After the groups we continue the simulation in a similar fashion for the rest of the matches in the knock-out phase. In the knock-out phase if the outcome is a draw, we assume either team is as likely to win the penalty shoout out. Finally there is a winner.
+Simulating a game works by looking up the score difference between two teams and looking up the outcome bucket for that difference and then make a weighted choice for the outcome, win, draw or loss.
+We then use a weighted choice to pick a win, draw or loss for this matches based on that histogram.
+
+Again, this is not very sophisticated. The outcome is encoded as a goal diference, but always 2-0, 1-1 or 0-2. The knock-out phase is modelled as groups of 2, as is the final.
 
 By running the simulation 100 000 times, we get a nice distributon of outcomes:
 
- * Brazil 35.41%
- * Argentina 13.08%
- * Germany 12.94%
- * France 12.12%
- * Netherlands 8.44%
- * Chile 6.52%
- * Colombia 4.47%
+ * Brazil 35.55%
+ * Argentina 13.29%
+ * France 13.22%
+ * Germany 11.13%
+ * Netherlands 8.46%
+ * Chile 6.76%
 
 At the time of writing the outcome is remarkable similar to the must more complicated model of fivethirtyeight at http://fivethirtyeight.com/interactives/world-cup/ 
 
