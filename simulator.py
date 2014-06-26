@@ -6,6 +6,7 @@ import math
 
 from collections import defaultdict, Counter
 import csv
+import argparse
 
 ITERATIONS = 100000
 
@@ -121,16 +122,34 @@ def simulate_tournament(tournament):
 
 
 if __name__ == '__main__':
+  parser = argparse.ArgumentParser(description='Simulate a tournament.')
+  parser.add_argument('tournament', type=str, default='brazil_2014.tournament',
+                      help='the tournament to simulate')
+  parser.add_argument('match', type=str, nargs='?',
+                      help='Match to focus on. Team1-Team2=Goals1-Goals2. Pretend that that is the outcome.')
+
+  args = parser.parse_args()
+
   model = file('model.txt').read().splitlines()
   win_loss_histogram = eval(model[0])
   del model[0]
   model = [l.split(':') for l in model]
   model = {team: float(score) for team, score in model}
 
-  first_day, last_day, tournament = read_tournament(file('brazil_2014.tournament').read().splitlines())
+  first_day, last_day, tournament = read_tournament(file(args.tournament).read().splitlines())
   games_played = {(r['team1'], r['team2']): (int(r['goals1']), int(r['goals2']))
                   for r in csv.DictReader(file('results.csv')) if first_day <= r['date'] <= last_day}
-  #games_played.update(((team2, team1), (goals2, goals1)) for (team1, team2), (goals1, goals2) in games_played.items())
+
+  if args.match:
+    teams, result = args.match.split('=')
+    team1, team2 = teams.split('-')
+    goals1, goals2 = map(int, result.split('-'))
+    match_res = Counter()
+    for i in range(ITERATIONS):
+      match_res[str(simulate_game(team1, team2))] += 1
+    for outcome, c in match_res.most_common():
+      print outcome, '%2.2f%%' % ((100.0 * c) / ITERATIONS)
+    games_played[(team1, team2)] = (goals1, goals2)
 
   res = Counter()
   for i in range(ITERATIONS):
