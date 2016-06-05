@@ -1,0 +1,210 @@
+{0: [137, 134, 186], 1: [141, 158, 198], 2: [193, 229, 394], 3: [143, 276, 703], 4: [29, 108, 580], 5: [0, 3, 103], 6: [0, 0, 10]}
+Brazil:4.289
+France:3.684
+Germany:3.576
+Argentina:3.492
+Colombia:3.460
+Netherlands:3.434
+Chile:3.369
+Spain:3.211
+Portugal:2.913
+Ukraine:2.902
+England:2.844
+Uruguay:2.842
+Mexico:2.816
+Belgium:2.752
+Ecuador:2.703
+USA:2.639
+Bosnia and Herzegovina:2.572
+Serbia:2.550
+Russia:2.546
+Switzerland:2.542
+Croatia:2.398
+Côte d'Ivoire:2.332
+Italy:2.322
+Nigeria:2.254
+Paraguay:2.239
+Sweden:2.236
+Ghana:2.225
+Denmark:2.224
+Austria:2.215
+Turkey:2.213
+Romania:2.156
+Greece:2.119
+Algeria:2.082
+Japan:2.081
+Czech Republic:2.080
+Costa Rica:2.023
+Egypt:1.994
+United Arab Emirates:1.949
+Peru:1.938
+Republic of Ireland:1.901
+Iran:1.899
+Scotland:1.889
+Panama:1.857
+Slovakia:1.843
+Poland:1.832
+Venezuela:1.818
+Finland:1.743
+Slovenia:1.741
+Tunisia:1.739
+Belarus:1.734
+Bulgaria:1.727
+Australia:1.683
+Guinea:1.665
+Senegal:1.657
+Korea Republic:1.631
+Israel:1.622
+Hungary:1.609
+South Africa:1.570
+Montenegro:1.516
+Cameroon:1.514
+Cape Verde Islands:1.504
+Mali:1.498
+Morocco:1.480
+Wales:1.470
+Bolivia:1.469
+Norway:1.458
+Honduras:1.383
+Uzbekistan:1.339
+Iceland:1.327
+Georgia:1.315
+Armenia:1.306
+Albania:1.291
+Zambia:1.266
+Oman:1.265
+Gabon:1.188
+Qatar:1.180
+Angola:1.138
+Jordan:1.130
+Congo DR:1.126
+Zimbabwe:1.122
+Uganda:1.104
+FYR Macedonia:1.097
+China PR:1.064
+Burkina Faso:1.057
+Libya:1.050
+Iraq:0.995
+Sierra Leone:0.979
+Jamaica:0.919
+Moldova:0.905
+Congo:0.898
+Korea DPR:0.889
+Azerbaijan:0.813
+Benin:0.810
+Lithuania:0.769
+Kuwait:0.749
+Bahrain:0.742
+Canada:0.740
+Northern Ireland:0.709
+Niger:0.682
+Trinidad and Tobago:0.679
+El Salvador:0.657
+Cyprus:0.638
+Tanzania:0.625
+Latvia:0.610
+Togo:0.606
+Kenya:0.605
+Saudi Arabia:0.604
+Kazakhstan:0.593
+Estonia:0.582
+New Zealand:0.579
+Botswana:0.547
+Guinea-Bissau:0.506
+Rwanda:0.505
+Equatorial Guinea:0.492
+Lebanon:0.432
+Syria:0.423
+Ethiopia:0.422
+Burundi:0.409
+Gambia:0.372
+Mauritania:0.368
+Sudan:0.352
+Liberia:0.351
+Mozambique:0.318
+Namibia:0.276
+Guatemala:0.275
+Central African Republic:0.261
+Malawi:0.225
+Haiti:0.172
+Luxembourg:0.137
+Cuba:0.131
+Dominican Republic:0.067
+Ratchaburi:-0.058
+Lesotho:-0.119
+Madagascar:-0.175
+Malta:-0.185
+Faroe Islands:-0.235
+New Caledonia:-0.248
+Palestine:-0.288
+Chad:-0.381
+Antigua and Barbuda:-0.385
+Indonesia:-0.388
+Liechtenstein:-0.506
+Vietnam:-0.512
+Malaysia:-0.523
+Swaziland:-0.539
+Turkmenistan:-0.561
+Sao Tome e Principe :-0.566
+Belize:-0.657
+Philippines:-0.692
+Yemen:-0.731
+Nicaragua:-0.741
+Puerto Rico:-0.802
+Mauritius:-0.970
+Comoros:-0.981
+Andorra:-1.000
+Hong Kong:-1.075
+Bermuda:-1.079
+Singapore:-1.109
+Guyana:-1.116
+Tajikistan:-1.199
+St. Kitts and Nevis:-1.269
+Grenada:-1.312
+Eritrea:-1.333
+Fiji:-1.353
+St. Vincent / Grenadines:-1.492
+Maldives:-1.499
+Kyrgyzstan:-1.501
+Afghanistan:-1.509
+South Sudan:-1.509
+Papua New Guinea:-1.600
+India:-1.739
+Netherlands Antilles:-1.785
+Suriname:-1.828
+Barbados:-1.951
+St. Lucia:-2.169
+Seychelles:-2.192
+Dominica:-2.194
+Myanmar:-2.208
+Tahiti:-2.211
+Solomon Islands:-2.291
+Bangladesh:-2.438
+Pakistan:-2.502
+Cayman Islands:-2.537
+Nepal:-2.600
+Somalia:-2.626
+Aruba:-2.761
+San Marino:-2.855
+Mongolia:-2.892
+Djibouti:-2.908
+Laos:-2.909
+Chinese Taipei:-3.122
+Curacao:-3.337
+Vanuatu:-3.506
+Sri Lanka:-3.580
+Guam:-3.928
+Brunei Darussalam:-4.177
+Timor-Leste:-4.181
+Cambodia:-4.731
+Macau:-5.027
+Turks and Caicos Islands:-5.358
+Montserrat:-5.764
+Bhutan:-5.871
+Anguilla:-6.959
+US Virgin Islands:-7.463
+British Virgin Islands:-9.247
+Samoa:-9.486
+Tonga:-9.751
+American Samoa:-9.898
+Cook Islands:-10.267

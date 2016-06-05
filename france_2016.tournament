@@ -1,0 +1,88 @@
+2016-06-10 2016-07-10
+
+Group_Stage
+  A
+    France
+    Romania
+    Albania
+    Switzerland
+  B
+    England
+    Russia
+    Wales
+    Slovakia
+  C
+    Germany
+    Ukraine
+    Poland
+    Northern Ireland
+  D
+    Spain
+    Czech Republic
+    Turkey
+    Croatia
+  E
+    Belgium
+    Italy
+    Ireland
+    Sweden
+  F
+    Portugal
+    Iceland
+    Austria
+    Hungary
+
+Round_2
+  R1
+    A2
+    C2
+  R2
+    D1
+    Q1
+  R3
+    B1
+    Q2
+  R4
+    F1
+    E2
+  R5
+    C1
+    Q3
+  R6
+    E1
+    D2
+  R7
+    A1
+    Q4
+  R8
+    B2
+    F2
+
+Quarter_Finals
+  Q1
+    R1
+    R2
+  Q2
+    R3
+    R4
+  Q3
+    R5
+    R6
+  Q4
+    R7
+    R8
+
+Semi_Finals
+  F1
+    Q1
+    Q2
+  F2
+    Q3
+    Q4
+
+Finals
+  Winner
+    F1
+    F2
+
+

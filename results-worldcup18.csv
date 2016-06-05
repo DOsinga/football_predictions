@@ -1,0 +1,330 @@
+date,team1,team2,result
+30.03. 04:30,Mexico,Canada,2 : 0
+30.03. 04:00,Costa Rica,Jamaica,3 : 0
+30.03. 03:30,Panama,Haiti,1 : 0
+30.03. 03:06,Honduras,El Salvador,2 : 0
+30.03. 02:45,Paraguay,Brazil,2 : 2
+30.03. 01:30,Argentina,Bolivia,2 : 0
+30.03. 01:30,Venezuela,Chile,1 : 4
+30.03. 01:25,USA,Guatemala,4 : 0
+30.03. 01:00,Trinidad & Tobago,Saint Vincent and the Grenadines,6 : 0
+30.03. 01:00,Uruguay,Peru,1 : 0
+29.03. 22:30,Colombia,Ecuador,3 : 1
+29.03. 18:00,Maldives,Bhutan,4 : 2
+29.03. 17:00,United Arab Emirates,Saudi Arabia,1 : 1
+29.03. 16:30,Iran,Oman,2 : 0
+29.03. 16:00,Iraq,Vietnam,1 : 0
+29.03. 16:00,Palestine,East Timor,7 : 0
+29.03. 15:00,Tajikistan,Kyrgyzstan,0 : 1
+29.03. 15:00,Uzbekistan,Bahrain,1 : 0
+29.03. 14:30,India,Turkmenistan,1 : 2
+29.03. 14:15,China,Qatar,2 : 0
+29.03. 14:00,Lebanon,Myanmar,1 : 1
+29.03. 14:00,Philippines,North Korea,3 : 2
+29.03. 13:00,South Korea,Kuwait,3 : 0
+29.03. 12:34,Japan,Syria,5 : 0
+29.03. 12:30,Afghanistan,Singapore,2 : 1
+29.03. 11:00,Australia,Jordan,5 : 1
+26.03. 03:08,Canada,Mexico,0 : 3
+26.03. 03:06,Guatemala,USA,2 : 0
+26.03. 02:06,El Salvador,Honduras,2 : 2
+26.03. 01:45,Brazil,Uruguay,2 : 2
+26.03. 01:00,Haiti,Panama,0 : 0
+26.03. 01:00,Jamaica,Costa Rica,1 : 1
+25.03. 20:30,Saint Vincent and the Grenadines,Trinidad & Tobago,2 : 3
+25.03. 03:15,Peru,Venezuela,2 : 2
+25.03. 00:30,Chile,Argentina,1 : 2
+24.03. 22:00,Ecuador,Paraguay,2 : 2
+24.03. 21:00,Bolivia,Colombia,2 : 3
+24.03. 18:30,Saudi Arabia,Malaysia,2 : 0
+24.03. 17:00,Qatar,Hong Kong,2 : 0
+24.03. 17:00,Syria,Cambodia,6 : 0
+24.03. 16:35,Kuwait,Laos,0 : 3
+24.03. 16:30,Bahrain,Yemen,3 : 0
+24.03. 16:00,Oman,Guam,1 : 0
+24.03. 16:00,United Arab Emirates,Palestine,2 : 0
+24.03. 15:30,Iran,India,4 : 0
+24.03. 15:00,Iraq,Thailand,2 : 2
+24.03. 14:00,Uzbekistan,Philippines,1 : 0
+24.03. 13:30,Jordan,Bangladesh,8 : 0
+24.03. 13:00,Vietnam,Chinese Taipei,4 : 1
+24.03. 12:35,China,Maldives,4 : 0
+24.03. 12:00,South Korea,Lebanon,1 : 0
+24.03. 11:34,Japan,Afghanistan,5 : 0
+24.03. 10:00,Australia,Tajikistan,7 : 0
+18.11. 02:30,El Salvador,Canada,0 : 0
+18.11. 02:30,Panama,Costa Rica,1 : 2
+18.11. 01:00,Haiti,Jamaica,0 : 1
+18.11. 01:00,Brazil,Peru,3 : 0
+18.11. 00:36,Trinidad & Tobago,USA,0 : 0
+18.11. 00:00,Paraguay,Bolivia,2 : 1
+18.11. 00:00,Uruguay,Chile,3 : 0
+17.11. 22:00,Honduras,Mexico,0 : 2
+17.11. 22:00,Venezuela,Ecuador,1 : 3
+17.11. 21:30,Colombia,Argentina,0 : 1
+17.11. 20:30,Saint Vincent and the Grenadines,Guatemala,0 : 4
+17.11. 20:00,Cape Verde,Kenya,2 : 0
+17.11. 20:00,Mali,Botswana,2 : 0
+17.11. 20:00,Senegal,Madagascar,3 : 0
+17.11. 19:15,Algeria,Tanzania,7 : 0
+17.11. 19:00,Burkina Faso,Benin,2 : 0
+17.11. 18:00,Ivory Coast,Liberia,3 : 0
+17.11. 18:00,South Africa,Angola,1 : 0
+17.11. 18:00,Tunisia,Mauritania,2 : 1
+17.11. 17:30,Egypt,Chad,4 : 0
+17.11. 16:30,Yemen,Uzbekistan,1 : 3
+17.11. 16:00,Congo,Ethiopia,2 : 1
+17.11. 16:00,Ghana,Comoros,2 : 0
+17.11. 16:00,Nigeria,Swaziland,2 : 0
+17.11. 15:00,Cameroon,Niger,0 : 0
+17.11. 15:00,Kyrgyzstan,Jordan,1 : 0
+17.11. 14:30,Rwanda,Libya,1 : 3
+17.11. 14:00,Turkmenistan,Oman,2 : 1
+17.11. 13:45,Malaysia,United Arab Emirates,1 : 2
+17.11. 13:14,Cambodia,Japan,0 : 2
+17.11. 13:00,Bhutan,Qatar,0 : 3
+17.11. 13:00,Hong Kong,China,0 : 0
+17.11. 13:00,Laos,South Korea,0 : 5
+17.11. 13:00,Myanmar,Kuwait,3 : 0
+17.11. 13:00,Singapore,Syria,1 : 2
+17.11. 12:30,Bangladesh,Australia,0 : 4
+17.11. 12:00,Chinese Taipei,Iraq,0 : 2
+17.11. 08:00,East Timor,Saudi Arabia,0 : 10
+17.11. 08:00,North Korea,Bahrain,2 : 0
+17.11. 06:30,Guam,Iran,0 : 6
+15.11. 20:00,Guinea,Namibia,2 : 0
+15.11. 16:00,Equatorial Guinea,Morocco,1 : 0
+15.11. 15:30,D.R. Congo,Burundi,2 : 2
+15.11. 14:00,Uganda,Togo,3 : 0
+15.11. 14:00,Zambia,Sudan,2 : 0
+14.11. 18:00,Gabon,Mozambique,1 : 0
+14.11. 17:00,Botswana,Mali,2 : 1
+14.11. 15:30,Chad,Egypt,1 : 0
+14.11. 14:30,Tanzania,Algeria,2 : 2
+14.11. 14:00,Ethiopia,Congo,3 : 4
+14.11. 04:08,Canada,Honduras,1 : 0
+14.11. 03:15,Peru,Paraguay,1 : 0
+14.11. 03:00,Costa Rica,Haiti,1 : 0
+14.11. 03:00,Jamaica,Panama,0 : 2
+14.11. 03:00,Mexico,El Salvador,3 : 0
+14.11. 02:06,Guatemala,Trinidad & Tobago,1 : 2
+14.11. 01:10,USA,Saint Vincent and the Grenadines,6 : 1
+14.11. 01:00,Argentina,Brazil,1 : 1
+13.11. 18:00,Mauritania,Tunisia,1 : 2
+13.11. 18:00,Swaziland,Nigeria,0 : 0
+13.11. 17:00,Liberia,Ivory Coast,0 : 1
+13.11. 16:00,Niger,Cameroon,0 : 3
+13.11. 15:30,Angola,South Africa,1 : 3
+13.11. 14:30,Libya,Rwanda,1 : 0
+13.11. 14:00,Kenya,Cape Verde,1 : 0
+13.11. 13:00,Comoros,Ghana,0 : 0
+13.11. 12:30,Madagascar,Senegal,2 : 2
+13.11. 00:30,Chile,Colombia,1 : 1
+12.11. 22:00,Ecuador,Uruguay,2 : 1
+12.11. 21:00,Bolivia,Venezuela,4 : 2
+12.11. 20:00,Morocco,Equatorial Guinea,2 : 0
+12.11. 16:30,Togo,Uganda,0 : 1
+12.11. 16:00,Benin,Burkina Faso,2 : 1
+12.11. 16:00,Lebanon,Laos,7 : 0
+12.11. 15:15,United Arab Emirates,East Timor,8 : 0
+12.11. 15:00,Namibia,Guinea,0 : 1
+12.11. 15:00,Palestine,Malaysia,6 : 0
+12.11. 14:30,Burundi,D.R. Congo,2 : 3
+12.11. 14:30,India,Guam,1 : 0
+12.11. 14:00,Uzbekistan,North Korea,3 : 1
+12.11. 13:00,Philippines,Yemen,0 : 1
+12.11. 13:00,Tajikistan,Bangladesh,5 : 0
+12.11. 13:00,Thailand,Chinese Taipei,4 : 2
+12.11. 12:35,China,Bhutan,12 : 0
+12.11. 12:30,Afghanistan,Cambodia,3 : 0
+12.11. 12:30,Iran,Turkmenistan,3 : 1
+12.11. 12:15,Singapore,Japan,0 : 3
+12.11. 12:00,South Korea,Myanmar,4 : 0
+12.11. 11:50,Maldives,Hong Kong,0 : 1
+12.11. 10:00,Australia,Kyrgyzstan,3 : 0
+11.11. 18:00,Mozambique,Gabon,1 : 0
+11.11. 18:00,Sudan,Zambia,0 : 1
+09.11. 15:00,Palestine,Saudi Arabia,0 : 0
+14.10. 04:15,Peru,Chile,3 : 4
+14.10. 03:00,Brazil,Venezuela,3 : 1
+14.10. 02:00,Paraguay,Argentina,0 : 0
+14.10. 01:00,Uruguay,Colombia,3 : 0
+13.10. 23:00,Ecuador,Bolivia,2 : 0
+13.10. 20:00,Botswana,Eritrea,3 : 1
+13.10. 19:00,Mauritania,South Sudan,4 : 0
+13.10. 18:30,Kuwait,Lebanon,0 : 0
+13.10. 18:00,Guinea Bissau,Liberia,1 : 3
+13.10. 18:00,Lesotho,Comoros,1 : 1
+13.10. 18:00,Jordan,Tajikistan,3 : 0
+13.10. 18:00,Syria,Afghanistan,5 : 2
+13.10. 17:30,Qatar,Maldives,4 : 0
+13.10. 17:00,Niger,Somalia,4 : 0
+13.10. 17:00,Bahrain,Philippines,2 : 0
+13.10. 16:30,Sierra Leone,Chad,2 : 1
+13.10. 16:30,Oman,India,3 : 0
+13.10. 16:00,Namibia,Gambia,2 : 1
+13.10. 16:00,Kyrgyzstan,Bangladesh,2 : 0
+13.10. 15:00,Burundi,Seychelles,2 : 0
+13.10. 15:00,Turkmenistan,Guam,1 : 0
+13.10. 14:00,Bhutan,Hong Kong,0 : 1
+13.10. 14:00,Myanmar,Laos,3 : 1
+13.10. 14:00,Singapore,Cambodia,2 : 1
+13.10. 14:00,Vietnam,Thailand,0 : 3
+13.10. 13:30,Madagascar,Central Africa,2 : 2
+13.10. 09:30,North Korea,Yemen,1 : 0
+13.10. 09:00,East Timor,Malaysia,0 : 1
+11.10. 15:00,Ethiopia,Sao Tome and Principe,3 : 0
+11.10. 15:00,Kenya,Mauritius,0 : 0
+11.10. 14:00,Malawi,Tanzania,1 : 0
+10.10. 16:30,Chad,Sierra Leone,1 : 0
+10.10. 15:00,Eritrea,Botswana,0 : 2
+10.10. 13:30,Central Africa,Madagascar,0 : 3
+09.10. 19:00,Gambia,Namibia,1 : 1
+09.10. 15:00,Djibouti,Swaziland,0 : 6
+09.10. 14:30,Somalia,Niger,0 : 2
+09.10. 02:00,Argentina,Ecuador,0 : 2
+09.10. 01:30,Chile,Brazil,2 : 0
+08.10. 23:00,Venezuela,Paraguay,0 : 1
+08.10. 22:30,Colombia,Peru,2 : 0
+08.10. 22:00,Bolivia,Uruguay,0 : 2
+08.10. 19:00,Saudi Arabia,United Arab Emirates,2 : 1
+08.10. 18:00,Liberia,Guinea Bissau,1 : 1
+08.10. 17:30,Qatar,China,1 : 0
+08.10. 17:00,Sao Tome and Principe,Ethiopia,1 : 0
+08.10. 17:00,Bahrain,Uzbekistan,0 : 4
+08.10. 16:55,Kuwait,South Korea,0 : 1
+08.10. 16:30,Oman,Iran,1 : 1
+08.10. 16:00,Jordan,Australia,2 : 0
+08.10. 16:00,Kyrgyzstan,Tajikistan,2 : 2
+08.10. 15:00,Syria,Japan,0 : 3
+08.10. 15:00,Turkmenistan,India,2 : 1
+08.10. 14:00,Bhutan,Maldives,3 : 4
+08.10. 14:00,Myanmar,Lebanon,0 : 2
+08.10. 14:00,Singapore,Afghanistan,1 : 0
+08.10. 14:00,Vietnam,Iraq,1 : 1
+08.10. 10:00,South Sudan,Mauritania,1 : 1
+08.10. 09:30,North Korea,Philippines,0 : 0
+08.10. 09:00,East Timor,Palestine,1 : 1
+07.10. 16:30,Mauritius,Kenya,2 : 5
+07.10. 15:00,Tanzania,Malawi,2 : 0
+07.10. 14:30,Seychelles,Burundi,0 : 1
+07.10. 14:00,Comoros,Lesotho,0 : 0
+09.09. 04:06,Guatemala,Antigua and Barbuda,2 : 0
+09.09. 03:35,El Salvador,Curacao,1 : 0
+09.09. 03:30,Nicaragua,Jamaica,0 : 2
+09.09. 03:00,Belize,Canada,1 : 1
+09.09. 02:00,Aruba,Saint Vincent and the Grenadines,2 : 1
+09.09. 01:00,Haiti,Grenada,3 : 0
+08.09. 18:00,Yemen,Bahrain,0 : 4
+08.09. 16:00,Lebanon,South Korea,0 : 3
+08.09. 16:00,Palestine,United Arab Emirates,0 : 0
+08.09. 15:30,India,Iran,0 : 3
+08.09. 15:00,Tajikistan,Australia,0 : 3
+08.09. 14:45,Malaysia,Saudi Arabia,0 : 3
+08.09. 14:25,Afghanistan,Japan,0 : 6
+08.09. 14:00,Hong Kong,Qatar,2 : 3
+08.09. 14:00,Laos,Kuwait,0 : 2
+08.09. 14:00,Philippines,Uzbekistan,1 : 5
+08.09. 14:00,Thailand,Iraq,2 : 2
+08.09. 13:35,Maldives,China,0 : 3
+08.09. 13:30,Cambodia,Syria,0 : 6
+08.09. 13:00,Bangladesh,Jordan,0 : 4
+08.09. 13:00,Chinese Taipei,Vietnam,1 : 2
+08.09. 08:00,Guam,Oman,0 : 0
+05.09. 03:00,Jamaica,Nicaragua,2 : 3
+05.09. 02:05,Antigua and Barbuda,Guatemala,1 : 0
+05.09. 01:30,Canada,Belize,3 : 0
+05.09. 01:05,Curacao,El Salvador,0 : 1
+04.09. 22:15,Grenada,Haiti,1 : 3
+04.09. 21:30,Saint Vincent and the Grenadines,Aruba,2 : 0
+03.09. 19:40,Saudi Arabia,East Timor,7 : 0
+03.09. 19:00,Kuwait,Myanmar,9 : 0
+03.09. 18:00,Jordan,Kyrgyzstan,0 : 0
+03.09. 18:00,Qatar,Bhutan,15 : 0
+03.09. 18:00,Syria,Singapore,1 : 0
+03.09. 17:40,Bahrain,North Korea,0 : 1
+03.09. 17:15,United Arab Emirates,Malaysia,10 : 0
+03.09. 17:00,Oman,Turkmenistan,3 : 1
+03.09. 16:30,Iran,Guam,6 : 0
+03.09. 16:00,Uzbekistan,Yemen,1 : 0
+03.09. 14:30,Iraq,Chinese Taipei,5 : 1
+03.09. 13:35,China,Hong Kong,0 : 0
+03.09. 13:00,Australia,Bangladesh,5 : 0
+03.09. 13:00,South Korea,Laos,8 : 0
+03.09. 12:26,Japan,Cambodia,3 : 0
+17.06. 03:00,El Salvador,Saint Kitts and Nevis,4 : 1
+17.06. 01:37,Canada,Dominica,4 : 0
+16.06. 21:30,Grenada,Puerto Rico,2 : 0
+16.06. 21:30,Suriname,Nicaragua,1 : 3
+16.06. 18:00,Yemen,Philippines,0 : 2
+16.06. 16:00,Kyrgyzstan,Australia,1 : 2
+16.06. 15:00,Turkmenistan,Iran,1 : 1
+16.06. 14:45,Malaysia,Palestine,0 : 6
+16.06. 14:00,Bhutan,China,0 : 6
+16.06. 14:00,Hong Kong,Maldives,2 : 0
+16.06. 14:00,Laos,Lebanon,0 : 2
+16.06. 14:00,Myanmar,South Korea,0 : 2
+16.06. 13:30,Cambodia,Afghanistan,0 : 1
+16.06. 13:30,Chinese Taipei,Thailand,0 : 2
+16.06. 13:00,Bangladesh,Tajikistan,1 : 1
+16.06. 12:30,Japan,Singapore,0 : 0
+16.06. 10:00,East Timor,United Arab Emirates,0 : 1
+16.06. 10:00,North Korea,Uzbekistan,4 : 2
+16.06. 08:15,Guam,India,2 : 1
+16.06. 00:30,Bermuda,Guatemala,0 : 1
+15.06. 01:30,Barbados,Aruba,1 : 0
+15.06. 01:00,Guyana,Saint Vincent and the Grenadines,4 : 4
+15.06. 01:00,Saint Lucia,Antigua and Barbuda,1 : 4
+15.06. 00:00,Belize,Dominican Republic,3 : 0
+14.06. 22:00,Cuba,Curacao,1 : 1
+13.06. 04:00,Guatemala,Bermuda,0 : 0
+13.06. 02:00,Puerto Rico,Grenada,1 : 0
+12.06. 02:06,Saint Kitts and Nevis,El Salvador,2 : 2
+12.06. 01:00,Dominica,Canada,0 : 2
+11.06. 22:00,Dominican Republic,Belize,1 : 2
+11.06. 20:00,Saudi Arabia,Palestine,3 : 2
+11.06. 18:00,Maldives,Qatar,0 : 1
+11.06. 18:00,Yemen,North Korea,0 : 3
+11.06. 17:30,Afghanistan,Syria,0 : 6
+11.06. 17:00,Tajikistan,Jordan,1 : 3
+11.06. 16:00,Lebanon,Kuwait,0 : 1
+11.06. 15:30,India,Oman,1 : 2
+11.06. 14:45,Malaysia,East Timor,1 : 1
+11.06. 14:00,Hong Kong,Bhutan,7 : 0
+11.06. 14:00,Laos,Myanmar,2 : 2
+11.06. 14:00,Philippines,Bahrain,2 : 1
+11.06. 13:30,Cambodia,Singapore,0 : 4
+11.06. 13:00,Bangladesh,Kyrgyzstan,1 : 3
+11.06. 08:15,Guam,Turkmenistan,1 : 0
+11.06. 02:00,Aruba,Barbados,0 : 2
+11.06. 02:00,Curacao,Cuba,0 : 0
+11.06. 01:00,Antigua and Barbuda,Saint Lucia,1 : 3
+10.06. 21:30,Saint Vincent and the Grenadines,Guyana,2 : 2
+08.06. 02:00,Nicaragua,Suriname,1 : 0
+24.05. 14:00,Thailand,Vietnam,1 : 0
+01.04. 01:00,Montserrat,Curacao,2 : 2
+30.03. 02:00,Cayman Islands,Belize,1 : 1
+29.03. 23:00,Anguilla,Nicaragua,0 : 3
+29.03. 23:00,Dominica,British Virgin Islands,0 : 0
+29.03. 20:00,Bermuda,Bahamas,3 : 0
+28.03. 01:00,Curacao,Montserrat,2 : 1
+27.03. 00:00,British Virgin Islands,Dominica,2 : 3
+27.03. 00:00,Turks and Caicos Islands,Saint Kitts and Nevis,2 : 6
+26.03. 20:30,United States Virgin Islands,Barbados,0 : 4
+26.03. 03:00,Belize,Cayman Islands,0 : 0
+26.03. 00:30,Bahamas,Bermuda,0 : 5
+24.03. 01:00,Nicaragua,Anguilla,5 : 0
+24.03. 01:00,Saint Kitts and Nevis,Turks and Caicos Islands,6 : 2
+23.03. 16:30,Pakistan,Yemen,0 : 0
+23.03. 00:00,Barbados,United States Virgin Islands,0 : 1
+17.03. 13:15,Brunei,Chinese Taipei,0 : 2
+17.03. 13:00,Macau,Cambodia,1 : 1
+17.03. 11:00,Bhutan,Sri Lanka,2 : 1
+17.03. 10:45,Nepal,India,0 : 0
+17.03. 09:00,Mongolia,East Timor,0 : 1
+12.03. 16:30,Yemen,Pakistan,3 : 1
+12.03. 14:30,India,Nepal,2 : 0
+12.03. 12:00,Chinese Taipei,Brunei,0 : 1
+12.03. 10:30,Sri Lanka,Bhutan,0 : 1
+12.03. 10:00,Cambodia,Macau,3 : 0
+12.03. 08:00,East Timor,Mongolia,4 : 1

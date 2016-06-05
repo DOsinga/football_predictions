@@ -45,7 +45,7 @@ def main():
   games = []
   sum_diff = 0
   sum_count = 0
-  for path, weight in [('results-friendly.csv', 0.5), ('results-qualifiers.csv', 1.0), ('results-worldcup18.csv', 0.8)]:
+  for path, weight in [('results-worldcup14.csv', 0.35), ('results-friendly.csv', 0.5), ('results-qualifiers.csv', 1.0), ('results-worldcup18.csv', 0.8)]:
     g, sd, sc = read_csv(path, weight)
     sum_diff += sd
     sum_count += sc

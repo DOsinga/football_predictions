@@ -1,0 +1,269 @@
+date,team1,team2,result
+17.11. 20:45,Denmark,Sweden,2 : 2
+17.11. 20:45,Slovenia,Ukraine,1 : 1
+16.11. 20:45,Ireland,Bosnia & Herzegovina,2 : 0
+15.11. 20:45,Hungary,Norway,2 : 1
+14.11. 20:45,Sweden,Denmark,2 : 1
+14.11. 18:00,Ukraine,Slovenia,2 : 0
+13.11. 20:45,Bosnia & Herzegovina,Ireland,1 : 1
+12.11. 20:45,Norway,Hungary,0 : 1
+13.10. 20:45,Belgium,Israel,3 : 1
+13.10. 20:45,Bulgaria,Azerbaijan,2 : 0
+13.10. 20:45,Cyprus,Bosnia & Herzegovina,2 : 3
+13.10. 20:45,Italy,Norway,2 : 1
+13.10. 20:45,Latvia,Kazakhstan,0 : 1
+13.10. 20:45,Malta,Croatia,0 : 1
+13.10. 20:45,Netherlands,Czech Republic,2 : 3
+13.10. 20:45,Turkey,Iceland,1 : 0
+13.10. 20:45,Wales,Andorra,2 : 0
+12.10. 20:45,Belarus,FYR Macedonia,0 : 0
+12.10. 20:45,Estonia,Switzerland,0 : 1
+12.10. 20:45,Lithuania,England,0 : 3
+12.10. 20:45,Luxembourg,Slovakia,2 : 4
+12.10. 20:45,San Marino,Slovenia,0 : 2
+12.10. 20:45,Ukraine,Spain,0 : 1
+12.10. 18:00,Austria,Liechtenstein,3 : 0
+12.10. 18:00,Russia,Montenegro,2 : 0
+12.10. 18:00,Sweden,Moldova,2 : 0
+11.10. 20:45,Germany,Georgia,2 : 1
+11.10. 20:45,Gibraltar,Scotland,0 : 6
+11.10. 20:45,Poland,Ireland,2 : 1
+11.10. 18:00,Armenia,Albania,0 : 3
+11.10. 18:00,Faroe Islands,Romania,0 : 3
+11.10. 18:00,Finland,Northern Ireland,1 : 1
+11.10. 18:00,Greece,Hungary,4 : 3
+11.10. 18:00,Serbia,Portugal,1 : 2
+10.10. 20:45,Andorra,Belgium,1 : 4
+10.10. 20:45,Bosnia & Herzegovina,Wales,2 : 0
+10.10. 20:45,Croatia,Bulgaria,3 : 0
+10.10. 20:45,Czech Republic,Turkey,0 : 2
+10.10. 20:45,Israel,Cyprus,1 : 2
+10.10. 18:00,Azerbaijan,Italy,1 : 3
+10.10. 18:00,Iceland,Latvia,2 : 2
+10.10. 18:00,Kazakhstan,Netherlands,1 : 2
+10.10. 18:00,Norway,Malta,2 : 0
+09.10. 20:45,England,Estonia,2 : 0
+09.10. 20:45,FYR Macedonia,Ukraine,0 : 2
+09.10. 20:45,Liechtenstein,Sweden,0 : 2
+09.10. 20:45,Moldova,Russia,1 : 2
+09.10. 20:45,Montenegro,Austria,2 : 3
+09.10. 20:45,Slovakia,Belarus,0 : 1
+09.10. 20:45,Slovenia,Lithuania,1 : 1
+09.10. 20:45,Spain,Luxembourg,4 : 0
+09.10. 20:45,Switzerland,San Marino,7 : 0
+08.10. 20:45,Albania,Serbia,0 : 2
+08.10. 20:45,Hungary,Faroe Islands,2 : 1
+08.10. 20:45,Ireland,Germany,1 : 0
+08.10. 20:45,Northern Ireland,Greece,3 : 1
+08.10. 20:45,Portugal,Denmark,1 : 0
+08.10. 20:45,Romania,Finland,1 : 1
+08.10. 20:45,Scotland,Poland,2 : 2
+08.10. 18:00,Georgia,Gibraltar,4 : 0
+08.09. 20:45,Belarus,Luxembourg,2 : 0
+08.09. 20:45,England,Switzerland,2 : 0
+08.09. 20:45,FYR Macedonia,Spain,0 : 1
+08.09. 20:45,Liechtenstein,Russia,0 : 7
+08.09. 20:45,Lithuania,San Marino,2 : 1
+08.09. 20:45,Moldova,Montenegro,0 : 2
+08.09. 20:45,Slovakia,Ukraine,0 : 0
+08.09. 20:45,Slovenia,Estonia,1 : 0
+08.09. 20:45,Sweden,Austria,1 : 4
+07.09. 20:45,Albania,Portugal,0 : 1
+07.09. 20:45,Finland,Faroe Islands,1 : 0
+07.09. 20:45,Ireland,Georgia,1 : 0
+07.09. 20:45,Northern Ireland,Hungary,1 : 1
+07.09. 20:45,Poland,Gibraltar,8 : 1
+07.09. 20:45,Romania,Greece,0 : 0
+07.09. 20:45,Scotland,Germany,2 : 3
+07.09. 18:00,Armenia,Denmark,0 : 0
+06.09. 20:45,Bosnia & Herzegovina,Andorra,3 : 0
+06.09. 20:45,Cyprus,Belgium,0 : 1
+06.09. 20:45,Iceland,Kazakhstan,0 : 0
+06.09. 20:45,Italy,Bulgaria,1 : 0
+06.09. 18:00,Latvia,Czech Republic,1 : 2
+06.09. 18:00,Malta,Azerbaijan,2 : 2
+06.09. 18:00,Norway,Croatia,2 : 0
+06.09. 18:00,Turkey,Netherlands,3 : 0
+06.09. 18:00,Wales,Israel,0 : 0
+05.09. 20:45,Austria,Moldova,1 : 0
+05.09. 20:45,Montenegro,Liechtenstein,2 : 0
+05.09. 20:45,Spain,Slovakia,2 : 0
+05.09. 20:45,Switzerland,Slovenia,3 : 2
+05.09. 18:00,Estonia,Lithuania,1 : 0
+05.09. 18:00,Luxembourg,FYR Macedonia,1 : 0
+05.09. 18:00,Russia,Sweden,1 : 0
+05.09. 18:00,San Marino,England,0 : 6
+05.09. 18:00,Ukraine,Belarus,3 : 1
+04.09. 20:45,Denmark,Albania,0 : 0
+04.09. 20:45,Faroe Islands,Northern Ireland,1 : 3
+04.09. 20:45,Germany,Poland,3 : 1
+04.09. 20:45,Gibraltar,Ireland,0 : 4
+04.09. 20:45,Greece,Finland,0 : 1
+04.09. 20:45,Hungary,Romania,0 : 0
+04.09. 20:45,Serbia,Armenia,2 : 0
+04.09. 18:00,Georgia,Scotland,1 : 0
+03.09. 20:45,Belgium,Bosnia & Herzegovina,3 : 1
+03.09. 20:45,Bulgaria,Norway,0 : 1
+03.09. 20:45,Cyprus,Wales,0 : 1
+03.09. 20:45,Czech Republic,Kazakhstan,2 : 1
+03.09. 20:45,Israel,Andorra,4 : 0
+03.09. 20:45,Italy,Malta,1 : 0
+03.09. 20:45,Netherlands,Iceland,0 : 1
+03.09. 20:45,Turkey,Latvia,1 : 1
+03.09. 18:00,Azerbaijan,Croatia,0 : 0
+14.06. 20:45,Belarus,Spain,0 : 1
+14.06. 20:45,Lithuania,Switzerland,1 : 2
+14.06. 20:45,Slovakia,FYR Macedonia,2 : 1
+14.06. 20:45,Sweden,Montenegro,3 : 1
+14.06. 18:00,Estonia,San Marino,2 : 0
+14.06. 18:00,Liechtenstein,Moldova,1 : 1
+14.06. 18:00,Russia,Austria,0 : 1
+14.06. 18:00,Slovenia,England,2 : 3
+14.06. 18:00,Ukraine,Luxembourg,3 : 0
+13.06. 20:45,Denmark,Serbia,2 : 0
+13.06. 20:45,Faroe Islands,Greece,2 : 1
+13.06. 20:45,Gibraltar,Germany,0 : 7
+13.06. 20:45,Northern Ireland,Romania,0 : 0
+13.06. 18:00,Armenia,Portugal,2 : 3
+13.06. 18:00,Finland,Hungary,0 : 1
+13.06. 18:00,Ireland,Scotland,1 : 1
+13.06. 18:00,Poland,Georgia,4 : 0
+12.06. 20:45,Andorra,Cyprus,1 : 3
+12.06. 20:45,Bosnia & Herzegovina,Israel,3 : 1
+12.06. 20:45,Croatia,Italy,1 : 1
+12.06. 20:45,Iceland,Czech Republic,2 : 1
+12.06. 20:45,Latvia,Netherlands,0 : 2
+12.06. 20:45,Malta,Bulgaria,0 : 1
+12.06. 20:45,Norway,Azerbaijan,0 : 0
+12.06. 20:45,Wales,Belgium,1 : 0
+12.06. 18:00,Kazakhstan,Turkey,0 : 1
+31.03. 20:45,Israel,Belgium,0 : 1
+29.03. 20:45,Hungary,Greece,0 : 0
+29.03. 20:45,Ireland,Poland,1 : 1
+29.03. 20:45,Portugal,Serbia,2 : 1
+29.03. 18:00,Albania,Armenia,2 : 1
+29.03. 18:00,Georgia,Germany,0 : 2
+29.03. 18:00,Northern Ireland,Finland,2 : 1
+29.03. 18:00,Romania,Faroe Islands,1 : 0
+29.03. 18:00,Scotland,Gibraltar,6 : 1
+28.03. 20:45,Andorra,Bosnia & Herzegovina,0 : 3
+28.03. 20:45,Belgium,Cyprus,5 : 0
+28.03. 20:45,Bulgaria,Italy,2 : 2
+28.03. 20:45,Netherlands,Turkey,1 : 1
+28.03. 18:00,Azerbaijan,Malta,2 : 0
+28.03. 18:00,Croatia,Norway,5 : 1
+28.03. 18:00,Czech Republic,Latvia,1 : 1
+28.03. 18:00,Israel,Wales,0 : 3
+28.03. 16:00,Kazakhstan,Iceland,0 : 3
+27.03. 20:45,England,Lithuania,4 : 0
+27.03. 20:45,FYR Macedonia,Belarus,1 : 2
+27.03. 20:45,Liechtenstein,Austria,0 : 5
+27.03. 20:45,Moldova,Sweden,0 : 2
+27.03. 20:45,Montenegro,Russia,0 : 3
+27.03. 20:45,Slovakia,Luxembourg,3 : 0
+27.03. 20:45,Slovenia,San Marino,6 : 0
+27.03. 20:45,Spain,Ukraine,1 : 0
+27.03. 20:45,Switzerland,Estonia,3 : 0
+16.11. 20:45,Bulgaria,Malta,1 : 1
+16.11. 20:45,Czech Republic,Iceland,2 : 1
+16.11. 20:45,Israel,Bosnia & Herzegovina,3 : 0
+16.11. 20:45,Italy,Croatia,1 : 1
+16.11. 20:45,Turkey,Kazakhstan,3 : 1
+16.11. 18:00,Azerbaijan,Norway,0 : 1
+16.11. 18:00,Belgium,Wales,0 : 0
+16.11. 18:00,Cyprus,Andorra,5 : 0
+16.11. 18:00,Netherlands,Latvia,6 : 0
+15.11. 20:45,FYR Macedonia,Slovakia,0 : 2
+15.11. 20:45,Montenegro,Sweden,1 : 1
+15.11. 20:45,Spain,Belarus,3 : 0
+15.11. 20:45,Switzerland,Lithuania,4 : 0
+15.11. 18:00,Austria,Russia,1 : 0
+15.11. 18:00,England,Slovenia,3 : 1
+15.11. 18:00,Luxembourg,Ukraine,0 : 3
+15.11. 18:00,Moldova,Liechtenstein,0 : 1
+15.11. 18:00,San Marino,Estonia,0 : 0
+14.11. 20:45,Germany,Gibraltar,4 : 0
+14.11. 20:45,Greece,Faroe Islands,0 : 1
+14.11. 20:45,Hungary,Finland,1 : 0
+14.11. 20:45,Portugal,Armenia,1 : 0
+14.11. 20:45,Romania,Northern Ireland,2 : 0
+14.11. 20:45,Scotland,Ireland,1 : 0
+14.11. 20:45,Serbia,Denmark,1 : 3
+14.11. 18:00,Georgia,Poland,0 : 4
+14.10. 20:45,Denmark,Portugal,0 : 1
+14.10. 20:45,Faroe Islands,Hungary,0 : 1
+14.10. 20:45,Finland,Romania,0 : 2
+14.10. 20:45,Germany,Ireland,1 : 1
+14.10. 20:45,Gibraltar,Georgia,0 : 3
+14.10. 20:45,Greece,Northern Ireland,0 : 2
+14.10. 20:45,Poland,Scotland,2 : 2
+14.10. 20:45,San Marino,Switzerland,0 : 4
+14.10. 20:45,Serbia,Albania,0 : 3
+13.10. 20:45,Andorra,Israel,1 : 4
+13.10. 20:45,Bosnia & Herzegovina,Belgium,1 : 1
+13.10. 20:45,Croatia,Azerbaijan,6 : 0
+13.10. 20:45,Iceland,Netherlands,2 : 0
+13.10. 20:45,Latvia,Turkey,1 : 1
+13.10. 20:45,Malta,Italy,0 : 1
+13.10. 20:45,Norway,Bulgaria,2 : 1
+13.10. 20:45,Wales,Cyprus,2 : 1
+13.10. 18:00,Kazakhstan,Czech Republic,2 : 4
+12.10. 20:45,Belarus,Slovakia,1 : 3
+12.10. 20:45,Lithuania,Slovenia,0 : 2
+12.10. 20:45,Luxembourg,Spain,0 : 4
+12.10. 20:45,Sweden,Liechtenstein,2 : 0
+12.10. 18:00,Austria,Montenegro,1 : 0
+12.10. 18:00,Estonia,England,0 : 1
+12.10. 18:00,Russia,Moldova,1 : 1
+12.10. 18:00,Ukraine,FYR Macedonia,1 : 0
+11.10. 20:45,Albania,Denmark,1 : 1
+11.10. 20:45,Finland,Greece,1 : 1
+11.10. 20:45,Northern Ireland,Faroe Islands,2 : 0
+11.10. 20:45,Poland,Germany,2 : 0
+11.10. 18:00,Armenia,Serbia,1 : 1
+11.10. 18:00,Ireland,Gibraltar,7 : 0
+11.10. 18:00,Romania,Hungary,1 : 1
+11.10. 18:00,Scotland,Georgia,1 : 0
+10.10. 20:45,Belgium,Andorra,6 : 0
+10.10. 20:45,Bulgaria,Croatia,0 : 1
+10.10. 20:45,Cyprus,Israel,1 : 2
+10.10. 20:45,Italy,Azerbaijan,2 : 1
+10.10. 20:45,Latvia,Iceland,0 : 3
+10.10. 20:45,Malta,Norway,0 : 3
+10.10. 20:45,Netherlands,Kazakhstan,3 : 1
+10.10. 20:45,Turkey,Czech Republic,1 : 2
+10.10. 20:45,Wales,Bosnia & Herzegovina,0 : 0
+09.10. 20:45,Belarus,Ukraine,0 : 2
+09.10. 20:45,England,San Marino,5 : 0
+09.10. 20:45,FYR Macedonia,Luxembourg,3 : 2
+09.10. 20:45,Liechtenstein,Montenegro,0 : 0
+09.10. 20:45,Lithuania,Estonia,1 : 0
+09.10. 20:45,Moldova,Austria,1 : 2
+09.10. 20:45,Slovakia,Spain,2 : 1
+09.10. 20:45,Slovenia,Switzerland,1 : 0
+09.10. 20:45,Sweden,Russia,1 : 1
+09.09. 20:45,Andorra,Wales,1 : 2
+09.09. 20:45,Bosnia & Herzegovina,Cyprus,1 : 2
+09.09. 20:45,Croatia,Malta,2 : 0
+09.09. 20:45,Czech Republic,Netherlands,2 : 1
+09.09. 20:45,Iceland,Turkey,3 : 0
+09.09. 20:45,Norway,Italy,0 : 2
+09.09. 18:00,Azerbaijan,Bulgaria,1 : 2
+09.09. 18:00,Kazakhstan,Latvia,0 : 0
+08.09. 20:45,Austria,Sweden,1 : 1
+08.09. 20:45,Estonia,Slovenia,1 : 0
+08.09. 20:45,Luxembourg,Belarus,1 : 1
+08.09. 20:45,Montenegro,Moldova,2 : 0
+08.09. 20:45,San Marino,Lithuania,0 : 2
+08.09. 20:45,Spain,FYR Macedonia,5 : 1
+08.09. 20:45,Switzerland,England,0 : 2
+08.09. 20:45,Ukraine,Slovakia,0 : 1
+08.09. 18:00,Russia,Liechtenstein,4 : 0
+07.09. 20:45,Faroe Islands,Finland,1 : 3
+07.09. 20:45,Germany,Scotland,2 : 1
+07.09. 20:45,Gibraltar,Poland,0 : 7
+07.09. 20:45,Greece,Romania,0 : 1
+07.09. 20:45,Portugal,Albania,0 : 1
+07.09. 18:00,Denmark,Armenia,2 : 1
+07.09. 18:00,Georgia,Ireland,1 : 2
+07.09. 18:00,Hungary,Northern Ireland,1 : 2
