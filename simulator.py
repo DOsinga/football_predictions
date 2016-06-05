@@ -8,7 +8,7 @@ from collections import defaultdict, Counter
 import csv
 import argparse
 
-ITERATIONS = 100000
+ITERATIONS = 10000
 
 model = None
 win_loss_histogram = None
@@ -93,7 +93,7 @@ def simulate_group(group):
     goals_against[team2] += goals1
   teams = sorted(goals_against.keys(),
                  key=lambda team: points[team] + float(goals_pro[team] - goals_against[team]) / 100 + float(goals_pro[team] / 10000), reverse=True)
-  return teams[0], teams[1]
+  return teams
 
 
 
@@ -111,21 +111,30 @@ def group_chances(group):
 def simulate_tournament(tournament):
   results = {}
   for round_name, round in tournament:
+    third_places = []
     for group_name, group in round:
       group = [results.get(team, team) for team in group]
       if len(group) == 2:
         results[group_name] = simulate_knock_out(group[0], group[1])
       else:
         for idx, team in enumerate(simulate_group(group)):
-          results[group_name + str(idx + 1)] = team
+          key = group_name + str(idx + 1)
+          results[key] = team
+          if key.endswith('3'):
+            third_places.append(team)
+      if third_places:
+        random.shuffle(third_places)
+        for idx, team in enumerate(third_places):
+          results['Q' + str(idx + 1)] = team
+
   return results['Winner']
 
 
 if __name__ == '__main__':
   parser = argparse.ArgumentParser(description='Simulate a tournament.')
-  parser.add_argument('tournament', type=str, default='brazil_2014.tournament',
+  parser.add_argument('tournament', type=str, default='france_2016.tournament',
                       help='the tournament to simulate')
-  parser.add_argument('match', type=str, nargs='?',
+  parser.add_argument('match', type=str, nargs='?', default='',
                       help='Match to focus on. Team1-Team2=Goals1-Goals2. Pretend that that is the outcome.')
 
   args = parser.parse_args()
@@ -138,18 +147,23 @@ if __name__ == '__main__':
 
   first_day, last_day, tournament = read_tournament(file(args.tournament).read().splitlines())
   games_played = {(r['team1'], r['team2']): (int(r['goals1']), int(r['goals2']))
-                  for r in csv.DictReader(file('results.csv')) if first_day <= r['date'] <= last_day}
+                  for r in csv.DictReader(file('results-friendly.csv')) if first_day <= r['date'] <= last_day}
 
   if args.match:
-    teams, result = args.match.split('=')
+    if '=' in args.match:
+      teams, result = args.match.split('=')
+    else:
+      teams = args.match
+      result = None
     team1, team2 = teams.split('-')
-    goals1, goals2 = map(int, result.split('-'))
     match_res = Counter()
     for i in range(ITERATIONS):
       match_res[str(simulate_game(team1, team2))] += 1
     for outcome, c in match_res.most_common():
       print outcome, '%2.2f%%' % ((100.0 * c) / ITERATIONS)
-    games_played[(team1, team2)] = (goals1, goals2)
+    if result:
+      goals1, goals2 = map(int, result.split('-'))
+      games_played[(team1, team2)] = (goals1, goals2)
 
   res = Counter()
   for i in range(ITERATIONS):
