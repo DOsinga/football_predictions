@@ -60,14 +60,3 @@ To refresh one tournament:
 ```bash
 python3 fetch_elo.py tournaments/wc_2026.yaml
 ```
-
-## Checks
-
-The browser simulator can be syntax-checked and tested with Node:
-
-```bash
-node --check static/app.js
-node --check static/simulate.js
-node test_model_settings.js
-python3 -m py_compile football_predictions.py fetch_elo.py simulate.py yaml_compat.py
-```
