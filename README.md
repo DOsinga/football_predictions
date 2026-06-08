@@ -4,6 +4,8 @@
 
 Looking for the pre-2026 code? See [`legacy/`](legacy/).
 
+![Football Predictions thumbnail](football_predictions.jpg)
+
 Football Predictions simulates international football tournaments from
 pre-tournament ratings and tournament definitions. The current version reads
 ratings from
