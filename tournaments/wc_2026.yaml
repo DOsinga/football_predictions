@@ -35,7 +35,7 @@ teams:
     name: Czechia
     elo_9m: 1765
   BA:
-    elo: 1591
+    elo: 1595
     name: Bosnia and Herzegovina
     elo_9m: 1511
   CA:
@@ -43,15 +43,15 @@ teams:
     name: Canada
     elo_9m: 1784
   QA:
-    elo: 1423
+    elo: 1421
     name: Qatar
     elo_9m: 1483
   CH:
-    elo: 1894
+    elo: 1891
     name: Switzerland
     elo_9m: 1896
   BR:
-    elo: 1988
+    elo: 1991
     name: Brazil
     elo_9m: 1989
   HT:
@@ -59,15 +59,15 @@ teams:
     name: Haiti
     elo_9m: 1517
   MA:
-    elo: 1824
+    elo: 1827
     name: Morocco
     elo_9m: 1824
   SQ:
-    elo: 1770
+    elo: 1782
     name: Scotland
     elo_9m: 1767
   AU:
-    elo: 1774
+    elo: 1777
     name: Australia
     elo_9m: 1803
   PY:
@@ -75,11 +75,11 @@ teams:
     name: Paraguay
     elo_9m: 1846
   TR:
-    elo: 1906
+    elo: 1911
     name: Turkey
     elo_9m: 1847
   US:
-    elo: 1733
+    elo: 1726
     name: United States
     elo_9m: 1702
   CI:
@@ -87,15 +87,15 @@ teams:
     name: Ivory Coast
     elo_9m: 1590
   CW:
-    elo: 1433
+    elo: 1434
     name: Curaçao
     elo_9m: 1442
   EC:
-    elo: 1935
+    elo: 1938
     name: Ecuador
     elo_9m: 1929
   DE:
-    elo: 1925
+    elo: 1932
     name: Germany
     elo_9m: 1880
   JP:
@@ -103,7 +103,7 @@ teams:
     name: Japan
     elo_9m: 1860
   NL:
-    elo: 1944
+    elo: 1948
     name: Netherlands
     elo_9m: 1962
   SE:
@@ -111,15 +111,15 @@ teams:
     name: Sweden
     elo_9m: 1703
   TN:
-    elo: 1633
+    elo: 1628
     name: Tunisia
     elo_9m: 1637
   BE:
-    elo: 1888
+    elo: 1893
     name: Belgium
     elo_9m: 1835
   EG:
-    elo: 1699
+    elo: 1696
     name: Egypt
     elo_9m: 1666
   IR:
@@ -127,11 +127,11 @@ teams:
     name: Iran
     elo_9m: 1762
   NZ:
-    elo: 1563
+    elo: 1562
     name: New Zealand
     elo_9m: 1583
   CV:
-    elo: 1576
+    elo: 1578
     name: Cape Verde
     elo_9m: 1543
   ES:
@@ -147,7 +147,7 @@ teams:
     name: Uruguay
     elo_9m: 1908
   FR:
-    elo: 2062
+    elo: 2063
     name: France
     elo_9m: 2068
   IQ:
@@ -155,7 +155,7 @@ teams:
     name: Iraq
     elo_9m: 1573
   NO:
-    elo: 1917
+    elo: 1914
     name: Norway
     elo_9m: 1880
   SN:
@@ -167,7 +167,7 @@ teams:
     name: Algeria
     elo_9m: 1696
   AR:
-    elo: 2113
+    elo: 2114
     name: Argentina
     elo_9m: 2111
   AT:
@@ -175,7 +175,7 @@ teams:
     name: Austria
     elo_9m: 1855
   JO:
-    elo: 1685
+    elo: 1680
     name: Jordan
     elo_9m: 1625
   CD:
@@ -183,23 +183,23 @@ teams:
     name: DR Congo
     elo_9m: 1590
   CO:
-    elo: 1977
+    elo: 1982
     name: Colombia
     elo_9m: 1993
   PT:
-    elo: 1984
+    elo: 1986
     name: Portugal
     elo_9m: 2043
   UZ:
-    elo: 1718
+    elo: 1714
     name: Uzbekistan
     elo_9m: 1719
   HR:
-    elo: 1908
+    elo: 1911
     name: Croatia
     elo_9m: 1927
   EN:
-    elo: 2020
+    elo: 2021
     name: England
     elo_9m: 2022
   GH:
@@ -207,7 +207,7 @@ teams:
     name: Ghana
     elo_9m: 1504
   PA:
-    elo: 1734
+    elo: 1730
     name: Panama
     elo_9m: 1740
 stages:
