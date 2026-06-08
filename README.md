@@ -1,18 +1,40 @@
 # Football Predictions
 
+[Live demo](https://douwe.com/projects/football_predictions)
+
 Looking for the pre-2026 code? See [`legacy/`](legacy/).
 
-This is a self-contained Django project for simulating international football
-tournaments. It is rendered inside `douwe.com`, but the folder is also a
-standalone Git repository so the data, simulator, and frontend can be checked
-out independently.
-
-The current version reads pre-tournament ratings from
+Football Predictions simulates international football tournaments from
+pre-tournament ratings and tournament definitions. The current version reads
+ratings from
 [eloratings.net](https://www.eloratings.net/), runs Monte Carlo simulations of
 group stages and knockout brackets, and lets you adjust the model directly in
 the browser. Controls include ELO predictive strength, home advantage, recent
 form, and late-round effects. The model can also be backtested against completed
 World Cups and Euros.
+
+## Run It Yourself
+
+The Python simulator can be run directly against any tournament YAML file:
+
+```bash
+python3 simulate.py tournaments/wc_2026.yaml
+```
+
+Run more or fewer simulations with `--n`:
+
+```bash
+python3 simulate.py tournaments/euro_2024.yaml --n 50000
+```
+
+Use `--seed` for reproducible output:
+
+```bash
+python3 simulate.py tournaments/wc_2022.yaml --n 10000 --seed 1
+```
+
+Example output is a table of each team's probability of reaching later stages
+and winning the tournament.
 
 ## Layout
 
@@ -25,22 +47,6 @@ World Cups and Euros.
 - `simulate.py` — Python simulator used by data tooling.
 - `test_*.js` — focused Node tests for simulator/model behavior.
 
-## Local Development
-
-Run the parent Django site:
-
-```bash
-cd ../..
-source venv3/bin/activate
-uvicorn djangosite.asgi:application --reload --host 127.0.0.1 --port 8000
-```
-
-Then open:
-
-```text
-http://127.0.0.1:8000/projects/football_predictions
-```
-
 ## Data Updates
 
 Tournament YAML files contain:
@@ -52,19 +58,16 @@ Tournament YAML files contain:
 To refresh one tournament:
 
 ```bash
-venv3/bin/python projects/football_predictions/fetch_elo.py \
-  projects/football_predictions/tournaments/wc_2026.yaml
+python3 fetch_elo.py tournaments/wc_2026.yaml
 ```
 
 ## Checks
 
-From the parent `djangosite` directory:
+The browser simulator can be syntax-checked and tested with Node:
 
 ```bash
-node --check projects/football_predictions/static/app.js
-node --check projects/football_predictions/static/simulate.js
-node projects/football_predictions/test_model_settings.js
-venv3/bin/python -m py_compile \
-  projects/football_predictions/football_predictions.py \
-  projects/football_predictions/fetch_elo.py
+node --check static/app.js
+node --check static/simulate.js
+node test_model_settings.js
+python3 -m py_compile football_predictions.py fetch_elo.py simulate.py yaml_compat.py
 ```
