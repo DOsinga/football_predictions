@@ -1,0 +1,76 @@
+name: Euro 1968
+year: 1968
+match_code: EC
+cutoff: 1968-06-05
+hosts:
+- IT
+points:
+  win: 2
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  IT:
+    name: Italy
+    elo: 1955
+    elo_9m: 1966
+  RU:
+    name: Soviet Union
+    elo: 1962
+    elo_9m: 1962
+  RS:
+    name: Yugoslavia
+    elo: 1741
+    elo_9m: 1741
+  EN:
+    name: England
+    elo: 2041
+    elo_9m: 2078
+stages:
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: IT
+      away: RU
+      date: 1968-06-05
+      actual:
+        winner: IT
+        score:
+        - 0
+        - 0
+    sf2:
+      home: RS
+      away: EN
+      date: 1968-06-05
+      actual:
+        winner: RS
+        score:
+        - 1
+        - 0
+- id: third_place
+  type: match
+  home: sf.sf1.L
+  away: sf.sf2.L
+  date: 1968-06-08
+  actual:
+    winner: EN
+    score:
+    - 0
+    - 2
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 1968-06-08
+  actual:
+    winner: IT
+    score:
+    - 1
+    - 1

@@ -1,0 +1,157 @@
+name: Euro 1980
+year: 1980
+match_code: EC
+cutoff: 1980-06-11
+hosts:
+- IT
+points:
+  win: 2
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  DE:
+    name: West Germany
+    elo: 2082
+    elo_9m: 2082
+  CZ:
+    name: Czechoslovakia
+    elo: 1854
+    elo_9m: 1854
+  NL:
+    name: Netherlands
+    elo: 2037
+    elo_9m: 2030
+  GR:
+    name: Greece
+    elo: 1669
+    elo_9m: 1706
+  BE:
+    name: Belgium
+    elo: 1921
+    elo_9m: 1812
+  IT:
+    name: Italy
+    elo: 1977
+    elo_9m: 1990
+  EN:
+    name: England
+    elo: 2028
+    elo_9m: 2031
+  ES:
+    name: Spain
+    elo: 1889
+    elo_9m: 1948
+stages:
+- id: groups
+  type: groups
+  groups:
+    1:
+    - DE
+    - CZ
+    - NL
+    - GR
+    2:
+    - BE
+    - IT
+    - EN
+    - ES
+  schedule:
+  - - 1980-06-11
+    - 1
+    - NL
+    - GR
+    - 1
+    - 0
+  - - 1980-06-11
+    - 1
+    - DE
+    - CZ
+    - 1
+    - 0
+  - - 1980-06-12
+    - 2
+    - BE
+    - EN
+    - 1
+    - 1
+  - - 1980-06-12
+    - 2
+    - IT
+    - ES
+    - 0
+    - 0
+  - - 1980-06-14
+    - 1
+    - CZ
+    - GR
+    - 3
+    - 1
+  - - 1980-06-14
+    - 1
+    - DE
+    - NL
+    - 3
+    - 2
+  - - 1980-06-15
+    - 2
+    - BE
+    - ES
+    - 2
+    - 1
+  - - 1980-06-15
+    - 2
+    - IT
+    - EN
+    - 1
+    - 0
+  - - 1980-06-17
+    - 1
+    - CZ
+    - NL
+    - 1
+    - 1
+  - - 1980-06-17
+    - 1
+    - DE
+    - GR
+    - 0
+    - 0
+  - - 1980-06-18
+    - 2
+    - EN
+    - ES
+    - 2
+    - 1
+  - - 1980-06-18
+    - 2
+    - BE
+    - IT
+    - 0
+    - 0
+- id: third_place
+  type: match
+  home: groups.1.2
+  away: groups.2.2
+  date: 1980-06-21
+  actual:
+    winner: IT
+    score:
+    - 1
+    - 1
+- id: final
+  type: match
+  home: groups.1.1
+  away: groups.2.1
+  date: 1980-06-22
+  actual:
+    winner: DE
+    score:
+    - 2
+    - 1

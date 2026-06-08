@@ -1,0 +1,76 @@
+name: Euro 1964
+year: 1964
+match_code: EC
+cutoff: 1964-06-17
+hosts:
+- ES
+points:
+  win: 2
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  ES:
+    name: Spain
+    elo: 1913
+    elo_9m: 1866
+  HU:
+    name: Hungary
+    elo: 1957
+    elo_9m: 1986
+  RU:
+    name: Soviet Union
+    elo: 2010
+    elo_9m: 2010
+  DK:
+    name: Denmark
+    elo: 1666
+    elo_9m: 1713
+stages:
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: ES
+      away: HU
+      date: 1964-06-17
+      actual:
+        winner: ES
+        score:
+        - 2
+        - 1
+    sf2:
+      home: RU
+      away: DK
+      date: 1964-06-17
+      actual:
+        winner: RU
+        score:
+        - 3
+        - 0
+- id: third_place
+  type: match
+  home: sf.sf1.L
+  away: sf.sf2.L
+  date: 1964-06-20
+  actual:
+    winner: HU
+    score:
+    - 3
+    - 1
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 1964-06-21
+  actual:
+    winner: ES
+    score:
+    - 2
+    - 1

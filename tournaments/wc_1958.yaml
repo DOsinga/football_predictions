@@ -1,0 +1,331 @@
+name: World Cup 1958
+year: 1958
+match_code: WC
+cutoff: 1958-06-08
+hosts:
+- SE
+points:
+  win: 2
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  DE:
+    name: West Germany
+    elo: 2082
+    elo_9m: 2082
+  EI:
+    name: Northern Ireland
+    elo: 1781
+    elo_9m: 1675
+  CZ:
+    name: Czechoslovakia
+    elo: 1854
+    elo_9m: 1854
+  AR:
+    name: Argentina
+    elo: 1984
+    elo_9m: 2041
+  FR:
+    name: France
+    elo: 1882
+    elo_9m: 1869
+  RS:
+    name: Yugoslavia
+    elo: 1741
+    elo_9m: 1741
+  PY:
+    name: Paraguay
+    elo: 1709
+    elo_9m: 1750
+  SQ:
+    name: Scotland
+    elo: 1836
+    elo_9m: 1858
+  SE:
+    name: Sweden
+    elo: 1837
+    elo_9m: 1794
+  WA:
+    name: Wales
+    elo: 1741
+    elo_9m: 1700
+  HU:
+    name: Hungary
+    elo: 2058
+    elo_9m: 2102
+  MX:
+    name: Mexico
+    elo: 1742
+    elo_9m: 1769
+  BR:
+    name: Brazil
+    elo: 2018
+    elo_9m: 1979
+  EN:
+    name: England
+    elo: 2005
+    elo_9m: 2035
+  RU:
+    name: Soviet Union
+    elo: 1909
+    elo_9m: 1909
+  AT:
+    name: Austria
+    elo: 1864
+    elo_9m: 1904
+stages:
+- id: r1
+  type: groups
+  groups:
+    1:
+    - DE
+    - EI
+    - CZ
+    - AR
+    2:
+    - FR
+    - RS
+    - PY
+    - SQ
+    3:
+    - SE
+    - WA
+    - HU
+    - MX
+    4:
+    - BR
+    - RU
+    - EN
+    - AT
+  schedule:
+  - - 1958-06-08
+    - 4
+    - BR
+    - AT
+    - 3
+    - 0
+  - - 1958-06-08
+    - 4
+    - RU
+    - EN
+    - 2
+    - 2
+  - - 1958-06-08
+    - 2
+    - FR
+    - PY
+    - 7
+    - 3
+  - - 1958-06-08
+    - 3
+    - WA
+    - HU
+    - 1
+    - 1
+  - - 1958-06-08
+    - 1
+    - EI
+    - CZ
+    - 1
+    - 0
+  - - 1958-06-08
+    - 2
+    - RS
+    - SQ
+    - 1
+    - 1
+  - - 1958-06-08
+    - 3
+    - SE
+    - MX
+    - 3
+    - 0
+  - - 1958-06-08
+    - 1
+    - DE
+    - AR
+    - 3
+    - 1
+  - - 1958-06-11
+    - 1
+    - EI
+    - AR
+    - 1
+    - 3
+  - - 1958-06-11
+    - 4
+    - BR
+    - EN
+    - 0
+    - 0
+  - - 1958-06-11
+    - 1
+    - DE
+    - CZ
+    - 2
+    - 2
+  - - 1958-06-11
+    - 3
+    - WA
+    - MX
+    - 1
+    - 1
+  - - 1958-06-11
+    - 2
+    - PY
+    - SQ
+    - 3
+    - 2
+  - - 1958-06-11
+    - 4
+    - RU
+    - AT
+    - 2
+    - 0
+  - - 1958-06-11
+    - 2
+    - FR
+    - RS
+    - 2
+    - 3
+  - - 1958-06-12
+    - 3
+    - SE
+    - HU
+    - 2
+    - 1
+  - - 1958-06-15
+    - 4
+    - EN
+    - AT
+    - 2
+    - 2
+  - - 1958-06-15
+    - 4
+    - BR
+    - RU
+    - 2
+    - 0
+  - - 1958-06-15
+    - 1
+    - CZ
+    - AR
+    - 6
+    - 1
+  - - 1958-06-15
+    - 2
+    - FR
+    - SQ
+    - 2
+    - 1
+  - - 1958-06-15
+    - 3
+    - HU
+    - MX
+    - 4
+    - 0
+  - - 1958-06-15
+    - 1
+    - DE
+    - EI
+    - 2
+    - 2
+  - - 1958-06-15
+    - 2
+    - RS
+    - PY
+    - 3
+    - 3
+  - - 1958-06-15
+    - 3
+    - SE
+    - WA
+    - 0
+    - 0
+- id: qf
+  type: bracket
+  matches:
+    qf1:
+      home: r1.4.1
+      away: r1.3.2
+      date: 1958-06-19
+      actual:
+        winner: BR
+        score:
+        - 1
+        - 0
+    qf2:
+      home: r1.2.1
+      away: r1.1.2
+      date: 1958-06-19
+      actual:
+        winner: FR
+        score:
+        - 4
+        - 0
+    qf3:
+      home: r1.3.1
+      away: r1.4.2
+      date: 1958-06-19
+      actual:
+        winner: SE
+        score:
+        - 2
+        - 0
+    qf4:
+      home: r1.1.1
+      away: r1.2.2
+      date: 1958-06-19
+      actual:
+        winner: DE
+        score:
+        - 1
+        - 0
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: qf.qf1.W
+      away: qf.qf2.W
+      date: 1958-06-24
+      actual:
+        winner: BR
+        score:
+        - 5
+        - 2
+    sf2:
+      home: qf.qf3.W
+      away: qf.qf4.W
+      date: 1958-06-24
+      actual:
+        winner: SE
+        score:
+        - 3
+        - 1
+- id: third_place
+  type: match
+  home: sf.sf1.L
+  away: sf.sf2.L
+  date: 1958-06-28
+  actual:
+    winner: FR
+    score:
+    - 6
+    - 3
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 1958-06-29
+  actual:
+    winner: BR
+    score:
+    - 5
+    - 2

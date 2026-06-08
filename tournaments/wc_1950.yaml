@@ -1,0 +1,234 @@
+name: World Cup 1950
+year: 1950
+match_code: WC
+cutoff: 1950-06-24
+hosts:
+- BR
+points:
+  win: 2
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+champion_slot: final_round.F.1
+teams:
+  BR:
+    name: Brazil
+    elo: 1990
+    elo_9m: 1955
+  RS:
+    name: Yugoslavia
+    elo: 1741
+    elo_9m: 1741
+  CH:
+    name: Switzerland
+    elo: 1673
+    elo_9m: 1728
+  MX:
+    name: Mexico
+    elo: 1811
+    elo_9m: 1834
+  EN:
+    name: England
+    elo: 2077
+    elo_9m: 2023
+  ES:
+    name: Spain
+    elo: 1911
+    elo_9m: 1906
+  CL:
+    name: Chile
+    elo: 1593
+    elo_9m: 1598
+  US:
+    name: United States
+    elo: 1568
+    elo_9m: 1568
+  SE:
+    name: Sweden
+    elo: 2004
+    elo_9m: 2009
+  IT:
+    name: Italy
+    elo: 1943
+    elo_9m: 1990
+  PY:
+    name: Paraguay
+    elo: 1888
+    elo_9m: 1881
+  UY:
+    name: Uruguay
+    elo: 1759
+    elo_9m: 1738
+  BO:
+    name: Bolivia
+    elo: 1423
+    elo_9m: 1453
+stages:
+- id: r1
+  type: groups
+  groups:
+    '1':
+    - BR
+    - RS
+    - CH
+    - MX
+    '2':
+    - ES
+    - EN
+    - CL
+    - US
+    '3':
+    - SE
+    - IT
+    - PY
+    '4':
+    - UY
+    - BO
+  schedule:
+  - - 1950-06-24
+    - '1'
+    - BR
+    - MX
+    - 4
+    - 0
+  - - 1950-06-25
+    - '2'
+    - EN
+    - CL
+    - 2
+    - 0
+  - - 1950-06-25
+    - '2'
+    - ES
+    - US
+    - 3
+    - 1
+  - - 1950-06-25
+    - '3'
+    - SE
+    - IT
+    - 3
+    - 2
+  - - 1950-06-25
+    - '1'
+    - RS
+    - CH
+    - 3
+    - 0
+  - - 1950-06-28
+    - '1'
+    - BR
+    - CH
+    - 2
+    - 2
+  - - 1950-06-28
+    - '1'
+    - RS
+    - MX
+    - 4
+    - 1
+  - - 1950-06-29
+    - '3'
+    - SE
+    - PY
+    - 2
+    - 2
+  - - 1950-06-29
+    - '2'
+    - ES
+    - CL
+    - 2
+    - 0
+  - - 1950-06-29
+    - '2'
+    - EN
+    - US
+    - 0
+    - 1
+  - - 1950-07-01
+    - '1'
+    - BR
+    - RS
+    - 2
+    - 0
+  - - 1950-07-02
+    - '2'
+    - CL
+    - US
+    - 5
+    - 2
+  - - 1950-07-02
+    - '3'
+    - IT
+    - PY
+    - 2
+    - 0
+  - - 1950-07-02
+    - '2'
+    - ES
+    - EN
+    - 1
+    - 0
+  - - 1950-07-02
+    - '1'
+    - CH
+    - MX
+    - 2
+    - 1
+  - - 1950-07-02
+    - '4'
+    - UY
+    - BO
+    - 8
+    - 0
+- id: final_round
+  type: groups
+  groups:
+    F:
+    - r1.1.1
+    - r1.2.1
+    - r1.3.1
+    - r1.4.1
+  schedule:
+  - - 1950-07-09
+    - F
+    - BR
+    - SE
+    - 7
+    - 1
+  - - 1950-07-09
+    - F
+    - ES
+    - UY
+    - 2
+    - 2
+  - - 1950-07-13
+    - F
+    - BR
+    - ES
+    - 6
+    - 1
+  - - 1950-07-13
+    - F
+    - SE
+    - UY
+    - 2
+    - 3
+  - - 1950-07-16
+    - F
+    - BR
+    - UY
+    - 1
+    - 2
+  - - 1950-07-16
+    - F
+    - ES
+    - SE
+    - 1
+    - 3

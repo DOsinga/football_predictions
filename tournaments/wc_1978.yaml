@@ -1,0 +1,357 @@
+name: World Cup 1978
+year: 1978
+match_code: WC
+cutoff: 1978-06-01
+hosts:
+- AR
+points:
+  win: 2
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  IT:
+    elo: 1964
+    name: Italy
+    elo_9m: 1971
+  AR:
+    elo: 1947
+    name: Argentina
+    elo_9m: 1913
+  FR:
+    elo: 1865
+    name: France
+    elo_9m: 1837
+  HU:
+    elo: 1887
+    name: Hungary
+    elo_9m: 1895
+  PL:
+    elo: 1942
+    name: Poland
+    elo_9m: 1911
+  DE:
+    elo: 2082
+    name: West Germany
+    elo_9m: 2082
+  TN:
+    elo: 1723
+    name: Tunisia
+    elo_9m: 1648
+  MX:
+    elo: 1733
+    name: Mexico
+    elo_9m: 1741
+  AT:
+    elo: 1898
+    name: Austria
+    elo_9m: 1847
+  BR:
+    elo: 2061
+    name: Brazil
+    elo_9m: 2059
+  ES:
+    elo: 1922
+    name: Spain
+    elo_9m: 1911
+  SE:
+    elo: 1814
+    name: Sweden
+    elo_9m: 1759
+  PE:
+    elo: 1821
+    name: Peru
+    elo_9m: 1764
+  NL:
+    elo: 2109
+    name: Netherlands
+    elo_9m: 2064
+  SQ:
+    elo: 1877
+    name: Scotland
+    elo_9m: 1966
+  IR:
+    elo: 1786
+    name: Iran
+    elo_9m: 1777
+stages:
+- id: r1
+  type: groups
+  groups:
+    1:
+    - IT
+    - AR
+    - FR
+    - HU
+    2:
+    - PL
+    - DE
+    - TN
+    - MX
+    3:
+    - AT
+    - BR
+    - ES
+    - SE
+    4:
+    - PE
+    - NL
+    - SQ
+    - IR
+  schedule:
+  - - 1978-06-01
+    - 2
+    - PL
+    - DE
+    - 0
+    - 0
+  - - 1978-06-02
+    - 1
+    - AR
+    - HU
+    - 2
+    - 1
+  - - 1978-06-02
+    - 1
+    - IT
+    - FR
+    - 2
+    - 1
+  - - 1978-06-02
+    - 2
+    - TN
+    - MX
+    - 3
+    - 1
+  - - 1978-06-03
+    - 3
+    - AT
+    - ES
+    - 2
+    - 1
+  - - 1978-06-03
+    - 3
+    - BR
+    - SE
+    - 1
+    - 1
+  - - 1978-06-03
+    - 4
+    - NL
+    - IR
+    - 3
+    - 0
+  - - 1978-06-03
+    - 4
+    - PE
+    - SQ
+    - 3
+    - 1
+  - - 1978-06-06
+    - 1
+    - AR
+    - FR
+    - 2
+    - 1
+  - - 1978-06-06
+    - 1
+    - IT
+    - HU
+    - 3
+    - 1
+  - - 1978-06-06
+    - 2
+    - PL
+    - TN
+    - 1
+    - 0
+  - - 1978-06-06
+    - 2
+    - DE
+    - MX
+    - 6
+    - 0
+  - - 1978-06-07
+    - 3
+    - AT
+    - SE
+    - 1
+    - 0
+  - - 1978-06-07
+    - 3
+    - BR
+    - ES
+    - 0
+    - 0
+  - - 1978-06-07
+    - 4
+    - SQ
+    - IR
+    - 1
+    - 1
+  - - 1978-06-07
+    - 4
+    - PE
+    - NL
+    - 0
+    - 0
+  - - 1978-06-10
+    - 1
+    - IT
+    - AR
+    - 1
+    - 0
+  - - 1978-06-10
+    - 1
+    - FR
+    - HU
+    - 3
+    - 1
+  - - 1978-06-10
+    - 2
+    - PL
+    - MX
+    - 3
+    - 1
+  - - 1978-06-10
+    - 2
+    - DE
+    - TN
+    - 0
+    - 0
+  - - 1978-06-11
+    - 3
+    - AT
+    - BR
+    - 0
+    - 1
+  - - 1978-06-11
+    - 4
+    - PE
+    - IR
+    - 4
+    - 1
+  - - 1978-06-11
+    - 4
+    - NL
+    - SQ
+    - 2
+    - 3
+  - - 1978-06-11
+    - 3
+    - ES
+    - SE
+    - 1
+    - 0
+- id: r2
+  type: groups
+  groups:
+    A:
+    - r1.1.1
+    - r1.2.2
+    - r1.3.1
+    - r1.4.2
+    B:
+    - r1.1.2
+    - r1.2.1
+    - r1.3.2
+    - r1.4.1
+  schedule:
+  - - 1978-06-14
+    - B
+    - AR
+    - PL
+    - 2
+    - 0
+  - - 1978-06-14
+    - B
+    - BR
+    - PE
+    - 3
+    - 0
+  - - 1978-06-14
+    - A
+    - IT
+    - DE
+    - 0
+    - 0
+  - - 1978-06-14
+    - A
+    - AT
+    - NL
+    - 1
+    - 5
+  - - 1978-06-18
+    - B
+    - AR
+    - BR
+    - 0
+    - 0
+  - - 1978-06-18
+    - A
+    - IT
+    - AT
+    - 1
+    - 0
+  - - 1978-06-18
+    - A
+    - DE
+    - NL
+    - 2
+    - 2
+  - - 1978-06-18
+    - B
+    - PL
+    - PE
+    - 1
+    - 0
+  - - 1978-06-21
+    - B
+    - AR
+    - PE
+    - 6
+    - 0
+  - - 1978-06-21
+    - A
+    - DE
+    - AT
+    - 2
+    - 3
+  - - 1978-06-21
+    - B
+    - PL
+    - BR
+    - 1
+    - 3
+  - - 1978-06-21
+    - A
+    - IT
+    - NL
+    - 1
+    - 2
+- id: third_place
+  type: match
+  home: r2.A.2
+  away: r2.B.2
+  date: 1978-06-24
+  actual:
+    winner: BR
+    score:
+    - 1
+    - 2
+- id: final
+  type: match
+  home: r2.A.1
+  away: r2.B.1
+  date: 1978-06-25
+  actual:
+    winner: AR
+    score:
+    - 1
+    - 3

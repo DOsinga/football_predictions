@@ -1,0 +1,331 @@
+name: World Cup 1962
+year: 1962
+match_code: WC
+cutoff: 1962-05-30
+hosts:
+- CL
+points:
+  win: 2
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  RU:
+    name: Soviet Union
+    elo: 2014
+    elo_9m: 2014
+  RS:
+    name: Yugoslavia
+    elo: 1741
+    elo_9m: 1741
+  UY:
+    name: Uruguay
+    elo: 1909
+    elo_9m: 1934
+  CO:
+    name: Colombia
+    elo: 1436
+    elo_9m: 1434
+  DE:
+    name: West Germany
+    elo: 2082
+    elo_9m: 2082
+  CL:
+    name: Chile
+    elo: 1769
+    elo_9m: 1715
+  IT:
+    name: Italy
+    elo: 1874
+    elo_9m: 1828
+  CH:
+    name: Switzerland
+    elo: 1679
+    elo_9m: 1665
+  BR:
+    name: Brazil
+    elo: 2117
+    elo_9m: 2093
+  CZ:
+    name: Czechoslovakia
+    elo: 1854
+    elo_9m: 1854
+  MX:
+    name: Mexico
+    elo: 1795
+    elo_9m: 1811
+  ES:
+    name: Spain
+    elo: 1934
+    elo_9m: 1961
+  HU:
+    name: Hungary
+    elo: 1968
+    elo_9m: 2008
+  EN:
+    name: England
+    elo: 1911
+    elo_9m: 1960
+  AR:
+    name: Argentina
+    elo: 1994
+    elo_9m: 1988
+  BG:
+    name: Bulgaria
+    elo: 1761
+    elo_9m: 1767
+stages:
+- id: r1
+  type: groups
+  groups:
+    1:
+    - RU
+    - RS
+    - UY
+    - CO
+    2:
+    - DE
+    - CL
+    - IT
+    - CH
+    3:
+    - BR
+    - CZ
+    - MX
+    - ES
+    4:
+    - HU
+    - EN
+    - AR
+    - BG
+  schedule:
+  - - 1962-05-30
+    - 4
+    - AR
+    - BG
+    - 1
+    - 0
+  - - 1962-05-30
+    - 3
+    - BR
+    - MX
+    - 2
+    - 0
+  - - 1962-05-30
+    - 2
+    - CL
+    - CH
+    - 3
+    - 1
+  - - 1962-05-30
+    - 1
+    - UY
+    - CO
+    - 2
+    - 1
+  - - 1962-05-31
+    - 3
+    - CZ
+    - ES
+    - 1
+    - 0
+  - - 1962-05-31
+    - 4
+    - HU
+    - EN
+    - 2
+    - 1
+  - - 1962-05-31
+    - 2
+    - DE
+    - IT
+    - 0
+    - 0
+  - - 1962-05-31
+    - 1
+    - RU
+    - RS
+    - 2
+    - 0
+  - - 1962-06-02
+    - 3
+    - BR
+    - CZ
+    - 0
+    - 0
+  - - 1962-06-02
+    - 2
+    - CL
+    - IT
+    - 2
+    - 0
+  - - 1962-06-02
+    - 4
+    - EN
+    - AR
+    - 3
+    - 1
+  - - 1962-06-02
+    - 1
+    - RS
+    - UY
+    - 3
+    - 1
+  - - 1962-06-03
+    - 1
+    - RU
+    - CO
+    - 4
+    - 4
+  - - 1962-06-03
+    - 4
+    - HU
+    - BG
+    - 6
+    - 1
+  - - 1962-06-03
+    - 3
+    - MX
+    - ES
+    - 0
+    - 1
+  - - 1962-06-03
+    - 2
+    - DE
+    - CH
+    - 2
+    - 1
+  - - 1962-06-06
+    - 4
+    - HU
+    - AR
+    - 0
+    - 0
+  - - 1962-06-06
+    - 3
+    - BR
+    - ES
+    - 2
+    - 1
+  - - 1962-06-06
+    - 2
+    - DE
+    - CL
+    - 2
+    - 0
+  - - 1962-06-06
+    - 1
+    - RU
+    - UY
+    - 2
+    - 1
+  - - 1962-06-07
+    - 4
+    - EN
+    - BG
+    - 0
+    - 0
+  - - 1962-06-07
+    - 2
+    - IT
+    - CH
+    - 3
+    - 0
+  - - 1962-06-07
+    - 3
+    - CZ
+    - MX
+    - 1
+    - 3
+  - - 1962-06-07
+    - 1
+    - RS
+    - CO
+    - 5
+    - 0
+- id: qf
+  type: bracket
+  matches:
+    qf1:
+      home: r1.2.2
+      away: r1.1.1
+      date: 1962-06-10
+      actual:
+        winner: CL
+        score:
+        - 2
+        - 1
+    qf2:
+      home: r1.1.2
+      away: r1.2.1
+      date: 1962-06-10
+      actual:
+        winner: RS
+        score:
+        - 1
+        - 0
+    qf3:
+      home: r1.3.1
+      away: r1.4.2
+      date: 1962-06-10
+      actual:
+        winner: BR
+        score:
+        - 3
+        - 1
+    qf4:
+      home: r1.3.2
+      away: r1.4.1
+      date: 1962-06-10
+      actual:
+        winner: CZ
+        score:
+        - 1
+        - 0
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: qf.qf3.W
+      away: qf.qf1.W
+      date: 1962-06-13
+      actual:
+        winner: BR
+        score:
+        - 4
+        - 2
+    sf2:
+      home: qf.qf4.W
+      away: qf.qf2.W
+      date: 1962-06-13
+      actual:
+        winner: CZ
+        score:
+        - 3
+        - 1
+- id: third_place
+  type: match
+  home: sf.sf1.L
+  away: sf.sf2.L
+  date: 1962-06-16
+  actual:
+    winner: CL
+    score:
+    - 1
+    - 0
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 1962-06-17
+  actual:
+    winner: BR
+    score:
+    - 3
+    - 1

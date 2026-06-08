@@ -1,0 +1,322 @@
+name: Euro 2000
+year: 2000
+match_code: EC
+cutoff: 2000-06-10
+hosts:
+- BE
+- NL
+points:
+  win: 3
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  DE:
+    name: Germany
+    elo: 1886
+    elo_9m: 1872
+  RO:
+    name: Romania
+    elo: 1859
+    elo_9m: 1904
+  PT:
+    name: Portugal
+    elo: 1934
+    elo_9m: 1912
+  EN:
+    name: England
+    elo: 1889
+    elo_9m: 1922
+  BE:
+    name: Belgium
+    elo: 1845
+    elo_9m: 1766
+  SE:
+    name: Sweden
+    elo: 1884
+    elo_9m: 1913
+  TR:
+    name: Turkey
+    elo: 1714
+    elo_9m: 1734
+  IT:
+    name: Italy
+    elo: 1941
+    elo_9m: 1953
+  ES:
+    name: Spain
+    elo: 1986
+    elo_9m: 2030
+  NO:
+    name: Norway
+    elo: 1944
+    elo_9m: 1918
+  RS:
+    name: Yugoslavia
+    elo: 1741
+    elo_9m: 1741
+  SI:
+    name: Slovenia
+    elo: 1650
+    elo_9m: 1575
+  FR:
+    name: France
+    elo: 2082
+    elo_9m: 2033
+  DK:
+    name: Denmark
+    elo: 1807
+    elo_9m: 1865
+  NL:
+    name: Netherlands
+    elo: 1979
+    elo_9m: 1958
+  CZ:
+    name: Czechia
+    elo: 1927
+    elo_9m: 1940
+stages:
+- id: groups
+  type: groups
+  groups:
+    A:
+    - PT
+    - RO
+    - EN
+    - DE
+    B:
+    - IT
+    - TR
+    - BE
+    - SE
+    C:
+    - ES
+    - RS
+    - NO
+    - SI
+    D:
+    - NL
+    - FR
+    - CZ
+    - DK
+  schedule:
+  - - 2000-06-10
+    - B
+    - BE
+    - SE
+    - 2
+    - 1
+  - - 2000-06-11
+    - D
+    - FR
+    - DK
+    - 3
+    - 0
+  - - 2000-06-11
+    - B
+    - IT
+    - TR
+    - 2
+    - 1
+  - - 2000-06-11
+    - D
+    - NL
+    - CZ
+    - 1
+    - 0
+  - - 2000-06-12
+    - A
+    - RO
+    - DE
+    - 1
+    - 1
+  - - 2000-06-12
+    - A
+    - PT
+    - EN
+    - 3
+    - 2
+  - - 2000-06-13
+    - C
+    - ES
+    - NO
+    - 0
+    - 1
+  - - 2000-06-13
+    - C
+    - RS
+    - SI
+    - 3
+    - 3
+  - - 2000-06-14
+    - B
+    - IT
+    - BE
+    - 2
+    - 0
+  - - 2000-06-15
+    - B
+    - TR
+    - SE
+    - 0
+    - 0
+  - - 2000-06-16
+    - D
+    - FR
+    - CZ
+    - 2
+    - 1
+  - - 2000-06-16
+    - D
+    - NL
+    - DK
+    - 3
+    - 0
+  - - 2000-06-17
+    - A
+    - EN
+    - DE
+    - 1
+    - 0
+  - - 2000-06-17
+    - A
+    - PT
+    - RO
+    - 1
+    - 0
+  - - 2000-06-18
+    - C
+    - ES
+    - SI
+    - 2
+    - 1
+  - - 2000-06-18
+    - C
+    - RS
+    - NO
+    - 1
+    - 0
+  - - 2000-06-19
+    - B
+    - TR
+    - BE
+    - 2
+    - 0
+  - - 2000-06-19
+    - B
+    - IT
+    - SE
+    - 2
+    - 1
+  - - 2000-06-20
+    - A
+    - PT
+    - DE
+    - 3
+    - 0
+  - - 2000-06-20
+    - A
+    - RO
+    - EN
+    - 3
+    - 2
+  - - 2000-06-21
+    - D
+    - CZ
+    - DK
+    - 2
+    - 0
+  - - 2000-06-21
+    - D
+    - NL
+    - FR
+    - 3
+    - 2
+  - - 2000-06-21
+    - C
+    - NO
+    - SI
+    - 0
+    - 0
+  - - 2000-06-21
+    - C
+    - ES
+    - RS
+    - 4
+    - 3
+- id: qf
+  type: bracket
+  matches:
+    qf1:
+      home: groups.A.1
+      away: groups.B.2
+      date: 2000-06-24
+      actual:
+        winner: PT
+        score:
+        - 2
+        - 0
+    qf2:
+      home: groups.B.1
+      away: groups.A.2
+      date: 2000-06-24
+      actual:
+        winner: IT
+        score:
+        - 2
+        - 0
+    qf3:
+      home: groups.C.1
+      away: groups.D.2
+      date: 2000-06-25
+      actual:
+        winner: FR
+        score:
+        - 1
+        - 2
+    qf4:
+      home: groups.D.1
+      away: groups.C.2
+      date: 2000-06-25
+      actual:
+        winner: NL
+        score:
+        - 6
+        - 1
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: qf.qf1.W
+      away: qf.qf3.W
+      date: 2000-06-28
+      actual:
+        winner: FR
+        score:
+        - 1
+        - 2
+    sf2:
+      home: qf.qf2.W
+      away: qf.qf4.W
+      date: 2000-06-29
+      actual:
+        winner: IT
+        score:
+        - 0
+        - 0
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 2000-07-02
+  actual:
+    winner: FR
+    score:
+    - 2
+    - 1

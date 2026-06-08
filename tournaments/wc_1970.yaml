@@ -1,0 +1,331 @@
+name: World Cup 1970
+year: 1970
+match_code: WC
+cutoff: 1970-05-31
+hosts:
+- MX
+points:
+  win: 2
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  MX:
+    name: Mexico
+    elo: 1714
+    elo_9m: 1803
+  RU:
+    name: Soviet Union
+    elo: 1931
+    elo_9m: 1931
+  BE:
+    name: Belgium
+    elo: 1800
+    elo_9m: 1794
+  SV:
+    name: El Salvador
+    elo: 1514
+    elo_9m: 1562
+  IT:
+    name: Italy
+    elo: 2024
+    elo_9m: 1985
+  UY:
+    name: Uruguay
+    elo: 1890
+    elo_9m: 1868
+  SE:
+    name: Sweden
+    elo: 1828
+    elo_9m: 1851
+  IL:
+    name: Israel
+    elo: 1659
+    elo_9m: 1655
+  BR:
+    name: Brazil
+    elo: 2056
+    elo_9m: 2040
+  EN:
+    name: England
+    elo: 2082
+    elo_9m: 2088
+  RO:
+    name: Romania
+    elo: 1774
+    elo_9m: 1785
+  CZ:
+    name: Czechoslovakia
+    elo: 1854
+    elo_9m: 1854
+  DE:
+    name: West Germany
+    elo: 2082
+    elo_9m: 2082
+  PE:
+    name: Peru
+    elo: 1734
+    elo_9m: 1709
+  BG:
+    name: Bulgaria
+    elo: 1782
+    elo_9m: 1901
+  MA:
+    name: Morocco
+    elo: 1662
+    elo_9m: 1663
+stages:
+- id: r1
+  type: groups
+  groups:
+    1:
+    - RU
+    - MX
+    - BE
+    - SV
+    2:
+    - IT
+    - UY
+    - SE
+    - IL
+    3:
+    - BR
+    - EN
+    - RO
+    - CZ
+    4:
+    - DE
+    - PE
+    - BG
+    - MA
+  schedule:
+  - - 1970-05-31
+    - 1
+    - RU
+    - MX
+    - 0
+    - 0
+  - - 1970-06-02
+    - 3
+    - EN
+    - RO
+    - 1
+    - 0
+  - - 1970-06-02
+    - 4
+    - PE
+    - BG
+    - 3
+    - 2
+  - - 1970-06-02
+    - 2
+    - UY
+    - IL
+    - 2
+    - 0
+  - - 1970-06-03
+    - 1
+    - BE
+    - SV
+    - 3
+    - 0
+  - - 1970-06-03
+    - 3
+    - BR
+    - CZ
+    - 4
+    - 1
+  - - 1970-06-03
+    - 2
+    - IT
+    - SE
+    - 1
+    - 0
+  - - 1970-06-03
+    - 4
+    - DE
+    - MA
+    - 2
+    - 1
+  - - 1970-06-06
+    - 2
+    - IT
+    - UY
+    - 0
+    - 0
+  - - 1970-06-06
+    - 4
+    - PE
+    - MA
+    - 3
+    - 0
+  - - 1970-06-06
+    - 3
+    - RO
+    - CZ
+    - 2
+    - 1
+  - - 1970-06-06
+    - 1
+    - RU
+    - BE
+    - 4
+    - 1
+  - - 1970-06-07
+    - 3
+    - BR
+    - EN
+    - 1
+    - 0
+  - - 1970-06-07
+    - 2
+    - SE
+    - IL
+    - 1
+    - 1
+  - - 1970-06-07
+    - 1
+    - MX
+    - SV
+    - 4
+    - 0
+  - - 1970-06-07
+    - 4
+    - DE
+    - BG
+    - 5
+    - 2
+  - - 1970-06-10
+    - 3
+    - BR
+    - RO
+    - 3
+    - 2
+  - - 1970-06-10
+    - 2
+    - UY
+    - SE
+    - 0
+    - 1
+  - - 1970-06-10
+    - 1
+    - RU
+    - SV
+    - 2
+    - 0
+  - - 1970-06-10
+    - 4
+    - DE
+    - PE
+    - 3
+    - 1
+  - - 1970-06-11
+    - 4
+    - BG
+    - MA
+    - 1
+    - 1
+  - - 1970-06-11
+    - 3
+    - EN
+    - CZ
+    - 1
+    - 0
+  - - 1970-06-11
+    - 2
+    - IT
+    - IL
+    - 0
+    - 0
+  - - 1970-06-11
+    - 1
+    - MX
+    - BE
+    - 1
+    - 0
+- id: qf
+  type: bracket
+  matches:
+    qf1:
+      home: r1.1.1
+      away: r1.2.2
+      date: 1970-06-14
+      actual:
+        winner: UY
+        score:
+        - 0
+        - 1
+    qf2:
+      home: r1.2.1
+      away: r1.1.2
+      date: 1970-06-14
+      actual:
+        winner: IT
+        score:
+        - 4
+        - 1
+    qf3:
+      home: r1.3.1
+      away: r1.4.2
+      date: 1970-06-14
+      actual:
+        winner: BR
+        score:
+        - 4
+        - 2
+    qf4:
+      home: r1.4.1
+      away: r1.3.2
+      date: 1970-06-14
+      actual:
+        winner: DE
+        score:
+        - 3
+        - 2
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: qf.qf3.W
+      away: qf.qf1.W
+      date: 1970-06-17
+      actual:
+        winner: BR
+        score:
+        - 3
+        - 1
+    sf2:
+      home: qf.qf2.W
+      away: qf.qf4.W
+      date: 1970-06-17
+      actual:
+        winner: IT
+        score:
+        - 4
+        - 3
+- id: third_place
+  type: match
+  home: sf.sf1.L
+  away: sf.sf2.L
+  date: 1970-06-20
+  actual:
+    winner: DE
+    score:
+    - 0
+    - 1
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 1970-06-21
+  actual:
+    winner: BR
+    score:
+    - 4
+    - 1

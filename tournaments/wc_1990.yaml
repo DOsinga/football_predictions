@@ -1,0 +1,520 @@
+name: World Cup 1990
+year: 1990
+match_code: WC
+cutoff: 1990-06-08
+hosts:
+- IT
+points:
+  win: 2
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  IT:
+    name: Italy
+    elo: 1975
+    elo_9m: 1980
+  AT:
+    name: Austria
+    elo: 1757
+    elo_9m: 1725
+  US:
+    name: United States
+    elo: 1565
+    elo_9m: 1592
+  CZ:
+    name: Czechoslovakia
+    elo: 1854
+    elo_9m: 1854
+  CM:
+    name: Cameroon
+    elo: 1674
+    elo_9m: 1692
+  RO:
+    name: Romania
+    elo: 1945
+    elo_9m: 1862
+  AR:
+    name: Argentina
+    elo: 1751
+    elo_9m: 1802
+  RU:
+    name: Soviet Union
+    elo: 1880
+    elo_9m: 1880
+  BR:
+    name: Brazil
+    elo: 2019
+    elo_9m: 1999
+  CR:
+    name: Costa Rica
+    elo: 1652
+    elo_9m: 1641
+  SQ:
+    name: Scotland
+    elo: 1697
+    elo_9m: 1779
+  SE:
+    name: Sweden
+    elo: 1925
+    elo_9m: 1930
+  DE:
+    name: West Germany
+    elo: 2082
+    elo_9m: 2082
+  RS:
+    name: Yugoslavia
+    elo: 1741
+    elo_9m: 1741
+  CO:
+    name: Colombia
+    elo: 1812
+    elo_9m: 1825
+  AE:
+    name: United Arab Emirates
+    elo: 1444
+    elo_9m: 1485
+  ES:
+    name: Spain
+    elo: 1924
+    elo_9m: 1912
+  BE:
+    name: Belgium
+    elo: 1877
+    elo_9m: 1873
+  UY:
+    name: Uruguay
+    elo: 1896
+    elo_9m: 1873
+  KR:
+    name: South Korea
+    elo: 1713
+    elo_9m: 1727
+  EN:
+    name: England
+    elo: 1940
+    elo_9m: 1939
+  IE:
+    name: Ireland
+    elo: 1896
+    elo_9m: 1882
+  NL:
+    name: Netherlands
+    elo: 2008
+    elo_9m: 2059
+  EG:
+    name: Egypt
+    elo: 1652
+    elo_9m: 1659
+stages:
+- id: groups
+  type: groups
+  groups:
+    A:
+    - IT
+    - CZ
+    - AT
+    - US
+    B:
+    - CM
+    - RO
+    - AR
+    - RU
+    C:
+    - BR
+    - CR
+    - SQ
+    - SE
+    D:
+    - DE
+    - RS
+    - CO
+    - AE
+    E:
+    - ES
+    - BE
+    - UY
+    - KR
+    F:
+    - EN
+    - IE
+    - NL
+    - EG
+  schedule:
+  - - 1990-06-08
+    - B
+    - CM
+    - AR
+    - 1
+    - 0
+  - - 1990-06-09
+    - D
+    - CO
+    - AE
+    - 2
+    - 0
+  - - 1990-06-09
+    - A
+    - IT
+    - AT
+    - 1
+    - 0
+  - - 1990-06-09
+    - B
+    - RO
+    - RU
+    - 2
+    - 0
+  - - 1990-06-10
+    - C
+    - BR
+    - SE
+    - 2
+    - 1
+  - - 1990-06-10
+    - A
+    - CZ
+    - US
+    - 5
+    - 1
+  - - 1990-06-10
+    - D
+    - DE
+    - RS
+    - 4
+    - 1
+  - - 1990-06-11
+    - C
+    - CR
+    - SQ
+    - 1
+    - 0
+  - - 1990-06-11
+    - F
+    - EN
+    - IE
+    - 1
+    - 1
+  - - 1990-06-12
+    - E
+    - BE
+    - KR
+    - 2
+    - 0
+  - - 1990-06-12
+    - F
+    - NL
+    - EG
+    - 1
+    - 1
+  - - 1990-06-13
+    - B
+    - AR
+    - RU
+    - 2
+    - 0
+  - - 1990-06-13
+    - E
+    - ES
+    - UY
+    - 0
+    - 0
+  - - 1990-06-14
+    - B
+    - CM
+    - RO
+    - 2
+    - 1
+  - - 1990-06-14
+    - A
+    - IT
+    - US
+    - 1
+    - 0
+  - - 1990-06-14
+    - D
+    - RS
+    - CO
+    - 1
+    - 0
+  - - 1990-06-15
+    - A
+    - CZ
+    - AT
+    - 1
+    - 0
+  - - 1990-06-15
+    - D
+    - DE
+    - AE
+    - 5
+    - 1
+  - - 1990-06-16
+    - C
+    - BR
+    - CR
+    - 1
+    - 0
+  - - 1990-06-16
+    - F
+    - EN
+    - NL
+    - 0
+    - 0
+  - - 1990-06-16
+    - C
+    - SQ
+    - SE
+    - 2
+    - 1
+  - - 1990-06-17
+    - E
+    - BE
+    - UY
+    - 3
+    - 1
+  - - 1990-06-17
+    - F
+    - IE
+    - EG
+    - 0
+    - 0
+  - - 1990-06-17
+    - E
+    - ES
+    - KR
+    - 3
+    - 1
+  - - 1990-06-18
+    - B
+    - RO
+    - AR
+    - 1
+    - 1
+  - - 1990-06-18
+    - B
+    - CM
+    - RU
+    - 0
+    - 4
+  - - 1990-06-19
+    - A
+    - AT
+    - US
+    - 2
+    - 1
+  - - 1990-06-19
+    - D
+    - DE
+    - CO
+    - 1
+    - 1
+  - - 1990-06-19
+    - A
+    - IT
+    - CZ
+    - 2
+    - 0
+  - - 1990-06-19
+    - D
+    - RS
+    - AE
+    - 4
+    - 1
+  - - 1990-06-20
+    - C
+    - BR
+    - SQ
+    - 1
+    - 0
+  - - 1990-06-20
+    - C
+    - CR
+    - SE
+    - 2
+    - 1
+  - - 1990-06-21
+    - F
+    - EN
+    - EG
+    - 1
+    - 0
+  - - 1990-06-21
+    - F
+    - IE
+    - NL
+    - 1
+    - 1
+  - - 1990-06-21
+    - E
+    - ES
+    - BE
+    - 2
+    - 1
+  - - 1990-06-21
+    - E
+    - UY
+    - KR
+    - 1
+    - 0
+- id: r16
+  type: bracket
+  matches:
+    m1:
+      home: groups.A.1
+      away: groups.E.3
+      date: 1990-06-25
+      actual:
+        winner: IT
+        score:
+        - 2
+        - 0
+    m2:
+      home: groups.A.2
+      away: groups.C.2
+      date: 1990-06-23
+      actual:
+        winner: CZ
+        score:
+        - 4
+        - 1
+    m3:
+      home: groups.D.1
+      away: groups.F.3
+      date: 1990-06-24
+      actual:
+        winner: DE
+        score:
+        - 2
+        - 1
+    m4:
+      home: groups.D.2
+      away: groups.E.1
+      date: 1990-06-26
+      actual:
+        winner: RS
+        score:
+        - 2
+        - 1
+    m5:
+      home: groups.B.1
+      away: groups.D.3
+      date: 1990-06-23
+      actual:
+        winner: CM
+        score:
+        - 2
+        - 1
+    m6:
+      home: groups.C.1
+      away: groups.B.3
+      date: 1990-06-24
+      actual:
+        winner: AR
+        score:
+        - 0
+        - 1
+    m7:
+      home: groups.F.1
+      away: groups.E.2
+      date: 1990-06-26
+      actual:
+        winner: EN
+        score:
+        - 1
+        - 0
+    m8:
+      home: groups.B.2
+      away: groups.F.2
+      date: 1990-06-25
+      actual:
+        winner: IE
+        score:
+        - 0
+        - 0
+- id: qf
+  type: bracket
+  matches:
+    qf1:
+      home: r16.m1.W
+      away: r16.m8.W
+      date: 1990-06-30
+      actual:
+        winner: IT
+        score:
+        - 1
+        - 0
+    qf2:
+      home: r16.m4.W
+      away: r16.m6.W
+      date: 1990-06-30
+      actual:
+        winner: AR
+        score:
+        - 0
+        - 0
+    qf3:
+      home: r16.m5.W
+      away: r16.m7.W
+      date: 1990-07-01
+      actual:
+        winner: EN
+        score:
+        - 2
+        - 3
+    qf4:
+      home: r16.m2.W
+      away: r16.m3.W
+      date: 1990-07-01
+      actual:
+        winner: DE
+        score:
+        - 0
+        - 1
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: qf.qf1.W
+      away: qf.qf2.W
+      date: 1990-07-03
+      actual:
+        winner: AR
+        score:
+        - 1
+        - 1
+    sf2:
+      home: qf.qf3.W
+      away: qf.qf4.W
+      date: 1990-07-04
+      actual:
+        winner: DE
+        score:
+        - 1
+        - 1
+- id: third_place
+  type: match
+  home: sf.sf1.L
+  away: sf.sf2.L
+  date: 1990-07-07
+  actual:
+    winner: IT
+    score:
+    - 2
+    - 1
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 1990-07-08
+  actual:
+    winner: DE
+    score:
+    - 0
+    - 1

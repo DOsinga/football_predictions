@@ -1,0 +1,321 @@
+name: Euro 2004
+year: 2004
+match_code: EC
+cutoff: 2004-06-12
+hosts:
+- PT
+points:
+  win: 3
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  PT:
+    name: Portugal
+    elo: 1861
+    elo_9m: 1922
+  GR:
+    name: Greece
+    elo: 1834
+    elo_9m: 1789
+  ES:
+    name: Spain
+    elo: 2026
+    elo_9m: 1980
+  RU:
+    name: Russia
+    elo: 1778
+    elo_9m: 1790
+  FR:
+    name: France
+    elo: 2072
+    elo_9m: 2033
+  EN:
+    name: England
+    elo: 1921
+    elo_9m: 1969
+  HR:
+    name: Croatia
+    elo: 1829
+    elo_9m: 1821
+  CH:
+    name: Switzerland
+    elo: 1716
+    elo_9m: 1729
+  SE:
+    name: Sweden
+    elo: 1844
+    elo_9m: 1816
+  DK:
+    name: Denmark
+    elo: 1875
+    elo_9m: 1869
+  IT:
+    name: Italy
+    elo: 1941
+    elo_9m: 1940
+  BG:
+    name: Bulgaria
+    elo: 1714
+    elo_9m: 1752
+  CZ:
+    name: Czechia
+    elo: 1961
+    elo_9m: 1976
+  LV:
+    name: Latvia
+    elo: 1520
+    elo_9m: 1509
+  DE:
+    name: Germany
+    elo: 1874
+    elo_9m: 1895
+  NL:
+    name: Netherlands
+    elo: 1959
+    elo_9m: 2015
+stages:
+- id: groups
+  type: groups
+  groups:
+    A:
+    - PT
+    - GR
+    - ES
+    - RU
+    B:
+    - FR
+    - EN
+    - HR
+    - CH
+    C:
+    - SE
+    - DK
+    - IT
+    - BG
+    D:
+    - CZ
+    - NL
+    - DE
+    - LV
+  schedule:
+  - - 2004-06-12
+    - A
+    - PT
+    - GR
+    - 1
+    - 2
+  - - 2004-06-12
+    - A
+    - ES
+    - RU
+    - 1
+    - 0
+  - - 2004-06-13
+    - B
+    - HR
+    - CH
+    - 0
+    - 0
+  - - 2004-06-13
+    - B
+    - FR
+    - EN
+    - 2
+    - 1
+  - - 2004-06-14
+    - C
+    - DK
+    - IT
+    - 0
+    - 0
+  - - 2004-06-14
+    - C
+    - SE
+    - BG
+    - 5
+    - 0
+  - - 2004-06-15
+    - D
+    - CZ
+    - LV
+    - 2
+    - 1
+  - - 2004-06-15
+    - D
+    - NL
+    - DE
+    - 1
+    - 1
+  - - 2004-06-16
+    - A
+    - GR
+    - ES
+    - 1
+    - 1
+  - - 2004-06-16
+    - A
+    - PT
+    - RU
+    - 2
+    - 0
+  - - 2004-06-17
+    - B
+    - FR
+    - HR
+    - 2
+    - 2
+  - - 2004-06-17
+    - B
+    - EN
+    - CH
+    - 3
+    - 0
+  - - 2004-06-18
+    - C
+    - DK
+    - BG
+    - 2
+    - 0
+  - - 2004-06-18
+    - C
+    - SE
+    - IT
+    - 1
+    - 1
+  - - 2004-06-19
+    - D
+    - CZ
+    - NL
+    - 3
+    - 2
+  - - 2004-06-19
+    - D
+    - DE
+    - LV
+    - 0
+    - 0
+  - - 2004-06-20
+    - A
+    - PT
+    - ES
+    - 1
+    - 0
+  - - 2004-06-20
+    - A
+    - GR
+    - RU
+    - 1
+    - 2
+  - - 2004-06-21
+    - B
+    - EN
+    - HR
+    - 4
+    - 2
+  - - 2004-06-21
+    - B
+    - FR
+    - CH
+    - 3
+    - 1
+  - - 2004-06-22
+    - C
+    - SE
+    - DK
+    - 2
+    - 2
+  - - 2004-06-22
+    - C
+    - IT
+    - BG
+    - 2
+    - 1
+  - - 2004-06-23
+    - D
+    - CZ
+    - DE
+    - 2
+    - 1
+  - - 2004-06-23
+    - D
+    - NL
+    - LV
+    - 3
+    - 0
+- id: qf
+  type: bracket
+  matches:
+    qf1:
+      home: groups.A.1
+      away: groups.B.2
+      date: 2004-06-24
+      actual:
+        winner: PT
+        score:
+        - 2
+        - 2
+    qf2:
+      home: groups.B.1
+      away: groups.A.2
+      date: 2004-06-25
+      actual:
+        winner: GR
+        score:
+        - 0
+        - 1
+    qf3:
+      home: groups.C.1
+      away: groups.D.2
+      date: 2004-06-26
+      actual:
+        winner: NL
+        score:
+        - 0
+        - 0
+    qf4:
+      home: groups.D.1
+      away: groups.C.2
+      date: 2004-06-27
+      actual:
+        winner: CZ
+        score:
+        - 3
+        - 0
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: qf.qf1.W
+      away: qf.qf3.W
+      date: 2004-06-30
+      actual:
+        winner: PT
+        score:
+        - 2
+        - 1
+    sf2:
+      home: qf.qf2.W
+      away: qf.qf4.W
+      date: 2004-07-01
+      actual:
+        winner: GR
+        score:
+        - 1
+        - 0
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 2004-07-04
+  actual:
+    winner: GR
+    score:
+    - 0
+    - 1

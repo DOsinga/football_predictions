@@ -1,0 +1,634 @@
+name: World Cup 2006
+year: 2006
+match_code: WC
+cutoff: 2006-06-09
+hosts:
+- DE
+points:
+  win: 3
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  DE:
+    name: Germany
+    elo: 1911
+    elo_9m: 1883
+  CR:
+    name: Costa Rica
+    elo: 1708
+    elo_9m: 1778
+  PL:
+    name: Poland
+    elo: 1761
+    elo_9m: 1840
+  EC:
+    name: Ecuador
+    elo: 1760
+    elo_9m: 1773
+  EN:
+    name: England
+    elo: 1987
+    elo_9m: 1946
+  PY:
+    name: Paraguay
+    elo: 1764
+    elo_9m: 1794
+  TT:
+    name: Trinidad and Tobago
+    elo: 1587
+    elo_9m: 1524
+  SE:
+    name: Sweden
+    elo: 1838
+    elo_9m: 1904
+  AR:
+    name: Argentina
+    elo: 1938
+    elo_9m: 1956
+  CI:
+    name: Ivory Coast
+    elo: 1749
+    elo_9m: 1680
+  RS:
+    name: Serbia and Montenegro
+    elo: 1741
+    elo_9m: 1741
+  NL:
+    name: Netherlands
+    elo: 2009
+    elo_9m: 2034
+  MX:
+    name: Mexico
+    elo: 1884
+    elo_9m: 1875
+  IR:
+    name: Iran
+    elo: 1796
+    elo_9m: 1803
+  AO:
+    name: Angola
+    elo: 1557
+    elo_9m: 1549
+  PT:
+    name: Portugal
+    elo: 1922
+    elo_9m: 1905
+  IT:
+    name: Italy
+    elo: 1955
+    elo_9m: 1921
+  GH:
+    name: Ghana
+    elo: 1604
+    elo_9m: 1579
+  US:
+    name: United States
+    elo: 1792
+    elo_9m: 1839
+  CZ:
+    name: Czechia
+    elo: 2003
+    elo_9m: 1918
+  BR:
+    name: Brazil
+    elo: 2049
+    elo_9m: 2021
+  HR:
+    name: Croatia
+    elo: 1823
+    elo_9m: 1883
+  AU:
+    name: Australia
+    elo: 1842
+    elo_9m: 1756
+  JP:
+    name: Japan
+    elo: 1745
+    elo_9m: 1819
+  FR:
+    name: France
+    elo: 1956
+    elo_9m: 1972
+  CH:
+    name: Switzerland
+    elo: 1813
+    elo_9m: 1764
+  KR:
+    name: South Korea
+    elo: 1755
+    elo_9m: 1666
+  TG:
+    name: Togo
+    elo: 1477
+    elo_9m: 1603
+  ES:
+    name: Spain
+    elo: 1994
+    elo_9m: 1959
+  UA:
+    name: Ukraine
+    elo: 1760
+    elo_9m: 1766
+  TN:
+    name: Tunisia
+    elo: 1691
+    elo_9m: 1705
+  SA:
+    name: Saudi Arabia
+    elo: 1566
+    elo_9m: 1652
+stages:
+- id: groups
+  type: groups
+  groups:
+    A:
+    - DE
+    - EC
+    - PL
+    - CR
+    B:
+    - EN
+    - SE
+    - PY
+    - TT
+    C:
+    - AR
+    - NL
+    - CI
+    - RS
+    D:
+    - PT
+    - MX
+    - AO
+    - IR
+    E:
+    - IT
+    - GH
+    - CZ
+    - US
+    F:
+    - BR
+    - AU
+    - HR
+    - JP
+    G:
+    - CH
+    - FR
+    - KR
+    - TG
+    H:
+    - ES
+    - UA
+    - TN
+    - SA
+  schedule:
+  - - 2006-06-09
+    - A
+    - EC
+    - PL
+    - 2
+    - 0
+  - - 2006-06-09
+    - A
+    - DE
+    - CR
+    - 4
+    - 2
+  - - 2006-06-10
+    - C
+    - AR
+    - CI
+    - 2
+    - 1
+  - - 2006-06-10
+    - B
+    - EN
+    - PY
+    - 1
+    - 0
+  - - 2006-06-10
+    - B
+    - SE
+    - TT
+    - 0
+    - 0
+  - - 2006-06-11
+    - D
+    - MX
+    - IR
+    - 3
+    - 1
+  - - 2006-06-11
+    - C
+    - NL
+    - RS
+    - 1
+    - 0
+  - - 2006-06-11
+    - D
+    - PT
+    - AO
+    - 1
+    - 0
+  - - 2006-06-12
+    - F
+    - AU
+    - JP
+    - 3
+    - 1
+  - - 2006-06-12
+    - E
+    - CZ
+    - US
+    - 3
+    - 0
+  - - 2006-06-12
+    - E
+    - IT
+    - GH
+    - 2
+    - 0
+  - - 2006-06-13
+    - F
+    - BR
+    - HR
+    - 1
+    - 0
+  - - 2006-06-13
+    - G
+    - CH
+    - FR
+    - 0
+    - 0
+  - - 2006-06-13
+    - G
+    - KR
+    - TG
+    - 2
+    - 1
+  - - 2006-06-14
+    - A
+    - DE
+    - PL
+    - 1
+    - 0
+  - - 2006-06-14
+    - H
+    - TN
+    - SA
+    - 2
+    - 2
+  - - 2006-06-14
+    - H
+    - ES
+    - UA
+    - 4
+    - 0
+  - - 2006-06-15
+    - A
+    - EC
+    - CR
+    - 3
+    - 0
+  - - 2006-06-15
+    - B
+    - EN
+    - TT
+    - 2
+    - 0
+  - - 2006-06-15
+    - B
+    - SE
+    - PY
+    - 1
+    - 0
+  - - 2006-06-16
+    - D
+    - MX
+    - AO
+    - 0
+    - 0
+  - - 2006-06-16
+    - C
+    - AR
+    - RS
+    - 6
+    - 0
+  - - 2006-06-16
+    - C
+    - NL
+    - CI
+    - 2
+    - 1
+  - - 2006-06-17
+    - E
+    - GH
+    - CZ
+    - 2
+    - 0
+  - - 2006-06-17
+    - E
+    - IT
+    - US
+    - 1
+    - 1
+  - - 2006-06-17
+    - D
+    - PT
+    - IR
+    - 2
+    - 0
+  - - 2006-06-18
+    - F
+    - BR
+    - AU
+    - 2
+    - 0
+  - - 2006-06-18
+    - F
+    - HR
+    - JP
+    - 0
+    - 0
+  - - 2006-06-18
+    - G
+    - FR
+    - KR
+    - 1
+    - 1
+  - - 2006-06-19
+    - H
+    - ES
+    - TN
+    - 3
+    - 1
+  - - 2006-06-19
+    - G
+    - CH
+    - TG
+    - 2
+    - 0
+  - - 2006-06-19
+    - H
+    - UA
+    - SA
+    - 4
+    - 0
+  - - 2006-06-20
+    - B
+    - EN
+    - SE
+    - 2
+    - 2
+  - - 2006-06-20
+    - A
+    - DE
+    - EC
+    - 3
+    - 0
+  - - 2006-06-20
+    - B
+    - PY
+    - TT
+    - 2
+    - 0
+  - - 2006-06-20
+    - A
+    - PL
+    - CR
+    - 2
+    - 1
+  - - 2006-06-21
+    - D
+    - AO
+    - IR
+    - 1
+    - 1
+  - - 2006-06-21
+    - C
+    - AR
+    - NL
+    - 0
+    - 0
+  - - 2006-06-21
+    - C
+    - CI
+    - RS
+    - 3
+    - 2
+  - - 2006-06-21
+    - D
+    - PT
+    - MX
+    - 2
+    - 1
+  - - 2006-06-22
+    - F
+    - AU
+    - HR
+    - 2
+    - 2
+  - - 2006-06-22
+    - F
+    - BR
+    - JP
+    - 4
+    - 1
+  - - 2006-06-22
+    - E
+    - GH
+    - US
+    - 2
+    - 1
+  - - 2006-06-22
+    - E
+    - IT
+    - CZ
+    - 2
+    - 0
+  - - 2006-06-23
+    - G
+    - FR
+    - TG
+    - 2
+    - 0
+  - - 2006-06-23
+    - H
+    - ES
+    - SA
+    - 1
+    - 0
+  - - 2006-06-23
+    - G
+    - CH
+    - KR
+    - 2
+    - 0
+  - - 2006-06-23
+    - H
+    - UA
+    - TN
+    - 1
+    - 0
+- id: r16
+  type: bracket
+  matches:
+    m1:
+      home: groups.A.1
+      away: groups.B.2
+      date: 2006-06-24
+      actual:
+        winner: DE
+        score:
+        - 2
+        - 0
+    m2:
+      home: groups.C.1
+      away: groups.D.2
+      date: 2006-06-24
+      actual:
+        winner: AR
+        score:
+        - 2
+        - 1
+    m3:
+      home: groups.B.1
+      away: groups.A.2
+      date: 2006-06-25
+      actual:
+        winner: EN
+        score:
+        - 1
+        - 0
+    m4:
+      home: groups.D.1
+      away: groups.C.2
+      date: 2006-06-25
+      actual:
+        winner: PT
+        score:
+        - 1
+        - 0
+    m5:
+      home: groups.E.1
+      away: groups.F.2
+      date: 2006-06-26
+      actual:
+        winner: IT
+        score:
+        - 1
+        - 0
+    m6:
+      home: groups.G.1
+      away: groups.H.2
+      date: 2006-06-26
+      actual:
+        winner: UA
+        score:
+        - 0
+        - 0
+    m7:
+      home: groups.F.1
+      away: groups.E.2
+      date: 2006-06-27
+      actual:
+        winner: BR
+        score:
+        - 3
+        - 0
+    m8:
+      home: groups.H.1
+      away: groups.G.2
+      date: 2006-06-27
+      actual:
+        winner: FR
+        score:
+        - 1
+        - 3
+- id: qf
+  type: bracket
+  matches:
+    qf1:
+      home: r16.m1.W
+      away: r16.m2.W
+      date: 2006-06-30
+      actual:
+        winner: DE
+        score:
+        - 1
+        - 1
+    qf2:
+      home: r16.m5.W
+      away: r16.m6.W
+      date: 2006-06-30
+      actual:
+        winner: IT
+        score:
+        - 3
+        - 0
+    qf3:
+      home: r16.m3.W
+      away: r16.m4.W
+      date: 2006-07-01
+      actual:
+        winner: PT
+        score:
+        - 0
+        - 0
+    qf4:
+      home: r16.m7.W
+      away: r16.m8.W
+      date: 2006-07-01
+      actual:
+        winner: FR
+        score:
+        - 0
+        - 1
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: qf.qf1.W
+      away: qf.qf2.W
+      date: 2006-07-04
+      actual:
+        winner: IT
+        score:
+        - 0
+        - 2
+    sf2:
+      home: qf.qf3.W
+      away: qf.qf4.W
+      date: 2006-07-05
+      actual:
+        winner: FR
+        score:
+        - 0
+        - 1
+- id: third_place
+  type: match
+  home: sf.sf1.L
+  away: sf.sf2.L
+  date: 2006-07-08
+  actual:
+    winner: DE
+    score:
+    - 3
+    - 1
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 2006-07-09
+  actual:
+    winner: IT
+    score:
+    - 1
+    - 1

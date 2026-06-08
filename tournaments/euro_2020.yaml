@@ -1,0 +1,508 @@
+name: Euro 2020
+year: 2021
+match_code: EC
+cutoff: 2021-06-11
+points:
+  win: 3
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  IT:
+    elo: 2025
+    name: Italy
+    elo_9m: 1981
+  CH:
+    elo: 1885
+    name: Switzerland
+    elo_9m: 1866
+  TR:
+    elo: 1788
+    name: Turkey
+    elo_9m: 1759
+  WA:
+    elo: 1837
+    name: Wales
+    elo_9m: 1799
+  BE:
+    elo: 2115
+    name: Belgium
+    elo_9m: 2099
+  DK:
+    elo: 1928
+    name: Denmark
+    elo_9m: 1870
+  FI:
+    elo: 1728
+    name: Finland
+    elo_9m: 1652
+  RU:
+    elo: 1729
+    name: Russia
+    elo_9m: 1819
+  NL:
+    elo: 1959
+    name: Netherlands
+    elo_9m: 1978
+  AT:
+    elo: 1769
+    name: Austria
+    elo_9m: 1742
+  UA:
+    elo: 1804
+    name: Ukraine
+    elo_9m: 1852
+  NM:
+    elo: 1579
+    name: North Macedonia
+    elo_9m: 1574
+  EN:
+    elo: 1990
+    name: England
+    elo_9m: 1972
+  HR:
+    elo: 1816
+    name: Croatia
+    elo_9m: 1903
+  CZ:
+    elo: 1806
+    name: Czechia
+    elo_9m: 1744
+  SQ:
+    elo: 1639
+    name: Scotland
+    elo_9m: 1650
+  ES:
+    elo: 2015
+    name: Spain
+    elo_9m: 2046
+  SE:
+    elo: 1865
+    name: Sweden
+    elo_9m: 1836
+  SK:
+    elo: 1691
+    name: Slovakia
+    elo_9m: 1688
+  PL:
+    elo: 1760
+    name: Poland
+    elo_9m: 1812
+  FR:
+    elo: 2108
+    name: France
+    elo_9m: 2078
+  DE:
+    elo: 1914
+    name: Germany
+    elo_9m: 1956
+  HU:
+    elo: 1719
+    name: Hungary
+    elo_9m: 1667
+  PT:
+    elo: 2060
+    name: Portugal
+    elo_9m: 2028
+stages:
+- id: groups
+  type: groups
+  groups:
+    A:
+    - IT
+    - WA
+    - CH
+    - TR
+    B:
+    - BE
+    - DK
+    - FI
+    - RU
+    C:
+    - NL
+    - AT
+    - UA
+    - NM
+    D:
+    - EN
+    - HR
+    - CZ
+    - SQ
+    E:
+    - SE
+    - ES
+    - SK
+    - PL
+    F:
+    - FR
+    - DE
+    - PT
+    - HU
+  schedule:
+  - - 2021-06-11
+    - A
+    - IT
+    - TR
+    - 3
+    - 0
+  - - 2021-06-12
+    - A
+    - WA
+    - CH
+    - 1
+    - 1
+  - - 2021-06-12
+    - B
+    - BE
+    - RU
+    - 3
+    - 0
+  - - 2021-06-12
+    - B
+    - DK
+    - FI
+    - 0
+    - 1
+  - - 2021-06-13
+    - C
+    - NL
+    - UA
+    - 3
+    - 2
+  - - 2021-06-13
+    - D
+    - EN
+    - HR
+    - 1
+    - 0
+  - - 2021-06-13
+    - C
+    - AT
+    - NM
+    - 3
+    - 1
+  - - 2021-06-14
+    - E
+    - SE
+    - ES
+    - 0
+    - 0
+  - - 2021-06-14
+    - E
+    - SK
+    - PL
+    - 2
+    - 1
+  - - 2021-06-14
+    - D
+    - CZ
+    - SQ
+    - 2
+    - 0
+  - - 2021-06-15
+    - F
+    - PT
+    - HU
+    - 3
+    - 0
+  - - 2021-06-15
+    - F
+    - FR
+    - DE
+    - 1
+    - 0
+  - - 2021-06-16
+    - A
+    - WA
+    - TR
+    - 2
+    - 0
+  - - 2021-06-16
+    - B
+    - FI
+    - RU
+    - 0
+    - 1
+  - - 2021-06-16
+    - A
+    - IT
+    - CH
+    - 3
+    - 0
+  - - 2021-06-17
+    - C
+    - UA
+    - NM
+    - 2
+    - 1
+  - - 2021-06-17
+    - C
+    - NL
+    - AT
+    - 2
+    - 0
+  - - 2021-06-17
+    - B
+    - BE
+    - DK
+    - 2
+    - 1
+  - - 2021-06-18
+    - E
+    - SE
+    - SK
+    - 1
+    - 0
+  - - 2021-06-18
+    - D
+    - EN
+    - SQ
+    - 0
+    - 0
+  - - 2021-06-18
+    - D
+    - HR
+    - CZ
+    - 1
+    - 1
+  - - 2021-06-19
+    - E
+    - ES
+    - PL
+    - 1
+    - 1
+  - - 2021-06-19
+    - F
+    - FR
+    - HU
+    - 1
+    - 1
+  - - 2021-06-19
+    - F
+    - DE
+    - PT
+    - 4
+    - 2
+  - - 2021-06-20
+    - A
+    - CH
+    - TR
+    - 3
+    - 1
+  - - 2021-06-20
+    - A
+    - IT
+    - WA
+    - 1
+    - 0
+  - - 2021-06-21
+    - C
+    - NL
+    - NM
+    - 3
+    - 0
+  - - 2021-06-21
+    - B
+    - DK
+    - RU
+    - 4
+    - 1
+  - - 2021-06-21
+    - B
+    - BE
+    - FI
+    - 2
+    - 0
+  - - 2021-06-21
+    - C
+    - AT
+    - UA
+    - 1
+    - 0
+  - - 2021-06-22
+    - D
+    - HR
+    - SQ
+    - 3
+    - 1
+  - - 2021-06-22
+    - D
+    - EN
+    - CZ
+    - 1
+    - 0
+  - - 2021-06-23
+    - E
+    - SE
+    - PL
+    - 3
+    - 2
+  - - 2021-06-23
+    - E
+    - ES
+    - SK
+    - 5
+    - 0
+  - - 2021-06-23
+    - F
+    - DE
+    - HU
+    - 2
+    - 2
+  - - 2021-06-23
+    - F
+    - FR
+    - PT
+    - 2
+    - 2
+- id: r16
+  type: bracket
+  matches:
+    m1:
+      home: groups.A.2
+      away: groups.B.2
+      date: 2021-06-26
+      actual:
+        winner: DK
+        score:
+        - 0
+        - 4
+    m2:
+      home: groups.A.1
+      away: groups.C.2
+      date: 2021-06-26
+      actual:
+        winner: IT
+        score:
+        - 2
+        - 1
+    m3:
+      home: groups.C.1
+      away: groups.D.3
+      date: 2021-06-27
+      actual:
+        winner: CZ
+        score:
+        - 0
+        - 2
+    m4:
+      home: groups.B.1
+      away: groups.F.3
+      date: 2021-06-27
+      actual:
+        winner: BE
+        score:
+        - 1
+        - 0
+    m5:
+      home: groups.D.2
+      away: groups.E.2
+      date: 2021-06-28
+      actual:
+        winner: ES
+        score:
+        - 3
+        - 5
+    m6:
+      home: groups.F.1
+      away: groups.A.3
+      date: 2021-06-28
+      actual:
+        winner: CH
+        score:
+        - 3
+        - 3
+    m7:
+      home: groups.D.1
+      away: groups.F.2
+      date: 2021-06-29
+      actual:
+        winner: EN
+        score:
+        - 2
+        - 0
+    m8:
+      home: groups.E.1
+      away: groups.C.3
+      date: 2021-06-29
+      actual:
+        winner: UA
+        score:
+        - 1
+        - 2
+- id: qf
+  type: bracket
+  matches:
+    qf1:
+      home: r16.m4.W
+      away: r16.m2.W
+      date: 2021-07-02
+      actual:
+        winner: IT
+        score:
+        - 1
+        - 2
+    qf2:
+      home: r16.m6.W
+      away: r16.m5.W
+      date: 2021-07-02
+      actual:
+        winner: ES
+        score:
+        - 1
+        - 1
+    qf3:
+      home: r16.m3.W
+      away: r16.m1.W
+      date: 2021-07-03
+      actual:
+        winner: DK
+        score:
+        - 1
+        - 2
+    qf4:
+      home: r16.m8.W
+      away: r16.m7.W
+      date: 2021-07-03
+      actual:
+        winner: EN
+        score:
+        - 0
+        - 4
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: qf.qf1.W
+      away: qf.qf2.W
+      date: 2021-07-06
+      actual:
+        winner: IT
+        score:
+        - 1
+        - 1
+    sf2:
+      home: qf.qf3.W
+      away: qf.qf4.W
+      date: 2021-07-07
+      actual:
+        winner: EN
+        score:
+        - 1
+        - 2
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 2021-07-11
+  actual:
+    winner: IT
+    score:
+    - 1
+    - 1

@@ -1,0 +1,168 @@
+name: Euro 1988
+year: 1988
+match_code: EC
+cutoff: 1988-06-10
+hosts:
+- DE
+points:
+  win: 2
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  DE:
+    name: West Germany
+    elo: 2082
+    elo_9m: 2082
+  IT:
+    name: Italy
+    elo: 1946
+    elo_9m: 1917
+  ES:
+    name: Spain
+    elo: 1929
+    elo_9m: 1950
+  DK:
+    name: Denmark
+    elo: 1865
+    elo_9m: 1897
+  RU:
+    name: Soviet Union
+    elo: 1880
+    elo_9m: 1880
+  NL:
+    name: Netherlands
+    elo: 1913
+    elo_9m: 1913
+  IE:
+    name: Ireland
+    elo: 1868
+    elo_9m: 1792
+  EN:
+    name: England
+    elo: 1962
+    elo_9m: 1982
+stages:
+- id: groups
+  type: groups
+  groups:
+    1:
+    - DE
+    - IT
+    - ES
+    - DK
+    2:
+    - RU
+    - NL
+    - IE
+    - EN
+  schedule:
+  - - 1988-06-10
+    - 1
+    - DE
+    - IT
+    - 1
+    - 1
+  - - 1988-06-11
+    - 1
+    - ES
+    - DK
+    - 3
+    - 2
+  - - 1988-06-12
+    - 2
+    - IE
+    - EN
+    - 1
+    - 0
+  - - 1988-06-12
+    - 2
+    - RU
+    - NL
+    - 1
+    - 0
+  - - 1988-06-14
+    - 1
+    - IT
+    - ES
+    - 1
+    - 0
+  - - 1988-06-14
+    - 1
+    - DE
+    - DK
+    - 2
+    - 0
+  - - 1988-06-15
+    - 2
+    - RU
+    - IE
+    - 1
+    - 1
+  - - 1988-06-15
+    - 2
+    - NL
+    - EN
+    - 3
+    - 1
+  - - 1988-06-17
+    - 1
+    - IT
+    - DK
+    - 2
+    - 0
+  - - 1988-06-17
+    - 1
+    - DE
+    - ES
+    - 2
+    - 0
+  - - 1988-06-18
+    - 2
+    - NL
+    - IE
+    - 1
+    - 0
+  - - 1988-06-18
+    - 2
+    - RU
+    - EN
+    - 3
+    - 1
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: groups.1.1
+      away: groups.2.2
+      date: 1988-06-21
+      actual:
+        winner: NL
+        score:
+        - 1
+        - 2
+    sf2:
+      home: groups.2.1
+      away: groups.1.2
+      date: 1988-06-22
+      actual:
+        winner: RU
+        score:
+        - 2
+        - 0
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 1988-06-25
+  actual:
+    winner: NL
+    score:
+    - 2
+    - 0

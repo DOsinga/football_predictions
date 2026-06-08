@@ -1,0 +1,168 @@
+name: Euro 1992
+year: 1992
+match_code: EC
+cutoff: 1992-06-10
+hosts:
+- SE
+points:
+  win: 2
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  SE:
+    name: Sweden
+    elo: 1831
+    elo_9m: 1829
+  FR:
+    name: France
+    elo: 1970
+    elo_9m: 2006
+  DK:
+    name: Denmark
+    elo: 1880
+    elo_9m: 1851
+  EN:
+    name: England
+    elo: 1996
+    elo_9m: 1992
+  NL:
+    name: Netherlands
+    elo: 1979
+    elo_9m: 1937
+  DE:
+    name: Germany
+    elo: 2057
+    elo_9m: 2069
+  RU:
+    name: Russia
+    elo: 1880
+    elo_9m: 1880
+  SQ:
+    name: Scotland
+    elo: 1763
+    elo_9m: 1766
+stages:
+- id: groups
+  type: groups
+  groups:
+    1:
+    - SE
+    - DK
+    - FR
+    - EN
+    2:
+    - NL
+    - DE
+    - SQ
+    - RU
+  schedule:
+  - - 1992-06-10
+    - 1
+    - SE
+    - FR
+    - 1
+    - 1
+  - - 1992-06-11
+    - 1
+    - DK
+    - EN
+    - 0
+    - 0
+  - - 1992-06-12
+    - 2
+    - DE
+    - RU
+    - 1
+    - 1
+  - - 1992-06-12
+    - 2
+    - NL
+    - SQ
+    - 1
+    - 0
+  - - 1992-06-14
+    - 1
+    - FR
+    - EN
+    - 0
+    - 0
+  - - 1992-06-14
+    - 1
+    - SE
+    - DK
+    - 1
+    - 0
+  - - 1992-06-15
+    - 2
+    - NL
+    - RU
+    - 0
+    - 0
+  - - 1992-06-15
+    - 2
+    - DE
+    - SQ
+    - 2
+    - 0
+  - - 1992-06-17
+    - 1
+    - DK
+    - FR
+    - 2
+    - 1
+  - - 1992-06-17
+    - 1
+    - SE
+    - EN
+    - 2
+    - 1
+  - - 1992-06-18
+    - 2
+    - NL
+    - DE
+    - 3
+    - 1
+  - - 1992-06-18
+    - 2
+    - SQ
+    - RU
+    - 3
+    - 0
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: groups.1.1
+      away: groups.2.2
+      date: 1992-06-21
+      actual:
+        winner: DE
+        score:
+        - 2
+        - 3
+    sf2:
+      home: groups.2.1
+      away: groups.1.2
+      date: 1992-06-22
+      actual:
+        winner: DK
+        score:
+        - 2
+        - 2
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 1992-06-26
+  actual:
+    winner: DK
+    score:
+    - 0
+    - 2

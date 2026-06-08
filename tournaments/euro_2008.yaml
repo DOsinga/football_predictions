@@ -1,0 +1,322 @@
+name: Euro 2008
+year: 2008
+match_code: EC
+cutoff: 2008-06-07
+hosts:
+- AT
+- CH
+points:
+  win: 3
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  CH:
+    name: Switzerland
+    elo: 1770
+    elo_9m: 1854
+  CZ:
+    name: Czechia
+    elo: 1942
+    elo_9m: 1861
+  PT:
+    name: Portugal
+    elo: 1893
+    elo_9m: 1896
+  TR:
+    name: Turkey
+    elo: 1780
+    elo_9m: 1814
+  AT:
+    name: Austria
+    elo: 1585
+    elo_9m: 1618
+  HR:
+    name: Croatia
+    elo: 1884
+    elo_9m: 1905
+  DE:
+    name: Germany
+    elo: 1980
+    elo_9m: 2013
+  PL:
+    name: Poland
+    elo: 1765
+    elo_9m: 1779
+  NL:
+    name: Netherlands
+    elo: 2022
+    elo_9m: 1993
+  IT:
+    name: Italy
+    elo: 1981
+    elo_9m: 2002
+  RO:
+    name: Romania
+    elo: 1915
+    elo_9m: 1915
+  FR:
+    name: France
+    elo: 1999
+    elo_9m: 2063
+  GR:
+    name: Greece
+    elo: 1792
+    elo_9m: 1791
+  SE:
+    name: Sweden
+    elo: 1824
+    elo_9m: 1815
+  ES:
+    name: Spain
+    elo: 2008
+    elo_9m: 1916
+  RU:
+    name: Russia
+    elo: 1778
+    elo_9m: 1798
+stages:
+- id: groups
+  type: groups
+  groups:
+    A:
+    - PT
+    - TR
+    - CH
+    - CZ
+    B:
+    - HR
+    - DE
+    - AT
+    - PL
+    C:
+    - NL
+    - IT
+    - RO
+    - FR
+    D:
+    - ES
+    - RU
+    - SE
+    - GR
+  schedule:
+  - - 2008-06-07
+    - A
+    - PT
+    - TR
+    - 2
+    - 0
+  - - 2008-06-07
+    - A
+    - CH
+    - CZ
+    - 0
+    - 1
+  - - 2008-06-08
+    - B
+    - HR
+    - AT
+    - 1
+    - 0
+  - - 2008-06-08
+    - B
+    - DE
+    - PL
+    - 2
+    - 0
+  - - 2008-06-09
+    - C
+    - RO
+    - FR
+    - 0
+    - 0
+  - - 2008-06-09
+    - C
+    - NL
+    - IT
+    - 3
+    - 0
+  - - 2008-06-10
+    - D
+    - ES
+    - RU
+    - 4
+    - 1
+  - - 2008-06-10
+    - D
+    - SE
+    - GR
+    - 2
+    - 0
+  - - 2008-06-11
+    - A
+    - PT
+    - CZ
+    - 3
+    - 1
+  - - 2008-06-11
+    - A
+    - TR
+    - CH
+    - 2
+    - 1
+  - - 2008-06-12
+    - B
+    - AT
+    - PL
+    - 1
+    - 1
+  - - 2008-06-12
+    - B
+    - HR
+    - DE
+    - 2
+    - 1
+  - - 2008-06-13
+    - C
+    - IT
+    - RO
+    - 1
+    - 1
+  - - 2008-06-13
+    - C
+    - NL
+    - FR
+    - 4
+    - 1
+  - - 2008-06-14
+    - D
+    - RU
+    - GR
+    - 1
+    - 0
+  - - 2008-06-14
+    - D
+    - ES
+    - SE
+    - 2
+    - 1
+  - - 2008-06-15
+    - A
+    - PT
+    - CH
+    - 0
+    - 2
+  - - 2008-06-15
+    - A
+    - TR
+    - CZ
+    - 3
+    - 2
+  - - 2008-06-16
+    - B
+    - DE
+    - AT
+    - 1
+    - 0
+  - - 2008-06-16
+    - B
+    - HR
+    - PL
+    - 1
+    - 0
+  - - 2008-06-17
+    - C
+    - IT
+    - FR
+    - 2
+    - 0
+  - - 2008-06-17
+    - C
+    - NL
+    - RO
+    - 2
+    - 0
+  - - 2008-06-18
+    - D
+    - RU
+    - SE
+    - 2
+    - 0
+  - - 2008-06-18
+    - D
+    - ES
+    - GR
+    - 2
+    - 1
+- id: qf
+  type: bracket
+  matches:
+    qf1:
+      home: groups.A.1
+      away: groups.B.2
+      date: 2008-06-19
+      actual:
+        winner: DE
+        score:
+        - 2
+        - 3
+    qf2:
+      home: groups.B.1
+      away: groups.A.2
+      date: 2008-06-20
+      actual:
+        winner: TR
+        score:
+        - 1
+        - 1
+    qf3:
+      home: groups.C.1
+      away: groups.D.2
+      date: 2008-06-21
+      actual:
+        winner: RU
+        score:
+        - 1
+        - 3
+    qf4:
+      home: groups.D.1
+      away: groups.C.2
+      date: 2008-06-22
+      actual:
+        winner: ES
+        score:
+        - 0
+        - 0
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: qf.qf1.W
+      away: qf.qf2.W
+      date: 2008-06-25
+      actual:
+        winner: DE
+        score:
+        - 3
+        - 2
+    sf2:
+      home: qf.qf3.W
+      away: qf.qf4.W
+      date: 2008-06-26
+      actual:
+        winner: ES
+        score:
+        - 0
+        - 3
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 2008-06-29
+  actual:
+    winner: ES
+    score:
+    - 0
+    - 1

@@ -1,0 +1,213 @@
+name: World Cup 1930
+year: 1930
+match_code: WC
+cutoff: 1930-07-13
+hosts:
+- UY
+points:
+  win: 2
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  AR:
+    name: Argentina
+    elo: 2077
+    elo_9m: 2053
+  CL:
+    name: Chile
+    elo: 1624
+    elo_9m: 1624
+  FR:
+    name: France
+    elo: 1609
+    elo_9m: 1541
+  MX:
+    name: Mexico
+    elo: 1551
+    elo_9m: 1551
+  BR:
+    name: Brazil
+    elo: 1871
+    elo_9m: 1871
+  BO:
+    name: Bolivia
+    elo: 1247
+    elo_9m: 1247
+  RS:
+    name: Yugoslavia
+    elo: 1741
+    elo_9m: 1741
+  PE:
+    name: Peru
+    elo: 1499
+    elo_9m: 1575
+  RO:
+    name: Romania
+    elo: 1603
+    elo_9m: 1562
+  UY:
+    name: Uruguay
+    elo: 1970
+    elo_9m: 1972
+  BE:
+    name: Belgium
+    elo: 1610
+    elo_9m: 1648
+  PY:
+    name: Paraguay
+    elo: 1716
+    elo_9m: 1759
+  US:
+    name: United States
+    elo: 1723
+    elo_9m: 1723
+stages:
+- id: groups
+  type: groups
+  groups:
+    '1':
+    - AR
+    - CL
+    - FR
+    - MX
+    '2':
+    - RS
+    - BR
+    - BO
+    '3':
+    - UY
+    - RO
+    - PE
+    '4':
+    - US
+    - PY
+    - BE
+  schedule:
+  - - 1930-07-13
+    - '1'
+    - FR
+    - MX
+    - 4
+    - 1
+  - - 1930-07-13
+    - '4'
+    - US
+    - BE
+    - 3
+    - 0
+  - - 1930-07-14
+    - '3'
+    - RO
+    - PE
+    - 3
+    - 1
+  - - 1930-07-14
+    - '2'
+    - RS
+    - BR
+    - 2
+    - 1
+  - - 1930-07-15
+    - '1'
+    - AR
+    - FR
+    - 1
+    - 0
+  - - 1930-07-16
+    - '1'
+    - CL
+    - MX
+    - 3
+    - 0
+  - - 1930-07-17
+    - '4'
+    - US
+    - PY
+    - 3
+    - 0
+  - - 1930-07-17
+    - '2'
+    - RS
+    - BO
+    - 4
+    - 0
+  - - 1930-07-18
+    - '3'
+    - UY
+    - PE
+    - 1
+    - 0
+  - - 1930-07-19
+    - '1'
+    - AR
+    - MX
+    - 6
+    - 3
+  - - 1930-07-19
+    - '1'
+    - CL
+    - FR
+    - 1
+    - 0
+  - - 1930-07-20
+    - '2'
+    - BR
+    - BO
+    - 4
+    - 0
+  - - 1930-07-20
+    - '4'
+    - PY
+    - BE
+    - 1
+    - 0
+  - - 1930-07-21
+    - '3'
+    - UY
+    - RO
+    - 4
+    - 0
+  - - 1930-07-22
+    - '1'
+    - AR
+    - CL
+    - 3
+    - 1
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: groups.1.1
+      away: groups.4.1
+      date: 1930-07-26
+      actual:
+        winner: AR
+        score:
+        - 6
+        - 1
+    sf2:
+      home: groups.3.1
+      away: groups.2.1
+      date: 1930-07-27
+      actual:
+        winner: UY
+        score:
+        - 6
+        - 1
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 1930-07-30
+  actual:
+    winner: UY
+    score:
+    - 2
+    - 4

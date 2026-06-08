@@ -1,0 +1,498 @@
+name: World Cup 1982
+year: 1982
+match_code: WC
+cutoff: 1982-06-13
+hosts:
+- ES
+points:
+  win: 2
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  IT:
+    elo: 1898
+    name: Italy
+    elo_9m: 1924
+  PL:
+    elo: 1952
+    name: Poland
+    elo_9m: 1931
+  CM:
+    elo: 1639
+    name: Cameroon
+    elo_9m: 1551
+  PE:
+    elo: 1764
+    name: Peru
+    elo_9m: 1721
+  DE:
+    elo: 2082
+    name: West Germany
+    elo_9m: 2082
+  AT:
+    elo: 1937
+    name: Austria
+    elo_9m: 1925
+  DZ:
+    elo: 1697
+    name: Algeria
+    elo_9m: 1622
+  CL:
+    elo: 1754
+    name: Chile
+    elo_9m: 1792
+  AR:
+    elo: 1967
+    name: Argentina
+    elo_9m: 2014
+  BE:
+    elo: 1954
+    name: Belgium
+    elo_9m: 1931
+  HU:
+    elo: 1834
+    name: Hungary
+    elo_9m: 1798
+  SV:
+    elo: 1569
+    name: El Salvador
+    elo_9m: 1531
+  EN:
+    elo: 1998
+    name: England
+    elo_9m: 1898
+  FR:
+    elo: 1846
+    name: France
+    elo_9m: 1868
+  CZ:
+    elo: 1854
+    name: Czechoslovakia
+    elo_9m: 1854
+  KW:
+    elo: 1648
+    name: Kuwait
+    elo_9m: 1662
+  EI:
+    elo: 1756
+    name: Northern Ireland
+    elo_9m: 1778
+  ES:
+    elo: 1867
+    name: Spain
+    elo_9m: 1850
+  HN:
+    elo: 1623
+    name: Honduras
+    elo_9m: 1593
+  RS:
+    elo: 1741
+    name: Yugoslavia
+    elo_9m: 1741
+  BR:
+    elo: 2116
+    name: Brazil
+    elo_9m: 2091
+  RU:
+    elo: 2036
+    name: Soviet Union
+    elo_9m: 2036
+  SQ:
+    elo: 1861
+    name: Scotland
+    elo_9m: 1870
+  NZ:
+    elo: 1574
+    name: New Zealand
+    elo_9m: 1549
+stages:
+- id: r1
+  type: groups
+  groups:
+    1:
+    - PL
+    - IT
+    - CM
+    - PE
+    2:
+    - DE
+    - AT
+    - DZ
+    - CL
+    3:
+    - BE
+    - AR
+    - HU
+    - SV
+    4:
+    - EN
+    - FR
+    - CZ
+    - KW
+    5:
+    - EI
+    - ES
+    - RS
+    - HN
+    6:
+    - BR
+    - RU
+    - SQ
+    - NZ
+  schedule:
+  - - 1982-06-13
+    - 3
+    - BE
+    - AR
+    - 1
+    - 0
+  - - 1982-06-14
+    - 6
+    - BR
+    - RU
+    - 2
+    - 1
+  - - 1982-06-14
+    - 1
+    - PL
+    - IT
+    - 0
+    - 0
+  - - 1982-06-15
+    - 1
+    - CM
+    - PE
+    - 0
+    - 0
+  - - 1982-06-15
+    - 3
+    - HU
+    - SV
+    - 10
+    - 1
+  - - 1982-06-15
+    - 6
+    - SQ
+    - NZ
+    - 5
+    - 2
+  - - 1982-06-16
+    - 2
+    - DE
+    - DZ
+    - 1
+    - 2
+  - - 1982-06-16
+    - 4
+    - EN
+    - FR
+    - 3
+    - 1
+  - - 1982-06-16
+    - 5
+    - ES
+    - HN
+    - 1
+    - 1
+  - - 1982-06-17
+    - 2
+    - AT
+    - CL
+    - 1
+    - 0
+  - - 1982-06-17
+    - 4
+    - CZ
+    - KW
+    - 1
+    - 1
+  - - 1982-06-17
+    - 5
+    - EI
+    - RS
+    - 0
+    - 0
+  - - 1982-06-18
+    - 3
+    - AR
+    - HU
+    - 4
+    - 1
+  - - 1982-06-18
+    - 6
+    - BR
+    - SQ
+    - 4
+    - 1
+  - - 1982-06-18
+    - 1
+    - IT
+    - PE
+    - 1
+    - 1
+  - - 1982-06-19
+    - 3
+    - BE
+    - SV
+    - 1
+    - 0
+  - - 1982-06-19
+    - 1
+    - PL
+    - CM
+    - 0
+    - 0
+  - - 1982-06-19
+    - 6
+    - RU
+    - NZ
+    - 3
+    - 0
+  - - 1982-06-20
+    - 4
+    - EN
+    - CZ
+    - 2
+    - 0
+  - - 1982-06-20
+    - 5
+    - ES
+    - RS
+    - 2
+    - 1
+  - - 1982-06-20
+    - 2
+    - DE
+    - CL
+    - 4
+    - 1
+  - - 1982-06-21
+    - 2
+    - AT
+    - DZ
+    - 2
+    - 0
+  - - 1982-06-21
+    - 4
+    - FR
+    - KW
+    - 4
+    - 1
+  - - 1982-06-21
+    - 5
+    - EI
+    - HN
+    - 1
+    - 1
+  - - 1982-06-22
+    - 3
+    - BE
+    - HU
+    - 1
+    - 1
+  - - 1982-06-22
+    - 1
+    - PL
+    - PE
+    - 5
+    - 1
+  - - 1982-06-22
+    - 6
+    - RU
+    - SQ
+    - 2
+    - 2
+  - - 1982-06-23
+    - 3
+    - AR
+    - SV
+    - 2
+    - 0
+  - - 1982-06-23
+    - 6
+    - BR
+    - NZ
+    - 4
+    - 0
+  - - 1982-06-23
+    - 1
+    - IT
+    - CM
+    - 1
+    - 1
+  - - 1982-06-24
+    - 2
+    - DZ
+    - CL
+    - 3
+    - 2
+  - - 1982-06-24
+    - 4
+    - FR
+    - CZ
+    - 1
+    - 1
+  - - 1982-06-24
+    - 5
+    - RS
+    - HN
+    - 1
+    - 0
+  - - 1982-06-25
+    - 4
+    - EN
+    - KW
+    - 1
+    - 0
+  - - 1982-06-25
+    - 5
+    - EI
+    - ES
+    - 1
+    - 0
+  - - 1982-06-25
+    - 2
+    - DE
+    - AT
+    - 1
+    - 0
+- id: r2
+  type: groups
+  groups:
+    A:
+    - r1.1.1
+    - r1.6.2
+    - r1.3.1
+    B:
+    - r1.2.1
+    - r1.4.1
+    - r1.5.2
+    C:
+    - r1.1.2
+    - r1.6.1
+    - r1.3.2
+    D:
+    - r1.4.2
+    - r1.2.2
+    - r1.5.1
+  schedule:
+  - - 1982-06-28
+    - D
+    - FR
+    - AT
+    - 1
+    - 0
+  - - 1982-06-28
+    - A
+    - PL
+    - BE
+    - 3
+    - 0
+  - - 1982-06-29
+    - B
+    - DE
+    - EN
+    - 0
+    - 0
+  - - 1982-06-29
+    - C
+    - IT
+    - AR
+    - 2
+    - 1
+  - - 1982-07-01
+    - D
+    - AT
+    - EI
+    - 2
+    - 2
+  - - 1982-07-01
+    - A
+    - RU
+    - BE
+    - 1
+    - 0
+  - - 1982-07-02
+    - C
+    - BR
+    - AR
+    - 3
+    - 1
+  - - 1982-07-02
+    - B
+    - DE
+    - ES
+    - 2
+    - 1
+  - - 1982-07-04
+    - D
+    - FR
+    - EI
+    - 4
+    - 1
+  - - 1982-07-04
+    - A
+    - PL
+    - RU
+    - 0
+    - 0
+  - - 1982-07-05
+    - C
+    - IT
+    - BR
+    - 3
+    - 2
+  - - 1982-07-05
+    - B
+    - EN
+    - ES
+    - 0
+    - 0
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: r2.A.1
+      away: r2.C.1
+      date: 1982-07-08
+      actual:
+        winner: IT
+        score:
+        - 0
+        - 2
+    sf2:
+      home: r2.B.1
+      away: r2.D.1
+      date: 1982-07-08
+      actual:
+        winner: DE
+        score:
+        - 3
+        - 3
+- id: third_place
+  type: match
+  home: sf.sf1.L
+  away: sf.sf2.L
+  date: 1982-07-10
+  actual:
+    winner: PL
+    score:
+    - 3
+    - 2
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 1982-07-11
+  actual:
+    winner: IT
+    score:
+    - 3
+    - 1

@@ -1,0 +1,321 @@
+name: Euro 1996
+year: 1996
+match_code: EC
+cutoff: 1996-06-08
+hosts:
+- EN
+points:
+  win: 3
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  EN:
+    name: England
+    elo: 1874
+    elo_9m: 1862
+  CH:
+    name: Switzerland
+    elo: 1815
+    elo_9m: 1840
+  NL:
+    name: Netherlands
+    elo: 1905
+    elo_9m: 1875
+  SQ:
+    name: Scotland
+    elo: 1776
+    elo_9m: 1781
+  ES:
+    name: Spain
+    elo: 1978
+    elo_9m: 1979
+  BG:
+    name: Bulgaria
+    elo: 1846
+    elo_9m: 1874
+  RO:
+    name: Romania
+    elo: 1876
+    elo_9m: 1907
+  FR:
+    name: France
+    elo: 2009
+    elo_9m: 1952
+  DE:
+    name: Germany
+    elo: 2058
+    elo_9m: 2021
+  CZ:
+    name: Czechia
+    elo: 1882
+    elo_9m: 1892
+  IT:
+    name: Italy
+    elo: 2011
+    elo_9m: 1985
+  RU:
+    name: Russia
+    elo: 1910
+    elo_9m: 1894
+  DK:
+    name: Denmark
+    elo: 1962
+    elo_9m: 1970
+  PT:
+    name: Portugal
+    elo: 1870
+    elo_9m: 1843
+  TR:
+    name: Turkey
+    elo: 1745
+    elo_9m: 1752
+  HR:
+    name: Croatia
+    elo: 1919
+    elo_9m: 1874
+stages:
+- id: groups
+  type: groups
+  groups:
+    A:
+    - EN
+    - NL
+    - SQ
+    - CH
+    B:
+    - FR
+    - ES
+    - BG
+    - RO
+    C:
+    - DE
+    - CZ
+    - IT
+    - RU
+    D:
+    - PT
+    - HR
+    - DK
+    - TR
+  schedule:
+  - - 1996-06-08
+    - A
+    - EN
+    - CH
+    - 1
+    - 1
+  - - 1996-06-09
+    - B
+    - ES
+    - BG
+    - 1
+    - 1
+  - - 1996-06-09
+    - D
+    - PT
+    - DK
+    - 1
+    - 1
+  - - 1996-06-09
+    - C
+    - DE
+    - CZ
+    - 2
+    - 0
+  - - 1996-06-10
+    - B
+    - FR
+    - RO
+    - 1
+    - 0
+  - - 1996-06-10
+    - A
+    - NL
+    - SQ
+    - 0
+    - 0
+  - - 1996-06-11
+    - D
+    - HR
+    - TR
+    - 1
+    - 0
+  - - 1996-06-11
+    - C
+    - IT
+    - RU
+    - 2
+    - 1
+  - - 1996-06-13
+    - B
+    - BG
+    - RO
+    - 1
+    - 0
+  - - 1996-06-13
+    - A
+    - NL
+    - CH
+    - 2
+    - 0
+  - - 1996-06-14
+    - C
+    - CZ
+    - IT
+    - 2
+    - 1
+  - - 1996-06-14
+    - D
+    - PT
+    - TR
+    - 1
+    - 0
+  - - 1996-06-15
+    - A
+    - EN
+    - SQ
+    - 2
+    - 0
+  - - 1996-06-15
+    - B
+    - FR
+    - ES
+    - 1
+    - 1
+  - - 1996-06-16
+    - D
+    - HR
+    - DK
+    - 3
+    - 0
+  - - 1996-06-16
+    - C
+    - DE
+    - RU
+    - 3
+    - 0
+  - - 1996-06-18
+    - A
+    - EN
+    - NL
+    - 4
+    - 1
+  - - 1996-06-18
+    - B
+    - FR
+    - BG
+    - 3
+    - 1
+  - - 1996-06-18
+    - A
+    - SQ
+    - CH
+    - 1
+    - 0
+  - - 1996-06-18
+    - B
+    - ES
+    - RO
+    - 2
+    - 1
+  - - 1996-06-19
+    - C
+    - CZ
+    - RU
+    - 3
+    - 3
+  - - 1996-06-19
+    - D
+    - DK
+    - TR
+    - 3
+    - 0
+  - - 1996-06-19
+    - C
+    - DE
+    - IT
+    - 0
+    - 0
+  - - 1996-06-19
+    - D
+    - PT
+    - HR
+    - 3
+    - 0
+- id: qf
+  type: bracket
+  matches:
+    qf1:
+      home: groups.A.1
+      away: groups.B.2
+      date: 1996-06-22
+      actual:
+        winner: EN
+        score:
+        - 0
+        - 0
+    qf2:
+      home: groups.B.1
+      away: groups.A.2
+      date: 1996-06-22
+      actual:
+        winner: FR
+        score:
+        - 0
+        - 0
+    qf3:
+      home: groups.C.1
+      away: groups.D.2
+      date: 1996-06-23
+      actual:
+        winner: DE
+        score:
+        - 2
+        - 1
+    qf4:
+      home: groups.D.1
+      away: groups.C.2
+      date: 1996-06-23
+      actual:
+        winner: CZ
+        score:
+        - 0
+        - 1
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: qf.qf1.W
+      away: qf.qf3.W
+      date: 1996-06-26
+      actual:
+        winner: DE
+        score:
+        - 1
+        - 1
+    sf2:
+      home: qf.qf2.W
+      away: qf.qf4.W
+      date: 1996-06-26
+      actual:
+        winner: CZ
+        score:
+        - 0
+        - 0
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 1996-06-30
+  actual:
+    winner: DE
+    score:
+    - 2
+    - 1

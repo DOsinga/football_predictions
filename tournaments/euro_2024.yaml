@@ -1,0 +1,591 @@
+name: Euro 2024
+year: 2024
+match_code: EC
+cutoff: 2024-06-14
+hosts:
+- DE
+points:
+  win: 3
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  DE:
+    elo: 1937
+    name: Germany
+    elo_9m: 1918
+  SQ:
+    elo: 1751
+    name: Scotland
+    elo_9m: 1816
+  HU:
+    elo: 1791
+    name: Hungary
+    elo_9m: 1858
+  CH:
+    elo: 1844
+    name: Switzerland
+    elo_9m: 1844
+  ES:
+    elo: 2057
+    name: Spain
+    elo_9m: 2018
+  HR:
+    elo: 1931
+    name: Croatia
+    elo_9m: 1978
+  IT:
+    elo: 1956
+    name: Italy
+    elo_9m: 1956
+  AL:
+    elo: 1616
+    name: Albania
+    elo_9m: 1657
+  SI:
+    elo: 1740
+    name: Slovenia
+    elo_9m: 1700
+  DK:
+    elo: 1827
+    name: Denmark
+    elo_9m: 1871
+  RS:
+    elo: 1788
+    name: Serbia
+    elo_9m: 1817
+  EN:
+    elo: 1993
+    name: England
+    elo_9m: 2013
+  PL:
+    elo: 1734
+    name: Poland
+    elo_9m: 1729
+  NL:
+    elo: 1985
+    name: Netherlands
+    elo_9m: 1954
+  AT:
+    elo: 1852
+    name: Austria
+    elo_9m: 1805
+  FR:
+    elo: 2087
+    name: France
+    elo_9m: 2120
+  BE:
+    elo: 1945
+    name: Belgium
+    elo_9m: 1999
+  SK:
+    elo: 1713
+    name: Slovakia
+    elo_9m: 1611
+  RO:
+    elo: 1714
+    name: Romania
+    elo_9m: 1629
+  UA:
+    elo: 1786
+    name: Ukraine
+    elo_9m: 1841
+  TR:
+    elo: 1777
+    name: Turkey
+    elo_9m: 1742
+  GE:
+    elo: 1636
+    name: Georgia
+    elo_9m: 1630
+  PT:
+    elo: 2013
+    name: Portugal
+    elo_9m: 2023
+  CZ:
+    elo: 1765
+    name: Czechia
+    elo_9m: 1748
+stages:
+- id: groups
+  type: groups
+  groups:
+    A:
+    - DE
+    - CH
+    - HU
+    - SQ
+    B:
+    - ES
+    - IT
+    - HR
+    - AL
+    C:
+    - EN
+    - DK
+    - SI
+    - RS
+    D:
+    - AT
+    - FR
+    - NL
+    - PL
+    E:
+    - RO
+    - BE
+    - SK
+    - UA
+    F:
+    - PT
+    - TR
+    - GE
+    - CZ
+  schedule:
+  - - 2024-06-14
+    - A
+    - DE
+    - SQ
+    - 5
+    - 1
+  - - 2024-06-15
+    - A
+    - CH
+    - HU
+    - 3
+    - 1
+  - - 2024-06-15
+    - B
+    - ES
+    - HR
+    - 3
+    - 0
+  - - 2024-06-15
+    - B
+    - IT
+    - AL
+    - 2
+    - 1
+  - - 2024-06-16
+    - D
+    - NL
+    - PL
+    - 2
+    - 1
+  - - 2024-06-16
+    - C
+    - EN
+    - RS
+    - 1
+    - 0
+  - - 2024-06-16
+    - C
+    - DK
+    - SI
+    - 1
+    - 1
+  - - 2024-06-17
+    - E
+    - BE
+    - SK
+    - 0
+    - 1
+  - - 2024-06-17
+    - E
+    - RO
+    - UA
+    - 3
+    - 0
+  - - 2024-06-17
+    - D
+    - AT
+    - FR
+    - 0
+    - 1
+  - - 2024-06-18
+    - F
+    - TR
+    - GE
+    - 3
+    - 1
+  - - 2024-06-18
+    - F
+    - PT
+    - CZ
+    - 2
+    - 1
+  - - 2024-06-19
+    - A
+    - CH
+    - SQ
+    - 1
+    - 1
+  - - 2024-06-19
+    - A
+    - DE
+    - HU
+    - 2
+    - 0
+  - - 2024-06-19
+    - B
+    - HR
+    - AL
+    - 2
+    - 2
+  - - 2024-06-20
+    - B
+    - ES
+    - IT
+    - 1
+    - 0
+  - - 2024-06-20
+    - C
+    - SI
+    - RS
+    - 1
+    - 1
+  - - 2024-06-20
+    - C
+    - EN
+    - DK
+    - 1
+    - 1
+  - - 2024-06-21
+    - E
+    - SK
+    - UA
+    - 1
+    - 2
+  - - 2024-06-21
+    - D
+    - FR
+    - NL
+    - 0
+    - 0
+  - - 2024-06-21
+    - D
+    - AT
+    - PL
+    - 3
+    - 1
+  - - 2024-06-22
+    - F
+    - PT
+    - TR
+    - 3
+    - 0
+  - - 2024-06-22
+    - F
+    - GE
+    - CZ
+    - 1
+    - 1
+  - - 2024-06-22
+    - E
+    - RO
+    - BE
+    - 0
+    - 2
+  - - 2024-06-23
+    - A
+    - HU
+    - SQ
+    - 1
+    - 0
+  - - 2024-06-23
+    - A
+    - DE
+    - CH
+    - 1
+    - 1
+  - - 2024-06-24
+    - B
+    - ES
+    - AL
+    - 1
+    - 0
+  - - 2024-06-24
+    - B
+    - IT
+    - HR
+    - 1
+    - 1
+  - - 2024-06-25
+    - D
+    - FR
+    - PL
+    - 1
+    - 1
+  - - 2024-06-25
+    - C
+    - EN
+    - SI
+    - 0
+    - 0
+  - - 2024-06-25
+    - C
+    - DK
+    - RS
+    - 0
+    - 0
+  - - 2024-06-25
+    - D
+    - AT
+    - NL
+    - 3
+    - 2
+  - - 2024-06-26
+    - F
+    - TR
+    - CZ
+    - 2
+    - 1
+  - - 2024-06-26
+    - E
+    - RO
+    - SK
+    - 1
+    - 1
+  - - 2024-06-26
+    - F
+    - PT
+    - GE
+    - 0
+    - 2
+  - - 2024-06-26
+    - E
+    - BE
+    - UA
+    - 0
+    - 0
+- id: thirds
+  type: thirds_pool
+  source: groups
+  rank: 3
+  take: 4
+  assignments:
+    ABCD:
+      B: A
+      C: D
+      E: B
+      F: C
+    ABCE:
+      B: A
+      C: E
+      E: B
+      F: C
+    ABCF:
+      B: A
+      C: F
+      E: B
+      F: C
+    ABDE:
+      B: D
+      C: E
+      E: A
+      F: B
+    ABDF:
+      B: D
+      C: F
+      E: A
+      F: B
+    ABEF:
+      B: E
+      C: F
+      E: B
+      F: A
+    ACDE:
+      B: E
+      C: D
+      E: C
+      F: A
+    ACDF:
+      B: F
+      C: D
+      E: C
+      F: A
+    ACEF:
+      B: E
+      C: F
+      E: C
+      F: A
+    ADEF:
+      B: E
+      C: F
+      E: D
+      F: A
+    BCDE:
+      B: E
+      C: D
+      E: B
+      F: C
+    BCDF:
+      B: F
+      C: D
+      E: C
+      F: B
+    BCEF:
+      B: F
+      C: E
+      E: C
+      F: B
+    BDEF:
+      B: F
+      C: E
+      E: D
+      F: B
+    CDEF:
+      B: F
+      C: E
+      E: D
+      F: C
+- id: r16
+  type: bracket
+  matches:
+    m1:
+      home: groups.B.1
+      away: thirds.B
+      date: 2024-06-30
+      actual:
+        winner: ES
+        score:
+        - 4
+        - 1
+    m2:
+      home: groups.A.1
+      away: groups.C.2
+      date: 2024-06-29
+      actual:
+        winner: DE
+        score:
+        - 2
+        - 0
+    m3:
+      home: groups.F.1
+      away: thirds.F
+      date: 2024-07-01
+      actual:
+        winner: PT
+        score:
+        - 0
+        - 0
+    m4:
+      home: groups.D.2
+      away: groups.E.2
+      date: 2024-07-01
+      actual:
+        winner: FR
+        score:
+        - 1
+        - 0
+    m5:
+      home: groups.C.1
+      away: thirds.C
+      date: 2024-06-30
+      actual:
+        winner: EN
+        score:
+        - 2
+        - 1
+    m6:
+      home: groups.A.2
+      away: groups.B.2
+      date: 2024-06-29
+      actual:
+        winner: CH
+        score:
+        - 2
+        - 0
+    m7:
+      home: groups.E.1
+      away: thirds.E
+      date: 2024-07-02
+      actual:
+        winner: NL
+        score:
+        - 0
+        - 3
+    m8:
+      home: groups.D.1
+      away: groups.F.2
+      date: 2024-07-02
+      actual:
+        winner: TR
+        score:
+        - 1
+        - 2
+- id: qf
+  type: bracket
+  matches:
+    qf1:
+      home: r16.m1.W
+      away: r16.m2.W
+      date: 2024-07-05
+      actual:
+        winner: ES
+        score:
+        - 2
+        - 1
+    qf2:
+      home: r16.m3.W
+      away: r16.m4.W
+      date: 2024-07-05
+      actual:
+        winner: FR
+        score:
+        - 0
+        - 0
+    qf3:
+      home: r16.m5.W
+      away: r16.m6.W
+      date: 2024-07-06
+      actual:
+        winner: EN
+        score:
+        - 1
+        - 1
+    qf4:
+      home: r16.m7.W
+      away: r16.m8.W
+      date: 2024-07-06
+      actual:
+        winner: NL
+        score:
+        - 2
+        - 1
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: qf.qf1.W
+      away: qf.qf2.W
+      date: 2024-07-09
+      actual:
+        winner: ES
+        score:
+        - 2
+        - 1
+    sf2:
+      home: qf.qf3.W
+      away: qf.qf4.W
+      date: 2024-07-10
+      actual:
+        winner: EN
+        score:
+        - 2
+        - 1
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 2024-07-14
+  actual:
+    winner: ES
+    score:
+    - 2
+    - 1

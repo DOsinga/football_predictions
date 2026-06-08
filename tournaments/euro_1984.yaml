@@ -1,0 +1,168 @@
+name: Euro 1984
+year: 1984
+match_code: EC
+cutoff: 1984-06-12
+hosts:
+- FR
+points:
+  win: 2
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  FR:
+    name: France
+    elo: 1971
+    elo_9m: 1926
+  DK:
+    name: Denmark
+    elo: 1802
+    elo_9m: 1820
+  BE:
+    name: Belgium
+    elo: 1935
+    elo_9m: 1934
+  RS:
+    name: Yugoslavia
+    elo: 1741
+    elo_9m: 1741
+  ES:
+    name: Spain
+    elo: 1866
+    elo_9m: 1884
+  PT:
+    name: Portugal
+    elo: 1837
+    elo_9m: 1774
+  DE:
+    name: West Germany
+    elo: 2082
+    elo_9m: 2082
+  RO:
+    name: Romania
+    elo: 1826
+    elo_9m: 1817
+stages:
+- id: groups
+  type: groups
+  groups:
+    1:
+    - FR
+    - DK
+    - BE
+    - RS
+    2:
+    - ES
+    - PT
+    - DE
+    - RO
+  schedule:
+  - - 1984-06-12
+    - 1
+    - FR
+    - DK
+    - 1
+    - 0
+  - - 1984-06-13
+    - 1
+    - BE
+    - RS
+    - 2
+    - 0
+  - - 1984-06-14
+    - 2
+    - PT
+    - DE
+    - 0
+    - 0
+  - - 1984-06-14
+    - 2
+    - ES
+    - RO
+    - 1
+    - 1
+  - - 1984-06-16
+    - 1
+    - DK
+    - RS
+    - 5
+    - 0
+  - - 1984-06-16
+    - 1
+    - FR
+    - BE
+    - 5
+    - 0
+  - - 1984-06-17
+    - 2
+    - ES
+    - PT
+    - 1
+    - 1
+  - - 1984-06-17
+    - 2
+    - DE
+    - RO
+    - 2
+    - 1
+  - - 1984-06-19
+    - 1
+    - DK
+    - BE
+    - 3
+    - 2
+  - - 1984-06-19
+    - 1
+    - FR
+    - RS
+    - 3
+    - 2
+  - - 1984-06-20
+    - 2
+    - PT
+    - RO
+    - 1
+    - 0
+  - - 1984-06-20
+    - 2
+    - ES
+    - DE
+    - 1
+    - 0
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: groups.1.1
+      away: groups.2.2
+      date: 1984-06-23
+      actual:
+        winner: FR
+        score:
+        - 3
+        - 2
+    sf2:
+      home: groups.2.1
+      away: groups.1.2
+      date: 1984-06-24
+      actual:
+        winner: ES
+        score:
+        - 1
+        - 1
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 1984-06-27
+  actual:
+    winner: FR
+    score:
+    - 2
+    - 0

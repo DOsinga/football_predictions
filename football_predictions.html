@@ -1,0 +1,186 @@
+<script type="text/markdown" id="info">
+name: Football Predictions
+description: >
+  Monte Carlo tournament simulator. Reads pre-tournament ELO ratings scraped
+  from eloratings.net and runs 10,000 simulations of the groups and bracket,
+  with controls for home advantage, recent form, ELO strength, and late-round
+  effects. Edit ratings, fix match scores, tune the model, and backtest it
+  against past World Cups and Euros to see how the probabilities shift.
+type: ai
+github: football_predictions
+</script>
+
+<style>
+  /* "Predictions" is wider than the layout's 320px h1 column at 64px;
+     shrink the title font just enough to keep it inside. */
+  header .container h1 span { font-size: 52px; line-height: 56px; }
+
+  .fp-controls { margin-bottom: 1em; display: flex; gap: 0.7em; align-items: center; flex-wrap: wrap; }
+  .fp-controls button { padding: 0.4em 0.9em; font-size: 0.95em; cursor: pointer; }
+  .fp-controls .status { position: relative; color: #666; font-size: 0.9em; margin-left: auto; min-width: 14em; padding: 0.25em 0.4em; text-align: center; overflow: hidden; border-radius: 3px; }
+  .fp-controls .status-fill { position: absolute; inset: 0 auto 0 0; width: 0; background: #dceaf8; transition: width 0.1s linear; }
+  .fp-controls .status-text { position: relative; z-index: 1; font-variant-numeric: tabular-nums; }
+
+  .fp-model { margin: 0 0 1em; border: 1px solid #ddd; border-radius: 4px; background: #fafafa; }
+  .fp-model summary { padding: 0.55em 0.75em; color: #1f5fa8; cursor: pointer; font-weight: 500; }
+  .fp-model[open] summary { border-bottom: 1px solid #ddd; }
+  .fp-model-body { padding: 0.8em; display: grid; grid-template-columns: minmax(260px, 0.9fr) minmax(320px, 1.1fr); gap: 1.2em; }
+  .fp-model-controls { display: grid; gap: 0.9em; align-content: start; }
+  .fp-model-control { display: grid; grid-template-columns: 1fr auto; gap: 0.15em 0.7em; align-items: center; }
+  .fp-model-control input { grid-column: 1 / -1; width: 100%; }
+  .fp-model-control output { font-variant-numeric: tabular-nums; font-weight: 500; }
+  .fp-model-control small, .fp-model-note { color: #666; line-height: 1.35; }
+  .fp-model-control small { grid-column: 1 / -1; }
+  .fp-model-reset { justify-self: start; padding: 0.35em 0.75em; cursor: pointer; }
+  .fp-curve-title { margin-bottom: 0.35em; font-size: 0.92em; font-weight: 500; }
+  .fp-curve { display: block; width: 100%; height: auto; overflow: visible; }
+  .fp-curve .grid { stroke: #ddd; stroke-width: 1; }
+  .fp-curve .axis { stroke: #999; stroke-width: 1; }
+  .fp-curve .win { fill: #dceaf8; }
+  .fp-curve .draw { fill: #e5e5e5; }
+  .fp-curve .loss { fill: #f4deda; }
+  .fp-curve .boundary { fill: none; stroke: #fff; stroke-width: 2; }
+  .fp-curve text { fill: #666; font-size: 11px; }
+  .fp-curve-legend { display: flex; gap: 1em; margin-top: 0.25em; font-size: 0.85em; color: #555; }
+  .fp-curve-legend span::before { content: ""; display: inline-block; width: 1em; height: 0.7em; margin-right: 0.3em; vertical-align: middle; }
+  .fp-curve-legend .win::before { background: #dceaf8; }
+  .fp-curve-legend .draw::before { background: #e5e5e5; }
+  .fp-curve-legend .loss::before { background: #f4deda; }
+
+  .fp-backtest { grid-column: 1 / -1; margin-top: 1em; padding-top: 1em; border-top: 1px solid #ddd; }
+  .fp-backtest h4 { margin: 0 0 0.6em; font-size: 1em; color: #444; }
+  .fp-backtest-intro { display: flex; align-items: center; gap: 1em; flex-wrap: wrap; margin-bottom: 0.8em; }
+  .fp-backtest-intro p { margin: 0; color: #666; flex: 1; min-width: 260px; }
+  .fp-backtest button { padding: 0.4em 0.9em; cursor: pointer; }
+  .fp-backtest-progress { position: relative; min-width: 16em; padding: 0.3em 0.5em; text-align: center; overflow: hidden; border-radius: 3px; color: #666; }
+  .fp-backtest-progress-fill { position: absolute; inset: 0 auto 0 0; width: 0; background: #dceaf8; transition: width 0.1s linear; }
+  .fp-backtest-progress-text { position: relative; z-index: 1; }
+  .fp-backtest table { width: 100%; border-collapse: collapse; font-size: 0.9em; }
+  .fp-backtest th, .fp-backtest td { padding: 0.3em 0.5em; text-align: right; border-bottom: 1px solid #ddd; }
+  .fp-backtest th:first-child, .fp-backtest td:first-child { text-align: left; }
+  .fp-backtest .better { font-weight: 600; color: #1f5fa8; }
+  .fp-backtest-tournaments { margin-top: 1em; max-height: 24em; overflow: auto; }
+  .fp-info { display: inline-grid; place-items: center; width: 1.1em; height: 1.1em; margin-left: 0.35em; border: 1px solid #bbb; border-radius: 50%; color: #666; font-size: 0.78em; line-height: 1; cursor: help; vertical-align: 0.08em; }
+  .fp-flag { display: inline-block; min-width: 1.45em; margin-right: 0.35em; text-align: center; }
+
+  .fp-results table { width: 100%; border-collapse: collapse; font-size: 0.92em; }
+  .fp-results th, .fp-results td { padding: 0.25em 0.5em; text-align: right; }
+  .fp-results th:first-child, .fp-results td:first-child { text-align: left; }
+  .fp-results thead th { border-bottom: 1px solid #999; }
+  .fp-results tbody tr:nth-child(odd) { background: #f6f6f6; }
+  .fp-results tr.hidden { display: none; }
+  .fp-results tr.expand { background: transparent !important; cursor: pointer; }
+  .fp-results tr.expand td { text-align: center; padding: 0.5em; color: #1f5fa8; font-weight: 500; }
+  .fp-results tr.expand td:hover { background: #eef4fa; }
+  .fp-results td.pct { font-variant-numeric: tabular-nums; }
+  .fp-results .elo-input { width: 4.5em; padding: 0.1em 0.4em; font: inherit; text-align: right; appearance: textfield; -moz-appearance: textfield; }
+  .fp-results .elo-input::-webkit-inner-spin-button,
+  .fp-results .elo-input::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+  .fp-results .heat-0 { background: transparent; }
+  .fp-results .heat-1 { background: #eaf2fb; }
+  .fp-results .heat-2 { background: #c9dff5; }
+  .fp-results .heat-3 { background: #8fbde9; }
+  .fp-results .heat-4 { background: #4f93d6; color: white; }
+  .fp-results .heat-5 { background: #1f5fa8; color: white; }
+
+  .fp-matches { margin-top: 1.5em; }
+  .fp-section { margin: 1.2em 0 0.4em 0; padding-bottom: 0.2em; border-bottom: 1px solid #ddd; font-size: 0.95em; color: #444; }
+  .fp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0.15em 1.2em; }
+  .fp-grid.fp-grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .fp-grid.fp-grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  @media (max-width: 700px) {
+    .fp-model-body { grid-template-columns: 1fr; }
+    .fp-grid.fp-grid-3 { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (max-width: 420px) {
+    .fp-grid.fp-grid-3, .fp-grid.fp-grid-2 { grid-template-columns: minmax(0, 1fr); }
+  }
+  .fp-match { display: flex; align-items: center; gap: 0.4em; padding: 0.18em 0.4em; font-size: 0.92em; border-radius: 3px; min-width: 0; min-height: 2em; box-sizing: border-box; }
+  .fp-match .home { flex: 1; text-align: right; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .fp-match .away { flex: 1; text-align: left; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .fp-match .vs { color: #999; font-size: 0.85em; }
+  .fp-match .tbd { color: #999; font-style: italic; }
+  .fp-match input { width: 2em; height: 1.6em; padding: 0 0.3em; font: inherit; text-align: center; appearance: textfield; -moz-appearance: textfield; box-sizing: border-box; }
+  .fp-match input::-webkit-inner-spin-button,
+  .fp-match input::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+  .fp-match select { font: inherit; height: 1.6em; padding: 0 0.2em; width: 7em; box-sizing: border-box; }
+  .fp-match select.pk-pick[hidden] { display: inline-block; visibility: hidden; }
+  .fp-match.fixed { background: #f0f7ff; }
+</style>
+
+<form method="get" class="fp-controls">
+  <label>Tournament:
+    <select name="tournament" id="fp-tournament">
+      {% for slug, name in tournaments %}<option value="{{ slug }}"{% if slug == tournament_slug %} selected{% endif %}>{{ name }}</option>{% endfor %}
+    </select>
+  </label>
+  <button type="button" id="fp-run">Run 10,000 simulations</button>
+  <button type="button" id="fp-load-actual" title="Pre-fill all fixed scores with historical results">Load actual results</button>
+  <button type="button" id="fp-reset" title="Clear all fixed scores">Reset</button>
+  <span class="status" id="fp-status"><span class="status-fill" id="fp-status-fill"></span><span class="status-text" id="fp-status-text"></span></span>
+</form>
+
+<details class="fp-model" id="fp-model">
+  <summary>Configure model</summary>
+  <div class="fp-model-body">
+    <div class="fp-model-controls">
+      <label class="fp-model-control">
+        <span>ELO predictive strength</span>
+        <output id="fp-elo-strength"></output>
+        <input id="fp-elo-strength-input" type="range" min="0" max="2" step="0.05">
+        <small>How strongly rating differences affect expected goals.</small>
+      </label>
+      <label class="fp-model-control">
+        <span>Host advantage</span>
+        <output id="fp-host-advantage"></output>
+        <input id="fp-host-advantage-input" type="range" min="0" max="150" step="5">
+        <small>ELO points added to tournament hosts.</small>
+      </label>
+      <label class="fp-model-control">
+        <span>Recent form</span>
+        <output id="fp-recency"></output>
+        <input id="fp-recency-input" type="range" min="-0.5" max="0.5" step="0.05">
+        <small>Positive values reward recent momentum; negative values lean against it.</small>
+      </label>
+      <label class="fp-model-control">
+        <span>Later-round leveling</span>
+        <output id="fp-later-rounds"></output>
+        <input id="fp-later-rounds-input" type="range" min="0" max="2" step="0.05">
+        <small>How much semi-finals and finals reduce the favorites' advantage.</small>
+      </label>
+      <button type="button" class="fp-model-reset" id="fp-model-reset">Reset model</button>
+    </div>
+    <div>
+      <div class="fp-curve-title">Regulation-time outcome by ELO difference</div>
+      <svg class="fp-curve" id="fp-curve" viewBox="0 0 520 245" role="img" aria-label="Win, draw, and loss probabilities by ELO difference"></svg>
+      <div class="fp-curve-legend">
+        <span class="win">Higher-rated team wins</span>
+        <span class="draw">Draw</span>
+        <span class="loss">Higher-rated team loses</span>
+      </div>
+      <p class="fp-model-note">The chart shows a neutral group-stage match. Host advantage and later-round leveling shift the effective rating difference.</p>
+    </div>
+    <div class="fp-backtest" id="fp-backtest">
+      <h4>Backtest model</h4>
+      <div class="fp-backtest-intro">
+        <button type="button" id="fp-backtest-run" hidden>Run historical backtest</button>
+        <p>Compare this model with the defaults across every completed World Cup and Euro.</p>
+        <div class="fp-backtest-progress">
+          <span class="fp-backtest-progress-fill" id="fp-backtest-fill"></span>
+          <span class="fp-backtest-progress-text" id="fp-backtest-status">Not run</span>
+        </div>
+      </div>
+      <div id="fp-backtest-results"></div>
+    </div>
+  </div>
+</details>
+
+<div class="fp-layout">
+  <div class="fp-results" id="fp-results"></div>
+  <div class="fp-matches" id="fp-matches"></div>
+</div>
+
+{{ tournament|json_script:"fp-data" }}
+
+<script src="{{ static }}simulate.js"></script>
+<script src="{{ static }}app.js"></script>

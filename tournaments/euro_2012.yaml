@@ -1,0 +1,322 @@
+name: Euro 2012
+year: 2012
+match_code: EC
+cutoff: 2012-06-08
+hosts:
+- PL
+- UA
+points:
+  win: 3
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  PL:
+    name: Poland
+    elo: 1717
+    elo_9m: 1699
+  GR:
+    name: Greece
+    elo: 1781
+    elo_9m: 1797
+  RU:
+    name: Russia
+    elo: 1885
+    elo_9m: 1813
+  CZ:
+    name: Czechia
+    elo: 1751
+    elo_9m: 1736
+  NL:
+    name: Netherlands
+    elo: 2020
+    elo_9m: 2117
+  DK:
+    name: Denmark
+    elo: 1856
+    elo_9m: 1793
+  DE:
+    name: Germany
+    elo: 2056
+    elo_9m: 2072
+  PT:
+    name: Portugal
+    elo: 1852
+    elo_9m: 1915
+  ES:
+    name: Spain
+    elo: 2109
+    elo_9m: 2134
+  IT:
+    name: Italy
+    elo: 1867
+    elo_9m: 1880
+  IE:
+    name: Ireland
+    elo: 1774
+    elo_9m: 1795
+  HR:
+    name: Croatia
+    elo: 1902
+    elo_9m: 1864
+  UA:
+    name: Ukraine
+    elo: 1783
+    elo_9m: 1747
+  SE:
+    name: Sweden
+    elo: 1862
+    elo_9m: 1849
+  FR:
+    name: France
+    elo: 1873
+    elo_9m: 1854
+  EN:
+    name: England
+    elo: 1949
+    elo_9m: 1937
+stages:
+- id: groups
+  type: groups
+  groups:
+    A:
+    - CZ
+    - GR
+    - RU
+    - PL
+    B:
+    - DE
+    - PT
+    - DK
+    - NL
+    C:
+    - ES
+    - IT
+    - HR
+    - IE
+    D:
+    - EN
+    - FR
+    - SE
+    - UA
+  schedule:
+  - - 2012-06-08
+    - A
+    - GR
+    - PL
+    - 1
+    - 1
+  - - 2012-06-08
+    - A
+    - CZ
+    - RU
+    - 1
+    - 4
+  - - 2012-06-09
+    - B
+    - DK
+    - NL
+    - 1
+    - 0
+  - - 2012-06-09
+    - B
+    - DE
+    - PT
+    - 1
+    - 0
+  - - 2012-06-10
+    - C
+    - HR
+    - IE
+    - 3
+    - 1
+  - - 2012-06-10
+    - C
+    - ES
+    - IT
+    - 1
+    - 1
+  - - 2012-06-11
+    - D
+    - EN
+    - FR
+    - 1
+    - 1
+  - - 2012-06-11
+    - D
+    - SE
+    - UA
+    - 1
+    - 2
+  - - 2012-06-12
+    - A
+    - CZ
+    - GR
+    - 2
+    - 1
+  - - 2012-06-12
+    - A
+    - RU
+    - PL
+    - 1
+    - 1
+  - - 2012-06-13
+    - B
+    - DE
+    - NL
+    - 2
+    - 1
+  - - 2012-06-13
+    - B
+    - PT
+    - DK
+    - 3
+    - 2
+  - - 2012-06-14
+    - C
+    - IT
+    - HR
+    - 1
+    - 1
+  - - 2012-06-14
+    - C
+    - ES
+    - IE
+    - 4
+    - 0
+  - - 2012-06-15
+    - D
+    - EN
+    - SE
+    - 3
+    - 2
+  - - 2012-06-15
+    - D
+    - FR
+    - UA
+    - 2
+    - 0
+  - - 2012-06-16
+    - A
+    - GR
+    - RU
+    - 1
+    - 0
+  - - 2012-06-16
+    - A
+    - CZ
+    - PL
+    - 1
+    - 0
+  - - 2012-06-17
+    - B
+    - DE
+    - DK
+    - 2
+    - 1
+  - - 2012-06-17
+    - B
+    - PT
+    - NL
+    - 2
+    - 1
+  - - 2012-06-18
+    - C
+    - IT
+    - IE
+    - 2
+    - 0
+  - - 2012-06-18
+    - C
+    - ES
+    - HR
+    - 1
+    - 0
+  - - 2012-06-19
+    - D
+    - FR
+    - SE
+    - 0
+    - 2
+  - - 2012-06-19
+    - D
+    - EN
+    - UA
+    - 1
+    - 0
+- id: qf
+  type: bracket
+  matches:
+    qf1:
+      home: groups.A.1
+      away: groups.B.2
+      date: 2012-06-21
+      actual:
+        winner: PT
+        score:
+        - 0
+        - 1
+    qf2:
+      home: groups.B.1
+      away: groups.A.2
+      date: 2012-06-22
+      actual:
+        winner: DE
+        score:
+        - 4
+        - 2
+    qf3:
+      home: groups.C.1
+      away: groups.D.2
+      date: 2012-06-23
+      actual:
+        winner: ES
+        score:
+        - 2
+        - 0
+    qf4:
+      home: groups.D.1
+      away: groups.C.2
+      date: 2012-06-24
+      actual:
+        winner: IT
+        score:
+        - 0
+        - 0
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: qf.qf1.W
+      away: qf.qf3.W
+      date: 2012-06-27
+      actual:
+        winner: ES
+        score:
+        - 0
+        - 0
+    sf2:
+      home: qf.qf2.W
+      away: qf.qf4.W
+      date: 2012-06-28
+      actual:
+        winner: IT
+        score:
+        - 1
+        - 2
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 2012-07-01
+  actual:
+    winner: ES
+    score:
+    - 4
+    - 0

@@ -1,0 +1,634 @@
+name: World Cup 2022
+year: 2022
+match_code: WC
+cutoff: 2022-11-20
+hosts:
+- QA
+points:
+  win: 3
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  QA:
+    name: Qatar
+    elo: 1642
+    elo_9m: 1667
+  EC:
+    name: Ecuador
+    elo: 1871
+    elo_9m: 1829
+  SN:
+    name: Senegal
+    elo: 1674
+    elo_9m: 1712
+  NL:
+    name: Netherlands
+    elo: 2050
+    elo_9m: 1940
+  EN:
+    name: England
+    elo: 1956
+    elo_9m: 2036
+  IR:
+    name: Iran
+    elo: 1761
+    elo_9m: 1819
+  US:
+    name: United States
+    elo: 1795
+    elo_9m: 1844
+  WA:
+    name: Wales
+    elo: 1790
+    elo_9m: 1844
+  AR:
+    name: Argentina
+    elo: 2086
+    elo_9m: 2118
+  SA:
+    name: Saudi Arabia
+    elo: 1693
+    elo_9m: 1616
+  MX:
+    name: Mexico
+    elo: 1808
+    elo_9m: 1836
+  PL:
+    name: Poland
+    elo: 1813
+    elo_9m: 1771
+  FR:
+    name: France
+    elo: 2021
+    elo_9m: 2115
+  AU:
+    name: Australia
+    elo: 1704
+    elo_9m: 1697
+  DK:
+    name: Denmark
+    elo: 1952
+    elo_9m: 1926
+  TN:
+    name: Tunisia
+    elo: 1724
+    elo_9m: 1616
+  ES:
+    name: Spain
+    elo: 2068
+    elo_9m: 2038
+  CR:
+    name: Costa Rica
+    elo: 1723
+    elo_9m: 1692
+  DE:
+    name: Germany
+    elo: 1918
+    elo_9m: 1964
+  JP:
+    name: Japan
+    elo: 1832
+    elo_9m: 1814
+  BE:
+    name: Belgium
+    elo: 2019
+    elo_9m: 2067
+  CA:
+    name: Canada
+    elo: 1762
+    elo_9m: 1817
+  MA:
+    name: Morocco
+    elo: 1777
+    elo_9m: 1726
+  HR:
+    name: Croatia
+    elo: 1913
+    elo_9m: 1852
+  BR:
+    name: Brazil
+    elo: 2185
+    elo_9m: 2148
+  RS:
+    name: Serbia
+    elo: 1882
+    elo_9m: 1855
+  CH:
+    name: Switzerland
+    elo: 1910
+    elo_9m: 1928
+  CM:
+    name: Cameroon
+    elo: 1598
+    elo_9m: 1597
+  PT:
+    name: Portugal
+    elo: 2009
+    elo_9m: 1979
+  GH:
+    name: Ghana
+    elo: 1560
+    elo_9m: 1525
+  UY:
+    name: Uruguay
+    elo: 1923
+    elo_9m: 1892
+  KR:
+    name: South Korea
+    elo: 1798
+    elo_9m: 1833
+stages:
+- id: groups
+  type: groups
+  groups:
+    A:
+    - NL
+    - SN
+    - EC
+    - QA
+    B:
+    - EN
+    - US
+    - IR
+    - WA
+    C:
+    - AR
+    - PL
+    - MX
+    - SA
+    D:
+    - FR
+    - AU
+    - TN
+    - DK
+    E:
+    - JP
+    - ES
+    - DE
+    - CR
+    F:
+    - MA
+    - HR
+    - BE
+    - CA
+    G:
+    - BR
+    - CH
+    - CM
+    - RS
+    H:
+    - PT
+    - KR
+    - UY
+    - GH
+  schedule:
+  - - 2022-11-20
+    - A
+    - EC
+    - QA
+    - 2
+    - 0
+  - - 2022-11-21
+    - B
+    - US
+    - WA
+    - 1
+    - 1
+  - - 2022-11-21
+    - A
+    - NL
+    - SN
+    - 2
+    - 0
+  - - 2022-11-21
+    - B
+    - EN
+    - IR
+    - 6
+    - 2
+  - - 2022-11-22
+    - C
+    - AR
+    - SA
+    - 1
+    - 2
+  - - 2022-11-22
+    - C
+    - PL
+    - MX
+    - 0
+    - 0
+  - - 2022-11-22
+    - D
+    - FR
+    - AU
+    - 4
+    - 1
+  - - 2022-11-22
+    - D
+    - TN
+    - DK
+    - 0
+    - 0
+  - - 2022-11-23
+    - E
+    - ES
+    - CR
+    - 7
+    - 0
+  - - 2022-11-23
+    - E
+    - JP
+    - DE
+    - 2
+    - 1
+  - - 2022-11-23
+    - F
+    - MA
+    - HR
+    - 0
+    - 0
+  - - 2022-11-23
+    - F
+    - BE
+    - CA
+    - 1
+    - 0
+  - - 2022-11-24
+    - G
+    - CH
+    - CM
+    - 1
+    - 0
+  - - 2022-11-24
+    - H
+    - KR
+    - UY
+    - 0
+    - 0
+  - - 2022-11-24
+    - H
+    - PT
+    - GH
+    - 3
+    - 2
+  - - 2022-11-24
+    - G
+    - BR
+    - RS
+    - 2
+    - 0
+  - - 2022-11-25
+    - A
+    - SN
+    - QA
+    - 3
+    - 1
+  - - 2022-11-25
+    - B
+    - IR
+    - WA
+    - 2
+    - 0
+  - - 2022-11-25
+    - B
+    - EN
+    - US
+    - 0
+    - 0
+  - - 2022-11-25
+    - A
+    - NL
+    - EC
+    - 1
+    - 1
+  - - 2022-11-26
+    - C
+    - PL
+    - SA
+    - 2
+    - 0
+  - - 2022-11-26
+    - D
+    - FR
+    - DK
+    - 2
+    - 1
+  - - 2022-11-26
+    - D
+    - AU
+    - TN
+    - 1
+    - 0
+  - - 2022-11-26
+    - C
+    - AR
+    - MX
+    - 2
+    - 0
+  - - 2022-11-27
+    - F
+    - MA
+    - BE
+    - 2
+    - 0
+  - - 2022-11-27
+    - E
+    - ES
+    - DE
+    - 1
+    - 1
+  - - 2022-11-27
+    - F
+    - HR
+    - CA
+    - 4
+    - 1
+  - - 2022-11-27
+    - E
+    - JP
+    - CR
+    - 0
+    - 1
+  - - 2022-11-28
+    - H
+    - PT
+    - UY
+    - 2
+    - 0
+  - - 2022-11-28
+    - H
+    - KR
+    - GH
+    - 2
+    - 3
+  - - 2022-11-28
+    - G
+    - CM
+    - RS
+    - 3
+    - 3
+  - - 2022-11-28
+    - G
+    - BR
+    - CH
+    - 1
+    - 0
+  - - 2022-11-29
+    - B
+    - US
+    - IR
+    - 1
+    - 0
+  - - 2022-11-29
+    - A
+    - SN
+    - EC
+    - 2
+    - 1
+  - - 2022-11-29
+    - A
+    - NL
+    - QA
+    - 2
+    - 0
+  - - 2022-11-29
+    - B
+    - EN
+    - WA
+    - 3
+    - 0
+  - - 2022-11-30
+    - D
+    - FR
+    - TN
+    - 0
+    - 1
+  - - 2022-11-30
+    - C
+    - MX
+    - SA
+    - 2
+    - 1
+  - - 2022-11-30
+    - D
+    - AU
+    - DK
+    - 1
+    - 0
+  - - 2022-11-30
+    - C
+    - AR
+    - PL
+    - 2
+    - 0
+  - - 2022-12-01
+    - F
+    - MA
+    - CA
+    - 2
+    - 1
+  - - 2022-12-01
+    - E
+    - JP
+    - ES
+    - 2
+    - 1
+  - - 2022-12-01
+    - E
+    - DE
+    - CR
+    - 4
+    - 2
+  - - 2022-12-01
+    - F
+    - HR
+    - BE
+    - 0
+    - 0
+  - - 2022-12-02
+    - H
+    - UY
+    - GH
+    - 2
+    - 0
+  - - 2022-12-02
+    - G
+    - CH
+    - RS
+    - 3
+    - 2
+  - - 2022-12-02
+    - H
+    - PT
+    - KR
+    - 1
+    - 2
+  - - 2022-12-02
+    - G
+    - BR
+    - CM
+    - 0
+    - 1
+- id: r16
+  type: bracket
+  matches:
+    m1:
+      home: groups.A.1
+      away: groups.B.2
+      date: 2022-12-03
+      actual:
+        winner: NL
+        score:
+        - 3
+        - 1
+    m2:
+      home: groups.C.1
+      away: groups.D.2
+      date: 2022-12-03
+      actual:
+        winner: AR
+        score:
+        - 2
+        - 1
+    m3:
+      home: groups.E.1
+      away: groups.F.2
+      date: 2022-12-05
+      actual:
+        winner: HR
+        score:
+        - 1
+        - 1
+    m4:
+      home: groups.G.1
+      away: groups.H.2
+      date: 2022-12-05
+      actual:
+        winner: BR
+        score:
+        - 4
+        - 1
+    m5:
+      home: groups.B.1
+      away: groups.A.2
+      date: 2022-12-04
+      actual:
+        winner: EN
+        score:
+        - 3
+        - 0
+    m6:
+      home: groups.D.1
+      away: groups.C.2
+      date: 2022-12-04
+      actual:
+        winner: FR
+        score:
+        - 3
+        - 1
+    m7:
+      home: groups.F.1
+      away: groups.E.2
+      date: 2022-12-06
+      actual:
+        winner: MA
+        score:
+        - 0
+        - 0
+    m8:
+      home: groups.H.1
+      away: groups.G.2
+      date: 2022-12-06
+      actual:
+        winner: PT
+        score:
+        - 6
+        - 1
+- id: qf
+  type: bracket
+  matches:
+    qf1:
+      home: r16.m1.W
+      away: r16.m2.W
+      date: 2022-12-09
+      actual:
+        winner: AR
+        score:
+        - 2
+        - 2
+    qf2:
+      home: r16.m3.W
+      away: r16.m4.W
+      date: 2022-12-09
+      actual:
+        winner: HR
+        score:
+        - 1
+        - 1
+    qf3:
+      home: r16.m5.W
+      away: r16.m6.W
+      date: 2022-12-10
+      actual:
+        winner: FR
+        score:
+        - 1
+        - 2
+    qf4:
+      home: r16.m7.W
+      away: r16.m8.W
+      date: 2022-12-10
+      actual:
+        winner: MA
+        score:
+        - 1
+        - 0
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: qf.qf1.W
+      away: qf.qf2.W
+      date: 2022-12-13
+      actual:
+        winner: AR
+        score:
+        - 3
+        - 0
+    sf2:
+      home: qf.qf3.W
+      away: qf.qf4.W
+      date: 2022-12-14
+      actual:
+        winner: FR
+        score:
+        - 2
+        - 0
+- id: third_place
+  type: match
+  home: sf.sf1.L
+  away: sf.sf2.L
+  date: 2022-12-17
+  actual:
+    winner: HR
+    score:
+    - 2
+    - 1
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 2022-12-18
+  actual:
+    winner: AR
+    score:
+    - 3
+    - 3

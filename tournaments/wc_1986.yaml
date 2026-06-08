@@ -1,0 +1,520 @@
+name: World Cup 1986
+year: 1986
+match_code: WC
+cutoff: 1986-05-31
+hosts:
+- MX
+points:
+  win: 2
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  AR:
+    elo: 1890
+    name: Argentina
+    elo_9m: 1880
+  IT:
+    elo: 1881
+    name: Italy
+    elo_9m: 1893
+  BG:
+    elo: 1847
+    name: Bulgaria
+    elo_9m: 1835
+  KR:
+    elo: 1597
+    name: South Korea
+    elo_9m: 1601
+  MX:
+    elo: 1861
+    name: Mexico
+    elo_9m: 1838
+  PY:
+    elo: 1825
+    name: Paraguay
+    elo_9m: 1724
+  BE:
+    elo: 1804
+    name: Belgium
+    elo_9m: 1842
+  IQ:
+    elo: 1579
+    name: Iraq
+    elo_9m: 1709
+  RU:
+    elo: 1960
+    name: Soviet Union
+    elo_9m: 1960
+  FR:
+    elo: 2002
+    name: France
+    elo_9m: 1979
+  HU:
+    elo: 1836
+    name: Hungary
+    elo_9m: 1875
+  CA:
+    elo: 1640
+    name: Canada
+    elo_9m: 1656
+  BR:
+    elo: 1944
+    name: Brazil
+    elo_9m: 1910
+  ES:
+    elo: 1873
+    name: Spain
+    elo_9m: 1860
+  EI:
+    elo: 1836
+    name: Northern Ireland
+    elo_9m: 1809
+  DZ:
+    elo: 1636
+    name: Algeria
+    elo_9m: 1680
+  DK:
+    elo: 1921
+    name: Denmark
+    elo_9m: 1893
+  DE:
+    elo: 2082
+    name: West Germany
+    elo_9m: 2082
+  UY:
+    elo: 1841
+    name: Uruguay
+    elo_9m: 1862
+  SQ:
+    elo: 1845
+    name: Scotland
+    elo_9m: 1865
+  MA:
+    elo: 1655
+    name: Morocco
+    elo_9m: 1697
+  EN:
+    elo: 1946
+    name: England
+    elo_9m: 1942
+  PL:
+    elo: 1792
+    name: Poland
+    elo_9m: 1831
+  PT:
+    elo: 1851
+    name: Portugal
+    elo_9m: 1797
+stages:
+- id: groups
+  type: groups
+  groups:
+    A:
+    - AR
+    - IT
+    - BG
+    - KR
+    B:
+    - MX
+    - PY
+    - BE
+    - IQ
+    C:
+    - RU
+    - FR
+    - HU
+    - CA
+    D:
+    - BR
+    - ES
+    - EI
+    - DZ
+    E:
+    - DK
+    - DE
+    - UY
+    - SQ
+    F:
+    - MA
+    - EN
+    - PL
+    - PT
+  schedule:
+  - - 1986-05-31
+    - A
+    - IT
+    - BG
+    - 1
+    - 1
+  - - 1986-06-01
+    - D
+    - BR
+    - ES
+    - 1
+    - 0
+  - - 1986-06-01
+    - C
+    - FR
+    - CA
+    - 1
+    - 0
+  - - 1986-06-02
+    - A
+    - AR
+    - KR
+    - 3
+    - 1
+  - - 1986-06-02
+    - F
+    - MA
+    - PL
+    - 0
+    - 0
+  - - 1986-06-02
+    - C
+    - RU
+    - HU
+    - 6
+    - 0
+  - - 1986-06-03
+    - D
+    - EI
+    - DZ
+    - 1
+    - 1
+  - - 1986-06-03
+    - B
+    - MX
+    - BE
+    - 2
+    - 1
+  - - 1986-06-03
+    - F
+    - EN
+    - PT
+    - 0
+    - 1
+  - - 1986-06-04
+    - E
+    - DK
+    - SQ
+    - 1
+    - 0
+  - - 1986-06-04
+    - B
+    - PY
+    - IQ
+    - 1
+    - 0
+  - - 1986-06-04
+    - E
+    - DE
+    - UY
+    - 1
+    - 1
+  - - 1986-06-05
+    - A
+    - AR
+    - IT
+    - 1
+    - 1
+  - - 1986-06-05
+    - A
+    - BG
+    - KR
+    - 1
+    - 1
+  - - 1986-06-05
+    - C
+    - RU
+    - FR
+    - 1
+    - 1
+  - - 1986-06-06
+    - D
+    - BR
+    - DZ
+    - 1
+    - 0
+  - - 1986-06-06
+    - F
+    - MA
+    - EN
+    - 0
+    - 0
+  - - 1986-06-06
+    - C
+    - HU
+    - CA
+    - 2
+    - 0
+  - - 1986-06-07
+    - B
+    - MX
+    - PY
+    - 1
+    - 1
+  - - 1986-06-07
+    - F
+    - PL
+    - PT
+    - 1
+    - 0
+  - - 1986-06-07
+    - D
+    - ES
+    - EI
+    - 2
+    - 1
+  - - 1986-06-08
+    - B
+    - BE
+    - IQ
+    - 2
+    - 1
+  - - 1986-06-08
+    - E
+    - DK
+    - UY
+    - 6
+    - 1
+  - - 1986-06-08
+    - E
+    - DE
+    - SQ
+    - 2
+    - 1
+  - - 1986-06-09
+    - C
+    - FR
+    - HU
+    - 3
+    - 0
+  - - 1986-06-09
+    - C
+    - RU
+    - CA
+    - 2
+    - 0
+  - - 1986-06-10
+    - A
+    - AR
+    - BG
+    - 2
+    - 0
+  - - 1986-06-10
+    - A
+    - IT
+    - KR
+    - 3
+    - 2
+  - - 1986-06-11
+    - B
+    - PY
+    - BE
+    - 2
+    - 2
+  - - 1986-06-11
+    - F
+    - EN
+    - PL
+    - 3
+    - 0
+  - - 1986-06-11
+    - B
+    - MX
+    - IQ
+    - 1
+    - 0
+  - - 1986-06-11
+    - F
+    - MA
+    - PT
+    - 3
+    - 1
+  - - 1986-06-12
+    - D
+    - BR
+    - EI
+    - 3
+    - 0
+  - - 1986-06-12
+    - D
+    - ES
+    - DZ
+    - 3
+    - 0
+  - - 1986-06-13
+    - E
+    - DK
+    - DE
+    - 2
+    - 0
+  - - 1986-06-13
+    - E
+    - UY
+    - SQ
+    - 0
+    - 0
+- id: r16
+  type: bracket
+  matches:
+    m1:
+      home: groups.A.1
+      away: groups.E.3
+      date: 1986-06-16
+      actual:
+        winner: AR
+        score:
+        - 1
+        - 0
+    m2:
+      home: groups.A.2
+      away: groups.C.2
+      date: 1986-06-17
+      actual:
+        winner: FR
+        score:
+        - 0
+        - 2
+    m3:
+      home: groups.D.1
+      away: groups.F.3
+      date: 1986-06-16
+      actual:
+        winner: BR
+        score:
+        - 4
+        - 0
+    m4:
+      home: groups.D.2
+      away: groups.E.1
+      date: 1986-06-18
+      actual:
+        winner: ES
+        score:
+        - 5
+        - 1
+    m5:
+      home: groups.B.1
+      away: groups.A.3
+      date: 1986-06-15
+      actual:
+        winner: MX
+        score:
+        - 2
+        - 0
+    m6:
+      home: groups.C.1
+      away: groups.B.3
+      date: 1986-06-15
+      actual:
+        winner: BE
+        score:
+        - 3
+        - 4
+    m7:
+      home: groups.F.1
+      away: groups.E.2
+      date: 1986-06-17
+      actual:
+        winner: DE
+        score:
+        - 0
+        - 1
+    m8:
+      home: groups.B.2
+      away: groups.F.2
+      date: 1986-06-18
+      actual:
+        winner: EN
+        score:
+        - 0
+        - 3
+- id: qf
+  type: bracket
+  matches:
+    qf1:
+      home: r16.m1.W
+      away: r16.m8.W
+      date: 1986-06-22
+      actual:
+        winner: AR
+        score:
+        - 2
+        - 1
+    qf2:
+      home: r16.m4.W
+      away: r16.m6.W
+      date: 1986-06-22
+      actual:
+        winner: BE
+        score:
+        - 1
+        - 1
+    qf3:
+      home: r16.m5.W
+      away: r16.m7.W
+      date: 1986-06-21
+      actual:
+        winner: DE
+        score:
+        - 0
+        - 0
+    qf4:
+      home: r16.m2.W
+      away: r16.m3.W
+      date: 1986-06-21
+      actual:
+        winner: FR
+        score:
+        - 1
+        - 1
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: qf.qf1.W
+      away: qf.qf2.W
+      date: 1986-06-25
+      actual:
+        winner: AR
+        score:
+        - 2
+        - 0
+    sf2:
+      home: qf.qf3.W
+      away: qf.qf4.W
+      date: 1986-06-25
+      actual:
+        winner: DE
+        score:
+        - 2
+        - 0
+- id: third_place
+  type: match
+  home: sf.sf1.L
+  away: sf.sf2.L
+  date: 1986-06-28
+  actual:
+    winner: FR
+    score:
+    - 2
+    - 4
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 1986-06-29
+  actual:
+    winner: AR
+    score:
+    - 3
+    - 2

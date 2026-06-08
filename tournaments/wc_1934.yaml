@@ -1,0 +1,238 @@
+name: World Cup 1934
+year: 1934
+match_code: WC
+cutoff: 1934-05-27
+hosts:
+- IT
+points:
+  win: 2
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  IT:
+    name: Italy
+    elo: 1995
+    elo_9m: 2010
+  US:
+    name: United States
+    elo: 1758
+    elo_9m: 1778
+  ES:
+    name: Spain
+    elo: 1981
+    elo_9m: 1924
+  BR:
+    name: Brazil
+    elo: 1889
+    elo_9m: 1889
+  AT:
+    name: Austria
+    elo: 2055
+    elo_9m: 2003
+  FR:
+    name: France
+    elo: 1621
+    elo_9m: 1599
+  HU:
+    name: Hungary
+    elo: 1859
+    elo_9m: 1816
+  EG:
+    name: Egypt
+    elo: 1677
+    elo_9m: 1704
+  CZ:
+    name: Czechoslovakia
+    elo: 1854
+    elo_9m: 1854
+  RO:
+    name: Romania
+    elo: 1625
+    elo_9m: 1628
+  DE:
+    name: Germany
+    elo: 1819
+    elo_9m: 1766
+  BE:
+    name: Belgium
+    elo: 1529
+    elo_9m: 1586
+  SE:
+    name: Sweden
+    elo: 1782
+    elo_9m: 1722
+  AR:
+    name: Argentina
+    elo: 2010
+    elo_9m: 2062
+  CH:
+    name: Switzerland
+    elo: 1653
+    elo_9m: 1627
+  NL:
+    name: Netherlands
+    elo: 1669
+    elo_9m: 1658
+stages:
+- id: r16
+  type: bracket
+  matches:
+    m1:
+      home: IT
+      away: US
+      date: 1934-05-27
+      actual:
+        winner: IT
+        score:
+        - 7
+        - 1
+    m2:
+      home: CZ
+      away: RO
+      date: 1934-05-27
+      actual:
+        winner: CZ
+        score:
+        - 2
+        - 1
+    m3:
+      home: DE
+      away: BE
+      date: 1934-05-27
+      actual:
+        winner: DE
+        score:
+        - 5
+        - 2
+    m4:
+      home: AT
+      away: FR
+      date: 1934-05-27
+      actual:
+        winner: AT
+        score:
+        - 3
+        - 2
+    m5:
+      home: ES
+      away: BR
+      date: 1934-05-27
+      actual:
+        winner: ES
+        score:
+        - 3
+        - 1
+    m6:
+      home: CH
+      away: NL
+      date: 1934-05-27
+      actual:
+        winner: CH
+        score:
+        - 3
+        - 2
+    m7:
+      home: SE
+      away: AR
+      date: 1934-05-27
+      actual:
+        winner: SE
+        score:
+        - 3
+        - 2
+    m8:
+      home: HU
+      away: EG
+      date: 1934-05-27
+      actual:
+        winner: HU
+        score:
+        - 4
+        - 2
+- id: qf
+  type: bracket
+  matches:
+    qf1:
+      home: r16.m1.W
+      away: r16.m5.W
+      date: 1934-05-31
+      actual:
+        winner: IT
+        score:
+        - 1
+        - 1
+    qf2:
+      home: r16.m4.W
+      away: r16.m8.W
+      date: 1934-05-31
+      actual:
+        winner: AT
+        score:
+        - 2
+        - 1
+    qf3:
+      home: r16.m3.W
+      away: r16.m7.W
+      date: 1934-05-31
+      actual:
+        winner: DE
+        score:
+        - 2
+        - 1
+    qf4:
+      home: r16.m2.W
+      away: r16.m6.W
+      date: 1934-05-31
+      actual:
+        winner: CZ
+        score:
+        - 3
+        - 2
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: qf.qf1.W
+      away: qf.qf2.W
+      date: 1934-06-03
+      actual:
+        winner: IT
+        score:
+        - 1
+        - 0
+    sf2:
+      home: qf.qf4.W
+      away: qf.qf3.W
+      date: 1934-06-03
+      actual:
+        winner: CZ
+        score:
+        - 3
+        - 1
+- id: third_place
+  type: match
+  home: sf.sf1.L
+  away: sf.sf2.L
+  date: 1934-06-07
+  actual:
+    winner: DE
+    score:
+    - 2
+    - 3
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 1934-06-10
+  actual:
+    winner: IT
+    score:
+    - 2
+    - 1

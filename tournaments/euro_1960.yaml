@@ -1,0 +1,76 @@
+name: Euro 1960
+year: 1960
+match_code: EC
+cutoff: 1960-07-06
+hosts:
+- FR
+points:
+  win: 2
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  RU:
+    name: Soviet Union
+    elo: 2014
+    elo_9m: 1952
+  CZ:
+    name: Czechoslovakia
+    elo: 1854
+    elo_9m: 1854
+  FR:
+    name: France
+    elo: 1928
+    elo_9m: 1916
+  RS:
+    name: Yugoslavia
+    elo: 1741
+    elo_9m: 1741
+stages:
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: RU
+      away: CZ
+      date: 1960-07-06
+      actual:
+        winner: RU
+        score:
+        - 3
+        - 0
+    sf2:
+      home: FR
+      away: RS
+      date: 1960-07-06
+      actual:
+        winner: RS
+        score:
+        - 4
+        - 5
+- id: third_place
+  type: match
+  home: sf.sf1.L
+  away: sf.sf2.L
+  date: 1960-07-09
+  actual:
+    winner: CZ
+    score:
+    - 2
+    - 0
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 1960-07-10
+  actual:
+    winner: RU
+    score:
+    - 2
+    - 1

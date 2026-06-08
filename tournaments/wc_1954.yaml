@@ -1,0 +1,325 @@
+name: World Cup 1954
+year: 1954
+match_code: WC
+cutoff: 1954-06-16
+hosts:
+- CH
+points:
+  win: 2
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+slot_overrides:
+  groups.2.2: DE
+  groups.2.3: TR
+  groups.4.2: CH
+  groups.4.3: IT
+teams:
+  BR:
+    elo: 2046
+    name: Brazil
+    elo_9m: 1985
+  RS:
+    elo: 1741
+    name: Yugoslavia
+    elo_9m: 1741
+  FR:
+    elo: 1758
+    name: France
+    elo_9m: 1778
+  MX:
+    elo: 1683
+    name: Mexico
+    elo_9m: 1670
+  HU:
+    elo: 2155
+    name: Hungary
+    elo_9m: 2103
+  DE:
+    elo: 2082
+    name: West Germany
+    elo_9m: 2082
+  TR:
+    elo: 1586
+    name: Turkey
+    elo_9m: 1554
+  KR:
+    elo: 1655
+    name: South Korea
+    elo_9m: 1741
+  UY:
+    elo: 1906
+    name: Uruguay
+    elo_9m: 1863
+  AT:
+    elo: 1901
+    name: Austria
+    elo_9m: 1873
+  CZ:
+    elo: 1854
+    name: Czechoslovakia
+    elo_9m: 1854
+  SQ:
+    elo: 1867
+    name: Scotland
+    elo_9m: 1947
+  EN:
+    elo: 2003
+    name: England
+    elo_9m: 2024
+  CH:
+    elo: 1713
+    name: Switzerland
+    elo_9m: 1648
+  IT:
+    elo: 1853
+    name: Italy
+    elo_9m: 1853
+  BE:
+    elo: 1795
+    name: Belgium
+    elo_9m: 1736
+stages:
+- id: groups
+  type: groups
+  groups:
+    '1':
+    - BR
+    - RS
+    - FR
+    - MX
+    '2':
+    - HU
+    - DE
+    - TR
+    - KR
+    '3':
+    - UY
+    - AT
+    - CZ
+    - SQ
+    '4':
+    - EN
+    - CH
+    - IT
+    - BE
+  pairings:
+    '1':
+    - - BR
+      - RS
+    - - BR
+      - MX
+    - - FR
+      - RS
+    - - FR
+      - MX
+    '2':
+    - - HU
+      - DE
+    - - HU
+      - KR
+    - - DE
+      - TR
+    - - TR
+      - KR
+    '3':
+    - - UY
+      - CZ
+    - - UY
+      - SQ
+    - - CZ
+      - AT
+    - - AT
+      - SQ
+    '4':
+    - - EN
+      - CH
+    - - EN
+      - BE
+    - - CH
+      - IT
+    - - IT
+      - BE
+  schedule:
+  - - 1954-06-16
+    - '3'
+    - AT
+    - SQ
+    - 1
+    - 0
+  - - 1954-06-16
+    - '1'
+    - BR
+    - MX
+    - 5
+    - 0
+  - - 1954-06-16
+    - '3'
+    - UY
+    - CZ
+    - 2
+    - 0
+  - - 1954-06-16
+    - '1'
+    - RS
+    - FR
+    - 1
+    - 0
+  - - 1954-06-17
+    - '4'
+    - EN
+    - BE
+    - 4
+    - 4
+  - - 1954-06-17
+    - '2'
+    - HU
+    - KR
+    - 9
+    - 0
+  - - 1954-06-17
+    - '4'
+    - CH
+    - IT
+    - 2
+    - 1
+  - - 1954-06-17
+    - '2'
+    - DE
+    - TR
+    - 4
+    - 1
+  - - 1954-06-19
+    - '3'
+    - AT
+    - CZ
+    - 5
+    - 0
+  - - 1954-06-19
+    - '1'
+    - BR
+    - RS
+    - 1
+    - 1
+  - - 1954-06-19
+    - '1'
+    - FR
+    - MX
+    - 3
+    - 2
+  - - 1954-06-19
+    - '3'
+    - UY
+    - SQ
+    - 7
+    - 0
+  - - 1954-06-20
+    - '2'
+    - HU
+    - DE
+    - 8
+    - 3
+  - - 1954-06-20
+    - '4'
+    - IT
+    - BE
+    - 4
+    - 1
+  - - 1954-06-20
+    - '4'
+    - EN
+    - CH
+    - 2
+    - 0
+  - - 1954-06-20
+    - '2'
+    - TR
+    - KR
+    - 7
+    - 0
+- id: qf
+  type: bracket
+  matches:
+    qf1:
+      home: groups.2.2
+      away: groups.1.2
+      date: 1954-06-27
+      actual:
+        winner: DE
+        score:
+        - 2
+        - 0
+    qf2:
+      home: groups.3.2
+      away: groups.4.2
+      date: 1954-06-26
+      actual:
+        winner: AT
+        score:
+        - 7
+        - 5
+    qf3:
+      home: groups.2.1
+      away: groups.1.1
+      date: 1954-06-27
+      actual:
+        winner: HU
+        score:
+        - 4
+        - 2
+    qf4:
+      home: groups.3.1
+      away: groups.4.1
+      date: 1954-06-26
+      actual:
+        winner: UY
+        score:
+        - 4
+        - 2
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: qf.qf1.W
+      away: qf.qf2.W
+      date: 1954-06-30
+      actual:
+        winner: DE
+        score:
+        - 6
+        - 1
+    sf2:
+      home: qf.qf3.W
+      away: qf.qf4.W
+      date: 1954-06-30
+      actual:
+        winner: HU
+        score:
+        - 4
+        - 2
+- id: third_place
+  type: match
+  home: sf.sf1.L
+  away: sf.sf2.L
+  date: 1954-07-03
+  actual:
+    winner: AT
+    score:
+    - 3
+    - 1
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 1954-07-04
+  actual:
+    winner: DE
+    score:
+    - 3
+    - 2

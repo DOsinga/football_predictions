@@ -1,0 +1,510 @@
+name: Euro 2016
+year: 2016
+match_code: EC
+cutoff: 2016-06-10
+hosts:
+- FR
+points:
+  win: 3
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  FR:
+    elo: 1981
+    name: France
+    elo_9m: 1940
+  RO:
+    elo: 1752
+    name: Romania
+    elo_9m: 1752
+  AL:
+    elo: 1600
+    name: Albania
+    elo_9m: 1578
+  CH:
+    elo: 1785
+    name: Switzerland
+    elo_9m: 1795
+  EN:
+    elo: 1956
+    name: England
+    elo_9m: 1949
+  RU:
+    elo: 1772
+    name: Russia
+    elo_9m: 1771
+  WA:
+    elo: 1687
+    name: Wales
+    elo_9m: 1677
+  SK:
+    elo: 1732
+    name: Slovakia
+    elo_9m: 1719
+  DE:
+    elo: 2052
+    name: Germany
+    elo_9m: 2084
+  UA:
+    elo: 1818
+    name: Ukraine
+    elo_9m: 1829
+  PL:
+    elo: 1780
+    name: Poland
+    elo_9m: 1738
+  EI:
+    elo: 1609
+    name: Northern Ireland
+    elo_9m: 1583
+  ES:
+    elo: 2001
+    name: Spain
+    elo_9m: 1975
+  CZ:
+    elo: 1744
+    name: Czechia
+    elo_9m: 1731
+  TR:
+    elo: 1802
+    name: Turkey
+    elo_9m: 1795
+  HR:
+    elo: 1844
+    name: Croatia
+    elo_9m: 1791
+  BE:
+    elo: 1878
+    name: Belgium
+    elo_9m: 1912
+  IT:
+    elo: 1917
+    name: Italy
+    elo_9m: 1880
+  IE:
+    elo: 1758
+    name: Ireland
+    elo_9m: 1758
+  SE:
+    elo: 1762
+    name: Sweden
+    elo_9m: 1744
+  PT:
+    elo: 1893
+    name: Portugal
+    elo_9m: 1912
+  IS:
+    elo: 1681
+    name: Iceland
+    elo_9m: 1699
+  AT:
+    elo: 1731
+    name: Austria
+    elo_9m: 1813
+  HU:
+    elo: 1742
+    name: Hungary
+    elo_9m: 1681
+stages:
+- id: groups
+  type: groups
+  groups:
+    A:
+    - FR
+    - CH
+    - AL
+    - RO
+    B:
+    - WA
+    - EN
+    - SK
+    - RU
+    C:
+    - DE
+    - PL
+    - EI
+    - UA
+    D:
+    - HR
+    - ES
+    - TR
+    - CZ
+    E:
+    - IT
+    - BE
+    - IE
+    - SE
+    F:
+    - HU
+    - IS
+    - PT
+    - AT
+  schedule:
+  - - 2016-06-10
+    - A
+    - FR
+    - RO
+    - 2
+    - 1
+  - - 2016-06-11
+    - B
+    - EN
+    - RU
+    - 1
+    - 1
+  - - 2016-06-11
+    - A
+    - CH
+    - AL
+    - 1
+    - 0
+  - - 2016-06-11
+    - B
+    - WA
+    - SK
+    - 2
+    - 1
+  - - 2016-06-12
+    - D
+    - HR
+    - TR
+    - 1
+    - 0
+  - - 2016-06-12
+    - C
+    - DE
+    - UA
+    - 2
+    - 0
+  - - 2016-06-12
+    - C
+    - PL
+    - EI
+    - 1
+    - 0
+  - - 2016-06-13
+    - E
+    - IE
+    - SE
+    - 1
+    - 1
+  - - 2016-06-13
+    - E
+    - IT
+    - BE
+    - 2
+    - 0
+  - - 2016-06-13
+    - D
+    - ES
+    - CZ
+    - 1
+    - 0
+  - - 2016-06-14
+    - F
+    - HU
+    - AT
+    - 2
+    - 0
+  - - 2016-06-14
+    - F
+    - IS
+    - PT
+    - 1
+    - 1
+  - - 2016-06-15
+    - A
+    - FR
+    - AL
+    - 2
+    - 0
+  - - 2016-06-15
+    - A
+    - CH
+    - RO
+    - 1
+    - 1
+  - - 2016-06-15
+    - B
+    - SK
+    - RU
+    - 2
+    - 1
+  - - 2016-06-16
+    - B
+    - WA
+    - EN
+    - 1
+    - 2
+  - - 2016-06-16
+    - C
+    - DE
+    - PL
+    - 0
+    - 0
+  - - 2016-06-16
+    - C
+    - EI
+    - UA
+    - 2
+    - 0
+  - - 2016-06-17
+    - D
+    - HR
+    - CZ
+    - 2
+    - 2
+  - - 2016-06-17
+    - E
+    - IT
+    - SE
+    - 1
+    - 0
+  - - 2016-06-17
+    - D
+    - ES
+    - TR
+    - 3
+    - 0
+  - - 2016-06-18
+    - F
+    - PT
+    - AT
+    - 0
+    - 0
+  - - 2016-06-18
+    - E
+    - BE
+    - IE
+    - 3
+    - 0
+  - - 2016-06-18
+    - F
+    - HU
+    - IS
+    - 1
+    - 1
+  - - 2016-06-19
+    - A
+    - AL
+    - RO
+    - 1
+    - 0
+  - - 2016-06-19
+    - A
+    - FR
+    - CH
+    - 0
+    - 0
+  - - 2016-06-20
+    - B
+    - EN
+    - SK
+    - 0
+    - 0
+  - - 2016-06-20
+    - B
+    - WA
+    - RU
+    - 3
+    - 0
+  - - 2016-06-21
+    - D
+    - HR
+    - ES
+    - 2
+    - 1
+  - - 2016-06-21
+    - C
+    - DE
+    - EI
+    - 1
+    - 0
+  - - 2016-06-21
+    - C
+    - PL
+    - UA
+    - 1
+    - 0
+  - - 2016-06-21
+    - D
+    - TR
+    - CZ
+    - 2
+    - 0
+  - - 2016-06-22
+    - E
+    - BE
+    - SE
+    - 1
+    - 0
+  - - 2016-06-22
+    - F
+    - HU
+    - PT
+    - 3
+    - 3
+  - - 2016-06-22
+    - F
+    - IS
+    - AT
+    - 2
+    - 1
+  - - 2016-06-22
+    - E
+    - IT
+    - IE
+    - 0
+    - 1
+- id: r16
+  type: bracket
+  matches:
+    m1:
+      home: groups.A.1
+      away: groups.E.3
+      date: 2016-06-26
+      actual:
+        winner: FR
+        score:
+        - 2
+        - 1
+    m2:
+      home: groups.B.1
+      away: groups.C.3
+      date: 2016-06-25
+      actual:
+        winner: WA
+        score:
+        - 1
+        - 0
+    m3:
+      home: groups.C.1
+      away: groups.B.3
+      date: 2016-06-26
+      actual:
+        winner: DE
+        score:
+        - 3
+        - 0
+    m4:
+      home: groups.D.1
+      away: groups.F.3
+      date: 2016-06-25
+      actual:
+        winner: PT
+        score:
+        - 0
+        - 1
+    m5:
+      home: groups.E.1
+      away: groups.D.2
+      date: 2016-06-27
+      actual:
+        winner: IT
+        score:
+        - 2
+        - 0
+    m6:
+      home: groups.F.1
+      away: groups.E.2
+      date: 2016-06-26
+      actual:
+        winner: BE
+        score:
+        - 0
+        - 4
+    m7:
+      home: groups.A.2
+      away: groups.C.2
+      date: 2016-06-25
+      actual:
+        winner: PL
+        score:
+        - 1
+        - 1
+    m8:
+      home: groups.B.2
+      away: groups.F.2
+      date: 2016-06-27
+      actual:
+        winner: IS
+        score:
+        - 1
+        - 2
+- id: qf
+  type: bracket
+  matches:
+    qf1:
+      home: r16.m4.W
+      away: r16.m7.W
+      date: 2016-06-30
+      actual:
+        winner: PT
+        score:
+        - 1
+        - 1
+    qf2:
+      home: r16.m2.W
+      away: r16.m6.W
+      date: 2016-07-01
+      actual:
+        winner: WA
+        score:
+        - 3
+        - 1
+    qf3:
+      home: r16.m5.W
+      away: r16.m3.W
+      date: 2016-07-02
+      actual:
+        winner: DE
+        score:
+        - 1
+        - 1
+    qf4:
+      home: r16.m1.W
+      away: r16.m8.W
+      date: 2016-07-03
+      actual:
+        winner: FR
+        score:
+        - 5
+        - 2
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: qf.qf1.W
+      away: qf.qf2.W
+      date: 2016-07-06
+      actual:
+        winner: PT
+        score:
+        - 2
+        - 0
+    sf2:
+      home: qf.qf3.W
+      away: qf.qf4.W
+      date: 2016-07-07
+      actual:
+        winner: FR
+        score:
+        - 0
+        - 2
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 2016-07-10
+  actual:
+    winner: PT
+    score:
+    - 1
+    - 0

@@ -1,0 +1,634 @@
+name: World Cup 2010
+year: 2010
+match_code: WC
+cutoff: 2010-06-11
+hosts:
+- ZA
+points:
+  win: 3
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  ZA:
+    name: South Africa
+    elo: 1608
+    elo_9m: 1545
+  MX:
+    name: Mexico
+    elo: 1882
+    elo_9m: 1899
+  UY:
+    name: Uruguay
+    elo: 1846
+    elo_9m: 1829
+  FR:
+    name: France
+    elo: 1860
+    elo_9m: 1877
+  AR:
+    name: Argentina
+    elo: 1935
+    elo_9m: 1874
+  NG:
+    name: Nigeria
+    elo: 1699
+    elo_9m: 1740
+  KR:
+    name: South Korea
+    elo: 1806
+    elo_9m: 1753
+  GR:
+    name: Greece
+    elo: 1694
+    elo_9m: 1757
+  EN:
+    name: England
+    elo: 1984
+    elo_9m: 1988
+  US:
+    name: United States
+    elo: 1802
+    elo_9m: 1836
+  DZ:
+    name: Algeria
+    elo: 1521
+    elo_9m: 1561
+  SI:
+    name: Slovenia
+    elo: 1704
+    elo_9m: 1649
+  DE:
+    name: Germany
+    elo: 1986
+    elo_9m: 1985
+  AU:
+    name: Australia
+    elo: 1746
+    elo_9m: 1764
+  RS:
+    name: Serbia
+    elo: 1798
+    elo_9m: 1848
+  GH:
+    name: Ghana
+    elo: 1729
+    elo_9m: 1734
+  NL:
+    name: Netherlands
+    elo: 2059
+    elo_9m: 2039
+  DK:
+    name: Denmark
+    elo: 1762
+    elo_9m: 1838
+  JP:
+    name: Japan
+    elo: 1709
+    elo_9m: 1777
+  CM:
+    name: Cameroon
+    elo: 1663
+    elo_9m: 1754
+  IT:
+    name: Italy
+    elo: 1922
+    elo_9m: 1951
+  PY:
+    name: Paraguay
+    elo: 1778
+    elo_9m: 1827
+  NZ:
+    name: New Zealand
+    elo: 1539
+    elo_9m: 1502
+  SK:
+    name: Slovakia
+    elo: 1658
+    elo_9m: 1632
+  BR:
+    name: Brazil
+    elo: 2111
+    elo_9m: 2111
+  KP:
+    name: North Korea
+    elo: 1535
+    elo_9m: 1531
+  CI:
+    name: Ivory Coast
+    elo: 1750
+    elo_9m: 1745
+  PT:
+    name: Portugal
+    elo: 1865
+    elo_9m: 1853
+  ES:
+    name: Spain
+    elo: 2058
+    elo_9m: 2078
+  CH:
+    name: Switzerland
+    elo: 1814
+    elo_9m: 1819
+  HN:
+    name: Honduras
+    elo: 1698
+    elo_9m: 1743
+  CL:
+    name: Chile
+    elo: 1902
+    elo_9m: 1861
+stages:
+- id: groups
+  type: groups
+  groups:
+    A:
+    - UY
+    - MX
+    - ZA
+    - FR
+    B:
+    - AR
+    - KR
+    - GR
+    - NG
+    C:
+    - US
+    - EN
+    - SI
+    - DZ
+    D:
+    - DE
+    - GH
+    - AU
+    - RS
+    E:
+    - NL
+    - JP
+    - DK
+    - CM
+    F:
+    - PY
+    - SK
+    - NZ
+    - IT
+    G:
+    - BR
+    - PT
+    - CI
+    - KP
+    H:
+    - ES
+    - CL
+    - CH
+    - HN
+  schedule:
+  - - 2010-06-11
+    - A
+    - UY
+    - FR
+    - 0
+    - 0
+  - - 2010-06-11
+    - A
+    - MX
+    - ZA
+    - 1
+    - 1
+  - - 2010-06-12
+    - B
+    - AR
+    - NG
+    - 1
+    - 0
+  - - 2010-06-12
+    - C
+    - US
+    - EN
+    - 1
+    - 1
+  - - 2010-06-12
+    - B
+    - KR
+    - GR
+    - 2
+    - 0
+  - - 2010-06-13
+    - D
+    - DE
+    - AU
+    - 4
+    - 0
+  - - 2010-06-13
+    - D
+    - GH
+    - RS
+    - 1
+    - 0
+  - - 2010-06-13
+    - C
+    - SI
+    - DZ
+    - 1
+    - 0
+  - - 2010-06-14
+    - F
+    - PY
+    - IT
+    - 1
+    - 1
+  - - 2010-06-14
+    - E
+    - JP
+    - CM
+    - 1
+    - 0
+  - - 2010-06-14
+    - E
+    - NL
+    - DK
+    - 2
+    - 0
+  - - 2010-06-15
+    - G
+    - BR
+    - KP
+    - 2
+    - 1
+  - - 2010-06-15
+    - G
+    - PT
+    - CI
+    - 0
+    - 0
+  - - 2010-06-15
+    - F
+    - SK
+    - NZ
+    - 1
+    - 1
+  - - 2010-06-16
+    - H
+    - CL
+    - HN
+    - 1
+    - 0
+  - - 2010-06-16
+    - A
+    - UY
+    - ZA
+    - 3
+    - 0
+  - - 2010-06-16
+    - H
+    - ES
+    - CH
+    - 0
+    - 1
+  - - 2010-06-17
+    - B
+    - AR
+    - KR
+    - 4
+    - 1
+  - - 2010-06-17
+    - B
+    - GR
+    - NG
+    - 2
+    - 1
+  - - 2010-06-17
+    - A
+    - MX
+    - FR
+    - 2
+    - 0
+  - - 2010-06-18
+    - C
+    - EN
+    - DZ
+    - 0
+    - 0
+  - - 2010-06-18
+    - D
+    - DE
+    - RS
+    - 0
+    - 1
+  - - 2010-06-18
+    - C
+    - US
+    - SI
+    - 2
+    - 2
+  - - 2010-06-19
+    - D
+    - GH
+    - AU
+    - 1
+    - 1
+  - - 2010-06-19
+    - E
+    - DK
+    - CM
+    - 2
+    - 1
+  - - 2010-06-19
+    - E
+    - NL
+    - JP
+    - 1
+    - 0
+  - - 2010-06-20
+    - G
+    - BR
+    - CI
+    - 3
+    - 1
+  - - 2010-06-20
+    - F
+    - NZ
+    - IT
+    - 1
+    - 1
+  - - 2010-06-20
+    - F
+    - PY
+    - SK
+    - 2
+    - 0
+  - - 2010-06-21
+    - H
+    - CL
+    - CH
+    - 1
+    - 0
+  - - 2010-06-21
+    - G
+    - PT
+    - KP
+    - 7
+    - 0
+  - - 2010-06-21
+    - H
+    - ES
+    - HN
+    - 2
+    - 0
+  - - 2010-06-22
+    - B
+    - AR
+    - GR
+    - 2
+    - 0
+  - - 2010-06-22
+    - B
+    - KR
+    - NG
+    - 2
+    - 2
+  - - 2010-06-22
+    - A
+    - ZA
+    - FR
+    - 2
+    - 1
+  - - 2010-06-22
+    - A
+    - UY
+    - MX
+    - 1
+    - 0
+  - - 2010-06-23
+    - D
+    - AU
+    - RS
+    - 2
+    - 1
+  - - 2010-06-23
+    - C
+    - EN
+    - SI
+    - 1
+    - 0
+  - - 2010-06-23
+    - D
+    - DE
+    - GH
+    - 1
+    - 0
+  - - 2010-06-23
+    - C
+    - US
+    - DZ
+    - 1
+    - 0
+  - - 2010-06-24
+    - E
+    - JP
+    - DK
+    - 3
+    - 1
+  - - 2010-06-24
+    - E
+    - NL
+    - CM
+    - 2
+    - 1
+  - - 2010-06-24
+    - F
+    - PY
+    - NZ
+    - 0
+    - 0
+  - - 2010-06-24
+    - F
+    - SK
+    - IT
+    - 3
+    - 2
+  - - 2010-06-25
+    - G
+    - BR
+    - PT
+    - 0
+    - 0
+  - - 2010-06-25
+    - H
+    - CH
+    - HN
+    - 0
+    - 0
+  - - 2010-06-25
+    - G
+    - CI
+    - KP
+    - 3
+    - 0
+  - - 2010-06-25
+    - H
+    - ES
+    - CL
+    - 2
+    - 1
+- id: r16
+  type: bracket
+  matches:
+    m1:
+      home: groups.A.1
+      away: groups.B.2
+      date: 2010-06-26
+      actual:
+        winner: UY
+        score:
+        - 2
+        - 1
+    m2:
+      home: groups.C.1
+      away: groups.D.2
+      date: 2010-06-26
+      actual:
+        winner: GH
+        score:
+        - 1
+        - 2
+    m3:
+      home: groups.E.1
+      away: groups.F.2
+      date: 2010-06-28
+      actual:
+        winner: NL
+        score:
+        - 2
+        - 1
+    m4:
+      home: groups.G.1
+      away: groups.H.2
+      date: 2010-06-28
+      actual:
+        winner: BR
+        score:
+        - 3
+        - 0
+    m5:
+      home: groups.B.1
+      away: groups.A.2
+      date: 2010-06-27
+      actual:
+        winner: AR
+        score:
+        - 3
+        - 1
+    m6:
+      home: groups.D.1
+      away: groups.C.2
+      date: 2010-06-27
+      actual:
+        winner: DE
+        score:
+        - 4
+        - 1
+    m7:
+      home: groups.F.1
+      away: groups.E.2
+      date: 2010-06-29
+      actual:
+        winner: PY
+        score:
+        - 0
+        - 0
+    m8:
+      home: groups.H.1
+      away: groups.G.2
+      date: 2010-06-29
+      actual:
+        winner: ES
+        score:
+        - 1
+        - 0
+- id: qf
+  type: bracket
+  matches:
+    qf1:
+      home: r16.m1.W
+      away: r16.m2.W
+      date: 2010-07-02
+      actual:
+        winner: UY
+        score:
+        - 1
+        - 1
+    qf2:
+      home: r16.m3.W
+      away: r16.m4.W
+      date: 2010-07-02
+      actual:
+        winner: NL
+        score:
+        - 2
+        - 1
+    qf3:
+      home: r16.m5.W
+      away: r16.m6.W
+      date: 2010-07-03
+      actual:
+        winner: DE
+        score:
+        - 0
+        - 4
+    qf4:
+      home: r16.m7.W
+      away: r16.m8.W
+      date: 2010-07-03
+      actual:
+        winner: ES
+        score:
+        - 0
+        - 1
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: qf.qf1.W
+      away: qf.qf2.W
+      date: 2010-07-06
+      actual:
+        winner: NL
+        score:
+        - 2
+        - 3
+    sf2:
+      home: qf.qf3.W
+      away: qf.qf4.W
+      date: 2010-07-07
+      actual:
+        winner: ES
+        score:
+        - 0
+        - 1
+- id: third_place
+  type: match
+  home: sf.sf1.L
+  away: sf.sf2.L
+  date: 2010-07-10
+  actual:
+    winner: DE
+    score:
+    - 2
+    - 3
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 2010-07-11
+  actual:
+    winner: ES
+    score:
+    - 0
+    - 1

@@ -1,0 +1,634 @@
+name: World Cup 2014
+year: 2014
+match_code: WC
+cutoff: 2014-06-12
+hosts:
+- BR
+points:
+  win: 3
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  BR:
+    elo: 2145
+    name: Brazil
+    elo_9m: 2123
+  HR:
+    elo: 1811
+    name: Croatia
+    elo_9m: 1845
+  MX:
+    elo: 1828
+    name: Mexico
+    elo_9m: 1781
+  CM:
+    elo: 1592
+    name: Cameroon
+    elo_9m: 1571
+  ES:
+    elo: 2032
+    name: Spain
+    elo_9m: 2120
+  NL:
+    elo: 2060
+    name: Netherlands
+    elo_9m: 1999
+  CL:
+    elo: 1941
+    name: Chile
+    elo_9m: 1883
+  AU:
+    elo: 1687
+    name: Australia
+    elo_9m: 1712
+  CO:
+    elo: 1960
+    name: Colombia
+    elo_9m: 1895
+  GR:
+    elo: 1785
+    name: Greece
+    elo_9m: 1825
+  CI:
+    elo: 1803
+    name: Ivory Coast
+    elo_9m: 1786
+  JP:
+    elo: 1754
+    name: Japan
+    elo_9m: 1754
+  UY:
+    elo: 1849
+    name: Uruguay
+    elo_9m: 1896
+  CR:
+    elo: 1780
+    name: Costa Rica
+    elo_9m: 1724
+  EN:
+    elo: 1897
+    name: England
+    elo_9m: 1959
+  IT:
+    elo: 1921
+    name: Italy
+    elo_9m: 1926
+  CH:
+    elo: 1882
+    name: Switzerland
+    elo_9m: 1856
+  EC:
+    elo: 1808
+    name: Ecuador
+    elo_9m: 1847
+  FR:
+    elo: 1919
+    name: France
+    elo_9m: 1872
+  HN:
+    elo: 1647
+    name: Honduras
+    elo_9m: 1686
+  AR:
+    elo: 2030
+    name: Argentina
+    elo_9m: 2042
+  BA:
+    elo: 1773
+    name: Bosnia and Herzegovina
+    elo_9m: 1780
+  IR:
+    elo: 1716
+    name: Iran
+    elo_9m: 1702
+  NG:
+    elo: 1726
+    name: Nigeria
+    elo_9m: 1729
+  DE:
+    elo: 2109
+    name: Germany
+    elo_9m: 2054
+  PT:
+    elo: 1906
+    name: Portugal
+    elo_9m: 1895
+  GH:
+    elo: 1686
+    name: Ghana
+    elo_9m: 1715
+  US:
+    elo: 1875
+    name: United States
+    elo_9m: 1859
+  BE:
+    elo: 1864
+    name: Belgium
+    elo_9m: 1883
+  DZ:
+    elo: 1612
+    name: Algeria
+    elo_9m: 1570
+  RU:
+    elo: 1834
+    name: Russia
+    elo_9m: 1855
+  KR:
+    elo: 1681
+    name: South Korea
+    elo_9m: 1673
+stages:
+- id: groups
+  type: groups
+  groups:
+    A:
+    - BR
+    - HR
+    - MX
+    - CM
+    B:
+    - ES
+    - NL
+    - CL
+    - AU
+    C:
+    - CO
+    - GR
+    - CI
+    - JP
+    D:
+    - UY
+    - CR
+    - EN
+    - IT
+    E:
+    - CH
+    - EC
+    - FR
+    - HN
+    F:
+    - AR
+    - BA
+    - IR
+    - NG
+    G:
+    - DE
+    - PT
+    - GH
+    - US
+    H:
+    - BE
+    - DZ
+    - RU
+    - KR
+  schedule:
+  - - 2014-06-12
+    - A
+    - BR
+    - HR
+    - 3
+    - 1
+  - - 2014-06-13
+    - B
+    - CL
+    - AU
+    - 3
+    - 1
+  - - 2014-06-13
+    - A
+    - MX
+    - CM
+    - 1
+    - 0
+  - - 2014-06-13
+    - B
+    - ES
+    - NL
+    - 1
+    - 5
+  - - 2014-06-14
+    - C
+    - CO
+    - GR
+    - 3
+    - 0
+  - - 2014-06-14
+    - D
+    - UY
+    - CR
+    - 1
+    - 3
+  - - 2014-06-14
+    - D
+    - EN
+    - IT
+    - 1
+    - 2
+  - - 2014-06-14
+    - C
+    - CI
+    - JP
+    - 2
+    - 1
+  - - 2014-06-15
+    - F
+    - AR
+    - BA
+    - 2
+    - 1
+  - - 2014-06-15
+    - E
+    - FR
+    - HN
+    - 3
+    - 0
+  - - 2014-06-15
+    - E
+    - CH
+    - EC
+    - 2
+    - 1
+  - - 2014-06-16
+    - G
+    - DE
+    - PT
+    - 4
+    - 0
+  - - 2014-06-16
+    - F
+    - IR
+    - NG
+    - 0
+    - 0
+  - - 2014-06-16
+    - G
+    - GH
+    - US
+    - 1
+    - 2
+  - - 2014-06-17
+    - H
+    - BE
+    - DZ
+    - 2
+    - 1
+  - - 2014-06-17
+    - A
+    - BR
+    - MX
+    - 0
+    - 0
+  - - 2014-06-17
+    - H
+    - RU
+    - KR
+    - 1
+    - 1
+  - - 2014-06-18
+    - B
+    - ES
+    - CL
+    - 0
+    - 2
+  - - 2014-06-18
+    - A
+    - HR
+    - CM
+    - 4
+    - 0
+  - - 2014-06-18
+    - B
+    - NL
+    - AU
+    - 3
+    - 2
+  - - 2014-06-19
+    - C
+    - CO
+    - CI
+    - 2
+    - 1
+  - - 2014-06-19
+    - C
+    - GR
+    - JP
+    - 0
+    - 0
+  - - 2014-06-19
+    - D
+    - UY
+    - EN
+    - 2
+    - 1
+  - - 2014-06-20
+    - D
+    - CR
+    - IT
+    - 1
+    - 0
+  - - 2014-06-20
+    - E
+    - EC
+    - HN
+    - 2
+    - 1
+  - - 2014-06-20
+    - E
+    - CH
+    - FR
+    - 2
+    - 5
+  - - 2014-06-21
+    - F
+    - AR
+    - IR
+    - 1
+    - 0
+  - - 2014-06-21
+    - G
+    - DE
+    - GH
+    - 2
+    - 2
+  - - 2014-06-21
+    - F
+    - BA
+    - NG
+    - 0
+    - 1
+  - - 2014-06-22
+    - H
+    - DZ
+    - KR
+    - 4
+    - 2
+  - - 2014-06-22
+    - H
+    - BE
+    - RU
+    - 1
+    - 0
+  - - 2014-06-22
+    - G
+    - PT
+    - US
+    - 2
+    - 2
+  - - 2014-06-23
+    - A
+    - BR
+    - CM
+    - 4
+    - 1
+  - - 2014-06-23
+    - A
+    - HR
+    - MX
+    - 1
+    - 3
+  - - 2014-06-23
+    - B
+    - NL
+    - CL
+    - 2
+    - 0
+  - - 2014-06-23
+    - B
+    - ES
+    - AU
+    - 3
+    - 0
+  - - 2014-06-24
+    - C
+    - CO
+    - JP
+    - 4
+    - 1
+  - - 2014-06-24
+    - D
+    - CR
+    - EN
+    - 0
+    - 0
+  - - 2014-06-24
+    - C
+    - GR
+    - CI
+    - 2
+    - 1
+  - - 2014-06-24
+    - D
+    - UY
+    - IT
+    - 1
+    - 0
+  - - 2014-06-25
+    - F
+    - AR
+    - NG
+    - 3
+    - 2
+  - - 2014-06-25
+    - F
+    - BA
+    - IR
+    - 3
+    - 1
+  - - 2014-06-25
+    - E
+    - EC
+    - FR
+    - 0
+    - 0
+  - - 2014-06-25
+    - E
+    - CH
+    - HN
+    - 3
+    - 0
+  - - 2014-06-26
+    - H
+    - DZ
+    - RU
+    - 1
+    - 1
+  - - 2014-06-26
+    - H
+    - BE
+    - KR
+    - 1
+    - 0
+  - - 2014-06-26
+    - G
+    - DE
+    - US
+    - 1
+    - 0
+  - - 2014-06-26
+    - G
+    - PT
+    - GH
+    - 2
+    - 1
+- id: r16
+  type: bracket
+  matches:
+    m1:
+      home: groups.A.1
+      away: groups.B.2
+      date: 2014-06-28
+      actual:
+        winner: BR
+        score:
+        - 1
+        - 1
+    m2:
+      home: groups.C.1
+      away: groups.D.2
+      date: 2014-06-28
+      actual:
+        winner: CO
+        score:
+        - 2
+        - 0
+    m3:
+      home: groups.E.1
+      away: groups.F.2
+      date: 2014-06-30
+      actual:
+        winner: FR
+        score:
+        - 2
+        - 0
+    m4:
+      home: groups.G.1
+      away: groups.H.2
+      date: 2014-06-30
+      actual:
+        winner: DE
+        score:
+        - 2
+        - 1
+    m5:
+      home: groups.B.1
+      away: groups.A.2
+      date: 2014-06-29
+      actual:
+        winner: NL
+        score:
+        - 2
+        - 1
+    m6:
+      home: groups.D.1
+      away: groups.C.2
+      date: 2014-06-29
+      actual:
+        winner: CR
+        score:
+        - 1
+        - 1
+    m7:
+      home: groups.F.1
+      away: groups.E.2
+      date: 2014-07-01
+      actual:
+        winner: AR
+        score:
+        - 1
+        - 0
+    m8:
+      home: groups.H.1
+      away: groups.G.2
+      date: 2014-07-01
+      actual:
+        winner: BE
+        score:
+        - 2
+        - 1
+- id: qf
+  type: bracket
+  matches:
+    qf1:
+      home: r16.m1.W
+      away: r16.m2.W
+      date: 2014-07-04
+      actual:
+        winner: BR
+        score:
+        - 2
+        - 1
+    qf2:
+      home: r16.m3.W
+      away: r16.m4.W
+      date: 2014-07-04
+      actual:
+        winner: DE
+        score:
+        - 0
+        - 1
+    qf3:
+      home: r16.m5.W
+      away: r16.m6.W
+      date: 2014-07-05
+      actual:
+        winner: NL
+        score:
+        - 0
+        - 0
+    qf4:
+      home: r16.m7.W
+      away: r16.m8.W
+      date: 2014-07-05
+      actual:
+        winner: AR
+        score:
+        - 1
+        - 0
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: qf.qf1.W
+      away: qf.qf2.W
+      date: 2014-07-08
+      actual:
+        winner: DE
+        score:
+        - 1
+        - 7
+    sf2:
+      home: qf.qf3.W
+      away: qf.qf4.W
+      date: 2014-07-09
+      actual:
+        winner: AR
+        score:
+        - 0
+        - 0
+- id: third_place
+  type: match
+  home: sf.sf1.L
+  away: sf.sf2.L
+  date: 2014-07-12
+  actual:
+    winner: NL
+    score:
+    - 0
+    - 3
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 2014-07-13
+  actual:
+    winner: DE
+    score:
+    - 1
+    - 0

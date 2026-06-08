@@ -1,0 +1,635 @@
+name: World Cup 2002
+year: 2002
+match_code: WC
+cutoff: 2002-05-31
+hosts:
+- KR
+- JP
+points:
+  win: 3
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  FR:
+    name: France
+    elo: 2039
+    elo_9m: 2115
+  SN:
+    name: Senegal
+    elo: 1752
+    elo_9m: 1584
+  UY:
+    name: Uruguay
+    elo: 1785
+    elo_9m: 1749
+  DK:
+    name: Denmark
+    elo: 1887
+    elo_9m: 1804
+  ES:
+    name: Spain
+    elo: 1983
+    elo_9m: 1962
+  SI:
+    name: Slovenia
+    elo: 1725
+    elo_9m: 1716
+  PY:
+    name: Paraguay
+    elo: 1723
+    elo_9m: 1803
+  ZA:
+    name: South Africa
+    elo: 1648
+    elo_9m: 1623
+  BR:
+    name: Brazil
+    elo: 1888
+    elo_9m: 1867
+  TR:
+    name: Turkey
+    elo: 1735
+    elo_9m: 1755
+  CN:
+    name: China
+    elo: 1661
+    elo_9m: 1715
+  CR:
+    name: Costa Rica
+    elo: 1793
+    elo_9m: 1739
+  KR:
+    name: South Korea
+    elo: 1767
+    elo_9m: 1796
+  PL:
+    name: Poland
+    elo: 1703
+    elo_9m: 1821
+  US:
+    name: United States
+    elo: 1852
+    elo_9m: 1783
+  PT:
+    name: Portugal
+    elo: 1934
+    elo_9m: 2002
+  DE:
+    name: Germany
+    elo: 1908
+    elo_9m: 1871
+  SA:
+    name: Saudi Arabia
+    elo: 1659
+    elo_9m: 1670
+  IE:
+    name: Ireland
+    elo: 1867
+    elo_9m: 1867
+  CM:
+    name: Cameroon
+    elo: 1811
+    elo_9m: 1712
+  AR:
+    name: Argentina
+    elo: 2031
+    elo_9m: 2037
+  NG:
+    name: Nigeria
+    elo: 1754
+    elo_9m: 1718
+  EN:
+    name: England
+    elo: 1919
+    elo_9m: 1950
+  SE:
+    name: Sweden
+    elo: 1871
+    elo_9m: 1868
+  IT:
+    name: Italy
+    elo: 2023
+    elo_9m: 2015
+  EC:
+    name: Ecuador
+    elo: 1712
+    elo_9m: 1713
+  HR:
+    name: Croatia
+    elo: 1847
+    elo_9m: 1890
+  MX:
+    name: Mexico
+    elo: 1866
+    elo_9m: 1773
+  JP:
+    name: Japan
+    elo: 1839
+    elo_9m: 1861
+  BE:
+    name: Belgium
+    elo: 1846
+    elo_9m: 1796
+  RU:
+    name: Russia
+    elo: 1824
+    elo_9m: 1815
+  TN:
+    name: Tunisia
+    elo: 1595
+    elo_9m: 1674
+stages:
+- id: groups
+  type: groups
+  groups:
+    A:
+    - DK
+    - SN
+    - UY
+    - FR
+    B:
+    - ES
+    - PY
+    - ZA
+    - SI
+    C:
+    - BR
+    - TR
+    - CR
+    - CN
+    D:
+    - KR
+    - US
+    - PT
+    - PL
+    E:
+    - DE
+    - IE
+    - CM
+    - SA
+    F:
+    - SE
+    - EN
+    - AR
+    - NG
+    G:
+    - MX
+    - IT
+    - HR
+    - EC
+    H:
+    - JP
+    - BE
+    - RU
+    - TN
+  schedule:
+  - - 2002-05-31
+    - A
+    - SN
+    - FR
+    - 1
+    - 0
+  - - 2002-06-01
+    - E
+    - IE
+    - CM
+    - 1
+    - 1
+  - - 2002-06-01
+    - A
+    - DK
+    - UY
+    - 2
+    - 1
+  - - 2002-06-01
+    - E
+    - DE
+    - SA
+    - 8
+    - 0
+  - - 2002-06-02
+    - F
+    - AR
+    - NG
+    - 1
+    - 0
+  - - 2002-06-02
+    - F
+    - SE
+    - EN
+    - 1
+    - 1
+  - - 2002-06-02
+    - B
+    - PY
+    - ZA
+    - 2
+    - 2
+  - - 2002-06-02
+    - B
+    - ES
+    - SI
+    - 3
+    - 1
+  - - 2002-06-03
+    - C
+    - BR
+    - TR
+    - 2
+    - 1
+  - - 2002-06-03
+    - G
+    - IT
+    - EC
+    - 2
+    - 0
+  - - 2002-06-03
+    - G
+    - MX
+    - HR
+    - 1
+    - 0
+  - - 2002-06-04
+    - C
+    - CR
+    - CN
+    - 2
+    - 0
+  - - 2002-06-04
+    - H
+    - JP
+    - BE
+    - 2
+    - 2
+  - - 2002-06-04
+    - D
+    - KR
+    - PL
+    - 2
+    - 0
+  - - 2002-06-05
+    - E
+    - DE
+    - IE
+    - 1
+    - 1
+  - - 2002-06-05
+    - H
+    - RU
+    - TN
+    - 2
+    - 0
+  - - 2002-06-05
+    - D
+    - US
+    - PT
+    - 3
+    - 2
+  - - 2002-06-06
+    - E
+    - CM
+    - SA
+    - 1
+    - 0
+  - - 2002-06-06
+    - A
+    - DK
+    - SN
+    - 1
+    - 1
+  - - 2002-06-06
+    - A
+    - UY
+    - FR
+    - 0
+    - 0
+  - - 2002-06-07
+    - F
+    - EN
+    - AR
+    - 1
+    - 0
+  - - 2002-06-07
+    - B
+    - ES
+    - PY
+    - 3
+    - 1
+  - - 2002-06-07
+    - F
+    - SE
+    - NG
+    - 2
+    - 1
+  - - 2002-06-08
+    - C
+    - BR
+    - CN
+    - 4
+    - 0
+  - - 2002-06-08
+    - G
+    - IT
+    - HR
+    - 1
+    - 2
+  - - 2002-06-08
+    - B
+    - ZA
+    - SI
+    - 1
+    - 0
+  - - 2002-06-09
+    - C
+    - TR
+    - CR
+    - 1
+    - 1
+  - - 2002-06-09
+    - H
+    - JP
+    - RU
+    - 1
+    - 0
+  - - 2002-06-09
+    - G
+    - MX
+    - EC
+    - 2
+    - 1
+  - - 2002-06-10
+    - H
+    - BE
+    - TN
+    - 1
+    - 1
+  - - 2002-06-10
+    - D
+    - PT
+    - PL
+    - 4
+    - 0
+  - - 2002-06-10
+    - D
+    - KR
+    - US
+    - 1
+    - 1
+  - - 2002-06-11
+    - A
+    - DK
+    - FR
+    - 2
+    - 0
+  - - 2002-06-11
+    - E
+    - DE
+    - CM
+    - 2
+    - 0
+  - - 2002-06-11
+    - E
+    - IE
+    - SA
+    - 3
+    - 0
+  - - 2002-06-11
+    - A
+    - SN
+    - UY
+    - 3
+    - 3
+  - - 2002-06-12
+    - F
+    - SE
+    - AR
+    - 1
+    - 1
+  - - 2002-06-12
+    - F
+    - EN
+    - NG
+    - 0
+    - 0
+  - - 2002-06-12
+    - B
+    - PY
+    - SI
+    - 3
+    - 1
+  - - 2002-06-12
+    - B
+    - ES
+    - ZA
+    - 3
+    - 2
+  - - 2002-06-13
+    - C
+    - BR
+    - CR
+    - 5
+    - 2
+  - - 2002-06-13
+    - G
+    - HR
+    - EC
+    - 0
+    - 1
+  - - 2002-06-13
+    - G
+    - MX
+    - IT
+    - 1
+    - 1
+  - - 2002-06-13
+    - C
+    - TR
+    - CN
+    - 3
+    - 0
+  - - 2002-06-14
+    - H
+    - BE
+    - RU
+    - 3
+    - 2
+  - - 2002-06-14
+    - H
+    - JP
+    - TN
+    - 2
+    - 0
+  - - 2002-06-14
+    - D
+    - US
+    - PL
+    - 1
+    - 3
+  - - 2002-06-14
+    - D
+    - KR
+    - PT
+    - 1
+    - 0
+- id: r16
+  type: bracket
+  matches:
+    m1:
+      home: groups.A.1
+      away: groups.F.2
+      date: 2002-06-15
+      actual:
+        winner: EN
+        score:
+        - 0
+        - 3
+    m2:
+      home: groups.E.1
+      away: groups.B.2
+      date: 2002-06-15
+      actual:
+        winner: DE
+        score:
+        - 1
+        - 0
+    m3:
+      home: groups.F.1
+      away: groups.A.2
+      date: 2002-06-16
+      actual:
+        winner: SN
+        score:
+        - 1
+        - 2
+    m4:
+      home: groups.B.1
+      away: groups.E.2
+      date: 2002-06-16
+      actual:
+        winner: ES
+        score:
+        - 1
+        - 1
+    m5:
+      home: groups.G.1
+      away: groups.D.2
+      date: 2002-06-17
+      actual:
+        winner: US
+        score:
+        - 0
+        - 2
+    m6:
+      home: groups.C.1
+      away: groups.H.2
+      date: 2002-06-17
+      actual:
+        winner: BR
+        score:
+        - 2
+        - 0
+    m7:
+      home: groups.H.1
+      away: groups.C.2
+      date: 2002-06-18
+      actual:
+        winner: TR
+        score:
+        - 0
+        - 1
+    m8:
+      home: groups.D.1
+      away: groups.G.2
+      date: 2002-06-18
+      actual:
+        winner: KR
+        score:
+        - 2
+        - 1
+- id: qf
+  type: bracket
+  matches:
+    qf1:
+      home: r16.m2.W
+      away: r16.m5.W
+      date: 2002-06-21
+      actual:
+        winner: DE
+        score:
+        - 1
+        - 0
+    qf2:
+      home: r16.m4.W
+      away: r16.m8.W
+      date: 2002-06-22
+      actual:
+        winner: KR
+        score:
+        - 0
+        - 0
+    qf3:
+      home: r16.m1.W
+      away: r16.m6.W
+      date: 2002-06-21
+      actual:
+        winner: BR
+        score:
+        - 1
+        - 2
+    qf4:
+      home: r16.m3.W
+      away: r16.m7.W
+      date: 2002-06-22
+      actual:
+        winner: TR
+        score:
+        - 0
+        - 1
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: qf.qf1.W
+      away: qf.qf2.W
+      date: 2002-06-25
+      actual:
+        winner: DE
+        score:
+        - 1
+        - 0
+    sf2:
+      home: qf.qf3.W
+      away: qf.qf4.W
+      date: 2002-06-26
+      actual:
+        winner: BR
+        score:
+        - 1
+        - 0
+- id: third_place
+  type: match
+  home: sf.sf1.L
+  away: sf.sf2.L
+  date: 2002-06-29
+  actual:
+    winner: TR
+    score:
+    - 2
+    - 3
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 2002-06-30
+  actual:
+    winner: BR
+    score:
+    - 0
+    - 2

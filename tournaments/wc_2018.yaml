@@ -1,0 +1,634 @@
+name: World Cup 2018
+year: 2018
+match_code: WC
+cutoff: 2018-06-14
+hosts:
+- RU
+points:
+  win: 3
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  RU:
+    elo: 1706
+    name: Russia
+    elo_9m: 1696
+  SA:
+    elo: 1558
+    name: Saudi Arabia
+    elo_9m: 1626
+  EG:
+    elo: 1628
+    name: Egypt
+    elo_9m: 1646
+  UY:
+    elo: 1904
+    name: Uruguay
+    elo_9m: 1863
+  PT:
+    elo: 1973
+    name: Portugal
+    elo_9m: 1985
+  ES:
+    elo: 2037
+    name: Spain
+    elo_9m: 2028
+  MA:
+    elo: 1706
+    name: Morocco
+    elo_9m: 1632
+  IR:
+    elo: 1815
+    name: Iran
+    elo_9m: 1784
+  FR:
+    elo: 1998
+    name: France
+    elo_9m: 1977
+  AU:
+    elo: 1731
+    name: Australia
+    elo_9m: 1703
+  PE:
+    elo: 1880
+    name: Peru
+    elo_9m: 1894
+  DK:
+    elo: 1889
+    name: Denmark
+    elo_9m: 1813
+  AR:
+    elo: 1968
+    name: Argentina
+    elo_9m: 1984
+  IS:
+    elo: 1781
+    name: Iceland
+    elo_9m: 1838
+  HR:
+    elo: 1877
+    name: Croatia
+    elo_9m: 1817
+  NG:
+    elo: 1657
+    name: Nigeria
+    elo_9m: 1672
+  BR:
+    elo: 2122
+    name: Brazil
+    elo_9m: 2103
+  CH:
+    elo: 1907
+    name: Switzerland
+    elo_9m: 1879
+  CR:
+    elo: 1716
+    name: Costa Rica
+    elo_9m: 1782
+  RS:
+    elo: 1813
+    name: Serbia
+    elo_9m: 1766
+  DE:
+    elo: 2029
+    name: Germany
+    elo_9m: 2115
+  MX:
+    elo: 1896
+    name: Mexico
+    elo_9m: 1858
+  SE:
+    elo: 1816
+    name: Sweden
+    elo_9m: 1808
+  KR:
+    elo: 1690
+    name: South Korea
+    elo_9m: 1717
+  BE:
+    elo: 1953
+    name: Belgium
+    elo_9m: 1926
+  PA:
+    elo: 1639
+    name: Panama
+    elo_9m: 1647
+  TN:
+    elo: 1643
+    name: Tunisia
+    elo_9m: 1631
+  EN:
+    elo: 1956
+    name: England
+    elo_9m: 1925
+  PL:
+    elo: 1793
+    name: Poland
+    elo_9m: 1848
+  SN:
+    elo: 1782
+    name: Senegal
+    elo_9m: 1714
+  CO:
+    elo: 1879
+    name: Colombia
+    elo_9m: 1928
+  JP:
+    elo: 1732
+    name: Japan
+    elo_9m: 1758
+stages:
+- id: groups
+  type: groups
+  groups:
+    A:
+    - UY
+    - RU
+    - SA
+    - EG
+    B:
+    - ES
+    - PT
+    - IR
+    - MA
+    C:
+    - FR
+    - DK
+    - PE
+    - AU
+    D:
+    - HR
+    - AR
+    - NG
+    - IS
+    E:
+    - BR
+    - CH
+    - RS
+    - CR
+    F:
+    - SE
+    - MX
+    - KR
+    - DE
+    G:
+    - BE
+    - EN
+    - TN
+    - PA
+    H:
+    - CO
+    - JP
+    - SN
+    - PL
+  schedule:
+  - - 2018-06-14
+    - A
+    - RU
+    - SA
+    - 5
+    - 0
+  - - 2018-06-15
+    - B
+    - IR
+    - MA
+    - 1
+    - 0
+  - - 2018-06-15
+    - B
+    - ES
+    - PT
+    - 3
+    - 3
+  - - 2018-06-15
+    - A
+    - UY
+    - EG
+    - 1
+    - 0
+  - - 2018-06-16
+    - D
+    - AR
+    - IS
+    - 1
+    - 1
+  - - 2018-06-16
+    - D
+    - HR
+    - NG
+    - 2
+    - 0
+  - - 2018-06-16
+    - C
+    - DK
+    - PE
+    - 1
+    - 0
+  - - 2018-06-16
+    - C
+    - FR
+    - AU
+    - 2
+    - 1
+  - - 2018-06-17
+    - E
+    - BR
+    - CH
+    - 1
+    - 1
+  - - 2018-06-17
+    - F
+    - MX
+    - DE
+    - 1
+    - 0
+  - - 2018-06-17
+    - E
+    - RS
+    - CR
+    - 1
+    - 0
+  - - 2018-06-18
+    - G
+    - BE
+    - PA
+    - 3
+    - 0
+  - - 2018-06-18
+    - G
+    - EN
+    - TN
+    - 2
+    - 1
+  - - 2018-06-18
+    - F
+    - SE
+    - KR
+    - 1
+    - 0
+  - - 2018-06-19
+    - H
+    - CO
+    - JP
+    - 1
+    - 2
+  - - 2018-06-19
+    - A
+    - RU
+    - EG
+    - 3
+    - 1
+  - - 2018-06-19
+    - H
+    - SN
+    - PL
+    - 2
+    - 1
+  - - 2018-06-20
+    - B
+    - PT
+    - MA
+    - 1
+    - 0
+  - - 2018-06-20
+    - B
+    - ES
+    - IR
+    - 1
+    - 0
+  - - 2018-06-20
+    - A
+    - UY
+    - SA
+    - 1
+    - 0
+  - - 2018-06-21
+    - C
+    - DK
+    - AU
+    - 1
+    - 1
+  - - 2018-06-21
+    - D
+    - HR
+    - AR
+    - 3
+    - 0
+  - - 2018-06-21
+    - C
+    - FR
+    - PE
+    - 1
+    - 0
+  - - 2018-06-22
+    - E
+    - BR
+    - CR
+    - 2
+    - 0
+  - - 2018-06-22
+    - D
+    - NG
+    - IS
+    - 2
+    - 0
+  - - 2018-06-22
+    - E
+    - CH
+    - RS
+    - 2
+    - 1
+  - - 2018-06-23
+    - G
+    - BE
+    - TN
+    - 5
+    - 2
+  - - 2018-06-23
+    - F
+    - SE
+    - DE
+    - 1
+    - 2
+  - - 2018-06-23
+    - F
+    - MX
+    - KR
+    - 2
+    - 1
+  - - 2018-06-24
+    - H
+    - CO
+    - PL
+    - 3
+    - 0
+  - - 2018-06-24
+    - G
+    - EN
+    - PA
+    - 6
+    - 1
+  - - 2018-06-24
+    - H
+    - JP
+    - SN
+    - 2
+    - 2
+  - - 2018-06-25
+    - B
+    - ES
+    - MA
+    - 2
+    - 2
+  - - 2018-06-25
+    - B
+    - PT
+    - IR
+    - 1
+    - 1
+  - - 2018-06-25
+    - A
+    - UY
+    - RU
+    - 3
+    - 0
+  - - 2018-06-25
+    - A
+    - SA
+    - EG
+    - 2
+    - 1
+  - - 2018-06-26
+    - D
+    - AR
+    - NG
+    - 2
+    - 1
+  - - 2018-06-26
+    - D
+    - HR
+    - IS
+    - 2
+    - 1
+  - - 2018-06-26
+    - C
+    - FR
+    - DK
+    - 0
+    - 0
+  - - 2018-06-26
+    - C
+    - PE
+    - AU
+    - 2
+    - 0
+  - - 2018-06-27
+    - E
+    - BR
+    - RS
+    - 2
+    - 0
+  - - 2018-06-27
+    - E
+    - CH
+    - CR
+    - 2
+    - 2
+  - - 2018-06-27
+    - F
+    - KR
+    - DE
+    - 2
+    - 0
+  - - 2018-06-27
+    - F
+    - SE
+    - MX
+    - 3
+    - 0
+  - - 2018-06-28
+    - G
+    - BE
+    - EN
+    - 1
+    - 0
+  - - 2018-06-28
+    - H
+    - CO
+    - SN
+    - 1
+    - 0
+  - - 2018-06-28
+    - H
+    - JP
+    - PL
+    - 0
+    - 1
+  - - 2018-06-28
+    - G
+    - TN
+    - PA
+    - 2
+    - 1
+- id: r16
+  type: bracket
+  matches:
+    m1:
+      home: groups.A.1
+      away: groups.B.2
+      date: 2018-06-30
+      actual:
+        winner: UY
+        score:
+        - 2
+        - 1
+    m2:
+      home: groups.C.1
+      away: groups.D.2
+      date: 2018-06-30
+      actual:
+        winner: FR
+        score:
+        - 4
+        - 3
+    m3:
+      home: groups.E.1
+      away: groups.F.2
+      date: 2018-07-02
+      actual:
+        winner: BR
+        score:
+        - 2
+        - 0
+    m4:
+      home: groups.G.1
+      away: groups.H.2
+      date: 2018-07-02
+      actual:
+        winner: BE
+        score:
+        - 3
+        - 2
+    m5:
+      home: groups.B.1
+      away: groups.A.2
+      date: 2018-07-01
+      actual:
+        winner: RU
+        score:
+        - 1
+        - 1
+    m6:
+      home: groups.D.1
+      away: groups.C.2
+      date: 2018-07-01
+      actual:
+        winner: HR
+        score:
+        - 1
+        - 1
+    m7:
+      home: groups.F.1
+      away: groups.E.2
+      date: 2018-07-03
+      actual:
+        winner: SE
+        score:
+        - 1
+        - 0
+    m8:
+      home: groups.H.1
+      away: groups.G.2
+      date: 2018-07-03
+      actual:
+        winner: EN
+        score:
+        - 1
+        - 1
+- id: qf
+  type: bracket
+  matches:
+    qf1:
+      home: r16.m1.W
+      away: r16.m2.W
+      date: 2018-07-06
+      actual:
+        winner: FR
+        score:
+        - 0
+        - 2
+    qf2:
+      home: r16.m3.W
+      away: r16.m4.W
+      date: 2018-07-06
+      actual:
+        winner: BE
+        score:
+        - 1
+        - 2
+    qf3:
+      home: r16.m5.W
+      away: r16.m6.W
+      date: 2018-07-07
+      actual:
+        winner: HR
+        score:
+        - 2
+        - 2
+    qf4:
+      home: r16.m7.W
+      away: r16.m8.W
+      date: 2018-07-07
+      actual:
+        winner: EN
+        score:
+        - 0
+        - 2
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: qf.qf1.W
+      away: qf.qf2.W
+      date: 2018-07-10
+      actual:
+        winner: FR
+        score:
+        - 1
+        - 0
+    sf2:
+      home: qf.qf3.W
+      away: qf.qf4.W
+      date: 2018-07-11
+      actual:
+        winner: HR
+        score:
+        - 2
+        - 1
+- id: third_place
+  type: match
+  home: sf.sf1.L
+  away: sf.sf2.L
+  date: 2018-07-14
+  actual:
+    winner: BE
+    score:
+    - 2
+    - 0
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 2018-07-15
+  actual:
+    winner: FR
+    score:
+    - 4
+    - 2

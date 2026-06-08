@@ -1,0 +1,225 @@
+name: World Cup 1938
+year: 1938
+match_code: WC
+cutoff: 1938-06-04
+hosts:
+- FR
+points:
+  win: 2
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  IT:
+    name: Italy
+    elo: 2060
+    elo_9m: 2057
+  NO:
+    name: Norway
+    elo: 1722
+    elo_9m: 1713
+  HU:
+    name: Hungary
+    elo: 1937
+    elo_9m: 1922
+  ID:
+    name: Dutch East Indies
+    elo: 1444
+    elo_9m: 1444
+  FR:
+    name: France
+    elo: 1655
+    elo_9m: 1596
+  BE:
+    name: Belgium
+    elo: 1542
+    elo_9m: 1533
+  CZ:
+    name: Czechoslovakia
+    elo: 1854
+    elo_9m: 1854
+  NL:
+    name: Netherlands
+    elo: 1671
+    elo_9m: 1710
+  BR:
+    name: Brazil
+    elo: 1914
+    elo_9m: 1914
+  PL:
+    name: Poland
+    elo: 1619
+    elo_9m: 1572
+  CH:
+    name: Switzerland
+    elo: 1683
+    elo_9m: 1596
+  DE:
+    name: Germany
+    elo: 1818
+    elo_9m: 1860
+  CU:
+    name: Cuba
+    elo: 1544
+    elo_9m: 1544
+  RO:
+    name: Romania
+    elo: 1556
+    elo_9m: 1574
+  SE:
+    name: Sweden
+    elo: 1644
+    elo_9m: 1682
+stages:
+- id: r16
+  type: bracket
+  matches:
+    m1:
+      home: IT
+      away: NO
+      date: 1938-06-05
+      actual:
+        winner: IT
+        score:
+        - 2
+        - 1
+    m2:
+      home: FR
+      away: BE
+      date: 1938-06-05
+      actual:
+        winner: FR
+        score:
+        - 3
+        - 1
+    m3:
+      home: BR
+      away: PL
+      date: 1938-06-05
+      actual:
+        winner: BR
+        score:
+        - 6
+        - 5
+    m4:
+      home: CZ
+      away: NL
+      date: 1938-06-05
+      actual:
+        winner: CZ
+        score:
+        - 3
+        - 0
+    m5:
+      home: HU
+      away: ID
+      date: 1938-06-05
+      actual:
+        winner: HU
+        score:
+        - 6
+        - 0
+    m6:
+      home: CH
+      away: DE
+      date: 1938-06-04
+      actual:
+        winner: CH
+        score:
+        - 1
+        - 1
+    m7:
+      home: CU
+      away: RO
+      date: 1938-06-05
+      actual:
+        winner: CU
+        score:
+        - 3
+        - 3
+- id: qf
+  type: bracket
+  matches:
+    qf1:
+      home: r16.m1.W
+      away: r16.m2.W
+      date: 1938-06-12
+      actual:
+        winner: IT
+        score:
+        - 3
+        - 1
+    qf2:
+      home: r16.m3.W
+      away: r16.m4.W
+      date: 1938-06-12
+      actual:
+        winner: BR
+        score:
+        - 1
+        - 1
+    qf3:
+      home: r16.m5.W
+      away: r16.m6.W
+      date: 1938-06-12
+      actual:
+        winner: HU
+        score:
+        - 2
+        - 0
+    qf4:
+      home: SE
+      away: r16.m7.W
+      date: 1938-06-12
+      actual:
+        winner: SE
+        score:
+        - 8
+        - 0
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: qf.qf3.W
+      away: qf.qf4.W
+      date: 1938-06-16
+      actual:
+        winner: HU
+        score:
+        - 5
+        - 1
+    sf2:
+      home: qf.qf1.W
+      away: qf.qf2.W
+      date: 1938-06-16
+      actual:
+        winner: IT
+        score:
+        - 2
+        - 1
+- id: third_place
+  type: match
+  home: sf.sf1.L
+  away: sf.sf2.L
+  date: 1938-06-19
+  actual:
+    winner: BR
+    score:
+    - 2
+    - 4
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 1938-06-19
+  actual:
+    winner: IT
+    score:
+    - 2
+    - 4

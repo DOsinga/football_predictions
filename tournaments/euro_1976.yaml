@@ -1,0 +1,76 @@
+name: Euro 1976
+year: 1976
+match_code: EC
+cutoff: 1976-06-16
+hosts:
+- RS
+points:
+  win: 2
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  CZ:
+    name: Czechoslovakia
+    elo: 1854
+    elo_9m: 1854
+  NL:
+    name: Netherlands
+    elo: 2020
+    elo_9m: 2065
+  RS:
+    name: Yugoslavia
+    elo: 1741
+    elo_9m: 1741
+  DE:
+    name: West Germany
+    elo: 2082
+    elo_9m: 2082
+stages:
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: CZ
+      away: NL
+      date: 1976-06-16
+      actual:
+        winner: CZ
+        score:
+        - 3
+        - 1
+    sf2:
+      home: RS
+      away: DE
+      date: 1976-06-17
+      actual:
+        winner: DE
+        score:
+        - 2
+        - 4
+- id: third_place
+  type: match
+  home: sf.sf1.L
+  away: sf.sf2.L
+  date: 1976-06-19
+  actual:
+    winner: NL
+    score:
+    - 3
+    - 2
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 1976-06-20
+  actual:
+    winner: CZ
+    score:
+    - 2
+    - 2

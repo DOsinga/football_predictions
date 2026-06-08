@@ -1,0 +1,76 @@
+name: Euro 1972
+year: 1972
+match_code: EC
+cutoff: 1972-06-14
+hosts:
+- BE
+points:
+  win: 2
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  BE:
+    name: Belgium
+    elo: 1834
+    elo_9m: 1823
+  DE:
+    name: West Germany
+    elo: 2082
+    elo_9m: 2082
+  RU:
+    name: Soviet Union
+    elo: 1872
+    elo_9m: 1957
+  HU:
+    name: Hungary
+    elo: 1913
+    elo_9m: 1899
+stages:
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: BE
+      away: DE
+      date: 1972-06-14
+      actual:
+        winner: DE
+        score:
+        - 1
+        - 2
+    sf2:
+      home: RU
+      away: HU
+      date: 1972-06-14
+      actual:
+        winner: RU
+        score:
+        - 1
+        - 0
+- id: third_place
+  type: match
+  home: sf.sf1.L
+  away: sf.sf2.L
+  date: 1972-06-17
+  actual:
+    winner: BE
+    score:
+    - 2
+    - 1
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 1972-06-18
+  actual:
+    winner: DE
+    score:
+    - 3
+    - 0

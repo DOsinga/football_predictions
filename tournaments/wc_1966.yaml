@@ -1,0 +1,331 @@
+name: World Cup 1966
+year: 1966
+match_code: WC
+cutoff: 1966-07-11
+hosts:
+- EN
+points:
+  win: 2
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  EN:
+    name: England
+    elo: 1976
+    elo_9m: 1928
+  UY:
+    name: Uruguay
+    elo: 1866
+    elo_9m: 1849
+  MX:
+    name: Mexico
+    elo: 1859
+    elo_9m: 1882
+  FR:
+    name: France
+    elo: 1768
+    elo_9m: 1773
+  DE:
+    name: West Germany
+    elo: 2082
+    elo_9m: 2082
+  AR:
+    name: Argentina
+    elo: 1997
+    elo_9m: 1996
+  ES:
+    name: Spain
+    elo: 1872
+    elo_9m: 1910
+  CH:
+    name: Switzerland
+    elo: 1639
+    elo_9m: 1621
+  PT:
+    name: Portugal
+    elo: 1892
+    elo_9m: 1795
+  HU:
+    name: Hungary
+    elo: 1895
+    elo_9m: 1984
+  BR:
+    name: Brazil
+    elo: 2031
+    elo_9m: 2000
+  BG:
+    name: Bulgaria
+    elo: 1782
+    elo_9m: 1749
+  RU:
+    name: Soviet Union
+    elo: 2052
+    elo_9m: 1957
+  KP:
+    name: North Korea
+    elo: 1755
+    elo_9m: 1766
+  IT:
+    name: Italy
+    elo: 1993
+    elo_9m: 1936
+  CL:
+    name: Chile
+    elo: 1731
+    elo_9m: 1773
+stages:
+- id: r1
+  type: groups
+  groups:
+    1:
+    - EN
+    - UY
+    - MX
+    - FR
+    2:
+    - DE
+    - AR
+    - ES
+    - CH
+    3:
+    - PT
+    - HU
+    - BR
+    - BG
+    4:
+    - RU
+    - KP
+    - IT
+    - CL
+  schedule:
+  - - 1966-07-11
+    - 1
+    - EN
+    - UY
+    - 0
+    - 0
+  - - 1966-07-12
+    - 3
+    - BR
+    - BG
+    - 2
+    - 0
+  - - 1966-07-12
+    - 4
+    - RU
+    - KP
+    - 3
+    - 0
+  - - 1966-07-12
+    - 2
+    - DE
+    - CH
+    - 5
+    - 0
+  - - 1966-07-13
+    - 2
+    - AR
+    - ES
+    - 2
+    - 1
+  - - 1966-07-13
+    - 1
+    - MX
+    - FR
+    - 1
+    - 1
+  - - 1966-07-13
+    - 4
+    - IT
+    - CL
+    - 2
+    - 0
+  - - 1966-07-13
+    - 3
+    - PT
+    - HU
+    - 3
+    - 1
+  - - 1966-07-15
+    - 4
+    - KP
+    - CL
+    - 1
+    - 1
+  - - 1966-07-15
+    - 3
+    - HU
+    - BR
+    - 3
+    - 1
+  - - 1966-07-15
+    - 2
+    - ES
+    - CH
+    - 2
+    - 1
+  - - 1966-07-15
+    - 1
+    - UY
+    - FR
+    - 2
+    - 1
+  - - 1966-07-16
+    - 2
+    - DE
+    - AR
+    - 0
+    - 0
+  - - 1966-07-16
+    - 1
+    - EN
+    - MX
+    - 2
+    - 0
+  - - 1966-07-16
+    - 3
+    - PT
+    - BG
+    - 3
+    - 0
+  - - 1966-07-16
+    - 4
+    - RU
+    - IT
+    - 1
+    - 0
+  - - 1966-07-19
+    - 2
+    - AR
+    - CH
+    - 2
+    - 0
+  - - 1966-07-19
+    - 1
+    - UY
+    - MX
+    - 0
+    - 0
+  - - 1966-07-19
+    - 4
+    - KP
+    - IT
+    - 1
+    - 0
+  - - 1966-07-19
+    - 3
+    - PT
+    - BR
+    - 3
+    - 1
+  - - 1966-07-20
+    - 1
+    - EN
+    - FR
+    - 2
+    - 0
+  - - 1966-07-20
+    - 3
+    - HU
+    - BG
+    - 3
+    - 1
+  - - 1966-07-20
+    - 4
+    - RU
+    - CL
+    - 2
+    - 1
+  - - 1966-07-20
+    - 2
+    - DE
+    - ES
+    - 2
+    - 1
+- id: qf
+  type: bracket
+  matches:
+    qf1:
+      home: r1.1.1
+      away: r1.2.2
+      date: 1966-07-23
+      actual:
+        winner: EN
+        score:
+        - 1
+        - 0
+    qf2:
+      home: r1.2.1
+      away: r1.1.2
+      date: 1966-07-23
+      actual:
+        winner: DE
+        score:
+        - 4
+        - 0
+    qf3:
+      home: r1.4.1
+      away: r1.3.2
+      date: 1966-07-23
+      actual:
+        winner: RU
+        score:
+        - 2
+        - 1
+    qf4:
+      home: r1.3.1
+      away: r1.4.2
+      date: 1966-07-23
+      actual:
+        winner: PT
+        score:
+        - 5
+        - 3
+- id: sf
+  type: bracket
+  matches:
+    sf1:
+      home: qf.qf1.W
+      away: qf.qf4.W
+      date: 1966-07-26
+      actual:
+        winner: EN
+        score:
+        - 2
+        - 1
+    sf2:
+      home: qf.qf2.W
+      away: qf.qf3.W
+      date: 1966-07-25
+      actual:
+        winner: DE
+        score:
+        - 2
+        - 1
+- id: third_place
+  type: match
+  home: sf.sf1.L
+  away: sf.sf2.L
+  date: 1966-07-28
+  actual:
+    winner: PT
+    score:
+    - 2
+    - 1
+- id: final
+  type: match
+  home: sf.sf1.W
+  away: sf.sf2.W
+  date: 1966-07-30
+  actual:
+    winner: EN
+    score:
+    - 4
+    - 2

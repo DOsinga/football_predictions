@@ -1,0 +1,357 @@
+name: World Cup 1974
+year: 1974
+match_code: WC
+cutoff: 1974-06-13
+hosts:
+- DE
+points:
+  win: 2
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  DE:
+    name: West Germany
+    elo: 2082
+    elo_9m: 2082
+  DD:
+    name: East Germany
+    elo: 1956
+    elo_9m: 1880
+  CL:
+    name: Chile
+    elo: 1772
+    elo_9m: 1775
+  AU:
+    name: Australia
+    elo: 1670
+    elo_9m: 1653
+  BR:
+    name: Brazil
+    elo: 2103
+    elo_9m: 2125
+  RS:
+    name: Yugoslavia
+    elo: 1741
+    elo_9m: 1741
+  SQ:
+    name: Scotland
+    elo: 1867
+    elo_9m: 1817
+  CD:
+    name: Zaire
+    elo: 1485
+    elo_9m: 1485
+  NL:
+    name: Netherlands
+    elo: 1877
+    elo_9m: 1838
+  SE:
+    name: Sweden
+    elo: 1882
+    elo_9m: 1863
+  BG:
+    name: Bulgaria
+    elo: 1828
+    elo_9m: 1812
+  UY:
+    name: Uruguay
+    elo: 1725
+    elo_9m: 1778
+  PL:
+    name: Poland
+    elo: 1983
+    elo_9m: 1976
+  AR:
+    name: Argentina
+    elo: 1869
+    elo_9m: 1868
+  IT:
+    name: Italy
+    elo: 2011
+    elo_9m: 1986
+  HT:
+    name: Haiti
+    elo: 1602
+    elo_9m: 1596
+stages:
+- id: r1
+  type: groups
+  groups:
+    1:
+    - DD
+    - DE
+    - CL
+    - AU
+    2:
+    - RS
+    - BR
+    - SQ
+    - CD
+    3:
+    - NL
+    - SE
+    - BG
+    - UY
+    4:
+    - PL
+    - AR
+    - IT
+    - HT
+  schedule:
+  - - 1974-06-13
+    - 2
+    - RS
+    - BR
+    - 0
+    - 0
+  - - 1974-06-14
+    - 1
+    - DD
+    - AU
+    - 2
+    - 0
+  - - 1974-06-14
+    - 2
+    - SQ
+    - CD
+    - 2
+    - 0
+  - - 1974-06-14
+    - 1
+    - DE
+    - CL
+    - 1
+    - 0
+  - - 1974-06-15
+    - 3
+    - SE
+    - BG
+    - 0
+    - 0
+  - - 1974-06-15
+    - 4
+    - IT
+    - HT
+    - 3
+    - 1
+  - - 1974-06-15
+    - 3
+    - NL
+    - UY
+    - 2
+    - 0
+  - - 1974-06-15
+    - 4
+    - PL
+    - AR
+    - 3
+    - 2
+  - - 1974-06-18
+    - 2
+    - BR
+    - SQ
+    - 0
+    - 0
+  - - 1974-06-18
+    - 1
+    - DD
+    - CL
+    - 1
+    - 1
+  - - 1974-06-18
+    - 1
+    - DE
+    - AU
+    - 3
+    - 0
+  - - 1974-06-18
+    - 2
+    - RS
+    - CD
+    - 9
+    - 0
+  - - 1974-06-19
+    - 4
+    - AR
+    - IT
+    - 1
+    - 1
+  - - 1974-06-19
+    - 3
+    - BG
+    - UY
+    - 1
+    - 1
+  - - 1974-06-19
+    - 3
+    - NL
+    - SE
+    - 0
+    - 0
+  - - 1974-06-19
+    - 4
+    - PL
+    - HT
+    - 7
+    - 0
+  - - 1974-06-22
+    - 1
+    - CL
+    - AU
+    - 0
+    - 0
+  - - 1974-06-22
+    - 2
+    - BR
+    - CD
+    - 3
+    - 0
+  - - 1974-06-22
+    - 2
+    - RS
+    - SQ
+    - 1
+    - 1
+  - - 1974-06-22
+    - 1
+    - DD
+    - DE
+    - 1
+    - 0
+  - - 1974-06-23
+    - 4
+    - AR
+    - HT
+    - 4
+    - 1
+  - - 1974-06-23
+    - 3
+    - NL
+    - BG
+    - 4
+    - 1
+  - - 1974-06-23
+    - 4
+    - PL
+    - IT
+    - 2
+    - 1
+  - - 1974-06-23
+    - 3
+    - SE
+    - UY
+    - 3
+    - 0
+- id: r2
+  type: groups
+  groups:
+    A:
+    - r1.3.1
+    - r1.2.2
+    - r1.1.1
+    - r1.4.2
+    B:
+    - r1.1.2
+    - r1.4.1
+    - r1.2.1
+    - r1.3.2
+  schedule:
+  - - 1974-06-26
+    - A
+    - BR
+    - DD
+    - 1
+    - 0
+  - - 1974-06-26
+    - A
+    - NL
+    - AR
+    - 4
+    - 0
+  - - 1974-06-26
+    - B
+    - PL
+    - SE
+    - 1
+    - 0
+  - - 1974-06-26
+    - B
+    - DE
+    - RS
+    - 2
+    - 0
+  - - 1974-06-30
+    - A
+    - BR
+    - AR
+    - 2
+    - 1
+  - - 1974-06-30
+    - A
+    - NL
+    - DD
+    - 2
+    - 0
+  - - 1974-06-30
+    - B
+    - PL
+    - RS
+    - 2
+    - 1
+  - - 1974-06-30
+    - B
+    - DE
+    - SE
+    - 4
+    - 2
+  - - 1974-07-03
+    - A
+    - DD
+    - AR
+    - 1
+    - 1
+  - - 1974-07-03
+    - A
+    - NL
+    - BR
+    - 2
+    - 0
+  - - 1974-07-03
+    - B
+    - RS
+    - SE
+    - 1
+    - 2
+  - - 1974-07-03
+    - B
+    - DE
+    - PL
+    - 1
+    - 0
+- id: third_place
+  type: match
+  home: r2.A.2
+  away: r2.B.2
+  date: 1974-07-06
+  actual:
+    winner: PL
+    score:
+    - 0
+    - 1
+- id: final
+  type: match
+  home: r2.A.1
+  away: r2.B.1
+  date: 1974-07-07
+  actual:
+    winner: DE
+    score:
+    - 1
+    - 2

@@ -1,0 +1,4847 @@
+name: World Cup 2026
+year: 2026
+match_code: WC
+cutoff: '2026-06-11'
+hosts:
+- US
+- MX
+- CA
+points:
+  win: 3
+  draw: 1
+  loss: 0
+tiebreakers:
+- points
+- gd
+- gf
+- h2h_points
+- h2h_gd
+- random
+teams:
+  MX:
+    elo: 1875
+    name: Mexico
+    elo_9m: 1847
+  ZA:
+    elo: 1518
+    name: South Africa
+    elo_9m: 1514
+  KR:
+    elo: 1758
+    name: South Korea
+    elo_9m: 1760
+  CZ:
+    elo: 1740
+    name: Czechia
+    elo_9m: 1765
+  BA:
+    elo: 1591
+    name: Bosnia and Herzegovina
+    elo_9m: 1511
+  CA:
+    elo: 1788
+    name: Canada
+    elo_9m: 1784
+  QA:
+    elo: 1423
+    name: Qatar
+    elo_9m: 1483
+  CH:
+    elo: 1894
+    name: Switzerland
+    elo_9m: 1896
+  BR:
+    elo: 1988
+    name: Brazil
+    elo_9m: 1989
+  HT:
+    elo: 1548
+    name: Haiti
+    elo_9m: 1517
+  MA:
+    elo: 1824
+    name: Morocco
+    elo_9m: 1824
+  SQ:
+    elo: 1770
+    name: Scotland
+    elo_9m: 1767
+  AU:
+    elo: 1774
+    name: Australia
+    elo_9m: 1803
+  PY:
+    elo: 1833
+    name: Paraguay
+    elo_9m: 1846
+  TR:
+    elo: 1906
+    name: Turkey
+    elo_9m: 1847
+  US:
+    elo: 1733
+    name: United States
+    elo_9m: 1702
+  CI:
+    elo: 1695
+    name: Ivory Coast
+    elo_9m: 1590
+  CW:
+    elo: 1433
+    name: Curaçao
+    elo_9m: 1442
+  EC:
+    elo: 1935
+    name: Ecuador
+    elo_9m: 1929
+  DE:
+    elo: 1925
+    name: Germany
+    elo_9m: 1880
+  JP:
+    elo: 1906
+    name: Japan
+    elo_9m: 1860
+  NL:
+    elo: 1944
+    name: Netherlands
+    elo_9m: 1962
+  SE:
+    elo: 1712
+    name: Sweden
+    elo_9m: 1703
+  TN:
+    elo: 1633
+    name: Tunisia
+    elo_9m: 1637
+  BE:
+    elo: 1888
+    name: Belgium
+    elo_9m: 1835
+  EG:
+    elo: 1699
+    name: Egypt
+    elo_9m: 1666
+  IR:
+    elo: 1772
+    name: Iran
+    elo_9m: 1762
+  NZ:
+    elo: 1563
+    name: New Zealand
+    elo_9m: 1583
+  CV:
+    elo: 1576
+    name: Cape Verde
+    elo_9m: 1543
+  ES:
+    elo: 2155
+    name: Spain
+    elo_9m: 2181
+  SA:
+    elo: 1569
+    name: Saudi Arabia
+    elo_9m: 1592
+  UY:
+    elo: 1892
+    name: Uruguay
+    elo_9m: 1908
+  FR:
+    elo: 2062
+    name: France
+    elo_9m: 2068
+  IQ:
+    elo: 1618
+    name: Iraq
+    elo_9m: 1573
+  NO:
+    elo: 1917
+    name: Norway
+    elo_9m: 1880
+  SN:
+    elo: 1867
+    name: Senegal
+    elo_9m: 1806
+  DZ:
+    elo: 1760
+    name: Algeria
+    elo_9m: 1696
+  AR:
+    elo: 2113
+    name: Argentina
+    elo_9m: 2111
+  AT:
+    elo: 1830
+    name: Austria
+    elo_9m: 1855
+  JO:
+    elo: 1685
+    name: Jordan
+    elo_9m: 1625
+  CD:
+    elo: 1661
+    name: DR Congo
+    elo_9m: 1590
+  CO:
+    elo: 1977
+    name: Colombia
+    elo_9m: 1993
+  PT:
+    elo: 1984
+    name: Portugal
+    elo_9m: 2043
+  UZ:
+    elo: 1718
+    name: Uzbekistan
+    elo_9m: 1719
+  HR:
+    elo: 1908
+    name: Croatia
+    elo_9m: 1927
+  EN:
+    elo: 2020
+    name: England
+    elo_9m: 2022
+  GH:
+    elo: 1510
+    name: Ghana
+    elo_9m: 1504
+  PA:
+    elo: 1734
+    name: Panama
+    elo_9m: 1740
+stages:
+- id: groups
+  type: groups
+  groups:
+    A:
+    - MX
+    - ZA
+    - KR
+    - CZ
+    B:
+    - BA
+    - CA
+    - QA
+    - CH
+    C:
+    - BR
+    - HT
+    - MA
+    - SQ
+    D:
+    - AU
+    - PY
+    - TR
+    - US
+    E:
+    - CI
+    - CW
+    - EC
+    - DE
+    F:
+    - JP
+    - NL
+    - SE
+    - TN
+    G:
+    - BE
+    - EG
+    - IR
+    - NZ
+    H:
+    - CV
+    - ES
+    - SA
+    - UY
+    I:
+    - FR
+    - IQ
+    - NO
+    - SN
+    J:
+    - DZ
+    - AR
+    - AT
+    - JO
+    K:
+    - CD
+    - CO
+    - PT
+    - UZ
+    L:
+    - HR
+    - EN
+    - GH
+    - PA
+- id: thirds
+  type: thirds_pool
+  source: groups
+  rank: 3
+  take: 8
+  assignments:
+    ABCDEFGH:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: A
+      I: F
+      K: D
+      L: E
+    ABCDEFGI:
+      A: C
+      B: G
+      D: B
+      E: D
+      G: A
+      I: F
+      K: E
+      L: I
+    ABCDEFGJ:
+      A: C
+      B: G
+      D: B
+      E: D
+      G: A
+      I: F
+      K: E
+      L: J
+    ABCDEFGK:
+      A: C
+      B: G
+      D: B
+      E: D
+      G: A
+      I: F
+      K: E
+      L: K
+    ABCDEFGL:
+      A: C
+      B: G
+      D: B
+      E: D
+      G: A
+      I: F
+      K: L
+      L: E
+    ABCDEFHI:
+      A: H
+      B: E
+      D: B
+      E: C
+      G: A
+      I: F
+      K: D
+      L: I
+    ABCDEFHJ:
+      A: H
+      B: J
+      D: B
+      E: C
+      G: A
+      I: F
+      K: D
+      L: E
+    ABCDEFHK:
+      A: H
+      B: E
+      D: B
+      E: C
+      G: A
+      I: F
+      K: D
+      L: K
+    ABCDEFHL:
+      A: H
+      B: F
+      D: B
+      E: C
+      G: A
+      I: D
+      K: L
+      L: E
+    ABCDEFIJ:
+      A: C
+      B: J
+      D: B
+      E: D
+      G: A
+      I: F
+      K: E
+      L: I
+    ABCDEFIK:
+      A: C
+      B: E
+      D: B
+      E: D
+      G: A
+      I: F
+      K: I
+      L: K
+    ABCDEFIL:
+      A: C
+      B: E
+      D: B
+      E: D
+      G: A
+      I: F
+      K: L
+      L: I
+    ABCDEFJK:
+      A: C
+      B: J
+      D: B
+      E: D
+      G: A
+      I: F
+      K: E
+      L: K
+    ABCDEFJL:
+      A: C
+      B: J
+      D: B
+      E: D
+      G: A
+      I: F
+      K: L
+      L: E
+    ABCDEFKL:
+      A: C
+      B: E
+      D: B
+      E: D
+      G: A
+      I: F
+      K: L
+      L: K
+    ABCDEGHI:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: A
+      I: D
+      K: E
+      L: I
+    ABCDEGHJ:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: A
+      I: D
+      K: E
+      L: J
+    ABCDEGHK:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: A
+      I: D
+      K: E
+      L: K
+    ABCDEGHL:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: A
+      I: D
+      K: L
+      L: E
+    ABCDEGIJ:
+      A: E
+      B: G
+      D: B
+      E: C
+      G: A
+      I: D
+      K: I
+      L: J
+    ABCDEGIK:
+      A: E
+      B: G
+      D: B
+      E: C
+      G: A
+      I: D
+      K: I
+      L: K
+    ABCDEGIL:
+      A: E
+      B: G
+      D: B
+      E: C
+      G: A
+      I: D
+      K: L
+      L: I
+    ABCDEGJK:
+      A: E
+      B: G
+      D: B
+      E: C
+      G: A
+      I: D
+      K: J
+      L: K
+    ABCDEGJL:
+      A: E
+      B: G
+      D: B
+      E: C
+      G: A
+      I: D
+      K: L
+      L: J
+    ABCDEGKL:
+      A: E
+      B: G
+      D: B
+      E: C
+      G: A
+      I: D
+      K: L
+      L: K
+    ABCDEHIJ:
+      A: H
+      B: J
+      D: B
+      E: C
+      G: A
+      I: D
+      K: E
+      L: I
+    ABCDEHIK:
+      A: H
+      B: E
+      D: B
+      E: C
+      G: A
+      I: D
+      K: I
+      L: K
+    ABCDEHIL:
+      A: H
+      B: E
+      D: B
+      E: C
+      G: A
+      I: D
+      K: L
+      L: I
+    ABCDEHJK:
+      A: H
+      B: J
+      D: B
+      E: C
+      G: A
+      I: D
+      K: E
+      L: K
+    ABCDEHJL:
+      A: H
+      B: J
+      D: B
+      E: C
+      G: A
+      I: D
+      K: L
+      L: E
+    ABCDEHKL:
+      A: H
+      B: E
+      D: B
+      E: C
+      G: A
+      I: D
+      K: L
+      L: K
+    ABCDEIJK:
+      A: E
+      B: J
+      D: B
+      E: C
+      G: A
+      I: D
+      K: I
+      L: K
+    ABCDEIJL:
+      A: E
+      B: J
+      D: B
+      E: C
+      G: A
+      I: D
+      K: L
+      L: I
+    ABCDEIKL:
+      A: E
+      B: I
+      D: B
+      E: C
+      G: A
+      I: D
+      K: L
+      L: K
+    ABCDEJKL:
+      A: E
+      B: J
+      D: B
+      E: C
+      G: A
+      I: D
+      K: L
+      L: K
+    ABCDFGHI:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: A
+      I: F
+      K: D
+      L: I
+    ABCDFGHJ:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: A
+      I: F
+      K: D
+      L: J
+    ABCDFGHK:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: A
+      I: F
+      K: D
+      L: K
+    ABCDFGHL:
+      A: C
+      B: G
+      D: B
+      E: D
+      G: A
+      I: F
+      K: L
+      L: H
+    ABCDFGIJ:
+      A: C
+      B: G
+      D: B
+      E: D
+      G: A
+      I: F
+      K: I
+      L: J
+    ABCDFGIK:
+      A: C
+      B: G
+      D: B
+      E: D
+      G: A
+      I: F
+      K: I
+      L: K
+    ABCDFGIL:
+      A: C
+      B: G
+      D: B
+      E: D
+      G: A
+      I: F
+      K: L
+      L: I
+    ABCDFGJK:
+      A: C
+      B: G
+      D: B
+      E: D
+      G: A
+      I: F
+      K: J
+      L: K
+    ABCDFGJL:
+      A: C
+      B: G
+      D: B
+      E: D
+      G: A
+      I: F
+      K: L
+      L: J
+    ABCDFGKL:
+      A: C
+      B: G
+      D: B
+      E: D
+      G: A
+      I: F
+      K: L
+      L: K
+    ABCDFHIJ:
+      A: H
+      B: J
+      D: B
+      E: C
+      G: A
+      I: F
+      K: D
+      L: I
+    ABCDFHIK:
+      A: H
+      B: F
+      D: B
+      E: C
+      G: A
+      I: D
+      K: I
+      L: K
+    ABCDFHIL:
+      A: H
+      B: F
+      D: B
+      E: C
+      G: A
+      I: D
+      K: L
+      L: I
+    ABCDFHJK:
+      A: H
+      B: J
+      D: B
+      E: C
+      G: A
+      I: F
+      K: D
+      L: K
+    ABCDFHJL:
+      A: C
+      B: J
+      D: B
+      E: D
+      G: A
+      I: F
+      K: L
+      L: H
+    ABCDFHKL:
+      A: H
+      B: F
+      D: B
+      E: C
+      G: A
+      I: D
+      K: L
+      L: K
+    ABCDFIJK:
+      A: C
+      B: J
+      D: B
+      E: D
+      G: A
+      I: F
+      K: I
+      L: K
+    ABCDFIJL:
+      A: C
+      B: J
+      D: B
+      E: D
+      G: A
+      I: F
+      K: L
+      L: I
+    ABCDFIKL:
+      A: C
+      B: I
+      D: B
+      E: D
+      G: A
+      I: F
+      K: L
+      L: K
+    ABCDFJKL:
+      A: C
+      B: J
+      D: B
+      E: D
+      G: A
+      I: F
+      K: L
+      L: K
+    ABCDGHIJ:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: A
+      I: D
+      K: I
+      L: J
+    ABCDGHIK:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: A
+      I: D
+      K: I
+      L: K
+    ABCDGHIL:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: A
+      I: D
+      K: L
+      L: I
+    ABCDGHJK:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: A
+      I: D
+      K: J
+      L: K
+    ABCDGHJL:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: A
+      I: D
+      K: L
+      L: J
+    ABCDGHKL:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: A
+      I: D
+      K: L
+      L: K
+    ABCDGIJK:
+      A: C
+      B: J
+      D: B
+      E: D
+      G: A
+      I: G
+      K: I
+      L: K
+    ABCDGIJL:
+      A: C
+      B: J
+      D: B
+      E: D
+      G: A
+      I: G
+      K: L
+      L: I
+    ABCDGIKL:
+      A: I
+      B: G
+      D: B
+      E: C
+      G: A
+      I: D
+      K: L
+      L: K
+    ABCDGJKL:
+      A: C
+      B: J
+      D: B
+      E: D
+      G: A
+      I: G
+      K: L
+      L: K
+    ABCDHIJK:
+      A: H
+      B: J
+      D: B
+      E: C
+      G: A
+      I: D
+      K: I
+      L: K
+    ABCDHIJL:
+      A: H
+      B: J
+      D: B
+      E: C
+      G: A
+      I: D
+      K: L
+      L: I
+    ABCDHIKL:
+      A: H
+      B: I
+      D: B
+      E: C
+      G: A
+      I: D
+      K: L
+      L: K
+    ABCDHJKL:
+      A: H
+      B: J
+      D: B
+      E: C
+      G: A
+      I: D
+      K: L
+      L: K
+    ABCDIJKL:
+      A: I
+      B: J
+      D: B
+      E: C
+      G: A
+      I: D
+      K: L
+      L: K
+    ABCEFGHI:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: A
+      I: F
+      K: E
+      L: I
+    ABCEFGHJ:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: A
+      I: F
+      K: E
+      L: J
+    ABCEFGHK:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: A
+      I: F
+      K: E
+      L: K
+    ABCEFGHL:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: A
+      I: F
+      K: L
+      L: E
+    ABCEFGIJ:
+      A: E
+      B: G
+      D: B
+      E: C
+      G: A
+      I: F
+      K: I
+      L: J
+    ABCEFGIK:
+      A: E
+      B: G
+      D: B
+      E: C
+      G: A
+      I: F
+      K: I
+      L: K
+    ABCEFGIL:
+      A: E
+      B: G
+      D: B
+      E: C
+      G: A
+      I: F
+      K: L
+      L: I
+    ABCEFGJK:
+      A: E
+      B: G
+      D: B
+      E: C
+      G: A
+      I: F
+      K: J
+      L: K
+    ABCEFGJL:
+      A: E
+      B: G
+      D: B
+      E: C
+      G: A
+      I: F
+      K: L
+      L: J
+    ABCEFGKL:
+      A: E
+      B: G
+      D: B
+      E: C
+      G: A
+      I: F
+      K: L
+      L: K
+    ABCEFHIJ:
+      A: H
+      B: J
+      D: B
+      E: C
+      G: A
+      I: F
+      K: E
+      L: I
+    ABCEFHIK:
+      A: H
+      B: E
+      D: B
+      E: C
+      G: A
+      I: F
+      K: I
+      L: K
+    ABCEFHIL:
+      A: H
+      B: E
+      D: B
+      E: C
+      G: A
+      I: F
+      K: L
+      L: I
+    ABCEFHJK:
+      A: H
+      B: J
+      D: B
+      E: C
+      G: A
+      I: F
+      K: E
+      L: K
+    ABCEFHJL:
+      A: H
+      B: J
+      D: B
+      E: C
+      G: A
+      I: F
+      K: L
+      L: E
+    ABCEFHKL:
+      A: H
+      B: E
+      D: B
+      E: C
+      G: A
+      I: F
+      K: L
+      L: K
+    ABCEFIJK:
+      A: E
+      B: J
+      D: B
+      E: C
+      G: A
+      I: F
+      K: I
+      L: K
+    ABCEFIJL:
+      A: E
+      B: J
+      D: B
+      E: C
+      G: A
+      I: F
+      K: L
+      L: I
+    ABCEFIKL:
+      A: E
+      B: I
+      D: B
+      E: C
+      G: A
+      I: F
+      K: L
+      L: K
+    ABCEFJKL:
+      A: E
+      B: J
+      D: B
+      E: C
+      G: A
+      I: F
+      K: L
+      L: K
+    ABCEGHIJ:
+      A: H
+      B: J
+      D: B
+      E: C
+      G: A
+      I: G
+      K: E
+      L: I
+    ABCEGHIK:
+      A: E
+      B: G
+      D: B
+      E: C
+      G: A
+      I: H
+      K: I
+      L: K
+    ABCEGHIL:
+      A: E
+      B: G
+      D: B
+      E: C
+      G: A
+      I: H
+      K: L
+      L: I
+    ABCEGHJK:
+      A: H
+      B: J
+      D: B
+      E: C
+      G: A
+      I: G
+      K: E
+      L: K
+    ABCEGHJL:
+      A: H
+      B: J
+      D: B
+      E: C
+      G: A
+      I: G
+      K: L
+      L: E
+    ABCEGHKL:
+      A: E
+      B: G
+      D: B
+      E: C
+      G: A
+      I: H
+      K: L
+      L: K
+    ABCEGIJK:
+      A: E
+      B: J
+      D: B
+      E: C
+      G: A
+      I: G
+      K: I
+      L: K
+    ABCEGIJL:
+      A: E
+      B: J
+      D: B
+      E: C
+      G: A
+      I: G
+      K: L
+      L: I
+    ABCEGIKL:
+      A: E
+      B: G
+      D: B
+      E: A
+      G: I
+      I: C
+      K: L
+      L: K
+    ABCEGJKL:
+      A: E
+      B: J
+      D: B
+      E: C
+      G: A
+      I: G
+      K: L
+      L: K
+    ABCEHIJK:
+      A: E
+      B: J
+      D: B
+      E: C
+      G: A
+      I: H
+      K: I
+      L: K
+    ABCEHIJL:
+      A: E
+      B: J
+      D: B
+      E: C
+      G: A
+      I: H
+      K: L
+      L: I
+    ABCEHIKL:
+      A: E
+      B: I
+      D: B
+      E: C
+      G: A
+      I: H
+      K: L
+      L: K
+    ABCEHJKL:
+      A: E
+      B: J
+      D: B
+      E: C
+      G: A
+      I: H
+      K: L
+      L: K
+    ABCEIJKL:
+      A: E
+      B: J
+      D: B
+      E: A
+      G: I
+      I: C
+      K: L
+      L: K
+    ABCFGHIJ:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: A
+      I: F
+      K: I
+      L: J
+    ABCFGHIK:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: A
+      I: F
+      K: I
+      L: K
+    ABCFGHIL:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: A
+      I: F
+      K: L
+      L: I
+    ABCFGHJK:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: A
+      I: F
+      K: J
+      L: K
+    ABCFGHJL:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: A
+      I: F
+      K: L
+      L: J
+    ABCFGHKL:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: A
+      I: F
+      K: L
+      L: K
+    ABCFGIJK:
+      A: C
+      B: J
+      D: B
+      E: F
+      G: A
+      I: G
+      K: I
+      L: K
+    ABCFGIJL:
+      A: C
+      B: J
+      D: B
+      E: F
+      G: A
+      I: G
+      K: L
+      L: I
+    ABCFGIKL:
+      A: I
+      B: G
+      D: B
+      E: C
+      G: A
+      I: F
+      K: L
+      L: K
+    ABCFGJKL:
+      A: C
+      B: J
+      D: B
+      E: F
+      G: A
+      I: G
+      K: L
+      L: K
+    ABCFHIJK:
+      A: H
+      B: J
+      D: B
+      E: C
+      G: A
+      I: F
+      K: I
+      L: K
+    ABCFHIJL:
+      A: H
+      B: J
+      D: B
+      E: C
+      G: A
+      I: F
+      K: L
+      L: I
+    ABCFHIKL:
+      A: H
+      B: I
+      D: B
+      E: C
+      G: A
+      I: F
+      K: L
+      L: K
+    ABCFHJKL:
+      A: H
+      B: J
+      D: B
+      E: C
+      G: A
+      I: F
+      K: L
+      L: K
+    ABCFIJKL:
+      A: I
+      B: J
+      D: B
+      E: C
+      G: A
+      I: F
+      K: L
+      L: K
+    ABCGHIJK:
+      A: H
+      B: J
+      D: B
+      E: C
+      G: A
+      I: G
+      K: I
+      L: K
+    ABCGHIJL:
+      A: H
+      B: J
+      D: B
+      E: C
+      G: A
+      I: G
+      K: L
+      L: I
+    ABCGHIKL:
+      A: I
+      B: G
+      D: B
+      E: C
+      G: A
+      I: H
+      K: L
+      L: K
+    ABCGHJKL:
+      A: H
+      B: J
+      D: B
+      E: C
+      G: A
+      I: G
+      K: L
+      L: K
+    ABCGIJKL:
+      A: I
+      B: J
+      D: B
+      E: C
+      G: A
+      I: G
+      K: L
+      L: K
+    ABCHIJKL:
+      A: I
+      B: J
+      D: B
+      E: C
+      G: A
+      I: H
+      K: L
+      L: K
+    ABDEFGHI:
+      A: H
+      B: G
+      D: B
+      E: D
+      G: A
+      I: F
+      K: E
+      L: I
+    ABDEFGHJ:
+      A: H
+      B: G
+      D: B
+      E: D
+      G: A
+      I: F
+      K: E
+      L: J
+    ABDEFGHK:
+      A: H
+      B: G
+      D: B
+      E: D
+      G: A
+      I: F
+      K: E
+      L: K
+    ABDEFGHL:
+      A: H
+      B: G
+      D: B
+      E: D
+      G: A
+      I: F
+      K: L
+      L: E
+    ABDEFGIJ:
+      A: E
+      B: G
+      D: B
+      E: D
+      G: A
+      I: F
+      K: I
+      L: J
+    ABDEFGIK:
+      A: E
+      B: G
+      D: B
+      E: D
+      G: A
+      I: F
+      K: I
+      L: K
+    ABDEFGIL:
+      A: E
+      B: G
+      D: B
+      E: D
+      G: A
+      I: F
+      K: L
+      L: I
+    ABDEFGJK:
+      A: E
+      B: G
+      D: B
+      E: D
+      G: A
+      I: F
+      K: J
+      L: K
+    ABDEFGJL:
+      A: E
+      B: G
+      D: B
+      E: D
+      G: A
+      I: F
+      K: L
+      L: J
+    ABDEFGKL:
+      A: E
+      B: G
+      D: B
+      E: D
+      G: A
+      I: F
+      K: L
+      L: K
+    ABDEFHIJ:
+      A: H
+      B: J
+      D: B
+      E: D
+      G: A
+      I: F
+      K: E
+      L: I
+    ABDEFHIK:
+      A: H
+      B: E
+      D: B
+      E: D
+      G: A
+      I: F
+      K: I
+      L: K
+    ABDEFHIL:
+      A: H
+      B: E
+      D: B
+      E: D
+      G: A
+      I: F
+      K: L
+      L: I
+    ABDEFHJK:
+      A: H
+      B: J
+      D: B
+      E: D
+      G: A
+      I: F
+      K: E
+      L: K
+    ABDEFHJL:
+      A: H
+      B: J
+      D: B
+      E: D
+      G: A
+      I: F
+      K: L
+      L: E
+    ABDEFHKL:
+      A: H
+      B: E
+      D: B
+      E: D
+      G: A
+      I: F
+      K: L
+      L: K
+    ABDEFIJK:
+      A: E
+      B: J
+      D: B
+      E: D
+      G: A
+      I: F
+      K: I
+      L: K
+    ABDEFIJL:
+      A: E
+      B: J
+      D: B
+      E: D
+      G: A
+      I: F
+      K: L
+      L: I
+    ABDEFIKL:
+      A: E
+      B: I
+      D: B
+      E: D
+      G: A
+      I: F
+      K: L
+      L: K
+    ABDEFJKL:
+      A: E
+      B: J
+      D: B
+      E: D
+      G: A
+      I: F
+      K: L
+      L: K
+    ABDEGHIJ:
+      A: H
+      B: J
+      D: B
+      E: D
+      G: A
+      I: G
+      K: E
+      L: I
+    ABDEGHIK:
+      A: E
+      B: G
+      D: B
+      E: D
+      G: A
+      I: H
+      K: I
+      L: K
+    ABDEGHIL:
+      A: E
+      B: G
+      D: B
+      E: D
+      G: A
+      I: H
+      K: L
+      L: I
+    ABDEGHJK:
+      A: H
+      B: J
+      D: B
+      E: D
+      G: A
+      I: G
+      K: E
+      L: K
+    ABDEGHJL:
+      A: H
+      B: J
+      D: B
+      E: D
+      G: A
+      I: G
+      K: L
+      L: E
+    ABDEGHKL:
+      A: E
+      B: G
+      D: B
+      E: D
+      G: A
+      I: H
+      K: L
+      L: K
+    ABDEGIJK:
+      A: E
+      B: J
+      D: B
+      E: D
+      G: A
+      I: G
+      K: I
+      L: K
+    ABDEGIJL:
+      A: E
+      B: J
+      D: B
+      E: D
+      G: A
+      I: G
+      K: L
+      L: I
+    ABDEGIKL:
+      A: E
+      B: G
+      D: B
+      E: A
+      G: I
+      I: D
+      K: L
+      L: K
+    ABDEGJKL:
+      A: E
+      B: J
+      D: B
+      E: D
+      G: A
+      I: G
+      K: L
+      L: K
+    ABDEHIJK:
+      A: E
+      B: J
+      D: B
+      E: D
+      G: A
+      I: H
+      K: I
+      L: K
+    ABDEHIJL:
+      A: E
+      B: J
+      D: B
+      E: D
+      G: A
+      I: H
+      K: L
+      L: I
+    ABDEHIKL:
+      A: E
+      B: I
+      D: B
+      E: D
+      G: A
+      I: H
+      K: L
+      L: K
+    ABDEHJKL:
+      A: E
+      B: J
+      D: B
+      E: D
+      G: A
+      I: H
+      K: L
+      L: K
+    ABDEIJKL:
+      A: E
+      B: J
+      D: B
+      E: A
+      G: I
+      I: D
+      K: L
+      L: K
+    ABDFGHIJ:
+      A: H
+      B: G
+      D: B
+      E: D
+      G: A
+      I: F
+      K: I
+      L: J
+    ABDFGHIK:
+      A: H
+      B: G
+      D: B
+      E: D
+      G: A
+      I: F
+      K: I
+      L: K
+    ABDFGHIL:
+      A: H
+      B: G
+      D: B
+      E: D
+      G: A
+      I: F
+      K: L
+      L: I
+    ABDFGHJK:
+      A: H
+      B: G
+      D: B
+      E: D
+      G: A
+      I: F
+      K: J
+      L: K
+    ABDFGHJL:
+      A: H
+      B: G
+      D: B
+      E: D
+      G: A
+      I: F
+      K: L
+      L: J
+    ABDFGHKL:
+      A: H
+      B: G
+      D: B
+      E: D
+      G: A
+      I: F
+      K: L
+      L: K
+    ABDFGIJK:
+      A: F
+      B: J
+      D: B
+      E: D
+      G: A
+      I: G
+      K: I
+      L: K
+    ABDFGIJL:
+      A: F
+      B: J
+      D: B
+      E: D
+      G: A
+      I: G
+      K: L
+      L: I
+    ABDFGIKL:
+      A: I
+      B: G
+      D: B
+      E: D
+      G: A
+      I: F
+      K: L
+      L: K
+    ABDFGJKL:
+      A: F
+      B: J
+      D: B
+      E: D
+      G: A
+      I: G
+      K: L
+      L: K
+    ABDFHIJK:
+      A: H
+      B: J
+      D: B
+      E: D
+      G: A
+      I: F
+      K: I
+      L: K
+    ABDFHIJL:
+      A: H
+      B: J
+      D: B
+      E: D
+      G: A
+      I: F
+      K: L
+      L: I
+    ABDFHIKL:
+      A: H
+      B: I
+      D: B
+      E: D
+      G: A
+      I: F
+      K: L
+      L: K
+    ABDFHJKL:
+      A: H
+      B: J
+      D: B
+      E: D
+      G: A
+      I: F
+      K: L
+      L: K
+    ABDFIJKL:
+      A: I
+      B: J
+      D: B
+      E: D
+      G: A
+      I: F
+      K: L
+      L: K
+    ABDGHIJK:
+      A: H
+      B: J
+      D: B
+      E: D
+      G: A
+      I: G
+      K: I
+      L: K
+    ABDGHIJL:
+      A: H
+      B: J
+      D: B
+      E: D
+      G: A
+      I: G
+      K: L
+      L: I
+    ABDGHIKL:
+      A: I
+      B: G
+      D: B
+      E: D
+      G: A
+      I: H
+      K: L
+      L: K
+    ABDGHJKL:
+      A: H
+      B: J
+      D: B
+      E: D
+      G: A
+      I: G
+      K: L
+      L: K
+    ABDGIJKL:
+      A: I
+      B: J
+      D: B
+      E: D
+      G: A
+      I: G
+      K: L
+      L: K
+    ABDHIJKL:
+      A: I
+      B: J
+      D: B
+      E: D
+      G: A
+      I: H
+      K: L
+      L: K
+    ABEFGHIJ:
+      A: H
+      B: J
+      D: B
+      E: F
+      G: A
+      I: G
+      K: E
+      L: I
+    ABEFGHIK:
+      A: E
+      B: G
+      D: B
+      E: F
+      G: A
+      I: H
+      K: I
+      L: K
+    ABEFGHIL:
+      A: E
+      B: G
+      D: B
+      E: F
+      G: A
+      I: H
+      K: L
+      L: I
+    ABEFGHJK:
+      A: H
+      B: J
+      D: B
+      E: F
+      G: A
+      I: G
+      K: E
+      L: K
+    ABEFGHJL:
+      A: H
+      B: J
+      D: B
+      E: F
+      G: A
+      I: G
+      K: L
+      L: E
+    ABEFGHKL:
+      A: E
+      B: G
+      D: B
+      E: F
+      G: A
+      I: H
+      K: L
+      L: K
+    ABEFGIJK:
+      A: E
+      B: J
+      D: B
+      E: F
+      G: A
+      I: G
+      K: I
+      L: K
+    ABEFGIJL:
+      A: E
+      B: J
+      D: B
+      E: F
+      G: A
+      I: G
+      K: L
+      L: I
+    ABEFGIKL:
+      A: E
+      B: G
+      D: B
+      E: A
+      G: I
+      I: F
+      K: L
+      L: K
+    ABEFGJKL:
+      A: E
+      B: J
+      D: B
+      E: F
+      G: A
+      I: G
+      K: L
+      L: K
+    ABEFHIJK:
+      A: E
+      B: J
+      D: B
+      E: F
+      G: A
+      I: H
+      K: I
+      L: K
+    ABEFHIJL:
+      A: E
+      B: J
+      D: B
+      E: F
+      G: A
+      I: H
+      K: L
+      L: I
+    ABEFHIKL:
+      A: E
+      B: I
+      D: B
+      E: F
+      G: A
+      I: H
+      K: L
+      L: K
+    ABEFHJKL:
+      A: E
+      B: J
+      D: B
+      E: F
+      G: A
+      I: H
+      K: L
+      L: K
+    ABEFIJKL:
+      A: E
+      B: J
+      D: B
+      E: A
+      G: I
+      I: F
+      K: L
+      L: K
+    ABEGHIJK:
+      A: E
+      B: J
+      D: B
+      E: A
+      G: H
+      I: G
+      K: I
+      L: K
+    ABEGHIJL:
+      A: E
+      B: J
+      D: B
+      E: A
+      G: H
+      I: G
+      K: L
+      L: I
+    ABEGHIKL:
+      A: E
+      B: G
+      D: B
+      E: A
+      G: I
+      I: H
+      K: L
+      L: K
+    ABEGHJKL:
+      A: E
+      B: J
+      D: B
+      E: A
+      G: H
+      I: G
+      K: L
+      L: K
+    ABEGIJKL:
+      A: E
+      B: J
+      D: B
+      E: A
+      G: I
+      I: G
+      K: L
+      L: K
+    ABEHIJKL:
+      A: E
+      B: J
+      D: B
+      E: A
+      G: I
+      I: H
+      K: L
+      L: K
+    ABFGHIJK:
+      A: H
+      B: J
+      D: B
+      E: F
+      G: A
+      I: G
+      K: I
+      L: K
+    ABFGHIJL:
+      A: H
+      B: J
+      D: B
+      E: F
+      G: A
+      I: G
+      K: L
+      L: I
+    ABFGHIKL:
+      A: H
+      B: G
+      D: B
+      E: A
+      G: I
+      I: F
+      K: L
+      L: K
+    ABFGHJKL:
+      A: H
+      B: J
+      D: B
+      E: F
+      G: A
+      I: G
+      K: L
+      L: K
+    ABFGIJKL:
+      A: I
+      B: J
+      D: B
+      E: F
+      G: A
+      I: G
+      K: L
+      L: K
+    ABFHIJKL:
+      A: H
+      B: J
+      D: B
+      E: A
+      G: I
+      I: F
+      K: L
+      L: K
+    ABGHIJKL:
+      A: H
+      B: J
+      D: B
+      E: A
+      G: I
+      I: G
+      K: L
+      L: K
+    ACDEFGHI:
+      A: H
+      B: G
+      D: E
+      E: C
+      G: A
+      I: F
+      K: D
+      L: I
+    ACDEFGHJ:
+      A: H
+      B: G
+      D: J
+      E: C
+      G: A
+      I: F
+      K: D
+      L: E
+    ACDEFGHK:
+      A: H
+      B: G
+      D: E
+      E: C
+      G: A
+      I: F
+      K: D
+      L: K
+    ACDEFGHL:
+      A: H
+      B: G
+      D: F
+      E: C
+      G: A
+      I: D
+      K: L
+      L: E
+    ACDEFGIJ:
+      A: C
+      B: G
+      D: J
+      E: D
+      G: A
+      I: F
+      K: E
+      L: I
+    ACDEFGIK:
+      A: C
+      B: G
+      D: E
+      E: D
+      G: A
+      I: F
+      K: I
+      L: K
+    ACDEFGIL:
+      A: C
+      B: G
+      D: E
+      E: D
+      G: A
+      I: F
+      K: L
+      L: I
+    ACDEFGJK:
+      A: C
+      B: G
+      D: J
+      E: D
+      G: A
+      I: F
+      K: E
+      L: K
+    ACDEFGJL:
+      A: C
+      B: G
+      D: J
+      E: D
+      G: A
+      I: F
+      K: L
+      L: E
+    ACDEFGKL:
+      A: C
+      B: G
+      D: E
+      E: D
+      G: A
+      I: F
+      K: L
+      L: K
+    ACDEFHIJ:
+      A: H
+      B: J
+      D: E
+      E: C
+      G: A
+      I: F
+      K: D
+      L: I
+    ACDEFHIK:
+      A: H
+      B: E
+      D: F
+      E: C
+      G: A
+      I: D
+      K: I
+      L: K
+    ACDEFHIL:
+      A: H
+      B: E
+      D: F
+      E: C
+      G: A
+      I: D
+      K: L
+      L: I
+    ACDEFHJK:
+      A: H
+      B: J
+      D: E
+      E: C
+      G: A
+      I: F
+      K: D
+      L: K
+    ACDEFHJL:
+      A: H
+      B: J
+      D: F
+      E: C
+      G: A
+      I: D
+      K: L
+      L: E
+    ACDEFHKL:
+      A: H
+      B: E
+      D: F
+      E: C
+      G: A
+      I: D
+      K: L
+      L: K
+    ACDEFIJK:
+      A: C
+      B: J
+      D: E
+      E: D
+      G: A
+      I: F
+      K: I
+      L: K
+    ACDEFIJL:
+      A: C
+      B: J
+      D: E
+      E: D
+      G: A
+      I: F
+      K: L
+      L: I
+    ACDEFIKL:
+      A: C
+      B: E
+      D: I
+      E: D
+      G: A
+      I: F
+      K: L
+      L: K
+    ACDEFJKL:
+      A: C
+      B: J
+      D: E
+      E: D
+      G: A
+      I: F
+      K: L
+      L: K
+    ACDEGHIJ:
+      A: H
+      B: G
+      D: J
+      E: C
+      G: A
+      I: D
+      K: E
+      L: I
+    ACDEGHIK:
+      A: H
+      B: G
+      D: E
+      E: C
+      G: A
+      I: D
+      K: I
+      L: K
+    ACDEGHIL:
+      A: H
+      B: G
+      D: E
+      E: C
+      G: A
+      I: D
+      K: L
+      L: I
+    ACDEGHJK:
+      A: H
+      B: G
+      D: J
+      E: C
+      G: A
+      I: D
+      K: E
+      L: K
+    ACDEGHJL:
+      A: H
+      B: G
+      D: J
+      E: C
+      G: A
+      I: D
+      K: L
+      L: E
+    ACDEGHKL:
+      A: H
+      B: G
+      D: E
+      E: C
+      G: A
+      I: D
+      K: L
+      L: K
+    ACDEGIJK:
+      A: E
+      B: G
+      D: J
+      E: C
+      G: A
+      I: D
+      K: I
+      L: K
+    ACDEGIJL:
+      A: E
+      B: G
+      D: J
+      E: C
+      G: A
+      I: D
+      K: L
+      L: I
+    ACDEGIKL:
+      A: E
+      B: G
+      D: I
+      E: C
+      G: A
+      I: D
+      K: L
+      L: K
+    ACDEGJKL:
+      A: E
+      B: G
+      D: J
+      E: C
+      G: A
+      I: D
+      K: L
+      L: K
+    ACDEHIJK:
+      A: H
+      B: J
+      D: E
+      E: C
+      G: A
+      I: D
+      K: I
+      L: K
+    ACDEHIJL:
+      A: H
+      B: J
+      D: E
+      E: C
+      G: A
+      I: D
+      K: L
+      L: I
+    ACDEHIKL:
+      A: H
+      B: E
+      D: I
+      E: C
+      G: A
+      I: D
+      K: L
+      L: K
+    ACDEHJKL:
+      A: H
+      B: J
+      D: E
+      E: C
+      G: A
+      I: D
+      K: L
+      L: K
+    ACDEIJKL:
+      A: E
+      B: J
+      D: I
+      E: C
+      G: A
+      I: D
+      K: L
+      L: K
+    ACDFGHIJ:
+      A: H
+      B: G
+      D: J
+      E: C
+      G: A
+      I: F
+      K: D
+      L: I
+    ACDFGHIK:
+      A: H
+      B: G
+      D: F
+      E: C
+      G: A
+      I: D
+      K: I
+      L: K
+    ACDFGHIL:
+      A: H
+      B: G
+      D: F
+      E: C
+      G: A
+      I: D
+      K: L
+      L: I
+    ACDFGHJK:
+      A: H
+      B: G
+      D: J
+      E: C
+      G: A
+      I: F
+      K: D
+      L: K
+    ACDFGHJL:
+      A: C
+      B: G
+      D: J
+      E: D
+      G: A
+      I: F
+      K: L
+      L: H
+    ACDFGHKL:
+      A: H
+      B: G
+      D: F
+      E: C
+      G: A
+      I: D
+      K: L
+      L: K
+    ACDFGIJK:
+      A: C
+      B: G
+      D: J
+      E: D
+      G: A
+      I: F
+      K: I
+      L: K
+    ACDFGIJL:
+      A: C
+      B: G
+      D: J
+      E: D
+      G: A
+      I: F
+      K: L
+      L: I
+    ACDFGIKL:
+      A: C
+      B: G
+      D: I
+      E: D
+      G: A
+      I: F
+      K: L
+      L: K
+    ACDFGJKL:
+      A: C
+      B: G
+      D: J
+      E: D
+      G: A
+      I: F
+      K: L
+      L: K
+    ACDFHIJK:
+      A: H
+      B: J
+      D: F
+      E: C
+      G: A
+      I: D
+      K: I
+      L: K
+    ACDFHIJL:
+      A: H
+      B: J
+      D: F
+      E: C
+      G: A
+      I: D
+      K: L
+      L: I
+    ACDFHIKL:
+      A: H
+      B: F
+      D: I
+      E: C
+      G: A
+      I: D
+      K: L
+      L: K
+    ACDFHJKL:
+      A: H
+      B: J
+      D: F
+      E: C
+      G: A
+      I: D
+      K: L
+      L: K
+    ACDFIJKL:
+      A: C
+      B: J
+      D: I
+      E: D
+      G: A
+      I: F
+      K: L
+      L: K
+    ACDGHIJK:
+      A: H
+      B: G
+      D: J
+      E: C
+      G: A
+      I: D
+      K: I
+      L: K
+    ACDGHIJL:
+      A: H
+      B: G
+      D: J
+      E: C
+      G: A
+      I: D
+      K: L
+      L: I
+    ACDGHIKL:
+      A: H
+      B: G
+      D: I
+      E: C
+      G: A
+      I: D
+      K: L
+      L: K
+    ACDGHJKL:
+      A: H
+      B: G
+      D: J
+      E: C
+      G: A
+      I: D
+      K: L
+      L: K
+    ACDGIJKL:
+      A: I
+      B: G
+      D: J
+      E: C
+      G: A
+      I: D
+      K: L
+      L: K
+    ACDHIJKL:
+      A: H
+      B: J
+      D: I
+      E: C
+      G: A
+      I: D
+      K: L
+      L: K
+    ACEFGHIJ:
+      A: H
+      B: G
+      D: J
+      E: C
+      G: A
+      I: F
+      K: E
+      L: I
+    ACEFGHIK:
+      A: H
+      B: G
+      D: E
+      E: C
+      G: A
+      I: F
+      K: I
+      L: K
+    ACEFGHIL:
+      A: H
+      B: G
+      D: E
+      E: C
+      G: A
+      I: F
+      K: L
+      L: I
+    ACEFGHJK:
+      A: H
+      B: G
+      D: J
+      E: C
+      G: A
+      I: F
+      K: E
+      L: K
+    ACEFGHJL:
+      A: H
+      B: G
+      D: J
+      E: C
+      G: A
+      I: F
+      K: L
+      L: E
+    ACEFGHKL:
+      A: H
+      B: G
+      D: E
+      E: C
+      G: A
+      I: F
+      K: L
+      L: K
+    ACEFGIJK:
+      A: E
+      B: G
+      D: J
+      E: C
+      G: A
+      I: F
+      K: I
+      L: K
+    ACEFGIJL:
+      A: E
+      B: G
+      D: J
+      E: C
+      G: A
+      I: F
+      K: L
+      L: I
+    ACEFGIKL:
+      A: E
+      B: G
+      D: I
+      E: C
+      G: A
+      I: F
+      K: L
+      L: K
+    ACEFGJKL:
+      A: E
+      B: G
+      D: J
+      E: C
+      G: A
+      I: F
+      K: L
+      L: K
+    ACEFHIJK:
+      A: H
+      B: J
+      D: E
+      E: C
+      G: A
+      I: F
+      K: I
+      L: K
+    ACEFHIJL:
+      A: H
+      B: J
+      D: E
+      E: C
+      G: A
+      I: F
+      K: L
+      L: I
+    ACEFHIKL:
+      A: H
+      B: E
+      D: I
+      E: C
+      G: A
+      I: F
+      K: L
+      L: K
+    ACEFHJKL:
+      A: H
+      B: J
+      D: E
+      E: C
+      G: A
+      I: F
+      K: L
+      L: K
+    ACEFIJKL:
+      A: E
+      B: J
+      D: I
+      E: C
+      G: A
+      I: F
+      K: L
+      L: K
+    ACEGHIJK:
+      A: E
+      B: G
+      D: J
+      E: C
+      G: A
+      I: H
+      K: I
+      L: K
+    ACEGHIJL:
+      A: E
+      B: G
+      D: J
+      E: C
+      G: A
+      I: H
+      K: L
+      L: I
+    ACEGHIKL:
+      A: E
+      B: G
+      D: I
+      E: C
+      G: A
+      I: H
+      K: L
+      L: K
+    ACEGHJKL:
+      A: E
+      B: G
+      D: J
+      E: C
+      G: A
+      I: H
+      K: L
+      L: K
+    ACEGIJKL:
+      A: E
+      B: J
+      D: I
+      E: C
+      G: A
+      I: G
+      K: L
+      L: K
+    ACEHIJKL:
+      A: E
+      B: J
+      D: I
+      E: C
+      G: A
+      I: H
+      K: L
+      L: K
+    ACFGHIJK:
+      A: H
+      B: G
+      D: J
+      E: C
+      G: A
+      I: F
+      K: I
+      L: K
+    ACFGHIJL:
+      A: H
+      B: G
+      D: J
+      E: C
+      G: A
+      I: F
+      K: L
+      L: I
+    ACFGHIKL:
+      A: H
+      B: G
+      D: I
+      E: C
+      G: A
+      I: F
+      K: L
+      L: K
+    ACFGHJKL:
+      A: H
+      B: G
+      D: J
+      E: C
+      G: A
+      I: F
+      K: L
+      L: K
+    ACFGIJKL:
+      A: I
+      B: G
+      D: J
+      E: C
+      G: A
+      I: F
+      K: L
+      L: K
+    ACFHIJKL:
+      A: H
+      B: J
+      D: I
+      E: C
+      G: A
+      I: F
+      K: L
+      L: K
+    ACGHIJKL:
+      A: H
+      B: J
+      D: I
+      E: C
+      G: A
+      I: G
+      K: L
+      L: K
+    ADEFGHIJ:
+      A: H
+      B: G
+      D: J
+      E: D
+      G: A
+      I: F
+      K: E
+      L: I
+    ADEFGHIK:
+      A: H
+      B: G
+      D: E
+      E: D
+      G: A
+      I: F
+      K: I
+      L: K
+    ADEFGHIL:
+      A: H
+      B: G
+      D: E
+      E: D
+      G: A
+      I: F
+      K: L
+      L: I
+    ADEFGHJK:
+      A: H
+      B: G
+      D: J
+      E: D
+      G: A
+      I: F
+      K: E
+      L: K
+    ADEFGHJL:
+      A: H
+      B: G
+      D: J
+      E: D
+      G: A
+      I: F
+      K: L
+      L: E
+    ADEFGHKL:
+      A: H
+      B: G
+      D: E
+      E: D
+      G: A
+      I: F
+      K: L
+      L: K
+    ADEFGIJK:
+      A: E
+      B: G
+      D: J
+      E: D
+      G: A
+      I: F
+      K: I
+      L: K
+    ADEFGIJL:
+      A: E
+      B: G
+      D: J
+      E: D
+      G: A
+      I: F
+      K: L
+      L: I
+    ADEFGIKL:
+      A: E
+      B: G
+      D: I
+      E: D
+      G: A
+      I: F
+      K: L
+      L: K
+    ADEFGJKL:
+      A: E
+      B: G
+      D: J
+      E: D
+      G: A
+      I: F
+      K: L
+      L: K
+    ADEFHIJK:
+      A: H
+      B: J
+      D: E
+      E: D
+      G: A
+      I: F
+      K: I
+      L: K
+    ADEFHIJL:
+      A: H
+      B: J
+      D: E
+      E: D
+      G: A
+      I: F
+      K: L
+      L: I
+    ADEFHIKL:
+      A: H
+      B: E
+      D: I
+      E: D
+      G: A
+      I: F
+      K: L
+      L: K
+    ADEFHJKL:
+      A: H
+      B: J
+      D: E
+      E: D
+      G: A
+      I: F
+      K: L
+      L: K
+    ADEFIJKL:
+      A: E
+      B: J
+      D: I
+      E: D
+      G: A
+      I: F
+      K: L
+      L: K
+    ADEGHIJK:
+      A: E
+      B: G
+      D: J
+      E: D
+      G: A
+      I: H
+      K: I
+      L: K
+    ADEGHIJL:
+      A: E
+      B: G
+      D: J
+      E: D
+      G: A
+      I: H
+      K: L
+      L: I
+    ADEGHIKL:
+      A: E
+      B: G
+      D: I
+      E: D
+      G: A
+      I: H
+      K: L
+      L: K
+    ADEGHJKL:
+      A: E
+      B: G
+      D: J
+      E: D
+      G: A
+      I: H
+      K: L
+      L: K
+    ADEGIJKL:
+      A: E
+      B: J
+      D: I
+      E: D
+      G: A
+      I: G
+      K: L
+      L: K
+    ADEHIJKL:
+      A: E
+      B: J
+      D: I
+      E: D
+      G: A
+      I: H
+      K: L
+      L: K
+    ADFGHIJK:
+      A: H
+      B: G
+      D: J
+      E: D
+      G: A
+      I: F
+      K: I
+      L: K
+    ADFGHIJL:
+      A: H
+      B: G
+      D: J
+      E: D
+      G: A
+      I: F
+      K: L
+      L: I
+    ADFGHIKL:
+      A: H
+      B: G
+      D: I
+      E: D
+      G: A
+      I: F
+      K: L
+      L: K
+    ADFGHJKL:
+      A: H
+      B: G
+      D: J
+      E: D
+      G: A
+      I: F
+      K: L
+      L: K
+    ADFGIJKL:
+      A: I
+      B: G
+      D: J
+      E: D
+      G: A
+      I: F
+      K: L
+      L: K
+    ADFHIJKL:
+      A: H
+      B: J
+      D: I
+      E: D
+      G: A
+      I: F
+      K: L
+      L: K
+    ADGHIJKL:
+      A: H
+      B: J
+      D: I
+      E: D
+      G: A
+      I: G
+      K: L
+      L: K
+    AEFGHIJK:
+      A: E
+      B: G
+      D: J
+      E: F
+      G: A
+      I: H
+      K: I
+      L: K
+    AEFGHIJL:
+      A: E
+      B: G
+      D: J
+      E: F
+      G: A
+      I: H
+      K: L
+      L: I
+    AEFGHIKL:
+      A: E
+      B: G
+      D: I
+      E: F
+      G: A
+      I: H
+      K: L
+      L: K
+    AEFGHJKL:
+      A: E
+      B: G
+      D: J
+      E: F
+      G: A
+      I: H
+      K: L
+      L: K
+    AEFGIJKL:
+      A: E
+      B: J
+      D: I
+      E: F
+      G: A
+      I: G
+      K: L
+      L: K
+    AEFHIJKL:
+      A: E
+      B: J
+      D: I
+      E: F
+      G: A
+      I: H
+      K: L
+      L: K
+    AEGHIJKL:
+      A: E
+      B: J
+      D: I
+      E: A
+      G: H
+      I: G
+      K: L
+      L: K
+    AFGHIJKL:
+      A: H
+      B: J
+      D: I
+      E: F
+      G: A
+      I: G
+      K: L
+      L: K
+    BCDEFGHI:
+      A: C
+      B: G
+      D: B
+      E: D
+      G: H
+      I: F
+      K: E
+      L: I
+    BCDEFGHJ:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: J
+      I: F
+      K: D
+      L: E
+    BCDEFGHK:
+      A: C
+      B: G
+      D: B
+      E: D
+      G: H
+      I: F
+      K: E
+      L: K
+    BCDEFGHL:
+      A: C
+      B: G
+      D: B
+      E: D
+      G: H
+      I: F
+      K: L
+      L: E
+    BCDEFGIJ:
+      A: C
+      B: G
+      D: B
+      E: D
+      G: J
+      I: F
+      K: E
+      L: I
+    BCDEFGIK:
+      A: C
+      B: G
+      D: B
+      E: D
+      G: E
+      I: F
+      K: I
+      L: K
+    BCDEFGIL:
+      A: C
+      B: G
+      D: B
+      E: D
+      G: E
+      I: F
+      K: L
+      L: I
+    BCDEFGJK:
+      A: C
+      B: G
+      D: B
+      E: D
+      G: J
+      I: F
+      K: E
+      L: K
+    BCDEFGJL:
+      A: C
+      B: G
+      D: B
+      E: D
+      G: J
+      I: F
+      K: L
+      L: E
+    BCDEFGKL:
+      A: C
+      B: G
+      D: B
+      E: D
+      G: E
+      I: F
+      K: L
+      L: K
+    BCDEFHIJ:
+      A: C
+      B: J
+      D: B
+      E: D
+      G: H
+      I: F
+      K: E
+      L: I
+    BCDEFHIK:
+      A: C
+      B: E
+      D: B
+      E: D
+      G: H
+      I: F
+      K: I
+      L: K
+    BCDEFHIL:
+      A: C
+      B: E
+      D: B
+      E: D
+      G: H
+      I: F
+      K: L
+      L: I
+    BCDEFHJK:
+      A: C
+      B: J
+      D: B
+      E: D
+      G: H
+      I: F
+      K: E
+      L: K
+    BCDEFHJL:
+      A: C
+      B: J
+      D: B
+      E: D
+      G: H
+      I: F
+      K: L
+      L: E
+    BCDEFHKL:
+      A: C
+      B: E
+      D: B
+      E: D
+      G: H
+      I: F
+      K: L
+      L: K
+    BCDEFIJK:
+      A: C
+      B: J
+      D: B
+      E: D
+      G: E
+      I: F
+      K: I
+      L: K
+    BCDEFIJL:
+      A: C
+      B: J
+      D: B
+      E: D
+      G: E
+      I: F
+      K: L
+      L: I
+    BCDEFIKL:
+      A: C
+      B: E
+      D: B
+      E: D
+      G: I
+      I: F
+      K: L
+      L: K
+    BCDEFJKL:
+      A: C
+      B: J
+      D: B
+      E: D
+      G: E
+      I: F
+      K: L
+      L: K
+    BCDEGHIJ:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: J
+      I: D
+      K: E
+      L: I
+    BCDEGHIK:
+      A: E
+      B: G
+      D: B
+      E: C
+      G: H
+      I: D
+      K: I
+      L: K
+    BCDEGHIL:
+      A: E
+      B: G
+      D: B
+      E: C
+      G: H
+      I: D
+      K: L
+      L: I
+    BCDEGHJK:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: J
+      I: D
+      K: E
+      L: K
+    BCDEGHJL:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: J
+      I: D
+      K: L
+      L: E
+    BCDEGHKL:
+      A: E
+      B: G
+      D: B
+      E: C
+      G: H
+      I: D
+      K: L
+      L: K
+    BCDEGIJK:
+      A: E
+      B: G
+      D: B
+      E: C
+      G: J
+      I: D
+      K: I
+      L: K
+    BCDEGIJL:
+      A: E
+      B: G
+      D: B
+      E: C
+      G: J
+      I: D
+      K: L
+      L: I
+    BCDEGIKL:
+      A: E
+      B: G
+      D: B
+      E: C
+      G: I
+      I: D
+      K: L
+      L: K
+    BCDEGJKL:
+      A: E
+      B: G
+      D: B
+      E: C
+      G: J
+      I: D
+      K: L
+      L: K
+    BCDEHIJK:
+      A: E
+      B: J
+      D: B
+      E: C
+      G: H
+      I: D
+      K: I
+      L: K
+    BCDEHIJL:
+      A: E
+      B: J
+      D: B
+      E: C
+      G: H
+      I: D
+      K: L
+      L: I
+    BCDEHIKL:
+      A: E
+      B: I
+      D: B
+      E: C
+      G: H
+      I: D
+      K: L
+      L: K
+    BCDEHJKL:
+      A: E
+      B: J
+      D: B
+      E: C
+      G: H
+      I: D
+      K: L
+      L: K
+    BCDEIJKL:
+      A: E
+      B: J
+      D: B
+      E: C
+      G: I
+      I: D
+      K: L
+      L: K
+    BCDFGHIJ:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: J
+      I: F
+      K: D
+      L: I
+    BCDFGHIK:
+      A: C
+      B: G
+      D: B
+      E: D
+      G: H
+      I: F
+      K: I
+      L: K
+    BCDFGHIL:
+      A: C
+      B: G
+      D: B
+      E: D
+      G: H
+      I: F
+      K: L
+      L: I
+    BCDFGHJK:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: J
+      I: F
+      K: D
+      L: K
+    BCDFGHJL:
+      A: C
+      B: G
+      D: B
+      E: D
+      G: H
+      I: F
+      K: L
+      L: J
+    BCDFGHKL:
+      A: C
+      B: G
+      D: B
+      E: D
+      G: H
+      I: F
+      K: L
+      L: K
+    BCDFGIJK:
+      A: C
+      B: G
+      D: B
+      E: D
+      G: J
+      I: F
+      K: I
+      L: K
+    BCDFGIJL:
+      A: C
+      B: G
+      D: B
+      E: D
+      G: J
+      I: F
+      K: L
+      L: I
+    BCDFGIKL:
+      A: C
+      B: G
+      D: B
+      E: D
+      G: I
+      I: F
+      K: L
+      L: K
+    BCDFGJKL:
+      A: C
+      B: G
+      D: B
+      E: D
+      G: J
+      I: F
+      K: L
+      L: K
+    BCDFHIJK:
+      A: C
+      B: J
+      D: B
+      E: D
+      G: H
+      I: F
+      K: I
+      L: K
+    BCDFHIJL:
+      A: C
+      B: J
+      D: B
+      E: D
+      G: H
+      I: F
+      K: L
+      L: I
+    BCDFHIKL:
+      A: C
+      B: I
+      D: B
+      E: D
+      G: H
+      I: F
+      K: L
+      L: K
+    BCDFHJKL:
+      A: C
+      B: J
+      D: B
+      E: D
+      G: H
+      I: F
+      K: L
+      L: K
+    BCDFIJKL:
+      A: C
+      B: J
+      D: B
+      E: D
+      G: I
+      I: F
+      K: L
+      L: K
+    BCDGHIJK:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: J
+      I: D
+      K: I
+      L: K
+    BCDGHIJL:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: J
+      I: D
+      K: L
+      L: I
+    BCDGHIKL:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: I
+      I: D
+      K: L
+      L: K
+    BCDGHJKL:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: J
+      I: D
+      K: L
+      L: K
+    BCDGIJKL:
+      A: I
+      B: G
+      D: B
+      E: C
+      G: J
+      I: D
+      K: L
+      L: K
+    BCDHIJKL:
+      A: H
+      B: J
+      D: B
+      E: C
+      G: I
+      I: D
+      K: L
+      L: K
+    BCEFGHIJ:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: J
+      I: F
+      K: E
+      L: I
+    BCEFGHIK:
+      A: E
+      B: G
+      D: B
+      E: C
+      G: H
+      I: F
+      K: I
+      L: K
+    BCEFGHIL:
+      A: E
+      B: G
+      D: B
+      E: C
+      G: H
+      I: F
+      K: L
+      L: I
+    BCEFGHJK:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: J
+      I: F
+      K: E
+      L: K
+    BCEFGHJL:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: J
+      I: F
+      K: L
+      L: E
+    BCEFGHKL:
+      A: E
+      B: G
+      D: B
+      E: C
+      G: H
+      I: F
+      K: L
+      L: K
+    BCEFGIJK:
+      A: E
+      B: G
+      D: B
+      E: C
+      G: J
+      I: F
+      K: I
+      L: K
+    BCEFGIJL:
+      A: E
+      B: G
+      D: B
+      E: C
+      G: J
+      I: F
+      K: L
+      L: I
+    BCEFGIKL:
+      A: E
+      B: G
+      D: B
+      E: C
+      G: I
+      I: F
+      K: L
+      L: K
+    BCEFGJKL:
+      A: E
+      B: G
+      D: B
+      E: C
+      G: J
+      I: F
+      K: L
+      L: K
+    BCEFHIJK:
+      A: E
+      B: J
+      D: B
+      E: C
+      G: H
+      I: F
+      K: I
+      L: K
+    BCEFHIJL:
+      A: E
+      B: J
+      D: B
+      E: C
+      G: H
+      I: F
+      K: L
+      L: I
+    BCEFHIKL:
+      A: E
+      B: I
+      D: B
+      E: C
+      G: H
+      I: F
+      K: L
+      L: K
+    BCEFHJKL:
+      A: E
+      B: J
+      D: B
+      E: C
+      G: H
+      I: F
+      K: L
+      L: K
+    BCEFIJKL:
+      A: E
+      B: J
+      D: B
+      E: C
+      G: I
+      I: F
+      K: L
+      L: K
+    BCEGHIJK:
+      A: E
+      B: J
+      D: B
+      E: C
+      G: H
+      I: G
+      K: I
+      L: K
+    BCEGHIJL:
+      A: E
+      B: J
+      D: B
+      E: C
+      G: H
+      I: G
+      K: L
+      L: I
+    BCEGHIKL:
+      A: E
+      B: G
+      D: B
+      E: C
+      G: I
+      I: H
+      K: L
+      L: K
+    BCEGHJKL:
+      A: E
+      B: J
+      D: B
+      E: C
+      G: H
+      I: G
+      K: L
+      L: K
+    BCEGIJKL:
+      A: E
+      B: J
+      D: B
+      E: C
+      G: I
+      I: G
+      K: L
+      L: K
+    BCEHIJKL:
+      A: E
+      B: J
+      D: B
+      E: C
+      G: I
+      I: H
+      K: L
+      L: K
+    BCFGHIJK:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: J
+      I: F
+      K: I
+      L: K
+    BCFGHIJL:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: J
+      I: F
+      K: L
+      L: I
+    BCFGHIKL:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: I
+      I: F
+      K: L
+      L: K
+    BCFGHJKL:
+      A: H
+      B: G
+      D: B
+      E: C
+      G: J
+      I: F
+      K: L
+      L: K
+    BCFGIJKL:
+      A: I
+      B: G
+      D: B
+      E: C
+      G: J
+      I: F
+      K: L
+      L: K
+    BCFHIJKL:
+      A: H
+      B: J
+      D: B
+      E: C
+      G: I
+      I: F
+      K: L
+      L: K
+    BCGHIJKL:
+      A: H
+      B: J
+      D: B
+      E: C
+      G: I
+      I: G
+      K: L
+      L: K
+    BDEFGHIJ:
+      A: H
+      B: G
+      D: B
+      E: D
+      G: J
+      I: F
+      K: E
+      L: I
+    BDEFGHIK:
+      A: E
+      B: G
+      D: B
+      E: D
+      G: H
+      I: F
+      K: I
+      L: K
+    BDEFGHIL:
+      A: E
+      B: G
+      D: B
+      E: D
+      G: H
+      I: F
+      K: L
+      L: I
+    BDEFGHJK:
+      A: H
+      B: G
+      D: B
+      E: D
+      G: J
+      I: F
+      K: E
+      L: K
+    BDEFGHJL:
+      A: H
+      B: G
+      D: B
+      E: D
+      G: J
+      I: F
+      K: L
+      L: E
+    BDEFGHKL:
+      A: E
+      B: G
+      D: B
+      E: D
+      G: H
+      I: F
+      K: L
+      L: K
+    BDEFGIJK:
+      A: E
+      B: G
+      D: B
+      E: D
+      G: J
+      I: F
+      K: I
+      L: K
+    BDEFGIJL:
+      A: E
+      B: G
+      D: B
+      E: D
+      G: J
+      I: F
+      K: L
+      L: I
+    BDEFGIKL:
+      A: E
+      B: G
+      D: B
+      E: D
+      G: I
+      I: F
+      K: L
+      L: K
+    BDEFGJKL:
+      A: E
+      B: G
+      D: B
+      E: D
+      G: J
+      I: F
+      K: L
+      L: K
+    BDEFHIJK:
+      A: E
+      B: J
+      D: B
+      E: D
+      G: H
+      I: F
+      K: I
+      L: K
+    BDEFHIJL:
+      A: E
+      B: J
+      D: B
+      E: D
+      G: H
+      I: F
+      K: L
+      L: I
+    BDEFHIKL:
+      A: E
+      B: I
+      D: B
+      E: D
+      G: H
+      I: F
+      K: L
+      L: K
+    BDEFHJKL:
+      A: E
+      B: J
+      D: B
+      E: D
+      G: H
+      I: F
+      K: L
+      L: K
+    BDEFIJKL:
+      A: E
+      B: J
+      D: B
+      E: D
+      G: I
+      I: F
+      K: L
+      L: K
+    BDEGHIJK:
+      A: E
+      B: J
+      D: B
+      E: D
+      G: H
+      I: G
+      K: I
+      L: K
+    BDEGHIJL:
+      A: E
+      B: J
+      D: B
+      E: D
+      G: H
+      I: G
+      K: L
+      L: I
+    BDEGHIKL:
+      A: E
+      B: G
+      D: B
+      E: D
+      G: I
+      I: H
+      K: L
+      L: K
+    BDEGHJKL:
+      A: E
+      B: J
+      D: B
+      E: D
+      G: H
+      I: G
+      K: L
+      L: K
+    BDEGIJKL:
+      A: E
+      B: J
+      D: B
+      E: D
+      G: I
+      I: G
+      K: L
+      L: K
+    BDEHIJKL:
+      A: E
+      B: J
+      D: B
+      E: D
+      G: I
+      I: H
+      K: L
+      L: K
+    BDFGHIJK:
+      A: H
+      B: G
+      D: B
+      E: D
+      G: J
+      I: F
+      K: I
+      L: K
+    BDFGHIJL:
+      A: H
+      B: G
+      D: B
+      E: D
+      G: J
+      I: F
+      K: L
+      L: I
+    BDFGHIKL:
+      A: H
+      B: G
+      D: B
+      E: D
+      G: I
+      I: F
+      K: L
+      L: K
+    BDFGHJKL:
+      A: H
+      B: G
+      D: B
+      E: D
+      G: J
+      I: F
+      K: L
+      L: K
+    BDFGIJKL:
+      A: I
+      B: G
+      D: B
+      E: D
+      G: J
+      I: F
+      K: L
+      L: K
+    BDFHIJKL:
+      A: H
+      B: J
+      D: B
+      E: D
+      G: I
+      I: F
+      K: L
+      L: K
+    BDGHIJKL:
+      A: H
+      B: J
+      D: B
+      E: D
+      G: I
+      I: G
+      K: L
+      L: K
+    BEFGHIJK:
+      A: E
+      B: J
+      D: B
+      E: F
+      G: H
+      I: G
+      K: I
+      L: K
+    BEFGHIJL:
+      A: E
+      B: J
+      D: B
+      E: F
+      G: H
+      I: G
+      K: L
+      L: I
+    BEFGHIKL:
+      A: E
+      B: G
+      D: B
+      E: F
+      G: I
+      I: H
+      K: L
+      L: K
+    BEFGHJKL:
+      A: E
+      B: J
+      D: B
+      E: F
+      G: H
+      I: G
+      K: L
+      L: K
+    BEFGIJKL:
+      A: E
+      B: J
+      D: B
+      E: F
+      G: I
+      I: G
+      K: L
+      L: K
+    BEFHIJKL:
+      A: E
+      B: J
+      D: B
+      E: F
+      G: I
+      I: H
+      K: L
+      L: K
+    BEGHIJKL:
+      A: E
+      B: J
+      D: I
+      E: B
+      G: H
+      I: G
+      K: L
+      L: K
+    BFGHIJKL:
+      A: H
+      B: J
+      D: B
+      E: F
+      G: I
+      I: G
+      K: L
+      L: K
+    CDEFGHIJ:
+      A: C
+      B: G
+      D: J
+      E: D
+      G: H
+      I: F
+      K: E
+      L: I
+    CDEFGHIK:
+      A: C
+      B: G
+      D: E
+      E: D
+      G: H
+      I: F
+      K: I
+      L: K
+    CDEFGHIL:
+      A: C
+      B: G
+      D: E
+      E: D
+      G: H
+      I: F
+      K: L
+      L: I
+    CDEFGHJK:
+      A: C
+      B: G
+      D: J
+      E: D
+      G: H
+      I: F
+      K: E
+      L: K
+    CDEFGHJL:
+      A: C
+      B: G
+      D: J
+      E: D
+      G: H
+      I: F
+      K: L
+      L: E
+    CDEFGHKL:
+      A: C
+      B: G
+      D: E
+      E: D
+      G: H
+      I: F
+      K: L
+      L: K
+    CDEFGIJK:
+      A: C
+      B: G
+      D: E
+      E: D
+      G: J
+      I: F
+      K: I
+      L: K
+    CDEFGIJL:
+      A: C
+      B: G
+      D: E
+      E: D
+      G: J
+      I: F
+      K: L
+      L: I
+    CDEFGIKL:
+      A: C
+      B: G
+      D: E
+      E: D
+      G: I
+      I: F
+      K: L
+      L: K
+    CDEFGJKL:
+      A: C
+      B: G
+      D: E
+      E: D
+      G: J
+      I: F
+      K: L
+      L: K
+    CDEFHIJK:
+      A: C
+      B: J
+      D: E
+      E: D
+      G: H
+      I: F
+      K: I
+      L: K
+    CDEFHIJL:
+      A: C
+      B: J
+      D: E
+      E: D
+      G: H
+      I: F
+      K: L
+      L: I
+    CDEFHIKL:
+      A: C
+      B: E
+      D: I
+      E: D
+      G: H
+      I: F
+      K: L
+      L: K
+    CDEFHJKL:
+      A: C
+      B: J
+      D: E
+      E: D
+      G: H
+      I: F
+      K: L
+      L: K
+    CDEFIJKL:
+      A: C
+      B: J
+      D: E
+      E: D
+      G: I
+      I: F
+      K: L
+      L: K
+    CDEGHIJK:
+      A: E
+      B: G
+      D: J
+      E: C
+      G: H
+      I: D
+      K: I
+      L: K
+    CDEGHIJL:
+      A: E
+      B: G
+      D: J
+      E: C
+      G: H
+      I: D
+      K: L
+      L: I
+    CDEGHIKL:
+      A: E
+      B: G
+      D: I
+      E: C
+      G: H
+      I: D
+      K: L
+      L: K
+    CDEGHJKL:
+      A: E
+      B: G
+      D: J
+      E: C
+      G: H
+      I: D
+      K: L
+      L: K
+    CDEGIJKL:
+      A: E
+      B: G
+      D: I
+      E: C
+      G: J
+      I: D
+      K: L
+      L: K
+    CDEHIJKL:
+      A: E
+      B: J
+      D: I
+      E: C
+      G: H
+      I: D
+      K: L
+      L: K
+    CDFGHIJK:
+      A: C
+      B: G
+      D: J
+      E: D
+      G: H
+      I: F
+      K: I
+      L: K
+    CDFGHIJL:
+      A: C
+      B: G
+      D: J
+      E: D
+      G: H
+      I: F
+      K: L
+      L: I
+    CDFGHIKL:
+      A: C
+      B: G
+      D: I
+      E: D
+      G: H
+      I: F
+      K: L
+      L: K
+    CDFGHJKL:
+      A: C
+      B: G
+      D: J
+      E: D
+      G: H
+      I: F
+      K: L
+      L: K
+    CDFGIJKL:
+      A: C
+      B: G
+      D: I
+      E: D
+      G: J
+      I: F
+      K: L
+      L: K
+    CDFHIJKL:
+      A: C
+      B: J
+      D: I
+      E: D
+      G: H
+      I: F
+      K: L
+      L: K
+    CDGHIJKL:
+      A: H
+      B: G
+      D: I
+      E: C
+      G: J
+      I: D
+      K: L
+      L: K
+    CEFGHIJK:
+      A: E
+      B: G
+      D: J
+      E: C
+      G: H
+      I: F
+      K: I
+      L: K
+    CEFGHIJL:
+      A: E
+      B: G
+      D: J
+      E: C
+      G: H
+      I: F
+      K: L
+      L: I
+    CEFGHIKL:
+      A: E
+      B: G
+      D: I
+      E: C
+      G: H
+      I: F
+      K: L
+      L: K
+    CEFGHJKL:
+      A: E
+      B: G
+      D: J
+      E: C
+      G: H
+      I: F
+      K: L
+      L: K
+    CEFGIJKL:
+      A: E
+      B: G
+      D: I
+      E: C
+      G: J
+      I: F
+      K: L
+      L: K
+    CEFHIJKL:
+      A: E
+      B: J
+      D: I
+      E: C
+      G: H
+      I: F
+      K: L
+      L: K
+    CEGHIJKL:
+      A: E
+      B: J
+      D: I
+      E: C
+      G: H
+      I: G
+      K: L
+      L: K
+    CFGHIJKL:
+      A: H
+      B: G
+      D: I
+      E: C
+      G: J
+      I: F
+      K: L
+      L: K
+    DEFGHIJK:
+      A: E
+      B: G
+      D: J
+      E: D
+      G: H
+      I: F
+      K: I
+      L: K
+    DEFGHIJL:
+      A: E
+      B: G
+      D: J
+      E: D
+      G: H
+      I: F
+      K: L
+      L: I
+    DEFGHIKL:
+      A: E
+      B: G
+      D: I
+      E: D
+      G: H
+      I: F
+      K: L
+      L: K
+    DEFGHJKL:
+      A: E
+      B: G
+      D: J
+      E: D
+      G: H
+      I: F
+      K: L
+      L: K
+    DEFGIJKL:
+      A: E
+      B: G
+      D: I
+      E: D
+      G: J
+      I: F
+      K: L
+      L: K
+    DEFHIJKL:
+      A: E
+      B: J
+      D: I
+      E: D
+      G: H
+      I: F
+      K: L
+      L: K
+    DEGHIJKL:
+      A: E
+      B: J
+      D: I
+      E: D
+      G: H
+      I: G
+      K: L
+      L: K
+    DFGHIJKL:
+      A: H
+      B: G
+      D: I
+      E: D
+      G: J
+      I: F
+      K: L
+      L: K
+    EFGHIJKL:
+      A: E
+      B: J
+      D: I
+      E: F
+      G: H
+      I: G
+      K: L
+      L: K
+- id: r32
+  type: bracket
+  matches:
+    m73:
+      home: groups.A.2
+      away: groups.B.2
+    m74:
+      home: groups.E.1
+      away: thirds.E
+    m75:
+      home: groups.F.1
+      away: groups.C.2
+    m76:
+      home: groups.C.1
+      away: groups.F.2
+    m77:
+      home: groups.I.1
+      away: thirds.I
+    m78:
+      home: groups.E.2
+      away: groups.I.2
+    m79:
+      home: groups.A.1
+      away: thirds.A
+    m80:
+      home: groups.L.1
+      away: thirds.L
+    m81:
+      home: groups.D.1
+      away: thirds.D
+    m82:
+      home: groups.G.1
+      away: thirds.G
+    m83:
+      home: groups.K.2
+      away: groups.L.2
+    m84:
+      home: groups.H.1
+      away: groups.J.2
+    m85:
+      home: groups.B.1
+      away: thirds.B
+    m86:
+      home: groups.J.1
+      away: groups.H.2
+    m87:
+      home: groups.K.1
+      away: thirds.K
+    m88:
+      home: groups.D.2
+      away: groups.G.2
+- id: r16
+  type: bracket
+  matches:
+    m89:
+      home: r32.m74.W
+      away: r32.m77.W
+    m90:
+      home: r32.m73.W
+      away: r32.m75.W
+    m91:
+      home: r32.m83.W
+      away: r32.m84.W
+    m92:
+      home: r32.m81.W
+      away: r32.m82.W
+    m93:
+      home: r32.m76.W
+      away: r32.m78.W
+    m94:
+      home: r32.m79.W
+      away: r32.m80.W
+    m95:
+      home: r32.m86.W
+      away: r32.m88.W
+    m96:
+      home: r32.m85.W
+      away: r32.m87.W
+- id: qf
+  type: bracket
+  matches:
+    qf97:
+      home: r16.m89.W
+      away: r16.m90.W
+    qf98:
+      home: r16.m93.W
+      away: r16.m94.W
+    qf99:
+      home: r16.m91.W
+      away: r16.m92.W
+    qf100:
+      home: r16.m95.W
+      away: r16.m96.W
+- id: sf
+  type: bracket
+  matches:
+    sf101:
+      home: qf.qf97.W
+      away: qf.qf98.W
+    sf102:
+      home: qf.qf99.W
+      away: qf.qf100.W
+- id: third_place
+  type: match
+  home: sf.sf101.L
+  away: sf.sf102.L
+- id: final
+  type: match
+  home: sf.sf101.W
+  away: sf.sf102.W
