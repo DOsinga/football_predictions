@@ -1,11 +1,9 @@
 import os
 from datetime import date
 
-from django.http import JsonResponse
-
 from projects.football_predictions.yaml_compat import safe_load as yaml_safe_load
 
-from projects.common import Project
+from projects.common import JsonResponse, Project
 
 TOURNAMENTS_DIR = os.path.join(os.path.dirname(__file__), "tournaments")
 
