@@ -79,8 +79,7 @@
     return Math.random() < 0.5 ? [nameA, nameB] : [nameB, nameA];
   }
 
-  function outcomeProbabilities(eloDiff, settings, slopeFactor = 1.0) {
-    const [xgA, xgB] = expectedGoals(eloDiff, 0, slopeFactor, settings);
+  function outcomeProbabilitiesFromXg(xgA, xgB) {
     const maxGoals = 20;
     const distributions = [xgA, xgB].map(mean => {
       const out = [Math.exp(-mean)];
@@ -98,6 +97,110 @@
     }
     const total = win + draw + loss;
     return { win: win / total, draw: draw / total, loss: loss / total };
+  }
+
+  function outcomeProbabilities(eloDiff, settings, slopeFactor = 1.0) {
+    const [xgA, xgB] = expectedGoals(eloDiff, 0, slopeFactor, settings);
+    return outcomeProbabilitiesFromXg(xgA, xgB);
+  }
+
+  // --- Score prediction -----------------------------------------------------
+  // simulate() samples to estimate how often teams reach each round. The
+  // functions below answer a different question: the single most-likely
+  // *scoreline* of one match — what you need to fill in a score-prediction
+  // pool. Mirror of predict.py; keep the two in sync.
+
+  const BLOWOUT_GAP_DEFAULT = 440;    // raw ELO gap that calls an outright 4-0
+  const MARKET_WEIGHT_DEFAULT = 0.8;  // weight on market xG when blending
+
+  function marketXg(ah, ou) {
+    // Convert bookmaker lines to expected goals for [home, away]. The
+    // Asian-handicap line is the negative of the home team's supremacy and the
+    // over/under line is the expected total: xgHome - xgAway = -ah,
+    // xgHome + xgAway = ou.
+    const supremacy = -ah;
+    return [
+      Math.max(MIN_XG, (ou + supremacy) / 2),
+      Math.max(MIN_XG, (ou - supremacy) / 2),
+    ];
+  }
+
+  function poissonMode(mean) {
+    // Mode of a Poisson(mean): floor(mean), floored at our minimum xG.
+    return Math.floor(Math.max(MIN_XG, mean));
+  }
+
+  function scorelineProbabilities(xgA, xgB, top = null, maxGoals = 10) {
+    // Scorelines ranked by probability (independent Poissons). With top set,
+    // return only that many of the most likely ones.
+    const dists = [xgA, xgB].map(mean => {
+      const out = [Math.exp(-mean)];
+      for (let k = 1; k <= maxGoals; k++) out.push(out[k - 1] * mean / k);
+      return out;
+    });
+    const grid = [];
+    for (let a = 0; a <= maxGoals; a++)
+      for (let b = 0; b <= maxGoals; b++)
+        grid.push([[a, b], dists[0][a] * dists[1][b]]);
+    grid.sort((x, y) => y[1] - x[1]);
+    return top ? grid.slice(0, top) : grid;
+  }
+
+  function outcomeAwareScore(xgA, xgB) {
+    // Most likely scoreline consistent with the most likely result. The plain
+    // modal score over-predicts draws; conditioning on the win/draw/loss
+    // outcome first scores better in pool backtests.
+    const { win, draw, loss } = outcomeProbabilitiesFromXg(xgA, xgB);
+    const best = (win >= draw && win >= loss) ? 'w' : (draw >= loss ? 'd' : 'l');
+    const ok = ([a, b]) => best === 'w' ? a > b : best === 'd' ? a === b : a < b;
+    for (const [s] of scorelineProbabilities(xgA, xgB)) if (ok(s)) return s;
+    return [1, 1];
+  }
+
+  function predictedScore(eloA, eloB, options = {}) {
+    // Most-likely scoreline for A vs B. eloA/eloB are effective ELOs (host
+    // bonus included) and drive the xG model. Options:
+    //   market       {ah, ou}  blend market xG with model xG before the mode
+    //   marketWeight  0..1      weight on market xG (default 0.8)
+    //   blowout       number    raw ELO gap for an outright 4-0 (null disables)
+    //   rawDiff       number    no-host gap gating the blowout (default eloA-eloB)
+    const {
+      market = null,
+      marketWeight = MARKET_WEIGHT_DEFAULT,
+      blowout = BLOWOUT_GAP_DEFAULT,
+      rawDiff = eloA - eloB,
+      outcomeAware = false,
+      top = null,
+      slopeFactor = 1.0,
+      settings,
+    } = options;
+    let [xgA, xgB] = expectedGoals(eloA, eloB, slopeFactor, settings);
+    let blended = false;
+    if (market) {
+      const [mA, mB] = marketXg(market.ah, market.ou);
+      xgA = marketWeight * mA + (1 - marketWeight) * xgA;
+      xgB = marketWeight * mB + (1 - marketWeight) * xgB;
+      blended = true;
+    }
+    let [a, b] = outcomeAware ? outcomeAwareScore(xgA, xgB)
+                              : [poissonMode(xgA), poissonMode(xgB)];
+    let isBlowout = false;
+    if (blowout != null) {
+      if (rawDiff >= blowout) { a = 4; b = 0; isBlowout = true; }
+      else if (rawDiff <= -blowout) { a = 0; b = 4; isBlowout = true; }
+    }
+    const result = {
+      score: [a, b],
+      xg: [xgA, xgB],
+      probs: outcomeProbabilitiesFromXg(xgA, xgB),
+      market: blended,
+      blowout: isBlowout,
+    };
+    if (top) {
+      result.top = scorelineProbabilities(xgA, xgB, top)
+        .map(([s, p]) => [s, Math.round(p * 1e4) / 1e4]);
+    }
+    return result;
   }
 
   function teamRecord(team, matches) {
@@ -397,6 +500,7 @@
   const api = {
     DEFAULT_MODEL, effectiveElos, simulate, simulateInto, simulateOnce, regulationGoals, knockoutWinner,
     outcomeProbabilities, rankGroup, resolveDeterministic, stageSlopeFactor,
+    marketXg, poissonMode, predictedScore, scorelineProbabilities, outcomeAwareScore,
   };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   else root.Football = api;

@@ -106,6 +106,7 @@ github: football_predictions
   .fp-match select { font: inherit; height: 1.6em; padding: 0 0.2em; width: 7em; box-sizing: border-box; }
   .fp-match select.pk-pick[hidden] { display: inline-block; visibility: hidden; }
   .fp-match.fixed { background: #f0f7ff; }
+  .fp-match .fp-pred { flex: 0 0 auto; margin-left: 0.3em; font-size: 0.8em; color: #999; font-variant-numeric: tabular-nums; cursor: help; }
 </style>
 
 <form method="get" class="fp-controls">
@@ -116,6 +117,7 @@ github: football_predictions
   </label>
   <button type="button" id="fp-run">Run 10,000 simulations</button>
   <button type="button" id="fp-load-actual" title="Pre-fill all fixed scores with historical results">Load actual results</button>
+  <button type="button" id="fp-fill-pred" title="Fill empty group scores with the model's predicted scoreline">Fill predictions</button>
   <button type="button" id="fp-reset" title="Clear all fixed scores">Reset</button>
   <span class="status" id="fp-status"><span class="status-fill" id="fp-status-fill"></span><span class="status-text" id="fp-status-text"></span></span>
 </form>

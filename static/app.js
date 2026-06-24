@@ -8,6 +8,7 @@
   const tournamentSelect = document.getElementById('fp-tournament');
   const runBtn = document.getElementById('fp-run');
   const loadBtn = document.getElementById('fp-load-actual');
+  const fillPredBtn = document.getElementById('fp-fill-pred');
   const resetBtn = document.getElementById('fp-reset');
   const modelResetBtn = document.getElementById('fp-model-reset');
   const curveEl = document.getElementById('fp-curve');
@@ -492,7 +493,58 @@
     third_place: '3rd-place playoff', final: 'Final',
   };
 
-  function renderGroupMatch(stageId, group, home, away, overrides) {
+  function groupFixtures(stage) {
+    const out = {};
+    for (const g of Object.keys(stage.groups)) out[g] = [];
+    if (stage.schedule) {
+      for (const entry of stage.schedule) {
+        const [, group, home, away] = entry;
+        out[group].push([home, away]);
+      }
+    } else {
+      for (const [g, codes] of Object.entries(stage.groups)) {
+        for (let i = 0; i < codes.length; i++)
+          for (let j = i + 1; j < codes.length; j++)
+            out[g].push([codes[i], codes[j]]);
+      }
+    }
+    return out;
+  }
+
+  function marketFor(odds, home, away) {
+    if (!odds) return null;
+    if (odds[`${home}-${away}`]) return odds[`${home}-${away}`];
+    const rev = odds[`${away}-${home}`];
+    return rev ? { ah: -rev.ah, ou: rev.ou } : null;
+  }
+
+  // The model's most-likely scoreline for a match, under the current settings.
+  function predictMatch(eff, home, away, stageId) {
+    if (!home || !away) return null;
+    return Football.predictedScore(eff[home], eff[away], {
+      rawDiff: config.teams[home].elo - config.teams[away].elo,
+      market: marketFor(config.odds, home, away),
+      slopeFactor: stageId ? Football.stageSlopeFactor(stageId, model) : 1.0,
+      settings: model,
+      top: 3,
+    });
+  }
+
+  function predChip(pred) {
+    if (!pred) return '';
+    const [a, b] = pred.score;
+    const flags = (pred.market ? '*' : '') + (pred.blowout ? '!' : '');
+    const probs = `win ${Math.round(pred.probs.win * 100)}% · ` +
+      `draw ${Math.round(pred.probs.draw * 100)}% · ` +
+      `loss ${Math.round(pred.probs.loss * 100)}%`;
+    const top = (pred.top || [])
+      .map(([s, p]) => `${s[0]}-${s[1]} ${Math.round(p * 100)}%`).join(' · ');
+    const title = `model pick ${a}–${b} (${probs})` +
+      (top ? ` | likeliest: ${top}` : '');
+    return `<span class="fp-pred" title="${title}">${a}–${b}${flags}</span>`;
+  }
+
+  function renderGroupMatch(stageId, group, home, away, overrides, pred) {
     const key = `${stageId}.${home}.${away}`;
     const v = overrides[key] || ['', ''];
     const fixed = v[0] !== '' && v[1] !== '' ? ' fixed' : '';
@@ -502,10 +554,11 @@
       `<span>–</span>` +
       `<input type="number" min="0" max="20" data-side="a" value="${v[1]}">` +
       `<span class="away">${teamLabel(config, away)}</span>` +
+      predChip(pred) +
       `</div>`;
   }
 
-  function renderKnockoutMatch(key, homeCode, awayCode, overrides) {
+  function renderKnockoutMatch(key, homeCode, awayCode, overrides, pred) {
     const ovr = overrides[key] || {};
     const homeName = homeCode ? config.teams[homeCode].name : 'TBD';
     const awayName = awayCode ? config.teams[awayCode].name : 'TBD';
@@ -541,12 +594,14 @@
         `<option value="${homeCode}"${sel(homeCode)}>${teamText(config, homeCode)}</option>` +
         `<option value="${awayCode}"${sel(awayCode)}>${teamText(config, awayCode)}</option>` +
       `</select>` +
+      predChip(pred) +
       `</div>`;
   }
 
   function renderMatches() {
     const overrides = loadOverrides();
     const slots = Football.resolveDeterministic(config, overrides);
+    const eff = Football.effectiveElos(config, model);
     const parts = [];
 
     const section = (title, matchHtmls, extra = '') =>
@@ -554,40 +609,51 @@
 
     for (const stage of config.stages) {
       if (stage.type === 'groups') {
-        const groupOrder = Object.keys(stage.groups);
-        const matchesByGroup = Object.fromEntries(groupOrder.map(g => [g, []]));
-        if (stage.schedule) {
-          for (const entry of stage.schedule) {
-            const [, group, home, away] = entry;
-            matchesByGroup[group].push([home, away]);
-          }
-        } else {
-          for (const [g, codes] of Object.entries(stage.groups)) {
-            for (let i = 0; i < codes.length; i++)
-              for (let j = i + 1; j < codes.length; j++)
-                matchesByGroup[g].push([codes[i], codes[j]]);
-          }
-        }
-        for (const g of groupOrder) {
-          const matches = matchesByGroup[g].map(([h, a]) =>
-            renderGroupMatch(stage.id, g, h, a, overrides));
+        const fixtures = groupFixtures(stage);
+        for (const g of Object.keys(stage.groups)) {
+          const matches = fixtures[g].map(([h, a]) =>
+            renderGroupMatch(stage.id, g, h, a, overrides,
+              predictMatch(eff, h, a, stage.id)));
           parts.push(section(`Group ${g}`, matches, 'fp-grid-3'));
         }
       } else if (stage.type === 'bracket') {
         const matches = Object.entries(stage.matches).map(([mid, mdef]) => {
           const homeCode = (mdef.home in config.teams) ? mdef.home : slots.get(mdef.home);
           const awayCode = (mdef.away in config.teams) ? mdef.away : slots.get(mdef.away);
-          return renderKnockoutMatch(`${stage.id}.${mid}`, homeCode, awayCode, overrides);
+          return renderKnockoutMatch(`${stage.id}.${mid}`, homeCode, awayCode, overrides,
+            predictMatch(eff, homeCode, awayCode, stage.id));
         });
         parts.push(section(ROUND_LABEL[stage.id] || stage.id, matches, 'fp-grid-2'));
       } else if (stage.type === 'match') {
         const homeCode = (stage.home in config.teams) ? stage.home : slots.get(stage.home);
         const awayCode = (stage.away in config.teams) ? stage.away : slots.get(stage.away);
         parts.push(section(ROUND_LABEL[stage.id] || stage.id,
-          [renderKnockoutMatch(stage.id, homeCode, awayCode, overrides)], 'fp-grid-2'));
+          [renderKnockoutMatch(stage.id, homeCode, awayCode, overrides,
+            predictMatch(eff, homeCode, awayCode, stage.id))], 'fp-grid-2'));
       }
     }
     matchesEl.innerHTML = parts.join('');
+  }
+
+  // Fill every empty group score with the model's predicted scoreline. This is
+  // the one-click version of what a score-prediction pool entry needs.
+  function fillPredictions() {
+    const overrides = loadOverrides();
+    const eff = Football.effectiveElos(config, model);
+    for (const stage of config.stages) {
+      if (stage.type !== 'groups') continue;
+      const fixtures = groupFixtures(stage);
+      for (const g of Object.keys(stage.groups)) {
+        for (const [h, a] of fixtures[g]) {
+          const key = `${stage.id}.${h}.${a}`;
+          if (overrides[key]) continue;   // keep anything already entered
+          overrides[key] = predictMatch(eff, h, a, stage.id).score;
+        }
+      }
+    }
+    saveOverrides(overrides);
+    renderMatches();
+    run();
   }
 
   function readOverrides() {
@@ -766,6 +832,7 @@
     renderMatches();
     run();
   });
+  fillPredBtn.addEventListener('click', fillPredictions);
   resetBtn.addEventListener('click', () => {
     saveOverrides({});
     renderMatches();
