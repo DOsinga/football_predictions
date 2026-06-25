@@ -66,6 +66,43 @@
   function saveOverrides(ovr) {
     try { localStorage.setItem(LS_KEY, JSON.stringify(ovr)); } catch (e) {}
   }
+  function completeOverrides(ovr) {
+    const out = {};
+    for (const [key, value] of Object.entries(ovr || {})) {
+      if (Array.isArray(value)) {
+        const [h, a] = value;
+        if (h !== '' && a !== '' && h != null && a != null) out[key] = [h, a];
+        continue;
+      }
+      if (!value || !value.winner) continue;
+      const fixed = { winner: value.winner };
+      if (value.score && value.score[0] !== '' && value.score[1] !== '') {
+        fixed.score = value.score;
+      }
+      out[key] = fixed;
+    }
+    return out;
+  }
+  function hasUserValue(value) {
+    if (Array.isArray(value)) return value.some(v => v !== '' && v != null);
+    if (!value) return false;
+    if (value.winner) return true;
+    return Boolean(value.score && value.score.some(v => v !== '' && v != null));
+  }
+  function sameOverride(a, b) {
+    return JSON.stringify(a) === JSON.stringify(b);
+  }
+  function mergeOfficialOverrides(current, official) {
+    const out = { ...(current || {}) };
+    let changed = false;
+    for (const [key, value] of Object.entries(official || {})) {
+      if (hasUserValue(out[key])) continue;
+      if (sameOverride(out[key], value)) continue;
+      out[key] = value;
+      changed = true;
+    }
+    return { overrides: out, changed };
+  }
   function loadModel() {
     try {
       const saved = JSON.parse(localStorage.getItem(MODEL_LS_KEY) || '{}');
@@ -360,6 +397,27 @@
     return backtestConfigsPromise;
   }
 
+  function loadLiveResults() {
+    const url = new URL('/projects/football_predictions/live-results', window.location.origin);
+    const selected = new URL(window.location.href).searchParams.get('tournament');
+    if (selected) url.searchParams.set('tournament', selected);
+    return fetch(url)
+      .then(response => {
+        if (!response.ok) throw new Error(`Live results request failed: ${response.status}`);
+        return response.json();
+      })
+      .then(data => {
+        if (!data.active || data.error || !data.overrides) return false;
+        const { overrides, changed } = mergeOfficialOverrides(loadOverrides(), data.overrides);
+        if (!changed) return false;
+        saveOverrides(overrides);
+        renderMatches();
+        run();
+        return true;
+      })
+      .catch(() => false);
+  }
+
   function runBacktest() {
     if (modelIsDefault()) return;
     const generation = ++backtestGeneration;
@@ -583,7 +641,7 @@
     // treat the override as absent — clear inputs and let the simulator
     // play this match out.
     const winnerInPlay = ovr.winner && (ovr.winner === homeCode || ovr.winner === awayCode);
-    const score = winnerInPlay && ovr.score ? ovr.score : ['', ''];
+    const score = (!ovr.winner || winnerInPlay) && ovr.score ? ovr.score : ['', ''];
     const [hVal, aVal] = score;
     const bothFilled = hVal !== '' && aVal !== '';
     const equal = bothFilled && hVal === aVal;
@@ -608,7 +666,7 @@
 
   function renderMatches() {
     const overrides = loadOverrides();
-    const slots = Football.resolveDeterministic(config, overrides);
+    const slots = Football.resolveDeterministic(config, completeOverrides(overrides));
     const eff = Football.effectiveElos(config, model);
     const parts = [];
 
@@ -664,14 +722,18 @@
     run();
   }
 
+  function scoreValue(value) {
+    return value === '' ? '' : parseInt(value, 10);
+  }
+
   function readOverrides() {
     const out = {};
     matchesEl.querySelectorAll('.fp-match').forEach(div => {
       const key = div.dataset.key;
       if (div.dataset.kind === 'group') {
         const [h, a] = div.querySelectorAll('input');
-        if (h.value !== '' && a.value !== '')
-          out[key] = [parseInt(h.value, 10), parseInt(a.value, 10)];
+        if (h.value !== '' || a.value !== '')
+          out[key] = [scoreValue(h.value), scoreValue(a.value)];
         return;
       }
       // ko
@@ -691,7 +753,12 @@
       } else if (pick && pick.value) {
         winner = pick.value;
       }
-      if (winner) out[key] = score ? { winner, score } : { winner };
+      if (winner || h !== '' || a !== '') {
+        const o = {};
+        if (winner) o.winner = winner;
+        if (h !== '' || a !== '') o.score = [scoreValue(h), scoreValue(a)];
+        out[key] = o;
+      }
     });
     return out;
   }
@@ -731,8 +798,9 @@
   function run({rerenderMatches = true} = {}) {
     const generation = ++runGeneration;
     readElos();
-    const overrides = readOverrides();
-    saveOverrides(overrides);
+    const uiOverrides = readOverrides();
+    const overrides = completeOverrides(uiOverrides);
+    saveOverrides(uiOverrides);
     if (rerenderMatches) withFocusPreserved(() => renderMatches());
     runBtn.disabled = true;
     const nFixed = Object.keys(overrides).length;
@@ -861,4 +929,5 @@
   renderResults(null);
   renderMatches();
   run();
+  loadLiveResults();
 })();

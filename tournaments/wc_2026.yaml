@@ -2,6 +2,8 @@ name: World Cup 2026
 year: 2026
 match_code: WC
 cutoff: '2026-06-11'
+start: '2026-06-11'
+end: '2026-07-19'
 hosts:
 - US
 - MX
