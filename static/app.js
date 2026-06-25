@@ -933,8 +933,11 @@
   loadBtn.addEventListener('click', () => {
     const ovr = actualOverrides();
     saveOverrides(ovr);
-    renderMatches();
-    run();
+    loadLiveResults().then(changed => {
+      if (changed) return;
+      renderMatches();
+      run();
+    });
   });
   fillPredBtn.addEventListener('click', fillPredictions);
   resetBtn.addEventListener('click', () => {
