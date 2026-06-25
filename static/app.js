@@ -92,11 +92,39 @@
   function sameOverride(a, b) {
     return JSON.stringify(a) === JSON.stringify(b);
   }
+  function visibleGroupKeys() {
+    const out = new Map();
+    for (const stage of config.stages) {
+      if (stage.type !== 'groups') continue;
+      const fixtures = groupFixtures(stage);
+      for (const matches of Object.values(fixtures)) {
+        for (const [home, away] of matches) {
+          const key = `${stage.id}.${home}.${away}`;
+          out.set(key, { key, reversed: false });
+          out.set(`${stage.id}.${away}.${home}`, { key, reversed: true });
+        }
+      }
+    }
+    return out;
+  }
+  function normalizeOfficialOverrides(official) {
+    const groupKeys = visibleGroupKeys();
+    const out = {};
+    for (const [key, value] of Object.entries(official || {})) {
+      const mapped = groupKeys.get(key);
+      if (mapped && Array.isArray(value)) {
+        out[mapped.key] = mapped.reversed ? [value[1], value[0]] : value;
+      } else {
+        out[key] = value;
+      }
+    }
+    return out;
+  }
   function mergeOfficialOverrides(current, official) {
     const out = { ...(current || {}) };
+    official = normalizeOfficialOverrides(official);
     let changed = false;
     for (const [key, value] of Object.entries(official || {})) {
-      if (hasUserValue(out[key])) continue;
       if (sameOverride(out[key], value)) continue;
       out[key] = value;
       changed = true;
