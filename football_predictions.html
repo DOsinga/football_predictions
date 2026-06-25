@@ -96,7 +96,7 @@ blog: 2026/0610
   @media (max-width: 420px) {
     .fp-grid.fp-grid-3, .fp-grid.fp-grid-2 { grid-template-columns: minmax(0, 1fr); }
   }
-  .fp-match { display: flex; align-items: center; gap: 0.4em; padding: 0.18em 0.4em; font-size: 0.92em; border-radius: 3px; min-width: 0; min-height: 2em; box-sizing: border-box; }
+  .fp-match { position: relative; display: flex; align-items: center; gap: 0.4em; padding: 0.18em 0.4em; font-size: 0.92em; border-radius: 3px; min-width: 0; min-height: 2em; box-sizing: border-box; }
   .fp-match .home { flex: 1; text-align: right; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .fp-match .away { flex: 1; text-align: left; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .fp-match .vs { color: #999; font-size: 0.85em; }
@@ -107,6 +107,15 @@ blog: 2026/0610
   .fp-match select { font: inherit; height: 1.6em; padding: 0 0.2em; width: 7em; box-sizing: border-box; }
   .fp-match select.pk-pick[hidden] { display: inline-block; visibility: hidden; }
   .fp-match.fixed { background: #f0f7ff; }
+  .fp-match .fp-pred { position: absolute; top: 50%; right: 0.4em; width: 3.4em; transform: translateY(-50%); color: #888; font-size: 0.78em; font-variant-numeric: tabular-nums; cursor: help; }
+  .fp-match.fixed .fp-pred { display: none; }
+  .fp-match .fp-pred-score { display: block; line-height: 1; text-align: center; }
+  .fp-match .fp-pred-bar { display: flex; height: 5px; margin-top: 4px; overflow: hidden; border-radius: 3px; background: #ddd; }
+  .fp-match .fp-pred-bar span { display: block; min-width: 1px; }
+  .fp-match .fp-pred-bar span + span { border-left: 1px solid rgba(0, 0, 0, 0.55); }
+  .fp-match .fp-pred-win { flex: var(--w); background: #168c7c; }
+  .fp-match .fp-pred-draw { flex: var(--d); background: #d6d9dd; }
+  .fp-match .fp-pred-loss { flex: var(--l); background: #d9480f; }
 </style>
 
 <form method="get" class="fp-controls">
@@ -117,6 +126,7 @@ blog: 2026/0610
   </label>
   <button type="button" id="fp-run">Run 10,000 simulations</button>
   <button type="button" id="fp-load-actual" title="Pre-fill all fixed scores with historical results">Load actual results</button>
+  <button type="button" id="fp-fill-pred" title="Fill empty group scores with the model's predicted scoreline">Fill predictions</button>
   <button type="button" id="fp-reset" title="Clear all fixed scores">Reset</button>
   <span class="status" id="fp-status"><span class="status-fill" id="fp-status-fill"></span><span class="status-text" id="fp-status-text"></span></span>
 </form>
@@ -183,5 +193,5 @@ blog: 2026/0610
 
 {{ tournament|json_script:"fp-data" }}
 
-<script src="{{ static }}simulate.js"></script>
-<script src="{{ static }}app.js"></script>
+<script src="{{ static }}simulate.js?v=score-prediction"></script>
+<script src="{{ static }}app.js?v=score-prediction"></script>
