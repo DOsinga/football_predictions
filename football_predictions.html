@@ -106,7 +106,15 @@ github: football_predictions
   .fp-match select { font: inherit; height: 1.6em; padding: 0 0.2em; width: 7em; box-sizing: border-box; }
   .fp-match select.pk-pick[hidden] { display: inline-block; visibility: hidden; }
   .fp-match.fixed { background: #f0f7ff; }
-  .fp-match .fp-pred { flex: 0 0 auto; margin-left: 0.3em; font-size: 0.8em; color: #999; font-variant-numeric: tabular-nums; cursor: help; }
+  .fp-match .fp-pred { flex: 0 0 3.4em; margin-left: 0.25em; transform: translateY(-1px); color: #888; font-size: 0.78em; font-variant-numeric: tabular-nums; cursor: help; }
+  .fp-match.fixed .fp-pred { display: none; }
+  .fp-match .fp-pred-score { display: block; line-height: 1; text-align: center; }
+  .fp-match .fp-pred-bar { display: flex; height: 5px; margin-top: 4px; overflow: hidden; border-radius: 3px; background: #ddd; }
+  .fp-match .fp-pred-bar span { display: block; min-width: 1px; }
+  .fp-match .fp-pred-bar span + span { border-left: 1px solid rgba(0, 0, 0, 0.55); }
+  .fp-match .fp-pred-win { flex: var(--w); background: #168c7c; }
+  .fp-match .fp-pred-draw { flex: var(--d); background: #d6d9dd; }
+  .fp-match .fp-pred-loss { flex: var(--l); background: #d9480f; }
 </style>
 
 <form method="get" class="fp-controls">
@@ -184,5 +192,5 @@ github: football_predictions
 
 {{ tournament|json_script:"fp-data" }}
 
-<script src="{{ static }}simulate.js"></script>
-<script src="{{ static }}app.js"></script>
+<script src="{{ static }}simulate.js?v=score-prediction"></script>
+<script src="{{ static }}app.js?v=score-prediction"></script>

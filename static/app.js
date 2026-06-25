@@ -534,14 +534,22 @@
     if (!pred) return '';
     const [a, b] = pred.score;
     const flags = (pred.market ? '*' : '') + (pred.blowout ? '!' : '');
-    const probs = `win ${Math.round(pred.probs.win * 100)}% · ` +
-      `draw ${Math.round(pred.probs.draw * 100)}% · ` +
-      `loss ${Math.round(pred.probs.loss * 100)}%`;
+    const win = Math.round(pred.probs.win * 100);
+    const draw = Math.round(pred.probs.draw * 100);
+    const loss = Math.round(pred.probs.loss * 100);
+    const probs = `win ${win}% · draw ${draw}% · loss ${loss}%`;
     const top = (pred.top || [])
       .map(([s, p]) => `${s[0]}-${s[1]} ${Math.round(p * 100)}%`).join(' · ');
     const title = `model pick ${a}–${b} (${probs})` +
       (top ? ` | likeliest: ${top}` : '');
-    return `<span class="fp-pred" title="${title}">${a}–${b}${flags}</span>`;
+    return `<span class="fp-pred" title="${title}" style="--w:${win};--d:${draw};--l:${loss}">` +
+      `<span class="fp-pred-score">${a}–${b}${flags}</span>` +
+      `<span class="fp-pred-bar" aria-hidden="true">` +
+        `<span class="fp-pred-win"></span>` +
+        `<span class="fp-pred-draw"></span>` +
+        `<span class="fp-pred-loss"></span>` +
+      `</span>` +
+      `</span>`;
   }
 
   function renderGroupMatch(stageId, group, home, away, overrides, pred) {
