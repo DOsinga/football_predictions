@@ -670,7 +670,8 @@
     // play this match out.
     const winnerInPlay = ovr.winner && (ovr.winner === homeCode || ovr.winner === awayCode);
     const score = (!ovr.winner || winnerInPlay) && ovr.score ? ovr.score : ['', ''];
-    const [hVal, aVal] = score;
+    const hVal = score[0] == null ? '' : String(score[0]);
+    const aVal = score[1] == null ? '' : String(score[1]);
     const bothFilled = hVal !== '' && aVal !== '';
     const equal = bothFilled && hVal === aVal;
     const winner = winnerInPlay ? ovr.winner : undefined;

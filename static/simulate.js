@@ -442,6 +442,25 @@
       if (slots.has(ref)) return slots.get(ref);
       return null;
     };
+    const swapSlot = (slotRef, expected) => {
+      if (!(slotRef in teams) && slots.has(slotRef)) {
+        const current = slots.get(slotRef);
+        const prefix = slotRef.split('.').slice(0, -1).join('.') + '.';
+        let otherSlot = null;
+        for (const [key, value] of slots) {
+          if (key.startsWith(prefix) && value === expected) {
+            otherSlot = key;
+            break;
+          }
+        }
+        if (otherSlot) {
+          slots.set(slotRef, expected);
+          slots.set(otherSlot, current);
+          return true;
+        }
+      }
+      return false;
+    };
     for (const stage of config.stages) {
       if (stage.type === 'groups') {
         for (const [name, codes] of Object.entries(stage.groups)) {
@@ -476,20 +495,30 @@
         thirdsAssign(stage, slots, teamStats);
       } else if (stage.type === 'bracket') {
         for (const [mid, mdef] of Object.entries(stage.matches)) {
-          const a = tryResolve(mdef.home);
-          const b = tryResolve(mdef.away);
+          let a = tryResolve(mdef.home);
+          let b = tryResolve(mdef.away);
           if (a === null || b === null) continue;
           const ovr = overrides && overrides[`${stage.id}.${mid}`];
-          if (!ovr || (ovr.winner !== a && ovr.winner !== b)) continue;
+          if (!ovr) continue;
+          if (ovr.winner !== a && ovr.winner !== b) {
+            if (swapSlot(mdef.home, ovr.winner)) a = ovr.winner;
+            else if (swapSlot(mdef.away, ovr.winner)) b = ovr.winner;
+          }
+          if (ovr.winner !== a && ovr.winner !== b) continue;
           slots.set(`${stage.id}.${mid}.W`, ovr.winner);
           slots.set(`${stage.id}.${mid}.L`, ovr.winner === a ? b : a);
         }
       } else if (stage.type === 'match') {
-        const a = tryResolve(stage.home);
-        const b = tryResolve(stage.away);
+        let a = tryResolve(stage.home);
+        let b = tryResolve(stage.away);
         if (a === null || b === null) continue;
         const ovr = overrides && overrides[stage.id];
-        if (!ovr || (ovr.winner !== a && ovr.winner !== b)) continue;
+        if (!ovr) continue;
+        if (ovr.winner !== a && ovr.winner !== b) {
+          if (swapSlot(stage.home, ovr.winner)) a = ovr.winner;
+          else if (swapSlot(stage.away, ovr.winner)) b = ovr.winner;
+        }
+        if (ovr.winner !== a && ovr.winner !== b) continue;
         slots.set(`${stage.id}.W`, ovr.winner);
         slots.set(`${stage.id}.L`, ovr.winner === a ? b : a);
       }
