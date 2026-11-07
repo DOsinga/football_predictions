@@ -139,3 +139,39 @@ To refresh one tournament:
 ```bash
 python3 fetch_elo.py tournaments/wc_2026.yaml
 ```
+
+## Country Factors
+
+`build_country_factors.py` builds a country-level dataset for questions like
+"what makes countries good at football?" It uses a ten-year monthly average of
+Elo ratings as the target, then joins country data from World Bank and Our World
+in Data:
+
+- GDP per head, both market-rate and PPP-adjusted.
+- Population.
+- International migrant stock as a percentage of population.
+- Male height.
+- Annual hours worked per worker.
+- Catholic share of population from Wikipedia's country table.
+- World Cup appearances and titles from the YAML files in `tournaments/`.
+
+Run it from the project root:
+
+```bash
+../../venv3/bin/python build_country_factors.py --write data/country_factors.csv
+```
+
+The script also prints a small model comparison table so we can see whether PPP
+GDP, migration, hours worked, Catholic share, and World Cup history improve the
+fit.
+
+Latest run, with 213 teams and a five-fold cross-validation split:
+
+| Model | Train R² | CV R² |
+| --- | ---: | ---: |
+| GDP USD + population + region + height | 0.661 | 0.596 |
+| GDP PPP + population + region + height | 0.658 | 0.594 |
+| + migration | 0.662 | 0.595 |
+| + hours worked | 0.664 | 0.586 |
+| + Catholic share | 0.677 | 0.599 |
+| + World Cup history | 0.738 | 0.673 |
