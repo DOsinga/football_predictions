@@ -6,6 +6,12 @@ Looking for the pre-2026 code? See [`legacy/`](legacy/).
 
 ![Football Predictions thumbnail](football_predictions.jpg)
 
+Run the interactive tournament simulator locally with:
+
+```bash
+uvx douwe football_predictions
+```
+
 Football Predictions simulates international football tournaments from
 pre-tournament ratings and tournament definitions. The current version reads
 ratings from
